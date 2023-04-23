@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
+     xml:base="schnitzler-interviews"
+     xml:id="M146">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
+            <title level="a" ref="#pmb60933">Zur Frage des Schlüsselromans, [Mitte Dezember 1904?,
+               vermutlich unveröffentlicht]</title>
+            <author ref="#pmb2121">Schnitzler, Arthur</author>
+            <editor>
+               <name>Müller, Martin Anton</name>
+            </editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>ASI</edition>
+            <respStmt>
+               <resp>Transkription und Kommentierung</resp>
+               <name>Martin Anton Müller</name>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Martin Anton Müller</publisher>
+            <idno type="asi" n="146"/>
+         </publicationStmt>
+         <sourceDesc>
+            <origDate when="1904-12-15" n="1">[Mitte Dezember 1904?–1906?]</origDate>
+            <listWit>
+               <witness n="1">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>GB</country>
+                        <settlement>Cambridge</settlement>
+                        <repository>University Library</repository>
+                        <idno>Schnitzler, A:3,4</idno>
+                     </msIdentifier>
+                     <physDesc>
+                        <p>Maschinschriftliches Typoskript, 5 Blätter, 5 Seiten, mit
+                           handschriftlichen Korrekturen in Bleistift (zwei weitere Durchschläge
+                           vorhanden).</p>
+                     </physDesc>
+                  </msDesc>
+               </witness>
+            </listWit>
+            <listBibl>
+               <biblStruct corresp="apundbe">
+                  <analytic>
+                     <title level="a" ref="#pmb60933">Zur Frage des Schlüsselromans</title>
+                  </analytic>
+                  <monogr>
+                     <author ref="#pmb2121">Schnitzler, Arthur</author>
+                     <title level="m">Aphorismen und Betrachtungen</title>
+                     <editor>Hg. Robert O. Weiss</editor>
+                     <imprint>
+                        <date when="1967-01-01">1967</date>
+                        <pubPlace>Frankfurt am Main</pubPlace>
+                        <publisher>S. Fischer</publisher>
+                     </imprint>
+                     <biblScope unit="pp">318–321</biblScope>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="de-DE">German</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="MAM" when="2021-11-09">angelegt</change>
+         <change who="MAM" when="2021-11-12">Index check</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="article">
+      <body>
+         <div type="edierter-text">
+            <listPerson>
+               <person xmlns="" ref="#pmb5480"/>
+               <person xmlns="" ref="#pmb8165"/>
+               <person xmlns="" ref="#pmb10039"/>
+               <person xmlns="" ref="#pmb10825"/>
+               <person xmlns="" ref="#pmb60892"/>
+               <person xmlns="" ref="#pmb60909"/>
+            </listPerson>
+            <listBibl>
+               <bibl xmlns="" ref="#pmb33344"/>
+               <bibl xmlns="" ref="#pmb58341"/>
+               <bibl xmlns="" ref="#pmb60890"/>
+               <bibl xmlns="" ref="#pmb60896"/>
+               <bibl xmlns="" ref="#pmb60898"/>
+               <bibl xmlns="" ref="#pmb60906"/>
+            </listBibl>
+            <listOrg/>
+            <listPlace>
+               <place xmlns="" ref="#pmb50"/>
+               <place xmlns="" ref="#pmb59021"/>
+               <place xmlns="" ref="#pmb60919"/>
+               <place xmlns="" ref="#pmb60922"/>
+            </listPlace>
+         </div>
+         <div type="kommentar-text">
+            <listPerson>
+               <person xmlns="" ref="#pmb5480"/>
+               <person xmlns="" ref="#pmb10039"/>
+               <person xmlns="" ref="#pmb10825"/>
+               <person xmlns="" ref="#pmb60892"/>
+               <person xmlns="" ref="#pmb60909"/>
+            </listPerson>
+            <listBibl>
+               <bibl xmlns="" ref="#pmb33344"/>
+               <bibl xmlns="" ref="#pmb58341"/>
+               <bibl xmlns="" ref="#pmb60890"/>
+               <bibl xmlns="" ref="#pmb60896"/>
+               <bibl xmlns="" ref="#pmb60898"/>
+            </listBibl>
+            <listOrg>
+               <org xmlns="" ref="#pmb29521"/>
+            </listOrg>
+            <listPlace>
+               <place xmlns="" ref="#pmb50"/>
+               <place xmlns="" ref="#pmb60919"/>
+               <place xmlns="" ref="#pmb60922"/>
+            </listPlace>
+         </div>
+      </body>
+      <back>
+         <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <forename>Arthur</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15.05.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21.10.1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+            </person>
+            <person xml:id="pmb10039">
+               <persName>
+                  <forename>Edward</forename>
+                  <surname>Stilgebauer</surname>
+               </persName>
+               <birth>
+                  <date when="1868-09-19">19.09.1868</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1936-12-18">18.12.1936</date>
+                  <settlement ref="pmb45279">
+                     <placeName type="pref">Sanremo</placeName>
+                     <location>
+                        <geo>43,81725 7,7772</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_20439</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/117258970</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10039/</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp53678</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1293771</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Edward_Stilgebauer</idno>
+            </person>
+            <person xml:id="pmb60892">
+               <persName>
+                  <forename>Friedrich Wilhelm</forename>
+                  <surname>Battenberg</surname>
+               </persName>
+               <birth>
+                  <date when="1847-05-16">1847-05-16</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1912-03-15">1912-03-15</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb294">Pädagoge/Pädagogin</occupation>
+               <occupation ref="pmb513">Pfarrer/Pfarrerin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60892/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116082216</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q94865483</idno>
+            </person>
+            <person xml:id="pmb8165">
+               <persName>
+                  <forename>Gottfried</forename>
+                  <surname>Keller</surname>
+               </persName>
+               <birth>
+                  <date when="1819-07-19">19.07.1819</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1890-07-16">16.07.1890</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16794</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/11856109X</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/8165/</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb8165.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp44580</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q122370</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Gottfried_Keller</idno>
+            </person>
+            <person xml:id="pmb10825">
+               <persName>
+                  <forename>Honoré de</forename>
+                  <surname>Balzac</surname>
+               </persName>
+               <birth>
+                  <date when="1799-05-20">20.05.1799</date>
+                  <settlement ref="pmb59461">
+                     <placeName type="pref">Tours</placeName>
+                     <location>
+                        <geo>47,39484 0,70398</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1850-08-18">18.08.1850</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13396</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118506358</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10825.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10825/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10825</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10825.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb10825</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46252</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q9711</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Honor%C3%A9_de_Balzac</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10825.html</idno>
+            </person>
+            <person xml:id="pmb5480">
+               <persName>
+                  <forename>Ewelina</forename>
+                  <surname>Hańska</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Rzewuska</persName>
+               <persName type="legacy-name-merge">Hanska, Evelyne Rzewuska</persName>
+               <birth>
+                  <date when="1801-01-06">06.01.1801</date>
+                  <settlement ref="pmb45598">
+                     <placeName type="pref">Pohrebyshche</placeName>
+                     <location>
+                        <geo>49,48508 29,25988</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1882-04-10">10.04.1882</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118720287</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15909</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5480/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/17845/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb5480</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q263997</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Ewelina_Ha%C5%84ska</idno>
+            </person>
+            <person xml:id="pmb60909">
+               <persName>
+                  <forename>Sarah-Frances</forename>
+                  <surname>Guidoboni-Visconti</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Lovell</persName>
+               <birth>
+                  <date when="1804-09-29">1804-09-29</date>
+                  <settlement ref="pmb60913">
+                     <placeName type="pref">Wiltshire</placeName>
+                     <location>
+                        <geo>51,25 -1,91667</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1883-04-28">1883-04-28</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60909/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1025803442</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q3080806</idno>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb60890">
+               <title>Götz Krafft. Die Geschichte einer Jungend</title>
+               <author ref="pmb10039" role="hat-geschaffen">Stilgebauer, Edward</author>
+               <date from="1904-01-01" to="1905-07-02">1904  – 1905</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60890/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb60890.html</idno>
+               <note type="work_kind">Roman</note>
+            </bibl>
+            <bibl xml:id="pmb58341">
+               <title>Das literarische Echo</title>
+               <title type="legacy-name-merge">Das litterarische Echo</title>
+               <date from="1898-01-01" to="1944-07-01">1898  – 1944</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58341/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59183/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1171453</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Das_literarische_Echo</idno>
+               <note type="work_kind">Periodikum &gt;&gt; Zeitschrift</note>
+            </bibl>
+            <bibl xml:id="pmb60898">
+               <title>[Stilgebauer: Götz Krafft]</title>
+               <date when="1904-12-01">1904-12-01</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60898/</idno>
+               <note type="work_kind">Rezension</note>
+            </bibl>
+            <bibl xml:id="pmb60896">
+               <title>Die Christliche Welt</title>
+               <date from="1887-01-01" to="1941-07-02">1887  – 1941</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60896/</idno>
+               <note type="work_kind">Periodikum &gt;&gt; Zeitschrift</note>
+            </bibl>
+            <bibl xml:id="pmb33344">
+               <title>Lettres à l’étrangère (1833–1842), (1842–1844)</title>
+               <title type="werk_link">https://gallica.bnf.fr/ark:/12148/bpt6k215311n.image#</title>
+               <title type="werk_link">https://gallica.bnf.fr/ark:/12148/bpt6k2153121/f57.item</title>
+               <author ref="pmb10825" role="hat-geschaffen">Balzac, Honoré de</author>
+               <date from="1899-01-01" to="1906-07-02">1899  – 1906</date>
+               <idno type="URL" subtype="gallica">https://gallica.bnf.fr/ark:/12148/bpt6k215311n/f1.image</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33344/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33344</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb33344.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33344.html</idno>
+               <note type="work_kind">Brief &gt;&gt; Briefe &gt;&gt; Briefausgabe</note>
+            </bibl>
+            <bibl xml:id="pmb60906">
+               <title>Albert Savarus</title>
+               <author ref="pmb10825" role="hat-geschaffen">Balzac, Honoré de</author>
+               <date notBefore="1842-01-01" when="1842-07-02">1842</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60906/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2740921</idno>
+               <note type="work_kind">Roman</note>
+            </bibl>
+            <bibl xml:id="pmb60933">
+               <title>Zur Frage des Schlüsselromans</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <date notBefore="1967-01-01" when="1967-07-02">1967</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60933/</idno>
+               <note type="work_kind">Umfrageteilnahme</note>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb59021">
+               <placeName>Marburg</placeName>
+               <placeName type="legacy-name-merge">Marburg an der Lahn</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+               <desc type="entity_type_id">1410</desc>
+               <location type="coords">
+                  <geo>50,80904 8,77069</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/3505/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59021/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2873759/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60184/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4037446-4</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb59021.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q3869</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Marburg</idno>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,2066 16,37341</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
+            </place>
+            <place xml:id="pmb60919">
+               <placeName>Saché</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+               <desc type="entity_type_id">1412</desc>
+               <location type="coords">
+                  <geo>47,24707 0,54455</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60919/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2982052/</idno>
+            </place>
+            <place xml:id="pmb60922">
+               <placeName>Château de la Bouleaunière</placeName>
+               <desc type="entity_type">Schloss (K.SLS)</desc>
+               <desc type="entity_type_id">41</desc>
+               <location type="coords">
+                  <geo>48,2956 2,68165</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50164">Grez-sur-Loing</placeName>
+                  <geo>48,31754 2,68848</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60922/</idno>
+            </place>
+         </listPlace>
+         <listOrg>
+            <org xml:id="pmb29521">
+               <orgName>Calmann-Lévy</orgName>
+               <desc type="entity_type">Verlag</desc>
+               <desc type="entity_type_id">975</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb182">Paris</placeName>
+                  <geo>48,85341 2,3488</geo>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q90</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paris</idno>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29521/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29521</idno>
+            </org>
+         </listOrg>
+      </back>
+   </text>
+</TEI>

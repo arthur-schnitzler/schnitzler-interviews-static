@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
+     xml:base="schnitzler-interviews"
+     xml:id="I066">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
+            <title level="a" ref="#pmb33209">Jób Paál: Schnitzler Arthur büszke arra, hogy magyar
+               zsidó, 15. 8. 1931</title>
+            <author ref="#pmb5134">Paál, Jób</author>
+            <editor>
+               <name>Müller, Martin Anton</name>
+            </editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>ASI</edition>
+            <respStmt>
+               <resp>Transkription und Kommentierung</resp>
+               <name>Martin Anton Müller</name>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Martin Anton Müller</publisher>
+            <idno type="asi" n="066"/>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <analytic>
+                     <author ref="#pmb5134">Paál, Jób</author>
+                     <title level="a" ref="#pmb33209">Schnitzler Arthur büszke arra, hogy magyar
+                        zsidó</title>
+                  </analytic>
+                  <monogr>
+                     <title level="j" ref="#pmb56438">Egyenlőség</title>
+                     <imprint>
+                        <date when="1931-08-15" n="1">15. 8. 1931</date>
+                     </imprint>
+                     <biblScope unit="jg">50</biblScope>
+                     <biblScope unit="nr">40</biblScope>
+                     <biblScope unit="pp">9</biblScope>
+                  </monogr>
+               </biblStruct>
+               <biblStruct corresp="ASUN">
+                  <analytic>
+                     <editor>Hg. Martin Anton Müller, Übersetzung Sándor Tatár</editor>
+                     <title level="a">Arthur Schnitzlers ungarische Interviews</title>
+                  </analytic>
+                  <monogr>
+                     <title level="j">Hofmannsthal-Jahrbuch. Zur europäischen Moderne</title>
+                     <imprint>
+                        <date when="2020">2020</date>
+                     </imprint>
+                     <biblScope unit="vol">28</biblScope>
+                     <biblScope unit="pp">77–82</biblScope>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="hu-HU">Hungarian</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="approved">
+         <change who="MAM" when="2017-11-17">angelegt</change>
+         <change who="MAM" when="2021-09-28">Index check</change>
+         <change who="KH" when="2021-11-02">Durchsicht</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="text">
+      <body>
+         <div type="edierter-text">
+            <listPerson>
+               <person xmlns="" ref="#pmb2121"/>
+               <person xmlns="" ref="#pmb2167"/>
+               <person xmlns="" ref="#pmb5142"/>
+               <person xmlns="" ref="#pmb5347"/>
+               <person xmlns="" ref="#pmb5352"/>
+               <person xmlns="" ref="#pmb12015"/>
+               <person xmlns="" ref="#pmb12504"/>
+               <person xmlns="" ref="#pmb12692"/>
+               <person xmlns="" ref="#pmb12695"/>
+               <person xmlns="" ref="#pmb24427"/>
+               <person xmlns="" ref="#pmb24439"/>
+               <person xmlns="" ref="#pmb27466"/>
+               <person xmlns="" ref="#pmb56482"/>
+            </listPerson>
+            <listBibl>
+               <bibl xmlns="" ref="#pmb56481"/>
+               <bibl xmlns="" ref="#pmb56488"/>
+               <bibl xmlns="" ref="#pmb56490"/>
+            </listBibl>
+            <listOrg/>
+            <listPlace>
+               <place xmlns="" ref="#pmb50"/>
+               <place xmlns="" ref="#pmb189"/>
+               <place xmlns="" ref="#pmb413"/>
+               <place xmlns="" ref="#pmb429"/>
+               <place xmlns="" ref="#pmb35512"/>
+               <place xmlns="" ref="#pmb43471"/>
+               <place xmlns="" ref="#pmb45359"/>
+               <place xmlns="" ref="#pmb45549"/>
+               <place xmlns="" ref="#pmb49143"/>
+               <place xmlns="" ref="#pmb56475"/>
+               <place xmlns="" ref="#pmb56503"/>
+            </listPlace>
+         </div>
+         <div type="kommentar-text">
+            <listPerson>
+               <person xmlns="" ref="#pmb2167"/>
+               <person xmlns="" ref="#pmb5134"/>
+               <person xmlns="" ref="#pmb5142"/>
+               <person xmlns="" ref="#pmb5352"/>
+               <person xmlns="" ref="#pmb12015"/>
+               <person xmlns="" ref="#pmb12504"/>
+               <person xmlns="" ref="#pmb12695"/>
+               <person xmlns="" ref="#pmb21009"/>
+               <person xmlns="" ref="#pmb24427"/>
+               <person xmlns="" ref="#pmb24439"/>
+               <person xmlns="" ref="#pmb27466"/>
+               <person xmlns="" ref="#pmb56482"/>
+            </listPerson>
+            <listBibl>
+               <bibl xmlns="" ref="#pmb31519"/>
+               <bibl xmlns="" ref="#pmb32460"/>
+               <bibl xmlns="" ref="#pmb33243"/>
+               <bibl xmlns="" ref="#pmb33838"/>
+               <bibl xmlns="" ref="#pmb36376"/>
+               <bibl xmlns="" ref="#pmb56438"/>
+               <bibl xmlns="" ref="#pmb56481"/>
+               <bibl xmlns="" ref="#pmb56488"/>
+               <bibl xmlns="" ref="#pmb56490"/>
+            </listBibl>
+            <listOrg>
+               <org xmlns="" ref="#pmb29300"/>
+            </listOrg>
+            <listPlace>
+               <place xmlns="" ref="#pmb50"/>
+               <place xmlns="" ref="#pmb189"/>
+               <place xmlns="" ref="#pmb413"/>
+               <place xmlns="" ref="#pmb468"/>
+               <place xmlns="" ref="#pmb470"/>
+               <place xmlns="" ref="#pmb662"/>
+               <place xmlns="" ref="#pmb35512"/>
+               <place xmlns="" ref="#pmb35513"/>
+               <place xmlns="" ref="#pmb43471"/>
+               <place xmlns="" ref="#pmb44548"/>
+               <place xmlns="" ref="#pmb45549"/>
+               <place xmlns="" ref="#pmb49143"/>
+               <place xmlns="" ref="#pmb56475"/>
+            </listPlace>
+         </div>
+      </body>
+      <back>
+         <listPerson>
+            <person xml:id="pmb5134">
+               <persName>
+                  <forename>Jób</forename>
+                  <surname>Paál</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Markus István Possel</persName>
+               <persName type="person_geburtsname_nachname">Possel</persName>
+               <persName type="legacy-name-merge">Paál, Jób</persName>
+               <birth>
+                  <date notBefore="1888-01-01" when="1888-07-01" notAfter="1888-12-31">1888</date>
+                  <settlement ref="pmb46476">
+                     <placeName type="pref">Tata</placeName>
+                     <location>
+                        <geo>47,65289 18,31838</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1962-07-02" notAfter="1962-12-31">1962</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/180963678</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_18631</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5134/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/22411/</idno>
+            </person>
+            <person xml:id="pmb56482">
+               <persName>
+                  <forename>József</forename>
+                  <surname>Kiss</surname>
+               </persName>
+               <birth>
+                  <date when="1843-11-30">1843-11-30</date>
+                  <settlement ref="pmb56483">
+                     <placeName type="pref">Mezőcsát</placeName>
+                     <location>
+                        <geo>47,81667 20,91667</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1921-12-31">1921-12-31</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb173">Redakteur/Redakteurin</occupation>
+               <occupation ref="pmb370">Dichter/Dichterin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56482/</idno>
+               <idno type="URL" subtype="">http://d-nb.info/gnd/136116825</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q920515</idno>
+            </person>
+            <person xml:id="pmb5347">
+               <persName>
+                  <forename>Miksa</forename>
+                  <surname>Szabolcsi</surname>
+               </persName>
+               <persName type="person_geburtsname-vorname">Max</persName>
+               <persName type="person_geburtsname_nachname">Weinstein</persName>
+               <birth>
+                  <date when="1857-08-27">27.08.1857</date>
+                  <settlement ref="pmb56569">
+                     <placeName type="pref">Nyírtura</placeName>
+                     <location>
+                        <geo>48,01419 21,83467</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1915-06-17">17.06.1915</date>
+                  <settlement ref="pmb55392">
+                     <placeName type="pref">Balatonfüred</placeName>
+                     <location>
+                        <geo>46,96188 17,87187</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1049701720</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5347/</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x002cb0b3</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1293326</idno>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <forename>Arthur</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15.05.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21.10.1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+            </person>
+            <person xml:id="pmb27466">
+               <persName>
+                  <forename>Ludwig</forename>
+                  <surname>Zerkovitz</surname>
+               </persName>
+               <birth>
+                  <date when="1865-12-09">09.12.1865</date>
+                  <settlement ref="pmb45549">
+                     <placeName type="pref">Nagykanizsa</placeName>
+                     <location>
+                        <geo>46,45347 16,99104</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-07-02" notAfter="1939-12-31">1939</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb175">Kaufmann/Kauffrau</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_21541</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/27466/</idno>
+            </person>
+            <person xml:id="pmb2167">
+               <persName>
+                  <forename>Felix</forename>
+                  <surname>Salten</surname>
+               </persName>
+               <persName type="person_geburtsname-vorname">Siegmund</persName>
+               <persName type="person_geburtsname_nachname">Salzmann</persName>
+               <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
+               <birth>
+                  <date when="1869-09-06">06.09.1869</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-08">08.10.1945</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2167</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
+            </person>
+            <person xml:id="pmb12504">
+               <persName>
+                  <forename>Max</forename>
+                  <surname>Reinhardt</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Goldmann</persName>
+               <birth>
+                  <date when="1873-09-09">09.09.1873</date>
+                  <settlement ref="pmb662">
+                     <placeName type="pref">Baden bei Wien</placeName>
+                     <location>
+                        <geo>48,00543 16,23264</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1943-10-30">30.10.1943</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb103">Theaterleiter/Theaterleiterin</occupation>
+               <occupation ref="pmb104">Regisseur/Regisseurin</occupation>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19154</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118599380</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12504.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12504/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb12504</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb12504</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp49966</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=R#DWpers0195</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x002840f0</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q78639</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Max_Reinhardt</idno>
+               <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001decb</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb12504.html</idno>
+            </person>
+            <person xml:id="pmb12015">
+               <persName>
+                  <forename>Emmerich</forename>
+                  <surname>Kálmán</surname>
+               </persName>
+               <persName type="person_geburtsname-vorname">Imre</persName>
+               <persName type="person_geburtsname_nachname">Koppstein</persName>
+               <birth>
+                  <date when="1882-10-24">24.10.1882</date>
+                  <settlement ref="pmb58065">
+                     <placeName type="pref">Siófok</placeName>
+                     <location>
+                        <geo>46,90413 18,058</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1953-10-30">30.10.1953</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb129">Komponist/Komponistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16669</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118559605</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12015/</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp47437</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q153818</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Emmerich_K%C3%A1lm%C3%A1n</idno>
+            </person>
+            <person xml:id="pmb5352">
+               <persName>
+                  <forename>Artúr Lajos</forename>
+                  <surname>Halmi</surname>
+               </persName>
+               <birth>
+                  <date when="1866-12-08">08.12.1866</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-12-03">03.12.1939</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb110">Bildender Künstler/Bildende Künstlerin &gt;&gt; Maler/Malerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1022854062</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5352/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q4134224</idno>
+            </person>
+            <person xml:id="pmb12692">
+               <persName>
+                  <forename>Heinrich</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1902-08-09">09.08.1902</date>
+                  <settlement ref="pmb75">
+                     <placeName type="pref">Hinterbrühl</placeName>
+                     <location>
+                        <geo>48,08611 16,24809</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1982-07-12">12.07.1982</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb104">Regisseur/Regisseurin</occupation>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19822</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848510</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12692.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12692/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb12692</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1598804</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Heinrich_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb12692.html</idno>
+            </person>
+            <person xml:id="pmb5142">
+               <persName>
+                  <forename>János</forename>
+                  <surname>Paál</surname>
+               </persName>
+               <birth>
+                  <date when="1916-08-24">24.08.1916</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="2010-03-25">25.03.2010</date>
+                  <settlement ref="pmb48369">
+                     <placeName type="pref">Dreieich</placeName>
+                     <location>
+                        <geo>50,01997 8,69611</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <occupation ref="pmb232">Psychoanalytiker/Psychoanalytikerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/132340127</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5142/</idno>
+            </person>
+            <person xml:id="pmb24427">
+               <persName>
+                  <forename>Josef</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <death>
+                  <date when="1863-01-30">30.01.1863</date>
+                  <settlement ref="pmb45549">
+                     <placeName type="pref">Nagykanizsa</placeName>
+                     <location>
+                        <geo>46,45347 16,99104</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb605">Tischler/Tischlerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19826</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24427/</idno>
+            </person>
+            <person xml:id="pmb24439">
+               <persName>
+                  <forename>Rosalie</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Klein</persName>
+               <birth>
+                  <date when="1812-01-01">1812/1813</date>
+                  <settlement ref="pmb44548">
+                     <placeName type="pref">Kaposvár</placeName>
+                     <location>
+                        <geo>46,36667 17,8</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1878-11-08">08.11.1878</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19833</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24439/</idno>
+            </person>
+            <person xml:id="pmb21009">
+               <persName>
+                  <forename>Amalia</forename>
+                  <surname>Markbreiter</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Schey</persName>
+               <birth>
+                  <date when="1815-01-16">16.01.1815</date>
+                  <settlement ref="pmb35513">
+                     <placeName type="pref">Kőszeg</placeName>
+                     <location>
+                        <geo>47,38922 16,541</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1884-09-24">24.09.1884</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17894</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/21009/</idno>
+            </person>
+            <person xml:id="pmb12695">
+               <persName>
+                  <forename>Johann</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <persName type="person_geburtsname-vorname">János</persName>
+               <birth>
+                  <date when="1835-04-10">10.04.1835</date>
+                  <settlement ref="pmb45549">
+                     <placeName type="pref">Nagykanizsa</placeName>
+                     <location>
+                        <geo>46,45347 16,99104</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1893-05-02">02.05.1893</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb132">Mediziner/Medizinerin &gt;&gt; Laryngologe/Laryngologin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19824</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848669</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12695.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12695/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb12695</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46937</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q86302</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Johann_Schnitzler</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284418</idno>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb56488">
+               <title>Jehova</title>
+               <author ref="pmb56482" role="hat-geschaffen">Kiss, József</author>
+               <date notBefore="1884-01-01" when="1884-07-01">1884</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56488/</idno>
+               <note type="work_kind">Verserzählung</note>
+            </bibl>
+            <bibl xml:id="pmb56481">
+               <title>Feuer</title>
+               <author ref="pmb56482" role="hat-geschaffen">Kiss, József</author>
+               <date notBefore="1899-01-01" when="1899-07-02">1899</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56481/</idno>
+               <note type="work_kind">Gedicht</note>
+            </bibl>
+            <bibl xml:id="pmb56438">
+               <title>Egyenlőség</title>
+               <date notBefore="1888-01-01" when="1888-07-01">1888</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56438/</idno>
+               <note type="work_kind">Periodikum &gt;&gt; Zeitschrift</note>
+            </bibl>
+            <bibl xml:id="pmb36376">
+               <title>Neues Wiener Journal</title>
+               <title type="werk_link-anno">http://anno.onb.ac.at/cgi-content/anno?aid=nwj</title>
+               <author ref="pmb36371" role="hat-einen-beitrag-geschaffen-zu">Papp, Desiderius</author>
+               <author ref="pmb10815" role="hat-einen-beitrag-geschaffen-zu">Bahr, Hermann</author>
+               <date to="1939-01-01">1893  – 1939</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36376/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36376</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb36376</idno>
+               <note type="work_kind">Periodikum &gt;&gt; Tageszeitung</note>
+            </bibl>
+            <bibl xml:id="pmb33243">
+               <title>Tagebuch</title>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author ref="pmb119261" role="hat-herausgegeben">Braunwarth, Peter Michael</author>
+               <author ref="pmb65504" role="hat-herausgegeben">Urbach, Reinhard</author>
+               <date to="2000-01-01">1981  – 2000</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q108122826</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Tagebuch_(Schnitzler)</idno>
+               <note type="work_kind">Tagebuch</note>
+            </bibl>
+            <bibl xml:id="pmb32460">
+               <title>Die Frau des Weisen. Novelletten</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <date>1898-05-03</date>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32460.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32460/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32460</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb32460.html</idno>
+               <note type="work_kind">Textsammlung &gt;&gt; Novellensammlung</note>
+            </bibl>
+            <bibl xml:id="pmb33838">
+               <title>Jugend in Wien</title>
+               <title type="namensvariante">Leben und Nachklang, Werk und Widerhall</title>
+               <title type="werk_link">http://www.zeno.org/Literatur/M/Schnitzler,+Arthur/Autobiographisches/Jugend+in+Wien</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <date notBefore="1968-01-01" when="1968-07-01">1968</date>
+               <idno type="URL" subtype="asaf">https://asaf.com/S.04.03.04</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q41815908</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31377.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31377/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33838/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33838</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33838.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Jugend_in_Wien</idno>
+               <note type="work_kind">Biografie &gt;&gt; Autobiografie</note>
+            </bibl>
+            <bibl xml:id="pmb56490">
+               <title>Alle Gedichte. Taschenbuch</title>
+               <title type="namensvariante">Összes költeményei. Olcsó kiadás</title>
+               <author ref="pmb56482" role="hat-geschaffen">Kiss, József</author>
+               <date notBefore="1899-01-01" when="1899-07-02">1899</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56490/</idno>
+               <note type="work_kind">Textsammlung &gt;&gt; Gedichtsammlung</note>
+            </bibl>
+            <bibl xml:id="pmb31519">
+               <title>Bambi. Eine Lebensgeschichte aus dem Walde</title>
+               <title type="legacy-name-merge">Bambi. Eine Lebensgeschichte aus dem Walde</title>
+               <author ref="pmb2167" role="hat-geschaffen">Salten, Felix</author>
+               <date when="1922-12-08">1922-12-08</date>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31519.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31519/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31519</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/76504/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb76504.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q742753</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Bambi._Eine_Lebensgeschichte_aus_dem_Walde</idno>
+               <note type="work_kind">Erzählung</note>
+            </bibl>
+            <bibl xml:id="pmb33209">
+               <title>Arthur Schnitzler ist stolz darauf, Jude aus Ungarn zu sein</title>
+               <title type="werk_bibliografische-angabe">Egyenlőség, Jg. 50, Nr. 40, 15.8.1931, S. 9</title>
+               <title type="namensvariante">Schnitzler Arthur büszke arra, hogy magyar zsidó</title>
+               <author ref="pmb5134" role="hat-geschaffen">Paál, Jób</author>
+               <date when="1931-08-15">15.08.1931</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33209/</idno>
+               <note type="work_kind">Interview</note>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb35512">
+               <placeName>Ungarn</placeName>
+               <placeName type="alternative-name">Republic of Hungary</placeName>
+               <placeName type="legacy-name-merge">Hungary</placeName>
+               <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+               <desc type="entity_type_id">1107</desc>
+               <location type="coords">
+                  <geo>47,0 20,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
+                  <geo>48,4054 16,4887</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q28</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb167.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/719819/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35512/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35512</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb35512.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Ungarn</idno>
+            </place>
+            <place xml:id="pmb189">
+               <placeName>Semmering</placeName>
+               <placeName type="alternative-name">Gemeinde Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Kurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>47,64224 15,8241</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/7873001/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb189.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/189/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb189</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91735/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91735.html</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4054504-0</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q659891</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Semmering_(Nieder%C3%B6sterreich)</idno>
+            </place>
+            <place xml:id="pmb413">
+               <placeName>Südbahnhotel</placeName>
+               <desc type="entity_type">Hotel (K.HTL)</desc>
+               <desc type="entity_type_id">12</desc>
+               <location type="coords">
+                  <geo>47,647222 15,83</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb189">Semmering</placeName>
+                  <geo>47,64224 15,8241</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1610900</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb413.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/413/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb413</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S%C3%BCdbahnhotel</idno>
+               <note type="apis_dates">
+                  <date notBefore="1882-01-01" when="1882-07-02">1882</date>
+               </note>
+            </place>
+            <place xml:id="pmb45359">
+               <placeName>Arad</placeName>
+               <placeName type="alternative-name">Arat</placeName>
+               <placeName type="legacy-name-merge">Arad (Rumänien)</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+               <desc type="entity_type_id">1415</desc>
+               <location type="coords">
+                  <geo>46,18333 21,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35512">Ungarn</placeName>
+                  <geo>47,0 20,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb378">Rumänien</placeName>
+                  <geo>46,0 25,0</geo>
+               </location>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4079813-6</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb26.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/26/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38414/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39452/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45359/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/686254/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb45359.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q173591</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arad_(Rum%C3%A4nien)</idno>
+            </place>
+            <place xml:id="pmb429">
+               <placeName>Salzkammergut</placeName>
+               <desc type="entity_type">Region</desc>
+               <desc type="entity_type_id">47</desc>
+               <location type="coords">
+                  <geo>47,75 13,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q266703</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb429.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/429/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb429</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91651/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2766813/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91651.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Salzkammergut</idno>
+            </place>
+            <place xml:id="pmb45549">
+               <placeName>Nagykanizsa</placeName>
+               <placeName type="legacy-name">Groß-Kanisza</placeName>
+               <placeName type="legacy-name-merge">Nagy-Kanisza</placeName>
+               <placeName type="legacy-name-merge">Nagy Kanisza</placeName>
+               <placeName type="legacy-name-merge">Nagykanisza</placeName>
+               <placeName type="legacy-name-merge">Nagy Kanizsa</placeName>
+               <placeName type="legacy-name-merge">Groß Kanizsa</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+               <desc type="entity_type_id">1412</desc>
+               <location type="coords">
+                  <geo>46,45347 16,99104</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35512">Ungarn</placeName>
+                  <geo>47,0 20,0</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1070/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/7796/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/17589/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24119/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24428/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/25818/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/27467/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45549/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3047679/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb45549.html</idno>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,2066 16,37341</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
+            </place>
+            <place xml:id="pmb43471">
+               <placeName>Budapest</placeName>
+               <placeName type="legacy-name-merge">Buda</placeName>
+               <placeName type="alternative-name">Königl. Freie Hauptstadt Ofen</placeName>
+               <placeName type="legacy-name-merge">Ofen</placeName>
+               <placeName type="alternative-name">Altofen</placeName>
+               <placeName type="legacy-name-merge">Pest (Stadt)</placeName>
+               <placeName type="legacy-name-merge">Óbuda</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+               <desc type="entity_type_id">1418</desc>
+               <location type="coords">
+                  <geo>47,49835 19,04045</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35512">Ungarn</placeName>
+                  <geo>47,0 20,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43471">Budapest</placeName>
+                  <geo>47,49835 19,04045</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1781</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb464.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3054643/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4008684-7</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/9867/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42014/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43471/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43797/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43471</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62463/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64169/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88759/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb43471</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb43471.html</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1781</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Budapest</idno>
+            </place>
+            <place xml:id="pmb56475">
+               <placeName>Balaton</placeName>
+               <placeName type="alternative-name">Balaton Lake</placeName>
+               <placeName type="alternative-name">Lake Balaton</placeName>
+               <placeName type="alternative-name">Plattensee</placeName>
+               <desc type="entity_type">See (N.SEE)</desc>
+               <desc type="entity_type_id">44</desc>
+               <location type="coords">
+                  <geo>46,83333 17,75</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35512">Ungarn</placeName>
+                  <geo>47,0 20,0</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56475/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3055597/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb56475.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q6383</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Balaton</idno>
+            </place>
+            <place xml:id="pmb56503">
+               <placeName>Népszínház utca</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>47,4951162 19,0754879</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43471">Budapest</placeName>
+                  <geo>47,49835 19,04045</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56503/</idno>
+            </place>
+            <place xml:id="pmb470">
+               <placeName>Edlach</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>47,69255 15,80915</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb483">Reichenau an der Rax</placeName>
+                  <geo>47,7 15,83333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2780428/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb470.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/470/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb470</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb470.html</idno>
+            </place>
+            <place xml:id="pmb49143">
+               <placeName>Szombathely</placeName>
+               <placeName type="alternative-name">Steinamanger</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+               <desc type="entity_type_id">1415</desc>
+               <location type="coords">
+                  <geo>47,23088 16,62155</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35512">Ungarn</placeName>
+                  <geo>47,0 20,0</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1071/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/9090/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49143/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3044310/</idno>
+            </place>
+            <place xml:id="pmb44548">
+               <placeName>Kaposvár</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+               <desc type="entity_type_id">1415</desc>
+               <location type="coords">
+                  <geo>46,36667 17,8</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35512">Ungarn</placeName>
+                  <geo>47,0 20,0</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/19091/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44548/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3050616/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44548.html</idno>
+            </place>
+            <place xml:id="pmb35513">
+               <placeName>Kőszeg</placeName>
+               <placeName type="alternative-name">Köszeg</placeName>
+               <placeName type="legacy-name">Güns</placeName>
+               <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+               <desc type="entity_type_id">1134</desc>
+               <location type="coords">
+                  <geo>47,38922 16,541</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35512">Ungarn</placeName>
+                  <geo>47,0 20,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb35511">Vas</placeName>
+                  <geo>47,16667 16,75</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3049366/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35513/</idno>
+            </place>
+            <place xml:id="pmb662">
+               <placeName>Baden bei Wien</placeName>
+               <placeName type="alternative-name">Baden</placeName>
+               <placeName type="legacy-name">Baden bei Wien?</placeName>
+               <placeName type="legacy-name-merge">Baden (Niederösterreich)</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,00543 16,23264</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1003">Niederösterreich</placeName>
+                  <geo>48,33333 15,75</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q486450</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb662.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/662/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb662</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88112/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4004168-2</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88115/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2782067/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb662</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb662.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Baden_(Nieder%C3%B6sterreich)</idno>
+            </place>
+            <place xml:id="pmb468">
+               <placeName>Europa</placeName>
+               <desc type="entity_type">Kontinent (A.KNT)</desc>
+               <desc type="entity_type_id">49</desc>
+               <location type="coords">
+                  <geo>48,69096 9,14062</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q46</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/6255148/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb468.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/468/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb468</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb468</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb468.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Europa</idno>
+            </place>
+         </listPlace>
+         <listOrg>
+            <org xml:id="pmb29300">
+               <orgName>Salzburger Festspiele</orgName>
+               <desc type="entity_type">Veranstaltung</desc>
+               <desc type="entity_type_id">1004</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb30">Salzburg</placeName>
+                  <geo>47,80067 13,04532</geo>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91649/</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91649.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/93885/</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2766818/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/94039/</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4076982-3</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q34713</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Salzburg</idno>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29300.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29300/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29300</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q256443</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Salzburger_Festspiele</idno>
+               <note type="apis_dates">
+                  <date notBefore="1920-01-01" when="1920-07-01">1920</date>
+               </note>
+            </org>
+         </listOrg>
+      </back>
+   </text>
+</TEI>
