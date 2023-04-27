@@ -14,7 +14,7 @@ var data = calendarData.map(r =>
   endDate: new Date(r.startDate),
   name: r.name,
   linkId: r.id,
-  color: '#3D5A80'
+  color: '#A63437'
 })).filter(r => r.startDate.getFullYear() === 1890);
 
 
@@ -99,7 +99,7 @@ function updateyear(year) {
     endDate: new Date(r.startDate),
     name: r.name,
     linkId: r.id,
-    color: '#3D5A80'
+    color: '#A63437'
   })).filter(r => r.startDate.getFullYear() === parseInt(year));
   calendar.setDataSource(dataSource);
 }
