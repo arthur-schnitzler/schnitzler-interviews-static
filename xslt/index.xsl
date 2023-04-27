@@ -98,26 +98,8 @@
                                                 alt="Schnitzlers Arbeitstisch"/>
                                         </div>
                                         <div class="card-header">
-                                            <h4>Korrespondenzen </h4>
-                                            <p>Auswahl anhand der Korrespondenzpartnerinnen und
-                                                -partner.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-sm-12">
-                                <a href="toc.html" class="index-link">
-                                    <div class="card index-card">
-                                        <div class="card-body">
-                                            <img class="d-block w-100"
-                                                src="https://shared.acdh.oeaw.ac.at/schnitzler-briefe/img/brief.jpg"
-                                                alt="Briefumschlag mit Schnitzlers aufgedruckter Absenderadresse"
-                                            />
-                                        </div>
-                                        <div class="card-header">
-                                            <h4>Korrespondenzstücke</h4>
-                                            <p>Verzeichnis aller edierten Briefe, Karten,
-                                                Widmungsexemplare und Telegramme.</p>
+                                            <h4>Interviews, Meinungen, Proteste </h4>
+                                            <p>Zum Inhaltsverzeichnis</p>
                                         </div>
                                     </div>
                                 </a>
@@ -133,7 +115,7 @@
                                         </div>
                                         <div class="card-header">
                                             <h4>Kalender</h4>
-                                            <p>Korrespondenzstücke anhand eines Datums finden.</p>
+                                            <p>Interviews nach Erscheinungsdatum des Erstdrucks finden.</p>
                                         </div>
                                     </div>
                                 </a>
@@ -166,7 +148,7 @@
                                         </div>
                                         <div class="card-header">
                                             <h4>Werkverzeichnis</h4>
-                                            <p>In den Korrespondenzstücken erwähnte literarische wie
+                                            <p>Erwähnte literarische wie
                                                 nicht-literarische Werke.</p>
                                         </div>
                                     </div>
@@ -184,7 +166,7 @@
                                         </div>
                                         <div class="card-header">
                                             <h4>Orte</h4>
-                                            <p>In den Korrespondenzstücken erwähnte geografische
+                                            <p>In den Texten erwähnte geografische
                                                 Orte. Diese sind auch über ihre Koordinaten
                                                 erschlossen.</p>
                                         </div>
@@ -201,7 +183,7 @@
                                         </div>
                                         <div class="card-header">
                                             <h4>Institutionen und Organisationen</h4>
-                                            <p>In den Korrespondenzstücken erwähnte Verlage,
+                                            <p>In den Texten erwähnte Verlage,
                                                 Redaktionen, Vereine, Gesellschaften, Firmen, Preise
                                                 …</p>
                                         </div>

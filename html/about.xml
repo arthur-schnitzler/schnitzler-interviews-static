@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+           <titleStmt>
+              <title level='a'>Zur Website</title>
+              <title level="s">Arthur Schnitzler: Das Zeitlose ist von kürzester Dauer. Interviews, Meinungen, Proteste</title>
+           </titleStmt>
+           <publicationStmt>
+              <p>Publication Information</p>
+           </publicationStmt>
+           <sourceDesc>
+              <p>Information about the source</p>
+           </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+           <p>Auf dieser Website sind bereits vor Veröffentlichung des
+               Buches im Oktober 2023 verschiedene Inhalte zugänglich:</p>
+            <list>
+                <item>Das Inhaltsverzeichnis</item>
+                <item>Der Quellennachweis mit allen bibliografischen
+                    Nachweisen</item>
+                <item>Die vier Indizes mit Verweisen, in welchen 
+                Texten sie vorkommen</item>
+            </list>
+            <p>Das Buch erscheint mit einer Förderung des FWF (PUB 979, Bewilligung
+            vom 3. Oktober 2022) und wird kostenfrei als PDF zu laden sein.</p>  
+              
+        </body>
+    </text>
+  </TEI>
+  

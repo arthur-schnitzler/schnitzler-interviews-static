@@ -5,10 +5,15 @@ note which one should be omitted without deleting it. If the URIs
 are but links to pdfs etc. an URL can be added
 -->
 <list>
-    <item type="current-edition">
+    <item  type="current-edition">
+        <abbr>schnitzler-interviews</abbr>
+        <caption>Interviews, Meinungen, Proteste</caption>
+        <color>#3D5A80</color>
+    </item>
+    <item>
         <abbr>schnitzler-briefe</abbr>
         <caption>Briefe</caption>
-        <color>#3D5A80</color>
+        <color>#A63437</color>
     </item>
     <item>
         <abbr>schnitzler-tagebuch</abbr>
