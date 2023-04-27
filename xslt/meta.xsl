@@ -32,14 +32,14 @@
                             <div class="card-body-index">
                                 <xsl:apply-templates select=".//tei:body"/>
                             </div>
-                            <xsl:if test="descendant::tei:footNote">
+                            <xsl:if test="descendant::tei:note[@type='footnote']">
                                 <div class="card-body-index">
                                     <p/>
                                     <xsl:element name="ol">
                                         <xsl:attribute name="class">
                                             <xsl:text>list-for-footnotes-meta</xsl:text>
                                         </xsl:attribute>
-                                        <xsl:apply-templates select="descendant::tei:footNote"
+                                        <xsl:apply-templates select="descendant::tei:note[@type='footnote']"
                                             mode="footnote"/>
                                     </xsl:element>
                                 </div>

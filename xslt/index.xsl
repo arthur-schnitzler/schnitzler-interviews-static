@@ -27,11 +27,11 @@
                                 <div class="intro_left">
                                     <h3 class="mt-3">Arthur Schnitzler</h3>
                                     <h1 class="mt-3" style="text-align: left;">»Das Zeitlose ist von
-                                        kürzester Dauer«<lb/>Interviews, Meinungen, Proteste</h1>
+                                        kürzester Dauer«<br/>Interviews, Meinungen, Proteste</h1>
                                     <h3 class="mt-3">1891–1931</h3>
                                     <h4 style="font-style: italic">Herausgegeben von Martin Anton
                                         Müller</h4>
-                                    <h4>Buchausgabe in Vorbereitung: Göttingen: Wallstein Verlag,
+                                    <h4>Göttingen: Wallstein Verlag,
                                         Oktober 2023</h4>
                                     <div style="text-align: right">
                                         <a href="#body">

@@ -647,8 +647,7 @@
                                     <a class="ml-3" data-toggle="tooltip" title="Brief als PDF">
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="$source_pdf"/>
-                                        </xsl:attribute>
-                                        <i class="fa-lg far fa-file-pdf"/> PDF </a>
+                                        </xsl:attribute><i class="fa-lg far fa-file-pdf"/> PDF </a>
                                 </p>
                                 <p>
                                     <a class="ml-3" data-toggle="tooltip"
@@ -1018,6 +1017,7 @@
                 <xsl:attribute name="href">
                     <xsl:value-of select="concat(replace(@ref, '#', ''), '.html')"/>
                 </xsl:attribute>
+                
                 <xsl:apply-templates/>
             </xsl:element>
         </span>

@@ -2,8 +2,8 @@
     <teiHeader>
         <fileDesc>
            <titleStmt>
-              <title type="main">Über das Projekt</title>
-              <title type="sub">Arthur Schnitzler: Das Zeitlose ist von kürzester Dauer. Interviews, Meinungen, Proteste</title>
+              <title level='a'>Zur Website</title>
+              <title level="s">Arthur Schnitzler: Das Zeitlose ist von kürzester Dauer. Interviews, Meinungen, Proteste</title>
            </titleStmt>
            <publicationStmt>
               <p>Publication Information</p>
@@ -15,15 +15,18 @@
     </teiHeader>
     <text>
         <body>
-           <p>
-               Scholarly Digital Editions sind eine revolutionäre Art, historische Texte und Dokumente in einem modernen und zugänglichen Format zu präsentieren. 
-               Diese Editionen verwenden digitale Technologien, um eine angereicherte und interaktive Version des Originaltexts darzustellen, die es Lesern ermöglicht, 
-               das Material auf neue Weise zu erkunden und zu nutzen. Sie bieten Wissenschaftlern ein mächtiges Werkzeug für Forschung und Analyse sowie eine Plattform, 
-               um ihre Arbeit einem breiteren Publikum zugänglich zu machen. Darüber hinaus können digitale Editionen eine genauere und zuverlässigere Version eines 
-               Textes bieten, indem sie fortschrittliche Techniken wie Bildverbesserung, Transkription und Textanalyse einsetzen. 
-               Da sich das Feld der digitalen Geisteswissenschaften weiterentwickelt, wird die Entwicklung von Scholarly Digital Editions immer wichtiger und wird 
-               voraussichtlich die Art und Weise revolutionieren, wie wir historische Texte und Dokumente studieren und verstehen.
-           </p>
+           <p>Auf dieser Website sind bereits vor Veröffentlichung des
+               Buches im Oktober 2023 verschiedene Inhalte zugänglich:</p>
+            <list>
+                <item>Das Inhaltsverzeichnis</item>
+                <item>Der Quellennachweis mit allen bibliografischen
+                    Nachweisen</item>
+                <item>Die vier Indizes mit Verweisen, in welchen 
+                Texten sie vorkommen</item>
+            </list>
+            <p>Das Buch erscheint mit einer Förderung des FWF (PUB 979, Bewilligung
+            vom 3. Oktober 2022) und wird kostenfrei als PDF zu laden sein.</p>  
+              
         </body>
     </text>
   </TEI>
