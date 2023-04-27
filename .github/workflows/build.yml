@@ -1,7 +1,6 @@
 name: Build and publish
 
-on: 
-  on: workflow_dispatch
+on: workflow_dispatch
 
 jobs:
   build_pages:
@@ -22,6 +21,7 @@ jobs:
         mv ant-contrib-1.0b3.jar /usr/share/ant/lib
     - name: Build
       run: |
+       ./transform.sh
         ant
     - name: Build Index
       run: |
