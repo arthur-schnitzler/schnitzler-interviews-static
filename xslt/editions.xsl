@@ -480,11 +480,11 @@
                     aria-labelledby="downloadModalLabel2" aria-hidden="true">
                     <xsl:variable name="datum">
                         <xsl:variable name="date"
-                            select="descendant::tei:correspDesc/tei:correspAction[@type = 'sent'][1]/tei:date"
+                            select="descendant::tei:titleStmt/tei:title[@when-iso][1]"
                             as="node()?"/>
                         <xsl:choose>
-                            <xsl:when test="$date/@when">
-                                <xsl:value-of select="$date/@when"/>
+                            <xsl:when test="$date/@when-iso">
+                                <xsl:value-of select="$date/@when-iso"/>
                             </xsl:when>
                             <xsl:when test="$date/@notBefore">
                                 <xsl:value-of select="$date/@notBefore"/>
