@@ -115,13 +115,16 @@
                                     <b>Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer«.
                                         Interviews, Meinungen, Proteste (1891–1931). Hg. Martin
                                         Anton Müller. Göttingen: Wallstein 2023</b>
-                                            <br/>
+                                            <br/><br/>
                                     
                                         <i>ca. 760 S., ca. 25 Abb., geb., Schutzumschlag<lb/> 2 Bde.
                                             im Schuber<lb/> ca. € 44,– (D); € 45,30 (A)<lb/>ISBN
                                             978-3-8353-5471-5</i>
                                     
                                         </li>
+                                    </ul>
+                                    <p/>
+                                    
                                     <legend>Erwähnte Personen</legend>
                                     <ul>
                                         <xsl:for-each select=".//tei:listPerson//tei:person">
