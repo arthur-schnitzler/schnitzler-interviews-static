@@ -917,3 +917,13 @@ nav {
     border-top-width: 0rem;
     border-top-color: #6c757d;
 }
+
+
+.card-body-normalertext {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #f1f1f1;
+    padding: 1.5rem 2.5rem;
+    }
+
+    
