@@ -11,7 +11,7 @@
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title">
-            <xsl:text>schnitzler-briefe</xsl:text>
+            <xsl:text>schnitzler-interviews</xsl:text>
         </xsl:variable>
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <html lang="de">
@@ -34,11 +34,11 @@
                                     Kalender</h1>
                                 <a>
                                     <i class="fas fa-info"
-                                        title="Korrespondenzstücke nach Tagen suchen"
+                                        title="Texte nach Tagen suchen"
                                         data-bs-toggle="modal" data-target="#exampleModal"/>
                                 </a>
                                 <a style="padding-left:5px;" href="js-data/calendarData.js">
-                                    <i class="fas fa-download" title="Data"/>
+                                    <i class="fas fa-download" title="Kalenderdaten herunterladen"/>
                                 </a>
                             </div>
                             <div class="card-body containingloader">
@@ -65,10 +65,10 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Die Briefe in Kalenderansicht</h5>
+                                    <h5 class="modal-title">Die Texte in Kalenderansicht</h5>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Briefe eines bestimmten Tages suchen. </p>
+                                    <p>Texte eines bestimmten Tages suchen. </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"

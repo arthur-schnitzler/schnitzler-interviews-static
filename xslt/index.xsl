@@ -89,7 +89,7 @@
                     <div class="container-fluid" style="margin:2em auto;">
                         <div class="row wrapper img_bottom">
                             <div class="col-md-6 col-lg-6 col-sm-12">
-                                <a href="tocs.html" class="index-link">
+                                <a href="toc.html" class="index-link">
                                     <div class="card index-card">
                                         <div class="card-body">
                                             <img class="d-block w-100"
