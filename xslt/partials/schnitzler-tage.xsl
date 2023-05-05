@@ -16,20 +16,24 @@
         </xsl:variable>
         <xsl:variable name="fetchUrl"
             select="document(concat('https://schnitzler-tage.acdh.oeaw.ac.at/', $datum-iso, '.xml'))"
-            as="node()"/>
-        <xsl:variable name="fetchURLohneTeiSource" as="node()">
+            as="node()?"/>
+
+        
+        <xsl:variable name="fetchURLohneTeiSource" as="node()?">
             <xsl:element name="listEvent" namespace="http://www.tei-c.org/ns/1.0">
                 <xsl:copy-of
                     select="$fetchUrl/descendant::tei:listEvent/tei:event[not(contains(tei:idno[1]/text(), $teiSource))]"
                 />
             </xsl:element>
         </xsl:variable>
-        <xsl:variable name="doc_title">
+        <xsl:variable name="doc_title" as="xs:string?">
             <xsl:value-of
                 select="$fetchUrl/descendant::tei:titleStmt[1]/tei:title[@level = 'a'][1]/text()"/>
         </xsl:variable>
         <div id="tag-fuer-tag-modal-body">
+            <xsl:if test="$fetchUrl/descendant::tei:event[1]">
             <xsl:apply-templates select="$fetchURLohneTeiSource" mode="schnitzler-tage"/>
+            </xsl:if>
             <div class="weiteres" style="margin-top:2.5em;">
                 <xsl:variable name="datum-written" select="
                         format-date($datum-iso, '[D1].&#160;[M1].&#160;[Y0001]',
