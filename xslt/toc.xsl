@@ -28,7 +28,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">Titel</th>
-                                            <th scope="col">Datum (ISO)</th>
+                                            <th scope="col">Datum</th>
                                             <th scope="col">Art</th>
                                         </tr>
                                     </thead>
