@@ -478,7 +478,22 @@
                 <!-- Modal Tag -->
                 <div class="modal fade" id="tagfuertag" tabindex="-1"
                     aria-labelledby="downloadModalLabel2" aria-hidden="true">
-                    <xsl:variable name="datum" select="descendant::tei:date[@when][1]/@when"> </xsl:variable>
+                    <xsl:variable name="datum">
+                        <xsl:variable name="date"
+                            select="descendant::tei:correspDesc/tei:correspAction[@type = 'sent'][1]/tei:date"
+                            as="node()?"/>
+                        <xsl:choose>
+                            <xsl:when test="$date/@when">
+                                <xsl:value-of select="$date/@when"/>
+                            </xsl:when>
+                            <xsl:when test="$date/@notBefore">
+                                <xsl:value-of select="$date/@notBefore"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="$date/@notAfter"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
                     <xsl:variable name="datum-written" select="
                             format-date($datum, '[D1].&#160;[M1].&#160;[Y0001]',
                             'en',
