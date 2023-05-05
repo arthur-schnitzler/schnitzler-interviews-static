@@ -87,8 +87,8 @@
                      </div>
                   </div>
                </div>
-               <div class="card">
-                  <div>
+               <div class="card-body">
+                  <div class="card-body-normalertext">
                      <p><i>Das hier ist eine Platzhalterseite, die bislang nur die
                            im edierten Text vorkommenden vorkommenden Personen,
                            Werke, Orte und Institutionen ausweist. Der Text selber
@@ -189,7 +189,7 @@
                         <div class="footer-widget col-lg-3 col-md-4 col-sm-3 ml-auto">
                            <div class="row">
                               <div class="textwidget custom-html-widget">
-                                 <h6 class="font-weight-bold">FÖRDERINSTITUTION</h6><a href="https://www.fwf.ac.at/"><img class="card-img-right flex-auto d-md-block" src="https://www.fwf.ac.at/fileadmin/files/Images/News_Presse/Presse/Logo/fwf-logo_var2.jpg" alt="FWF Der Wissenschaftsfond Logo" style="max-width: 140px; height: auto; margin-top:1em;" title="FWF Der Wissenschaftsfond" /></a><p></p>
+                                 <h6 class="font-weight-bold">FÖRDERINSTITUTION</h6><a href="https://www.fwf.ac.at/"><img class="card-img-right flex-auto d-md-block" src="https://www.fwf.ac.at/fileadmin/files/Images/News_Presse/Presse/Logo/Logo-D/FWF_Logo_Zusatz_Dunkelblau_RGB_DE.svg" alt="FWF Österreichischer Wissenschaftsfond Logo" style="max-width: 140px; height: auto; margin-top:1em;" title="FWF Der Wissenschaftsfond" /></a><p></p>
                                  <p>Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021) und
                                     P34792 (2021–[2024])</p>
                               </div>
@@ -262,20 +262,53 @@
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle3"><a href="https://schnitzler-tage.acdh.oeaw.ac.at/1899-02-18.html" target="_blank" style="color: #C67F53">Samstag, 18. 2. 1899</a></h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button></div>
+                  <h5 class="modal-title" id="exampleModalLongTitle3"><a href="https://schnitzler-tage.acdh.oeaw.ac.at/1899-02-15.html" target="_blank" style="color: #C67F53">Mittwoch, 15. 2. 1899</a></h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button></div>
                <div class="modal-body">
-                  <div id="tag-fuer-tag-modal-body"></div><script type="text/javascript" src="js/schnitzler-tage.js" charset="UTF-8"></script><script type="text/javascript">
-                                    fetch('https://schnitzler-tage.acdh.oeaw.ac.at/1899-02-18.json').then(function (response) {return response.json();
-                                }).then(function (data) {
-                                    appendData(data, 'M002');
-                                }). catch (function (err) {
-                                    console.log('error: ' + err);
-                                });</script><div class="weiteres" style="margin-top:2.5em;">
-                     <h3>Weiteres</h3>
-                     <ul>
-                        <li>Zeitungen vom <a href="https://anno.onb.ac.at/cgi-content/anno?datum=18990218" target="_blank">18. 2. 1899</a> bei <a href="https://anno.onb.ac.at/cgi-content/anno?datum=18990218" target="_blank">ANNO</a></li>
-                        <li>Briefe vom <a href="https://correspsearch.net/de/suche.html?d=1899-02-18&amp;x=1&amp;w=0" target="_blank">18. 2. 1899</a> bei <a href="https://correspsearch.net/de/suche.html?d=1899-02-18&amp;x=1&amp;w=0" target="_blank">correspSearch</a></li>
-                     </ul>
+                  <div id="tag-fuer-tag-modal-body"></div>
+                  <div id="tag-fuer-tag-modal-body">
+                     <div class="schnitzler-tagebuch" style="margin-bottom: 35px;"><span class="badge rounded-pill" style="color: white; background-color: #037a33; margin-bottom: 10px;"><a target="_blank" href=""></a>Tagebuch</span><p><b><a href="https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1899-02-15.html" target="_blank">Tagebuch, 15. Februar 1899</a></b></p>
+                        <ul style="list-style-type: none;">
+                           <li>
+                              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                                 <li><i class="fa-regular fa-users" title="Erwähnte Personen"></i>  <span class="badge rounded-pill" style="background-color: #037a33; color: white;"><a style="color: white; " href="https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_13581.html" target="_blank">Marianne Benedict</a></span> <span class="badge rounded-pill" style="background-color: #037a33; color: white;"><a style="color: white; " href="https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19476.html" target="_blank">Russ</a></span> <span class="badge rounded-pill" style="background-color: #037a33; color: white;"><a style="color: white; " href="https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_13131.html" target="_blank">Ida d’Albert</a></span> <span class="badge rounded-pill" style="background-color: #037a33; color: white;"><a style="color: white; " href="https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19150.html" target="_blank">Marie Reinhard</a></span> <span class="badge rounded-pill" style="background-color: #037a33; color: white;"><a style="color: white; " href="https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_16293.html" target="_blank">Hugo von Hofmannsthal</a></span> </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="schnitzler-briefe" style="margin-bottom: 35px;"><span class="badge rounded-pill" style="color: white; background-color: #A63437; margin-bottom: 10px;"><a target="_blank" href=""></a>Briefe</span><p><b><a href="https://schnitzler-briefe.acdh.oeaw.ac.at/L00890.html" target="_blank">Arthur Schnitzler an Hermann Bahr, 15. 2. 1899</a></b></p>
+                        <ul style="list-style-type: none;">
+                           <li>
+                              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                                 <li><i class="fa-regular fa-users" title="Erwähnte Personen"></i>  <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10815.html" target="_blank">Hermann Bahr</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2161.html" target="_blank">Emerich von Bukovics</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2164.html" target="_blank">Ernst Gettke</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2157.html" target="_blank">Leo Ebermann</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb13082.html" target="_blank">Carl Karlweis</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2334.html" target="_blank">Philipp Langmann</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2337.html" target="_blank">Victor Léon</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb14328.html" target="_blank">Oskar Blumenthal</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb13118.html" target="_blank">Ernst von Wildenbruch</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11605.html" target="_blank">Otto Erich Hartleben</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2344.html" target="_blank">Max Grube</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11673.html" target="_blank">Theodor Herzl</a></span> </li>
+                                 <li><i title="Erwähnte Werke" class="fa-regular fa-image"></i>  <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb31343.html" target="_blank">Premièren. (Zur Première des Lustspiels »Unser Kät…</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36340.html" target="_blank">Die Zeit. Wiener Wochenschrift</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29979.html" target="_blank">»Unser Käthchen« [Brief an Hermann Bahr]</a></span> <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36374.html" target="_blank">Neue Freie Presse</a></span> </li>
+                                 <li><i title="Erwähnte Orte" class="fa-regular fa-map-location-dot"></i>  <span class="badge rounded-pill" style="background-color: #A63437; color: white;"><a style="color: white; " href="https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html" target="_blank">Wien</a></span> </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="schnitzler-bahr" style="margin-bottom: 35px;"><span class="badge rounded-pill" style="color: white; background-color: #F9BD63; margin-bottom: 10px;"><a target="_blank" href=""></a>Schnitzler/Bahr</span><p><b><a href="https://schnitzler-bahr.acdh.oeaw.ac.at/T030043.html" target="_blank">Schnitzler: [Das Erscheinen der Autoren], 15. 2. 1899</a></b></p>
+                        <ul style="list-style-type: none;">
+                           <li>
+                              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                                 <li><i class="fa-regular fa-users" title="Erwähnte Personen"></i>  <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10815.html" target="_blank">Hermann Bahr</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2161.html" target="_blank">Emerich von Bukovics</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2164.html" target="_blank">Ernst Gettke</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2157.html" target="_blank">Leo Ebermann</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb13082.html" target="_blank">Carl Karlweis</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2334.html" target="_blank">Philipp Langmann</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2337.html" target="_blank">Victor Léon</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb14328.html" target="_blank">Oskar Blumenthal</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb13118.html" target="_blank">Ernst von Wildenbruch</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11605.html" target="_blank">Otto Erich Hartleben</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2344.html" target="_blank">Max Grube</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11673.html" target="_blank">Theodor Herzl</a></span> </li>
+                                 <li><i title="Erwähnte Werke" class="fa-regular fa-image"></i>  <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31343.html" target="_blank">Premièren. (Zur Première des Lustspiels »Unser Kät…</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb36340.html" target="_blank">Die Zeit. Wiener Wochenschrift</a></span> <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29979.html" target="_blank">»Unser Käthchen« [Brief an Hermann Bahr]</a></span> </li>
+                                 <li><i title="Erwähnte Orte" class="fa-regular fa-map-location-dot"></i>  <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html" target="_blank">Wien</a></span> </li>
+                                 <li><i class="fa-regular fa-building-columns" title="Erwähnte Organisationen"></i> 
+                                    <span class="badge rounded-pill" style="background-color: #F9BD63; color: white;"><a style="color: white; " href="https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29351.html" target="_blank">Neue Freie Presse</a></span> </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="schnitzler-orte" style="margin-bottom: 35px;"><span class="badge rounded-pill" style="color: white; background-color: #045344; margin-bottom: 10px;"><a target="_blank" href=""></a>Aufenthaltsorte</span><p><b><a href="https://pmb.acdh.oeaw.ac.at/entity/50/" target="_blank">Wien</a></b></p>
+                        <ul style="list-style-type: none;"></ul>
+                     </div>
+                     <div class="weiteres" style="margin-top:2.5em;">
+                        <h3>Weiteres</h3>
+                        <ul>
+                           <li>Zeitungen vom <a href="https://anno.onb.ac.at/cgi-content/anno?datum=18990215" target="_blank">Mittwoch, 15. 2. 1899</a> bei <a href="https://anno.onb.ac.at/cgi-content/anno?datum=18990215" target="_blank">ANNO</a></li>
+                           <li>Briefe vom <a href="https://correspsearch.net/de/suche.html?d=1899-02-15&amp;x=1&amp;w=0" target="_blank">Mittwoch, 15. 2. 1899</a> bei <a href="https://correspsearch.net/de/suche.html?d=1899-02-15&amp;x=1&amp;w=0" target="_blank">correspSearch</a></li>
+                        </ul>
+                     </div>
                   </div>
                </div>
                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button></div>
