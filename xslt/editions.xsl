@@ -116,7 +116,7 @@
                                             im Schuber<lb/> ca. € 44,– (D); € 45,30 (A)<lb/>ISBN
                                             978-3-8353-5471-5</i>
                                     </p>
-                                    <legend>Personen</legend>
+                                    <legend>Erwähnte Personen</legend>
                                     <ul>
                                         <xsl:for-each select=".//tei:listPerson//tei:person">
                                             <xsl:sort
@@ -154,9 +154,9 @@
                                         </xsl:for-each>
                                     </ul>
                                 </div>
-                                <div>
+                                <div class="card-body-normalertext">
                                     <xsl:if test=".//tei:back/tei:listBibl/tei:bibl[1]">
-                                        <legend>Werke</legend>
+                                        <legend>Erwähnte Werke</legend>
                                         <ul>
                                             <xsl:for-each select=".//tei:back/tei:listBibl/tei:bibl">
                                                 <xsl:sort select="child::tei:title[1]"/>
@@ -212,9 +212,9 @@
                                         </ul>
                                     </xsl:if>
                                 </div>
-                                <div>
+                                <div class="card-body-normalertext">
                                     <xsl:if test=".//tei:back/tei:listOrg/tei:org[1]">
-                                        <legend>Institutionen</legend>
+                                        <legend>Erwähnte Institutionen</legend>
                                         <ul>
                                             <xsl:for-each select=".//tei:listOrg//tei:org">
                                                 <xsl:sort select="child::tei:orgName[1]"/>
@@ -231,9 +231,9 @@
                                         </ul>
                                     </xsl:if>
                                 </div>
-                                <div>
+                                <div class="card-body-normalertext">
                                     <xsl:if test=".//tei:back/tei:listPlace/tei:place[1]">
-                                        <legend>Orte</legend>
+                                        <legend>Erwähnte Orte</legend>
                                         <ul>
                                             <xsl:for-each select=".//tei:listPlace/tei:place">
                                                 <xsl:sort select="child::tei:placeName[1]"/>
