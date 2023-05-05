@@ -102,20 +102,26 @@
                             <div class="card-body">
                                 <div class="card-body-normalertext">
                                     <p>
-                                        <i>Das hier ist eine Platzhalterseite, die bislang nur die
-                                            im edierten Text vorkommenden vorkommenden Personen,
-                                            Werke, Orte und Institutionen ausweist. Der Text selber
+                                        <i>Diese Seite ist ein Platzhalter, von der sich nur
+                                            die bibliografischen Angaben des Textes und die 
+                                            Erwähnungen von Personen, Orten, Werken und Institutionen
+                                            entnehmen lassen. Die Buchausgabe ist in Verlagsproduktion.
+                                            Der Text 
                                             wird im Oktober 2023 als zweibändige Ausgabe
                                             veröffentlicht:</i>
                                     </p>
-                                    <h5>Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer«.
+                                    <ul style="list-style-type: none;">
+                                        <li>
+                                    <b>Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer«.
                                         Interviews, Meinungen, Proteste (1891–1931). Hg. Martin
-                                        Anton Müller. Göttingen: Wallstein 2023</h5>
-                                    <p>
+                                        Anton Müller. Göttingen: Wallstein 2023</b>
+                                            <br/>
+                                    
                                         <i>ca. 760 S., ca. 25 Abb., geb., Schutzumschlag<lb/> 2 Bde.
                                             im Schuber<lb/> ca. € 44,– (D); € 45,30 (A)<lb/>ISBN
                                             978-3-8353-5471-5</i>
-                                    </p>
+                                    
+                                        </li>
                                     <legend>Erwähnte Personen</legend>
                                     <ul>
                                         <xsl:for-each select=".//tei:listPerson//tei:person">
