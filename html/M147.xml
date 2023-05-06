@@ -74,16 +74,16 @@
          <div type="edierter-text">
             <listPerson/>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson/>
             <listBibl>
-               <bibl xmlns="" ref="#pmb60937"/>
-               <bibl xmlns="" ref="#pmb60939"/>
+               <bibl ref="#pmb60937"/>
+               <bibl ref="#pmb60939"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

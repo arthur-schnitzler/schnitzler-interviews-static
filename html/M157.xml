@@ -3,7 +3,7 @@
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb61769">Hieroglyphen des Lebens, 15. 6. 1891</title>
-            <title type="iso-date" when-iso="1891-06-15" n="1">15. 6. 1891</title>
+            <title type="iso-date" when-iso="1891-06-15" n="2">15. 6. 1891</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -53,33 +53,33 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb7253"/>
+               <person ref="#pmb7253"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb61767"/>
+               <bibl ref="#pmb61767"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb61773"/>
+               <org ref="#pmb61773"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb864"/>
+               <place ref="#pmb864"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb4287"/>
-               <person xmlns="" ref="#pmb7253"/>
-               <person xmlns="" ref="#pmb18053"/>
-               <person xmlns="" ref="#pmb18468"/>
+               <person ref="#pmb4287"/>
+               <person ref="#pmb7253"/>
+               <person ref="#pmb18053"/>
+               <person ref="#pmb18468"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb31901"/>
-               <bibl xmlns="" ref="#pmb35942"/>
-               <bibl xmlns="" ref="#pmb61767"/>
-               <bibl xmlns="" ref="#pmb61781"/>
-               <bibl xmlns="" ref="#pmb61800"/>
+               <bibl ref="#pmb31901"/>
+               <bibl ref="#pmb35942"/>
+               <bibl ref="#pmb61767"/>
+               <bibl ref="#pmb61781"/>
+               <bibl ref="#pmb61800"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

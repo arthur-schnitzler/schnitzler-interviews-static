@@ -4,7 +4,7 @@
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb33207">Mária Rónay: Schnitzler Artur elavult műfajnak tartja az
           interjút, Oktober 1927</title>
-            <title type="iso-date" when-iso="1927-10-01" n="1">Oktober 1927</title>
+            <title type="iso-date" when-iso="1927-10-01" n="3">Oktober 1927</title>
             <author ref="#pmb29096">Rónay, Mária</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -71,26 +71,26 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb17901"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb17901"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb113"/>
-               <place xmlns="" ref="#pmb150"/>
-               <place xmlns="" ref="#pmb41240"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb113"/>
+               <place ref="#pmb150"/>
+               <place ref="#pmb41240"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb17901"/>
+               <person ref="#pmb17901"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb41240"/>
+               <place ref="#pmb41240"/>
             </listPlace>
          </div>
       </body>

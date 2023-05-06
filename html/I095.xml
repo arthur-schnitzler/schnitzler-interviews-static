@@ -4,7 +4,7 @@
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb58606">[Anna Lisa Andersson]: Arthur Schnitzler i Stockholm,
                18. 5. 1923</title>
-            <title type="iso-date" when-iso="1923-05-18" n="1">18. 5. 1923</title>
+            <title type="iso-date" when-iso="1923-05-18" n="3">18. 5. 1923</title>
             <author ref="#pmb5985">Andersson, Anna Lisa</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -56,39 +56,39 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb11798"/>
-               <person xmlns="" ref="#pmb12877"/>
-               <person xmlns="" ref="#pmb20474"/>
-               <person xmlns="" ref="#pmb21998"/>
-               <person xmlns="" ref="#pmb62310"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb11798"/>
+               <person ref="#pmb12877"/>
+               <person ref="#pmb20474"/>
+               <person ref="#pmb21998"/>
+               <person ref="#pmb62310"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb29971"/>
-               <bibl xmlns="" ref="#pmb31157"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb29971"/>
+               <bibl ref="#pmb31157"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb151"/>
-               <place xmlns="" ref="#pmb745"/>
-               <place xmlns="" ref="#pmb1119"/>
-               <place xmlns="" ref="#pmb36300"/>
-               <place xmlns="" ref="#pmb41240"/>
-               <place xmlns="" ref="#pmb44335"/>
-               <place xmlns="" ref="#pmb58094"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb151"/>
+               <place ref="#pmb745"/>
+               <place ref="#pmb1119"/>
+               <place ref="#pmb36300"/>
+               <place ref="#pmb41240"/>
+               <place ref="#pmb44335"/>
+               <place ref="#pmb58094"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb5985"/>
-               <person xmlns="" ref="#pmb25761"/>
+               <person ref="#pmb5985"/>
+               <person ref="#pmb25761"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
+               <place ref="#pmb50"/>
             </listPlace>
          </div>
       </body>

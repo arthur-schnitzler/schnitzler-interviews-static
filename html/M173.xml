@@ -96,33 +96,33 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb5208"/>
-               <person xmlns="" ref="#pmb11391"/>
-               <person xmlns="" ref="#pmb12695"/>
-               <person xmlns="" ref="#pmb12809"/>
+               <person ref="#pmb5208"/>
+               <person ref="#pmb11391"/>
+               <person ref="#pmb12695"/>
+               <person ref="#pmb12809"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29843"/>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb31861"/>
-               <bibl xmlns="" ref="#pmb31957"/>
-               <bibl xmlns="" ref="#pmb63181"/>
+               <bibl ref="#pmb29843"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb31861"/>
+               <bibl ref="#pmb31957"/>
+               <bibl ref="#pmb63181"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb168"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb168"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb12695"/>
-               <person xmlns="" ref="#pmb12809"/>
+               <person ref="#pmb12695"/>
+               <person ref="#pmb12809"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb33838"/>
+               <bibl ref="#pmb33838"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

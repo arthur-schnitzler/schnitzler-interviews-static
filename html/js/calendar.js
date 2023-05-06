@@ -18,8 +18,6 @@ var data = calendarData.map(r =>
 })).filter(r => r.startDate.getFullYear() === 1890);
 
 
-
-
 years = Array.from(new Set(calendarData.map(getYear))).sort();
 var yearsTable = document.getElementById('years-table');
 for (var i = 0; i <= years.length; i++) {
@@ -29,7 +27,7 @@ for (var i = 0; i <= years.length; i++) {
 //document.getElementById("ybtn1900").classList.add("focus");
 
 const calendar = new Calendar('#calendar', {
-  startYear: 1890,
+  startYear: 1900,
   language: "de",
   dataSource: data,
   displayHeader: false,

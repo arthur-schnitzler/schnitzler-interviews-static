@@ -88,22 +88,22 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb12692"/>
+               <person ref="#pmb12692"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb150"/>
-               <place xmlns="" ref="#pmb41376"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb150"/>
+               <place ref="#pmb41376"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson/>
             <listBibl>
-               <bibl xmlns="" ref="#pmb33243"/>
+               <bibl ref="#pmb33243"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

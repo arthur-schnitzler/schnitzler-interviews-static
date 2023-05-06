@@ -52,24 +52,24 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb12314"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb12314"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb40306"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb40306"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb23729"/>
+               <person ref="#pmb23729"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb44053"/>
+               <place ref="#pmb44053"/>
             </listPlace>
          </div>
       </body>

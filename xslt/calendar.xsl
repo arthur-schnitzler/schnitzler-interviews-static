@@ -11,7 +11,7 @@
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title">
-            <xsl:text>schnitzler-interviews</xsl:text>
+            <xsl:text>schnitzler-briefe</xsl:text>
         </xsl:variable>
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <html lang="de">
@@ -32,11 +32,7 @@
                             <div class="card-header" style="text-align:center">
                                 <h1 style="display:inline-block;margin-bottom:0;padding-right:5px;">
                                     Kalender</h1>
-                                <a>
-                                    <i class="fas fa-info"
-                                        title="Texte nach Tagen suchen"
-                                        data-bs-toggle="modal" data-target="#exampleModal"/>
-                                </a>
+        
                                 <a style="padding-left:5px;" href="js-data/calendarData.js">
                                     <i class="fas fa-download" title="Kalenderdaten herunterladen"/>
                                 </a>
@@ -57,22 +53,6 @@
                                     <div class="col-sm-10">
                                         <div id="calendar"/>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Die Texte in Kalenderansicht</h5>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Texte eines bestimmten Tages suchen. </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Schließen</button>
                                 </div>
                             </div>
                         </div>

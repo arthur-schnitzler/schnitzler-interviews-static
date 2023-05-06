@@ -109,31 +109,31 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2299"/>
+               <person ref="#pmb2299"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29917"/>
+               <bibl ref="#pmb29917"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb35597"/>
-               <org xmlns="" ref="#pmb36247"/>
+               <org ref="#pmb35597"/>
+               <org ref="#pmb36247"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb168"/>
+               <place ref="#pmb168"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2299"/>
+               <person ref="#pmb2299"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29917"/>
+               <bibl ref="#pmb29917"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb35597"/>
+               <org ref="#pmb35597"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb168"/>
+               <place ref="#pmb168"/>
             </listPlace>
          </div>
       </body>

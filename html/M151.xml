@@ -55,18 +55,18 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2167"/>
+               <person ref="#pmb2167"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2167"/>
+               <person ref="#pmb2167"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

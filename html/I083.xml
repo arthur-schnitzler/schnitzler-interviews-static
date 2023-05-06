@@ -54,37 +54,37 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb10851"/>
-               <person xmlns="" ref="#pmb12511"/>
-               <person xmlns="" ref="#pmb12766"/>
-               <person xmlns="" ref="#pmb17069"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb10851"/>
+               <person ref="#pmb12511"/>
+               <person ref="#pmb12766"/>
+               <person ref="#pmb17069"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29855"/>
+               <bibl ref="#pmb29855"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb433"/>
-               <place xmlns="" ref="#pmb776"/>
-               <place xmlns="" ref="#pmb869"/>
-               <place xmlns="" ref="#pmb34438"/>
-               <place xmlns="" ref="#pmb41240"/>
-               <place xmlns="" ref="#pmb56513"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb433"/>
+               <place ref="#pmb776"/>
+               <place ref="#pmb869"/>
+               <place ref="#pmb34438"/>
+               <place ref="#pmb41240"/>
+               <place ref="#pmb56513"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb12511"/>
+               <person ref="#pmb12511"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29855"/>
+               <bibl ref="#pmb29855"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb34438"/>
-               <place xmlns="" ref="#pmb43471"/>
+               <place ref="#pmb34438"/>
+               <place ref="#pmb43471"/>
             </listPlace>
          </div>
       </body>

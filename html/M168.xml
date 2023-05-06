@@ -53,37 +53,37 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2323"/>
+               <person ref="#pmb2323"/>
             </listPerson>
             <listBibl/>
             <listOrg>
-               <org xmlns="" ref="#pmb62745"/>
+               <org ref="#pmb62745"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb34438"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb34438"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb6303"/>
-               <person xmlns="" ref="#pmb7209"/>
-               <person xmlns="" ref="#pmb8422"/>
-               <person xmlns="" ref="#pmb8740"/>
-               <person xmlns="" ref="#pmb9756"/>
-               <person xmlns="" ref="#pmb11187"/>
-               <person xmlns="" ref="#pmb11205"/>
-               <person xmlns="" ref="#pmb11435"/>
-               <person xmlns="" ref="#pmb11570"/>
-               <person xmlns="" ref="#pmb11820"/>
-               <person xmlns="" ref="#pmb12170"/>
-               <person xmlns="" ref="#pmb12543"/>
-               <person xmlns="" ref="#pmb13055"/>
-               <person xmlns="" ref="#pmb62727"/>
-               <person xmlns="" ref="#pmb62732"/>
+               <person ref="#pmb6303"/>
+               <person ref="#pmb7209"/>
+               <person ref="#pmb8422"/>
+               <person ref="#pmb8740"/>
+               <person ref="#pmb9756"/>
+               <person ref="#pmb11187"/>
+               <person ref="#pmb11205"/>
+               <person ref="#pmb11435"/>
+               <person ref="#pmb11570"/>
+               <person ref="#pmb11820"/>
+               <person ref="#pmb12170"/>
+               <person ref="#pmb12543"/>
+               <person ref="#pmb13055"/>
+               <person ref="#pmb62727"/>
+               <person ref="#pmb62732"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

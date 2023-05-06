@@ -53,38 +53,38 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb18468"/>
+               <person ref="#pmb18468"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb61781"/>
-               <bibl xmlns="" ref="#pmb61784"/>
+               <bibl ref="#pmb61781"/>
+               <bibl ref="#pmb61784"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29771"/>
+               <org ref="#pmb29771"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb864"/>
-               <place xmlns="" ref="#pmb866"/>
+               <place ref="#pmb864"/>
+               <place ref="#pmb866"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2167"/>
-               <person xmlns="" ref="#pmb4287"/>
-               <person xmlns="" ref="#pmb7253"/>
-               <person xmlns="" ref="#pmb18053"/>
-               <person xmlns="" ref="#pmb18468"/>
+               <person ref="#pmb2167"/>
+               <person ref="#pmb4287"/>
+               <person ref="#pmb7253"/>
+               <person ref="#pmb18053"/>
+               <person ref="#pmb18468"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb31901"/>
-               <bibl xmlns="" ref="#pmb35942"/>
-               <bibl xmlns="" ref="#pmb41466"/>
-               <bibl xmlns="" ref="#pmb61767"/>
-               <bibl xmlns="" ref="#pmb61781"/>
-               <bibl xmlns="" ref="#pmb61787"/>
-               <bibl xmlns="" ref="#pmb61800"/>
+               <bibl ref="#pmb31901"/>
+               <bibl ref="#pmb35942"/>
+               <bibl ref="#pmb41466"/>
+               <bibl ref="#pmb61767"/>
+               <bibl ref="#pmb61781"/>
+               <bibl ref="#pmb61787"/>
+               <bibl ref="#pmb61800"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>
