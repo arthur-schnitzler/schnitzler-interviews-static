@@ -21,8 +21,8 @@ jobs:
         mv ant-contrib-1.0b3.jar /usr/share/ant/lib
     - name: Build
       run: |
-       pip install acdh-tei-pyutils
-       ./transform.sh
+        pip install acdh-tei-pyutils
+        ./transform.sh
         ant
     - name: Build Index
       run: |
