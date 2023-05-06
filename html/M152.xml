@@ -1,17 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M152">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M152" next="M122" prev="M139"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews,
                Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb61314">[Seht mir den endlosen Zug],
                27. 5. 1906</title>
-            <title type="iso-date" when-iso="1906-05-27">27. 5. 1906</title>
+            <title type="iso-date" when-iso="1906-05-27" n="1">27. 5. 1906</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,8 +85,7 @@
          <change who="MAM" when="2021-11-16">Index check</change>
          <change who="MAM" when="2021-12-21">Bibliografische Angabe und Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -878,5 +871,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

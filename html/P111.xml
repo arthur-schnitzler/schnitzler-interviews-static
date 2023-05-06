@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="P111">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="P111" next="M050" prev="P080"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb58490">Une protestation d’Arthur Schnitzler,
                21. 12. 1914</title>
-            <title type="iso-date" when-iso="1914-12-21">21. 12. 1914</title>
+            <title type="iso-date" when-iso="1914-12-21" n="1">21. 12. 1914</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <author ref="#pmb12543">Rolland, Romain</author>
             <editor>
@@ -149,11 +143,9 @@
          <change who="KH" when="2021-10-14">Durchsicht</change>
          <change who="MAM" when="2021-10-18">NZZ als deutsche Vorlage</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+   </teiHeader><facsimile>
       <graphic url="Georg_Brandes_arkiv_177"/>
-   </facsimile>
-   <text type="article">
+   </facsimile><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -1315,5 +1307,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

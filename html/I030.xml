@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I030">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I030" next="P031" prev="I066"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb32999">David Ewen: Schnitzler Tells Why He Is a Jew,
                27. 8. 1931</title>
-            <title type="iso-date" when-iso="1931-08-27">27. 8. 1931</title>
+            <title type="iso-date" when-iso="1931-08-27" n="1">27. 8. 1931</title>
             <author ref="#pmb11277">Ewen, David</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -93,8 +87,7 @@
          <change who="KH" when="2021-11-02">Durchsicht</change>
          <change who="MAM" when="2021-11-03">Korrekturen nach AI</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -414,5 +407,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

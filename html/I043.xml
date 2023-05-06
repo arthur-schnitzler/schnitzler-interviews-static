@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I043">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I043" prev="M128"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb33049">Martha Hofmann: Arthur Schnitzler und Theodor Herzl,
                14. 5. 1937</title>
-            <title type="iso-date" when-iso="1937-05-14">14. 5. 1937</title>
+            <title type="iso-date" when-iso="1937-05-14" n="1">14. 5. 1937</title>
             <author ref="#pmb11734">Hofmann, Martha</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -71,8 +65,7 @@
          <change who="MAM" when="2021-09-24">Index check</change>
          <change who="KH" when="2021-11-03">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -1409,5 +1402,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

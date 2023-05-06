@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M175">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M175" next="I119" prev="M140"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb63146">Leo Feld: Komödie der Irrungen,
                20. 4. 1924</title>
-            <title type="iso-date" when-iso="1924-04-20">20. 4. 1924</title>
+            <title type="iso-date" when-iso="1924-04-20" n="1">20. 4. 1924</title>
             <author ref="#pmb18308">Feld, Leo</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -56,8 +50,7 @@
          <change who="MAM" when="2022-01-11">Angelegt</change>
          <change who="MAM" when="2022-01-18">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -628,5 +621,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M151">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M151" next="M163" prev="I087"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb61305">[Mein lieber Felix Salten], [November 1929]</title>
-            <title type="iso-date" when-iso="1929-11-01">[November] 1929</title>
+            <title type="iso-date" when-iso="1929-11-01" n="1">[November] 1929</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -57,8 +51,7 @@
          <change who="MAM" when="2021-11-09">angelegt</change>
          <change who="MAM" when="2021-11-16">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -179,5 +172,4 @@
             </bibl>
          </listBibl>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

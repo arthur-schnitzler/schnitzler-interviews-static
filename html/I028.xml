@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I028">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I028" next="M140" prev="I026"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb32995">J. L. Benvenisti: Arthur Schnitzler. A
                Snap Shot, 29. 2. 1924</title>
-            <title type="iso-date" when-iso="1924-02-29">29. 2. 1924</title>
+            <title type="iso-date" when-iso="1924-02-29" n="1">29. 2. 1924</title>
             <author ref="#pmb14026">Benvenisti, James Lincoln</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -127,8 +121,7 @@
          <change who="MAM" when="2018-02-14">Index check</change>
          <change who="KH" when="2021-10-25">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -815,5 +808,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

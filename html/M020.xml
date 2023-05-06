@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M020">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M020" next="P054" prev="M171"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb32963">Alfred von Berger: Jugend von heute und ehemals,
                6. 8. 1911</title>
-            <title type="iso-date" when-iso="1911-08-06">6. 8. 1911</title>
+            <title type="iso-date" when-iso="1911-08-06" n="1">6. 8. 1911</title>
             <author ref="#pmb10883">Berger, Alfred von</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -56,8 +50,7 @@
          <change who="MAM" when="2018-02-14">Index check</change>
          <change who="KH" when="2021-10-13">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -767,5 +760,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

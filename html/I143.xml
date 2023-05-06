@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I143">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I143" next="I112" prev="P129"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb60753">Kurt Mühsam: Mit Arthur Schnitzler im Film-Atelier,
                2. 12. 1927</title>
-            <title type="iso-date" when-iso="1927-12-02">2. 12. 1927</title>
+            <title type="iso-date" when-iso="1927-12-02" n="1">2. 12. 1927</title>
             <author ref="#pmb9000">Mühsam, Kurt</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -57,8 +51,7 @@
          <change who="MAM" when="2021-10-14">angelegt</change>
          <change who="MAM" when="2021-11-09">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -941,5 +934,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

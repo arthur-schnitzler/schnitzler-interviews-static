@@ -14,8 +14,7 @@
     <xsl:import href="./partials/html_title_navigation.xsl"/>
     <xsl:import href="./partials/view-type.xsl"/>
     <xsl:import href="./partials/entities.xsl"/>
-        <xsl:import href="./partials/schnitzler-tage.xsl"/>
-
+    <xsl:import href="./partials/schnitzler-tage.xsl"/>
     <xsl:variable name="quotationURL">
         <xsl:value-of
             select="concat('https://schnitzler-interviews.acdh.oeaw.ac.at/', replace(tokenize(base-uri(), '/')[last()], '.xml', '.html'))"
@@ -96,35 +95,42 @@
                         <div class="wp-transcript">
                             <div class="card" data-index="true">
                                 <div class="card-header">
-                                    <xsl:call-template name="header-nav"/>
+                                    <xsl:call-template name="header-nav">
+                                        <xsl:with-param name="next"
+                                            select="concat(tei:TEI/@next, '.html')"/>
+                                        <xsl:with-param name="prev"
+                                            select="concat(tei:TEI/@prev, '.html')"
+                                        />
+                                    </xsl:call-template>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="card-body-normalertext">
                                     <p>
-                                        <i>Diese Seite ist ein Platzhalter, von der sich nur
-                                            die bibliografischen Angaben des Textes und die 
-                                            Erwähnungen von Personen, Orten, Werken und Institutionen
-                                            entnehmen lassen. Die Buchausgabe ist in Verlagsproduktion.
-                                            Der Text 
-                                            wird im Oktober 2023 als zweibändige Ausgabe
+                                        <i>Diese Seite ist ein Platzhalter, von der sich nur die
+                                            bibliografischen Angaben des Textes und die Erwähnungen
+                                            von Personen, Orten, Werken und Institutionen entnehmen
+                                            lassen. Die Buchausgabe ist in Verlagsproduktion. Der
+                                            Text wird im Oktober 2023 als zweibändige Ausgabe
                                             veröffentlicht:</i>
                                     </p>
                                     <ul style="list-style-type: none;">
                                         <li>
-                                    <b>Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer«.
-                                        Interviews, Meinungen, Proteste (1891–1931). Hg. Martin
-                                        Anton Müller. Göttingen: Wallstein 2023</b>
-                                            <br/><br/>
-                                    
-                                        <i>ca. 760 S., ca. 25 Abb., geb., Schutzumschlag<lb/> 2 Bde.
-                                            im Schuber<lb/> ca. € 44,– (D); € 45,30 (A)<lb/>ISBN
-                                            978-3-8353-5471-5</i>
-                                    
+                                            <b>Arthur Schnitzler: »Das Zeitlose ist von kürzester
+                                                Dauer«. Interviews, Meinungen, Proteste (1891–1931).
+                                                Hg. Martin Anton Müller. Göttingen: Wallstein
+                                                2023</b>
+                                            <br/>
+                                            <br/>
+                                            <i>ca. 760 Seiten, circa 25 Abbildungen, gebunden, Schutzumschlag<br/>2
+                                                Bände im Schuber<br/> circa € 44,– (D); € 45,30
+                                                (A)<br/>ISBN 978-3-8353-5471-5</i>
                                         </li>
                                     </ul>
                                     <p/>
-                                    
+                                </div>
+                                <p/>
+                                <div class="card-body-normalertext">
                                     <legend>Erwähnte Personen</legend>
                                     <ul>
                                         <xsl:for-each select=".//tei:listPerson//tei:person">
@@ -477,20 +483,15 @@
                     </div>
                 </div>
                 <!-- Modal Zitat -->
-                
                 <!-- Modal Qualität -->
-                
                 <!-- Modal Entitäten -->
-                
                 <!-- Einstellungen Modal -->
-                
                 <!-- Modal Tag -->
                 <div class="modal fade" id="tagfuertag" tabindex="-1"
                     aria-labelledby="downloadModalLabel2" aria-hidden="true">
                     <xsl:variable name="datum">
                         <xsl:variable name="date"
-                            select="descendant::tei:titleStmt/tei:title[@when-iso][1]"
-                            as="node()?"/>
+                            select="descendant::tei:titleStmt/tei:title[@when-iso][1]" as="node()?"/>
                         <xsl:choose>
                             <xsl:when test="$date/@when-iso">
                                 <xsl:value-of select="$date/@when-iso"/>
@@ -989,7 +990,6 @@
                 <xsl:attribute name="href">
                     <xsl:value-of select="concat(replace(@ref, '#', ''), '.html')"/>
                 </xsl:attribute>
-                
                 <xsl:apply-templates/>
             </xsl:element>
         </span>

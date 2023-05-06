@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I094">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I094" next="I095" prev="I096"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb58587">O. N–ll: Arthur Schnitzler som charmör och som kåsör,
                18. 5. 1923</title>
-            <title type="iso-date" when-iso="1923-05-18">18. 5. 1923</title>
+            <title type="iso-date" when-iso="1923-05-18" n="1">18. 5. 1923</title>
             <author ref="#pmb58585">O. N–ll</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -71,8 +65,7 @@
          <change who="MAM" when="2021-12-06">Mariekes Übersetzung</change>
          <change who="MAM" when="2021-12-17">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -774,5 +767,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

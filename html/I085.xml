@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I085">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I085" next="I088" prev="I011"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb58119">Henry Albert Philips: Schnitzler, Author of »Anatol«,
                Likes America, but at a Distance, 18. 1. 1931</title>
-            <title type="iso-date" when-iso="1931-01-18">18. 1. 1931</title>
+            <title type="iso-date" when-iso="1931-01-18" n="1">18. 1. 1931</title>
             <author ref="#pmb22516">Philips, Henry Albert</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -57,8 +51,7 @@
          <change who="MAM" when="2021-09-28">Index check</change>
          <change who="KH" when="2021-11-02">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -911,5 +904,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

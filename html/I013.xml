@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I013">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I013" next="I081" prev="P055"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb32937">Kurt Sonnenfeld: Ein Abend bei Artur Schnitzler,
                11. 1. 1920</title>
-            <title type="iso-date" when-iso="1920-01-11">11. 1. 1920</title>
+            <title type="iso-date" when-iso="1920-01-11" n="1">11. 1. 1920</title>
             <author ref="#pmb3109">Sonnenfeld, Kurt</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -56,8 +50,7 @@
          <change who="MAM" when="2017-11-17">angelegt</change>
          <change who="MAM" when="2018-02-14">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -1353,5 +1346,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

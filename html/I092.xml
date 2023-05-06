@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I092">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I092" next="I007" prev="M077"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb57974">Gaspard [=Viggo Schiørring]: Hos Österrikes mest
                framstående dramatiska författare, 23. 11. 1904</title>
-            <title type="iso-date" when-iso="1904-11-23">23. 11. 1904</title>
+            <title type="iso-date" when-iso="1904-11-23" n="1">23. 11. 1904</title>
             <author ref="#pmb24203">Gaspard [=Viggo Schiørring]</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -59,8 +53,7 @@
          <change who="MAM" when="2021-12-10">Mariekes Übersetzung</change>
          <change who="MAM" when="2021-12-16">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -1287,5 +1280,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

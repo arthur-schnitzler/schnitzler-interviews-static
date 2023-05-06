@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I070">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I070" next="P109" prev="M174"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb33223">Joseph Gollomb: Dr. Arthur Schnitzler on the Vienna
                of To-day, 5. 6. 1920</title>
-            <title type="iso-date" when-iso="1920-06-05">5. 6. 1920</title>
+            <title type="iso-date" when-iso="1920-06-05" n="1">5. 6. 1920</title>
             <author ref="#pmb11494">Gollomb, Joseph</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -85,8 +79,7 @@
          <change who="MAM" when="2021-09-13">Index check</change>
          <change who="KH" when="2021-10-18">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -1346,5 +1339,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

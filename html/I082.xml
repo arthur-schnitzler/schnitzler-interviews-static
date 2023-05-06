@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I082">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I082" next="I021" prev="I113"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb56582">Friedrich Wallisch: Arthur Schnitzler. Zu seinem 60.
                Geburtstag am 15. Mai, 13. 5. 1922</title>
-            <title type="iso-date" when-iso="1922-05-13">13. 5. 1922</title>
+            <title type="iso-date" when-iso="1922-05-13" n="1">13. 5. 1922</title>
             <author ref="#pmb13034">Wallisch, Friedrich</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -72,8 +66,7 @@
          <change who="MAM" when="2021-09-15">Index check</change>
          <change who="KH" when="2021-10-19">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -604,5 +597,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="P176">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="P176" next="M147" prev="M173"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb63131">[Ludwig Basch]: [Verkaufszahlen von Der junge Medardus],
                14. 2. 1914</title>
-            <title type="iso-date" when-iso="1912-02-14">14. 2. 1912</title>
+            <title type="iso-date" when-iso="1912-02-14" n="1">14. 2. 1912</title>
             <author ref="#pmb13791">Basch, Ludwig</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -56,8 +50,7 @@
          <change who="MAM" when="2022-01-11">Angelegt</change>
          <change who="MAM" when="2022-01-11">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -313,5 +306,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

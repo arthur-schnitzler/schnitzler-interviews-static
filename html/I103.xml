@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I103">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I103" next="I127" prev="M130"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb58247">Karl Marilaun: [Interview, Fragment],
                20. 11. 1925</title>
-            <title type="iso-date" when-iso="1925-11-20">20. 11. 1925</title>
+            <title type="iso-date" when-iso="1925-11-20" n="1">20. 11. 1925</title>
             <author ref="#pmb5130">Marilaun, Karl</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -58,11 +52,9 @@
          <change who="MAM" when="2021-09-22">Index check</change>
          <change who="KH" when="2021-10-27">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <facsimile>
+   </teiHeader><facsimile>
       <graphic url="https://schnitzler-zeitungen.acdh.oeaw.ac.at/transkribus/page/50217/224218/44"/>
-   </facsimile>
-   <text type="text">
+   </facsimile><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -285,5 +277,4 @@
             </place>
          </listPlace>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

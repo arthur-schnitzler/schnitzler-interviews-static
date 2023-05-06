@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I042">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I042" next="I083" prev="P064"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb33047">–sch [=Ludwig Basch]: Eine Begegnung mit Dr. Artur
                Schnitzler, 12. 2. 1921</title>
-            <title type="iso-date" when-iso="1921-02-12">12. 2. 1921</title>
+            <title type="iso-date" when-iso="1921-02-12" n="1">12. 2. 1921</title>
             <author ref="#pmb13791">Basch, Ludwig</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -73,8 +67,7 @@
          <change who="MAM" when="2021-09-21">Index check</change>
          <change who="KH" when="2021-10-19">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -446,5 +439,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>
