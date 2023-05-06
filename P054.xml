@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="P054">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="P054" next="M173" prev="M020"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb33131">[Der junge Medardus am Burgtheater],
                25. 9. 1911</title>
-            <title type="iso-date" when-iso="1911-09-26">25. 9. 1911</title>
+            <title type="iso-date" when-iso="1911-09-26" n="1">25. 9. 1911</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -58,37 +52,36 @@
          <change who="MAM" when="2021-09-08">Index check</change>
          <change who="KH" when="2021-10-13">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb11018"/>
-               <person xmlns="" ref="#pmb29074"/>
+               <person ref="#pmb11018"/>
+               <person ref="#pmb29074"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29937"/>
-               <bibl xmlns="" ref="#pmb33133"/>
+               <bibl ref="#pmb29937"/>
+               <bibl ref="#pmb33133"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb36247"/>
+               <org ref="#pmb36247"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb166"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb166"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb11018"/>
-               <person xmlns="" ref="#pmb29074"/>
+               <person ref="#pmb11018"/>
+               <person ref="#pmb29074"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29937"/>
-               <bibl xmlns="" ref="#pmb33133"/>
+               <bibl ref="#pmb29937"/>
+               <bibl ref="#pmb33133"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29451"/>
+               <org ref="#pmb29451"/>
             </listOrg>
             <listPlace/>
          </div>
@@ -338,5 +331,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

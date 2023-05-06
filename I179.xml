@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I179">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I179" next="M002" prev="M063"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb30470">–n– [=Peter Nansen]: Arthur Schnitzler. »Elskovsleg«s
                Forfatter, 9. 3. 1897</title>
-            <title type="iso-date" when-iso="1897-03-09">9. 3. 1897</title>
+            <title type="iso-date" when-iso="1897-03-09" n="1">9. 3. 1897</title>
             <author ref="#pmb2357">Nansen, Peter</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -75,63 +69,62 @@
          <change who="MAM" when="2021-02-01">angelegt</change>
          <change who="MAM" when="2022-02-01">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb4216"/>
-               <person xmlns="" ref="#pmb10863"/>
-               <person xmlns="" ref="#pmb11485"/>
-               <person xmlns="" ref="#pmb11640"/>
-               <person xmlns="" ref="#pmb21481"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb4216"/>
+               <person ref="#pmb10863"/>
+               <person ref="#pmb11485"/>
+               <person ref="#pmb11640"/>
+               <person ref="#pmb21481"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29917"/>
+               <bibl ref="#pmb29917"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29442"/>
+               <org ref="#pmb29442"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb151"/>
-               <place xmlns="" ref="#pmb166"/>
-               <place xmlns="" ref="#pmb168"/>
-               <place xmlns="" ref="#pmb182"/>
-               <place xmlns="" ref="#pmb745"/>
-               <place xmlns="" ref="#pmb958"/>
-               <place xmlns="" ref="#pmb1091"/>
-               <place xmlns="" ref="#pmb36300"/>
-               <place xmlns="" ref="#pmb41240"/>
-               <place xmlns="" ref="#pmb43570"/>
-               <place xmlns="" ref="#pmb63615"/>
-               <place xmlns="" ref="#pmb63623"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb151"/>
+               <place ref="#pmb166"/>
+               <place ref="#pmb168"/>
+               <place ref="#pmb182"/>
+               <place ref="#pmb745"/>
+               <place ref="#pmb958"/>
+               <place ref="#pmb1091"/>
+               <place ref="#pmb36300"/>
+               <place ref="#pmb41240"/>
+               <place ref="#pmb43570"/>
+               <place ref="#pmb63615"/>
+               <place ref="#pmb63623"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2357"/>
-               <person xmlns="" ref="#pmb4216"/>
-               <person xmlns="" ref="#pmb10860"/>
-               <person xmlns="" ref="#pmb10863"/>
-               <person xmlns="" ref="#pmb11485"/>
-               <person xmlns="" ref="#pmb21481"/>
+               <person ref="#pmb2357"/>
+               <person ref="#pmb4216"/>
+               <person ref="#pmb10860"/>
+               <person ref="#pmb10863"/>
+               <person ref="#pmb11485"/>
+               <person ref="#pmb21481"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29917"/>
-               <bibl xmlns="" ref="#pmb30470"/>
-               <bibl xmlns="" ref="#pmb33838"/>
-               <bibl xmlns="" ref="#pmb36357"/>
+               <bibl ref="#pmb29917"/>
+               <bibl ref="#pmb30470"/>
+               <bibl ref="#pmb33838"/>
+               <bibl ref="#pmb36357"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb63620"/>
+               <org ref="#pmb63620"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb958"/>
-               <place xmlns="" ref="#pmb36300"/>
-               <place xmlns="" ref="#pmb41240"/>
-               <place xmlns="" ref="#pmb63623"/>
+               <place ref="#pmb958"/>
+               <place ref="#pmb36300"/>
+               <place ref="#pmb41240"/>
+               <place ref="#pmb63623"/>
             </listPlace>
          </div>
       </body>
@@ -830,5 +823,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

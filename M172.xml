@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M172">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M172" next="I034" prev="M148"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb63193">[Julius Bauer und Ludwig Basch]: [Mein erster Durchfall],
                [nach dem 17. 11. 1909?], nicht veröffentlicht</title>
-            <title type="iso-date" when-iso="1908-11-17">[nach dem 17. 11. 1909?]</title>
+            <title type="iso-date" when-iso="1908-11-17" n="1">[nach dem 17. 11. 1909?]</title>
             <author ref="#pmb13791">Basch, Ludwig </author>
             <author ref="#pmb2150">Bauer, Julius</author>
             <editor>
@@ -59,36 +53,35 @@
          <change who="MAM" when="2022-01-10">Angelegt</change>
          <change who="MAM" when="2022-01-10">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb7263"/>
-               <person xmlns="" ref="#pmb12695"/>
+               <person ref="#pmb7263"/>
+               <person ref="#pmb12695"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb30143"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb30143"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb7263"/>
-               <person xmlns="" ref="#pmb13791"/>
-               <person xmlns="" ref="#pmb15764"/>
+               <person ref="#pmb7263"/>
+               <person ref="#pmb13791"/>
+               <person ref="#pmb15764"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb30143"/>
+               <bibl ref="#pmb30143"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29720"/>
+               <org ref="#pmb29720"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb39"/>
-               <place xmlns="" ref="#pmb52510"/>
+               <place ref="#pmb39"/>
+               <place ref="#pmb52510"/>
             </listPlace>
          </div>
       </body>
@@ -402,5 +395,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

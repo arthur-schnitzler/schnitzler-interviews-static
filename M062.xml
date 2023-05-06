@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M062">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M062" next="I086" prev="I005"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb33195">Schnitzler: Der Burgtheaterring der »Concordia«,
                30. 5. 1926</title>
-            <title type="iso-date" when-iso="1926-05-30">30. 5. 1926</title>
+            <title type="iso-date" when-iso="1926-05-30" n="1">30. 5. 1926</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <author ref="#pmb5320">Wilbrandt-Baudius, Auguste</author>
             <editor>
@@ -58,36 +52,35 @@
          <change who="MAM" when="2021-09-28">Index check</change>
          <change who="KH" when="2021-10-27">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb4054"/>
-               <person xmlns="" ref="#pmb5320"/>
-               <person xmlns="" ref="#pmb13088"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb4054"/>
+               <person ref="#pmb5320"/>
+               <person ref="#pmb13088"/>
             </listPerson>
             <listBibl/>
             <listOrg>
-               <org xmlns="" ref="#pmb29268"/>
-               <org xmlns="" ref="#pmb29320"/>
-               <org xmlns="" ref="#pmb29468"/>
-               <org xmlns="" ref="#pmb29752"/>
-               <org xmlns="" ref="#pmb36247"/>
+               <org ref="#pmb29268"/>
+               <org ref="#pmb29320"/>
+               <org ref="#pmb29468"/>
+               <org ref="#pmb29752"/>
+               <org ref="#pmb36247"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb35"/>
-               <place xmlns="" ref="#pmb50"/>
+               <place ref="#pmb35"/>
+               <place ref="#pmb50"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson/>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb506"/>
-               <place xmlns="" ref="#pmb41016"/>
+               <place ref="#pmb506"/>
+               <place ref="#pmb41016"/>
             </listPlace>
          </div>
       </body>
@@ -502,5 +495,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

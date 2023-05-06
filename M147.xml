@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M147">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M147" next="I067" prev="P176"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb60935">Rundfrage über das Duell, [Mai 1912?, vermutlich
                unveröffentlicht]</title>
-            <title type="iso-date" when-iso="1912-05-01">[Mai 1912?]</title>
+            <title type="iso-date" when-iso="1912-05-01" n="1">[Mai 1912?]</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -75,22 +69,21 @@
          <change who="MAM" when="2021-11-09">angelegt</change>
          <change who="MAM" when="2021-11-11">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson/>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson/>
             <listBibl>
-               <bibl xmlns="" ref="#pmb60937"/>
-               <bibl xmlns="" ref="#pmb60939"/>
+               <bibl ref="#pmb60937"/>
+               <bibl ref="#pmb60939"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>
@@ -169,5 +162,4 @@
             </bibl>
          </listBibl>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

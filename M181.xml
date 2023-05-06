@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M181">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M181" next="M148" prev="I025"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb88385">Schnitzler: [Über Tolstoj], 10. 9. 1908</title>
-            <title type="iso-date" when-iso="1908-09-10">28. 8. 1908
+            <title type="iso-date" when-iso="1908-09-10" n="1">28. 8. 1908
                            [=10. 9. 1908]</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
@@ -56,27 +50,26 @@
          <change who="MAM" when="2022-04-24">Angelegt</change>
          <change who="MAM" when="2022-05-04">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb3739"/>
-               <person xmlns="" ref="#pmb25069"/>
+               <person ref="#pmb3739"/>
+               <person ref="#pmb25069"/>
             </listPerson>
             <listBibl/>
             <listOrg>
-               <org xmlns="" ref="#pmb60847"/>
+               <org ref="#pmb60847"/>
             </listOrg>
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb3739"/>
-               <person xmlns="" ref="#pmb25069"/>
+               <person ref="#pmb3739"/>
+               <person ref="#pmb25069"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>
@@ -237,5 +230,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

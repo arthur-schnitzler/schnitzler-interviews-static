@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I082">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I082" next="I021" prev="I113"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb56582">Friedrich Wallisch: Arthur Schnitzler. Zu seinem 60.
                Geburtstag am 15. Mai, 13. 5. 1922</title>
-            <title type="iso-date" when-iso="1922-05-13">13. 5. 1922</title>
+            <title type="iso-date" when-iso="1922-05-13" n="2">13. 5. 1922</title>
             <author ref="#pmb13034">Wallisch, Friedrich</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -72,49 +66,48 @@
          <change who="MAM" when="2021-09-15">Index check</change>
          <change who="KH" when="2021-10-19">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb8396"/>
-               <person xmlns="" ref="#pmb11518"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb8396"/>
+               <person ref="#pmb11518"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29823"/>
-               <bibl xmlns="" ref="#pmb29917"/>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb30207"/>
-               <bibl xmlns="" ref="#pmb32508"/>
-               <bibl xmlns="" ref="#pmb33498"/>
-               <bibl xmlns="" ref="#pmb56576"/>
+               <bibl ref="#pmb29823"/>
+               <bibl ref="#pmb29917"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb30207"/>
+               <bibl ref="#pmb32508"/>
+               <bibl ref="#pmb33498"/>
+               <bibl ref="#pmb56576"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb56572"/>
+               <org ref="#pmb56572"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb63"/>
-               <place xmlns="" ref="#pmb150"/>
-               <place xmlns="" ref="#pmb383"/>
-               <place xmlns="" ref="#pmb574"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb63"/>
+               <place ref="#pmb150"/>
+               <place ref="#pmb383"/>
+               <place ref="#pmb574"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb8396"/>
-               <person xmlns="" ref="#pmb11518"/>
+               <person ref="#pmb8396"/>
+               <person ref="#pmb11518"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb32508"/>
-               <bibl xmlns="" ref="#pmb33498"/>
-               <bibl xmlns="" ref="#pmb50519"/>
-               <bibl xmlns="" ref="#pmb56576"/>
+               <bibl ref="#pmb32508"/>
+               <bibl ref="#pmb33498"/>
+               <bibl ref="#pmb50519"/>
+               <bibl ref="#pmb56576"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29636"/>
-               <org xmlns="" ref="#pmb56572"/>
+               <org ref="#pmb29636"/>
+               <org ref="#pmb56572"/>
             </listOrg>
             <listPlace/>
          </div>
@@ -604,5 +597,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

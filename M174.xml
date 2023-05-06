@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="M174">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M174" next="I070" prev="I081"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb63170">Kundgebungen für das Andenken Moriz Benedikts,
                23. 3. 1920</title>
-            <title type="iso-date" when-iso="1920-03-23">23. 3. 1920</title>
+            <title type="iso-date" when-iso="1920-03-23" n="1">23. 3. 1920</title>
             <author/>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -55,32 +49,31 @@
          <change who="MAM" when="2022-01-10">Angelegt</change>
          <change who="MAM" when="2022-01-11">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb10872"/>
-               <person xmlns="" ref="#pmb13996"/>
+               <person ref="#pmb10872"/>
+               <person ref="#pmb13996"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb189"/>
-               <place xmlns="" ref="#pmb40876"/>
+               <place ref="#pmb189"/>
+               <place ref="#pmb40876"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb10872"/>
-               <person xmlns="" ref="#pmb13996"/>
+               <person ref="#pmb10872"/>
+               <person ref="#pmb13996"/>
             </listPerson>
             <listBibl/>
             <listOrg>
-               <org xmlns="" ref="#pmb29351"/>
+               <org ref="#pmb29351"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
+               <place ref="#pmb50"/>
             </listPlace>
          </div>
       </body>
@@ -307,5 +300,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

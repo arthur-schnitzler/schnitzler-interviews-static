@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I005">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I005" next="M062" prev="I015"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb32957">Berta Zuckerkandl-Szeps: Wie kann das geistige Eigentum
                geschützt werden?, 18. 4. 1926</title>
-            <title type="iso-date" when-iso="1926-04-18">18. 4. 1926</title>
+            <title type="iso-date" when-iso="1926-04-18" n="1">18. 4. 1926</title>
             <author ref="#pmb2312">Zuckerkandl-Szeps, Berta</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,46 +85,45 @@
          <change who="MAM" when="2018-02-14">Index check</change>
          <change who="KH" when="2021-10-27">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb2381"/>
-               <person xmlns="" ref="#pmb5172"/>
-               <person xmlns="" ref="#pmb12421"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb2381"/>
+               <person ref="#pmb5172"/>
+               <person ref="#pmb12421"/>
             </listPerson>
             <listBibl/>
             <listOrg>
-               <org xmlns="" ref="#pmb29275"/>
-               <org xmlns="" ref="#pmb29397"/>
+               <org ref="#pmb29275"/>
+               <org ref="#pmb29397"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb151"/>
-               <place xmlns="" ref="#pmb166"/>
-               <place xmlns="" ref="#pmb168"/>
-               <place xmlns="" ref="#pmb175"/>
-               <place xmlns="" ref="#pmb182"/>
-               <place xmlns="" ref="#pmb41240"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb151"/>
+               <place ref="#pmb166"/>
+               <place ref="#pmb168"/>
+               <place ref="#pmb175"/>
+               <place ref="#pmb182"/>
+               <place ref="#pmb41240"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2312"/>
-               <person xmlns="" ref="#pmb5156"/>
-               <person xmlns="" ref="#pmb5172"/>
+               <person ref="#pmb2312"/>
+               <person ref="#pmb5156"/>
+               <person ref="#pmb5172"/>
             </listPerson>
             <listBibl/>
             <listOrg>
-               <org xmlns="" ref="#pmb29371"/>
+               <org ref="#pmb29371"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb166"/>
-               <place xmlns="" ref="#pmb182"/>
-               <place xmlns="" ref="#pmb506"/>
-               <place xmlns="" ref="#pmb873"/>
+               <place ref="#pmb166"/>
+               <place ref="#pmb182"/>
+               <place ref="#pmb506"/>
+               <place ref="#pmb873"/>
             </listPlace>
          </div>
       </body>
@@ -666,5 +659,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

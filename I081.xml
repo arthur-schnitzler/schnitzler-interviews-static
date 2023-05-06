@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I081">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I081" next="M174" prev="I013"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb58574">Julius Stern: Wiener Theaterwoche,
                14. 3. 1920</title>
-            <title type="iso-date" when-iso="1920-03-14">14. 3. 1920</title>
+            <title type="iso-date" when-iso="1920-03-14" n="1">14. 3. 1920</title>
             <author ref="#pmb3162">Stern, Julius</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -59,84 +53,83 @@
          <change who="MAM" when="2021-09-13">Index check</change>
          <change who="KH" when="2021-10-18">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb2167"/>
-               <person xmlns="" ref="#pmb3145"/>
-               <person xmlns="" ref="#pmb3201"/>
-               <person xmlns="" ref="#pmb10854"/>
-               <person xmlns="" ref="#pmb10959"/>
-               <person xmlns="" ref="#pmb11036"/>
-               <person xmlns="" ref="#pmb11461"/>
-               <person xmlns="" ref="#pmb12595"/>
-               <person xmlns="" ref="#pmb12695"/>
-               <person xmlns="" ref="#pmb12698"/>
-               <person xmlns="" ref="#pmb12809"/>
-               <person xmlns="" ref="#pmb13166"/>
-               <person xmlns="" ref="#pmb13212"/>
-               <person xmlns="" ref="#pmb13522"/>
-               <person xmlns="" ref="#pmb20562"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb2167"/>
+               <person ref="#pmb3145"/>
+               <person ref="#pmb3201"/>
+               <person ref="#pmb10854"/>
+               <person ref="#pmb10959"/>
+               <person ref="#pmb11036"/>
+               <person ref="#pmb11461"/>
+               <person ref="#pmb12595"/>
+               <person ref="#pmb12695"/>
+               <person ref="#pmb12698"/>
+               <person ref="#pmb12809"/>
+               <person ref="#pmb13166"/>
+               <person ref="#pmb13212"/>
+               <person ref="#pmb13522"/>
+               <person ref="#pmb20562"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29843"/>
-               <bibl xmlns="" ref="#pmb29873"/>
-               <bibl xmlns="" ref="#pmb29917"/>
-               <bibl xmlns="" ref="#pmb29931"/>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb30247"/>
-               <bibl xmlns="" ref="#pmb30655"/>
-               <bibl xmlns="" ref="#pmb30717"/>
-               <bibl xmlns="" ref="#pmb30749"/>
-               <bibl xmlns="" ref="#pmb30819"/>
-               <bibl xmlns="" ref="#pmb32426"/>
-               <bibl xmlns="" ref="#pmb36059"/>
-               <bibl xmlns="" ref="#pmb61461"/>
-               <bibl xmlns="" ref="#pmb78589"/>
+               <bibl ref="#pmb29843"/>
+               <bibl ref="#pmb29873"/>
+               <bibl ref="#pmb29917"/>
+               <bibl ref="#pmb29931"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb30247"/>
+               <bibl ref="#pmb30655"/>
+               <bibl ref="#pmb30717"/>
+               <bibl ref="#pmb30749"/>
+               <bibl ref="#pmb30819"/>
+               <bibl ref="#pmb32426"/>
+               <bibl ref="#pmb36059"/>
+               <bibl ref="#pmb61461"/>
+               <bibl ref="#pmb78589"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb36247"/>
-               <org xmlns="" ref="#pmb36430"/>
-               <org xmlns="" ref="#pmb37126"/>
-               <org xmlns="" ref="#pmb41367"/>
+               <org ref="#pmb36247"/>
+               <org ref="#pmb36430"/>
+               <org ref="#pmb37126"/>
+               <org ref="#pmb41367"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb113"/>
-               <place xmlns="" ref="#pmb150"/>
-               <place xmlns="" ref="#pmb842"/>
-               <place xmlns="" ref="#pmb34438"/>
-               <place xmlns="" ref="#pmb49098"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb113"/>
+               <place ref="#pmb150"/>
+               <place ref="#pmb842"/>
+               <place ref="#pmb34438"/>
+               <place ref="#pmb49098"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb4420"/>
-               <person xmlns="" ref="#pmb11220"/>
-               <person xmlns="" ref="#pmb11461"/>
-               <person xmlns="" ref="#pmb12053"/>
-               <person xmlns="" ref="#pmb13212"/>
-               <person xmlns="" ref="#pmb20562"/>
+               <person ref="#pmb4420"/>
+               <person ref="#pmb11220"/>
+               <person ref="#pmb11461"/>
+               <person ref="#pmb12053"/>
+               <person ref="#pmb13212"/>
+               <person ref="#pmb20562"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29843"/>
-               <bibl xmlns="" ref="#pmb29905"/>
-               <bibl xmlns="" ref="#pmb29917"/>
-               <bibl xmlns="" ref="#pmb30919"/>
-               <bibl xmlns="" ref="#pmb33243"/>
-               <bibl xmlns="" ref="#pmb33676"/>
-               <bibl xmlns="" ref="#pmb33838"/>
-               <bibl xmlns="" ref="#pmb61461"/>
+               <bibl ref="#pmb29843"/>
+               <bibl ref="#pmb29905"/>
+               <bibl ref="#pmb29917"/>
+               <bibl ref="#pmb30919"/>
+               <bibl ref="#pmb33243"/>
+               <bibl ref="#pmb33676"/>
+               <bibl ref="#pmb33838"/>
+               <bibl ref="#pmb61461"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb150"/>
-               <place xmlns="" ref="#pmb168"/>
-               <place xmlns="" ref="#pmb433"/>
-               <place xmlns="" ref="#pmb34438"/>
+               <place ref="#pmb150"/>
+               <place ref="#pmb168"/>
+               <place ref="#pmb433"/>
+               <place ref="#pmb34438"/>
             </listPlace>
          </div>
       </body>
@@ -1472,5 +1465,4 @@
             </org>
          </listOrg>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

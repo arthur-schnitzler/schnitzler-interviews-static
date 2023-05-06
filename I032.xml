@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-     xml:base="schnitzler-interviews"
-     xml:id="I032">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="I032" next="I011" prev="I060"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb33005">David Ewen: Anti-semitism, a Healthy Influence,
                26. 9. 1930</title>
-            <title type="iso-date" when-iso="1930-09-26">26. 9. 1930</title>
+            <title type="iso-date" when-iso="1930-09-26" n="1">26. 9. 1930</title>
             <author ref="#pmb11277">Ewen, David</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -170,32 +164,31 @@
          <change who="MAM" when="2018-02-14">Index check</change>
          <change who="KH" when="2021-10-29">Durchsicht</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="text">
+   </teiHeader><text type="text">
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb25217"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb25217"/>
             </listPerson>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb386"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb386"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb11277"/>
-               <person xmlns="" ref="#pmb20509"/>
+               <person ref="#pmb11277"/>
+               <person ref="#pmb20509"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb33838"/>
+               <bibl ref="#pmb33838"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb44053"/>
+               <place ref="#pmb44053"/>
             </listPlace>
          </div>
       </body>
@@ -473,5 +466,4 @@
             </place>
          </listPlace>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

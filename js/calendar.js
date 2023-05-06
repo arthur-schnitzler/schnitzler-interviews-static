@@ -1,6 +1,7 @@
 function getYear(item) {
-  return item['startDate'].split('-')[0]
+  return item.startDate.split('-')[0];
 }
+
 
 function createyearcell(val) {
   return (val !== undefined) ? `<div class="col-xs-6" style="width: auto;">\
@@ -14,10 +15,8 @@ var data = calendarData.map(r =>
   endDate: new Date(r.startDate),
   name: r.name,
   linkId: r.id,
-  color: '#A63437'
+  color: '#3D5A80'
 })).filter(r => r.startDate.getFullYear() === 1890);
-
-
 
 
 years = Array.from(new Set(calendarData.map(getYear))).sort();
@@ -29,7 +28,7 @@ for (var i = 0; i <= years.length; i++) {
 //document.getElementById("ybtn1900").classList.add("focus");
 
 const calendar = new Calendar('#calendar', {
-  startYear: 1890,
+  startYear: 1922,
   language: "de",
   dataSource: data,
   displayHeader: false,
@@ -99,7 +98,7 @@ function updateyear(year) {
     endDate: new Date(r.startDate),
     name: r.name,
     linkId: r.id,
-    color: '#A63437'
+    color: '#3D5A80'
   })).filter(r => r.startDate.getFullYear() === parseInt(year));
   calendar.setDataSource(dataSource);
 }
