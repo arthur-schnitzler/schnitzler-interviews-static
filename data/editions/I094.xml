@@ -4,7 +4,7 @@
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb58587">O. N–ll: Arthur Schnitzler som charmör och som kåsör,
                18. 5. 1923</title>
-            <title type="iso-date" when-iso="1923-05-18" n="1">18. 5. 1923</title>
+            <title type="iso-date" when-iso="1923-05-18" n="2">18. 5. 1923</title>
             <author ref="#pmb58585">O. N–ll</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -69,45 +69,45 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb10992"/>
-               <person xmlns="" ref="#pmb11342"/>
-               <person xmlns="" ref="#pmb12692"/>
-               <person xmlns="" ref="#pmb13068"/>
-               <person xmlns="" ref="#pmb20462"/>
-               <person xmlns="" ref="#pmb20474"/>
-               <person xmlns="" ref="#pmb20478"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb10992"/>
+               <person ref="#pmb11342"/>
+               <person ref="#pmb12692"/>
+               <person ref="#pmb13068"/>
+               <person ref="#pmb20462"/>
+               <person ref="#pmb20474"/>
+               <person ref="#pmb20478"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29855"/>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb30203"/>
-               <bibl xmlns="" ref="#pmb30881"/>
-               <bibl xmlns="" ref="#pmb31393"/>
+               <bibl ref="#pmb29855"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb30203"/>
+               <bibl ref="#pmb30881"/>
+               <bibl ref="#pmb31393"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb62330"/>
+               <org ref="#pmb62330"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb175"/>
-               <place xmlns="" ref="#pmb955"/>
-               <place xmlns="" ref="#pmb1119"/>
-               <place xmlns="" ref="#pmb43430"/>
-               <place xmlns="" ref="#pmb44335"/>
-               <place xmlns="" ref="#pmb59370"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb175"/>
+               <place ref="#pmb955"/>
+               <place ref="#pmb1119"/>
+               <place ref="#pmb43430"/>
+               <place ref="#pmb44335"/>
+               <place ref="#pmb59370"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb12435"/>
-               <person xmlns="" ref="#pmb24992"/>
+               <person ref="#pmb12435"/>
+               <person ref="#pmb24992"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29855"/>
-               <bibl xmlns="" ref="#pmb31393"/>
+               <bibl ref="#pmb29855"/>
+               <bibl ref="#pmb31393"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

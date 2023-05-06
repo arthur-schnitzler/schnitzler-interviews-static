@@ -54,38 +54,38 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb4216"/>
-               <person xmlns="" ref="#pmb4279"/>
-               <person xmlns="" ref="#pmb11617"/>
-               <person xmlns="" ref="#pmb12176"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb4216"/>
+               <person ref="#pmb4279"/>
+               <person ref="#pmb11617"/>
+               <person ref="#pmb12176"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29853"/>
-               <bibl xmlns="" ref="#pmb29917"/>
-               <bibl xmlns="" ref="#pmb29923"/>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb30117"/>
-               <bibl xmlns="" ref="#pmb30203"/>
-               <bibl xmlns="" ref="#pmb42883"/>
+               <bibl ref="#pmb29853"/>
+               <bibl ref="#pmb29917"/>
+               <bibl ref="#pmb29923"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb30117"/>
+               <bibl ref="#pmb30203"/>
+               <bibl ref="#pmb42883"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb52775"/>
+               <org ref="#pmb52775"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb468"/>
-               <place xmlns="" ref="#pmb41240"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb468"/>
+               <place ref="#pmb41240"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson/>
             <listBibl>
-               <bibl xmlns="" ref="#pmb33243"/>
+               <bibl ref="#pmb33243"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace>
-               <place xmlns="" ref="#pmb34438"/>
+               <place ref="#pmb34438"/>
             </listPlace>
          </div>
       </body>

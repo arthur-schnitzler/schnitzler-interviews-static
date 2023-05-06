@@ -54,62 +54,62 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb2121"/>
-               <person xmlns="" ref="#pmb2284"/>
-               <person xmlns="" ref="#pmb2461"/>
-               <person xmlns="" ref="#pmb10772"/>
-               <person xmlns="" ref="#pmb11036"/>
-               <person xmlns="" ref="#pmb11518"/>
-               <person xmlns="" ref="#pmb11687"/>
-               <person xmlns="" ref="#pmb12258"/>
-               <person xmlns="" ref="#pmb12671"/>
-               <person xmlns="" ref="#pmb12678"/>
-               <person xmlns="" ref="#pmb12695"/>
-               <person xmlns="" ref="#pmb12698"/>
-               <person xmlns="" ref="#pmb12903"/>
-               <person xmlns="" ref="#pmb28526"/>
+               <person ref="#pmb2121"/>
+               <person ref="#pmb2284"/>
+               <person ref="#pmb2461"/>
+               <person ref="#pmb10772"/>
+               <person ref="#pmb11036"/>
+               <person ref="#pmb11518"/>
+               <person ref="#pmb11687"/>
+               <person ref="#pmb12258"/>
+               <person ref="#pmb12671"/>
+               <person ref="#pmb12678"/>
+               <person ref="#pmb12695"/>
+               <person ref="#pmb12698"/>
+               <person ref="#pmb12903"/>
+               <person ref="#pmb28526"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29843"/>
-               <bibl xmlns="" ref="#pmb29853"/>
-               <bibl xmlns="" ref="#pmb29857"/>
-               <bibl xmlns="" ref="#pmb29903"/>
-               <bibl xmlns="" ref="#pmb29917"/>
-               <bibl xmlns="" ref="#pmb29923"/>
-               <bibl xmlns="" ref="#pmb36156"/>
+               <bibl ref="#pmb29843"/>
+               <bibl ref="#pmb29853"/>
+               <bibl ref="#pmb29857"/>
+               <bibl ref="#pmb29903"/>
+               <bibl ref="#pmb29917"/>
+               <bibl ref="#pmb29923"/>
+               <bibl ref="#pmb36156"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29395"/>
-               <org xmlns="" ref="#pmb29677"/>
-               <org xmlns="" ref="#pmb36247"/>
+               <org ref="#pmb29395"/>
+               <org ref="#pmb29677"/>
+               <org ref="#pmb36247"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb20"/>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb151"/>
-               <place xmlns="" ref="#pmb166"/>
-               <place xmlns="" ref="#pmb168"/>
-               <place xmlns="" ref="#pmb224"/>
-               <place xmlns="" ref="#pmb386"/>
-               <place xmlns="" ref="#pmb1025"/>
-               <place xmlns="" ref="#pmb41240"/>
-               <place xmlns="" ref="#pmb44053"/>
+               <place ref="#pmb20"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb151"/>
+               <place ref="#pmb166"/>
+               <place ref="#pmb168"/>
+               <place ref="#pmb224"/>
+               <place ref="#pmb386"/>
+               <place ref="#pmb1025"/>
+               <place ref="#pmb41240"/>
+               <place ref="#pmb44053"/>
             </listPlace>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb5119"/>
+               <person ref="#pmb5119"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29843"/>
-               <bibl xmlns="" ref="#pmb29869"/>
-               <bibl xmlns="" ref="#pmb29877"/>
+               <bibl ref="#pmb29843"/>
+               <bibl ref="#pmb29869"/>
+               <bibl ref="#pmb29877"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29392"/>
+               <org ref="#pmb29392"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb1049"/>
+               <place ref="#pmb1049"/>
             </listPlace>
          </div>
       </body>

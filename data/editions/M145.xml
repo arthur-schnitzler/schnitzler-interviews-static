@@ -73,13 +73,13 @@
          <div type="edierter-text">
             <listPerson/>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson/>
             <listBibl/>
-            <listOrg/>
+            
             <listPlace/>
          </div>
       </body>

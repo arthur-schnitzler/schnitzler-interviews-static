@@ -82,38 +82,38 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb4079"/>
-               <person xmlns="" ref="#pmb60111"/>
+               <person ref="#pmb4079"/>
+               <person ref="#pmb60111"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb31393"/>
+               <bibl ref="#pmb31393"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb60121"/>
+               <org ref="#pmb60121"/>
             </listOrg>
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb4748"/>
-               <person xmlns="" ref="#pmb8962"/>
-               <person xmlns="" ref="#pmb13068"/>
-               <person xmlns="" ref="#pmb60125"/>
-               <person xmlns="" ref="#pmb60135"/>
-               <person xmlns="" ref="#pmb60148"/>
+               <person ref="#pmb4748"/>
+               <person ref="#pmb8962"/>
+               <person ref="#pmb13068"/>
+               <person ref="#pmb60125"/>
+               <person ref="#pmb60135"/>
+               <person ref="#pmb60148"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb36374"/>
-               <bibl xmlns="" ref="#pmb60104"/>
+               <bibl ref="#pmb36374"/>
+               <bibl ref="#pmb60104"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29351"/>
-               <org xmlns="" ref="#pmb60121"/>
+               <org ref="#pmb29351"/>
+               <org ref="#pmb60121"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb50"/>
-               <place xmlns="" ref="#pmb50592"/>
-               <place xmlns="" ref="#pmb60142"/>
+               <place ref="#pmb50"/>
+               <place ref="#pmb50592"/>
+               <place ref="#pmb60142"/>
             </listPlace>
          </div>
       </body>

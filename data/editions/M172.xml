@@ -57,31 +57,31 @@
       <body>
          <div type="edierter-text">
             <listPerson>
-               <person xmlns="" ref="#pmb7263"/>
-               <person xmlns="" ref="#pmb12695"/>
+               <person ref="#pmb7263"/>
+               <person ref="#pmb12695"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb29935"/>
-               <bibl xmlns="" ref="#pmb30143"/>
+               <bibl ref="#pmb29935"/>
+               <bibl ref="#pmb30143"/>
             </listBibl>
-            <listOrg/>
+            
             <listPlace/>
          </div>
          <div type="kommentar-text">
             <listPerson>
-               <person xmlns="" ref="#pmb7263"/>
-               <person xmlns="" ref="#pmb13791"/>
-               <person xmlns="" ref="#pmb15764"/>
+               <person ref="#pmb7263"/>
+               <person ref="#pmb13791"/>
+               <person ref="#pmb15764"/>
             </listPerson>
             <listBibl>
-               <bibl xmlns="" ref="#pmb30143"/>
+               <bibl ref="#pmb30143"/>
             </listBibl>
             <listOrg>
-               <org xmlns="" ref="#pmb29720"/>
+               <org ref="#pmb29720"/>
             </listOrg>
             <listPlace>
-               <place xmlns="" ref="#pmb39"/>
-               <place xmlns="" ref="#pmb52510"/>
+               <place ref="#pmb39"/>
+               <place ref="#pmb52510"/>
             </listPlace>
          </div>
       </body>
