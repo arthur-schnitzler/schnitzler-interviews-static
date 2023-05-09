@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="card-body-normalertext" style="background-color: #3D5A80; opacity:0.4;">
+                                <div class="card-body-normalertext" style="background-color: #3D5A80; color: black;">
                                     <p>
                                         <i>Diese Seite ist ein Platzhalter, von der sich nur die
                                             bibliografischen Angaben des Textes und die Erwähnungen
@@ -133,7 +133,7 @@
                                 <div class="card-body-normalertext">
                                     <legend>Erwähnte Personen</legend>
                                     <ul>
-                                        <xsl:for-each select=".//tei:listPerson//tei:person">
+                                        <xsl:for-each select="descendant::tei:back/tei:listPerson/tei:person">
                                             <xsl:sort
                                                 select="concat(child::tei:persName[1]/tei:surname[1], child::tei:persName[1]/tei:forename[1])"/>
                                             <xsl:variable name="naname" as="xs:string">
@@ -173,7 +173,7 @@
                                     <xsl:if test=".//tei:back/tei:listBibl/tei:bibl[1]">
                                         <legend>Erwähnte Werke</legend>
                                         <ul>
-                                            <xsl:for-each select=".//tei:back/tei:listBibl/tei:bibl">
+                                            <xsl:for-each select="descendant::tei:back/tei:listBibl/tei:bibl">
                                                 <xsl:sort select="child::tei:title[1]"/>
                                                 <li>
                                                   <a class="theme-color">
@@ -228,7 +228,7 @@
                                     </xsl:if>
                                 </div>
                                 <div class="card-body-normalertext">
-                                    <xsl:if test=".//tei:back/tei:listOrg/tei:org[1]">
+                                    <xsl:if test="descendant::tei:back/tei:listOrg/tei:org[1]">
                                         <legend>Erwähnte Institutionen</legend>
                                         <ul>
                                             <xsl:for-each select=".//tei:listOrg//tei:org">
@@ -247,7 +247,7 @@
                                     </xsl:if>
                                 </div>
                                 <div class="card-body-normalertext">
-                                    <xsl:if test=".//tei:back/tei:listPlace/tei:place[1]">
+                                    <xsl:if test="descendant::tei:back/tei:listPlace/tei:place[1]">
                                         <legend>Erwähnte Orte</legend>
                                         <ul>
                                             <xsl:for-each select=".//tei:listPlace/tei:place">
