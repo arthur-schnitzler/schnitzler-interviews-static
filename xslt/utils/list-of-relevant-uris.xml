@@ -50,11 +50,12 @@ are but links to pdfs etc. an URL can be added
         <caption>Pollazczek: Schnitzler und ich</caption>
         <color>#1e81b0</color>
     </item>
-    <item type="current-edition">
-        <abbr>schnitzler-tage</abbr>
-        <caption>Tag für Tag</caption>
+    <item>
+        <abbr>schnitzler-chronik</abbr>
+        <caption>Chronik</caption>
         <color>#C67F53</color>
     </item>
+    
     <item>
         <abbr>Arthur-Schnitzler-digital</abbr>
         <caption>Arthur Schnitzler digital (Werke 1905–1931)</caption>
