@@ -231,7 +231,7 @@
                                     <xsl:if test="descendant::tei:back/tei:listOrg/tei:org[1]">
                                         <legend>Erwähnte Institutionen</legend>
                                         <ul>
-                                            <xsl:for-each select=".//tei:listOrg//tei:org">
+                                            <xsl:for-each select="descendant::tei:back/tei:listOrg/tei:org">
                                                 <xsl:sort select="child::tei:orgName[1]"/>
                                                 <li>
                                                   <a class="theme-color">
@@ -250,7 +250,7 @@
                                     <xsl:if test="descendant::tei:back/tei:listPlace/tei:place[1]">
                                         <legend>Erwähnte Orte</legend>
                                         <ul>
-                                            <xsl:for-each select=".//tei:listPlace/tei:place">
+                                            <xsl:for-each select="descendant::tei:back/tei:listPlace/tei:place">
                                                 <xsl:sort select="child::tei:placeName[1]"/>
                                                 <li>
                                                   <a class="theme-color">
