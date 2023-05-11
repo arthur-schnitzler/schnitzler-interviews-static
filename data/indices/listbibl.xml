@@ -4215,7 +4215,7 @@
                <note type="work_kind">Novelle</note>
             <note target="I061.xml" corresp="1929-12-07" type="mentions">Pierre Loving: Time Robs Schnitzler of Anatole,
                7. 12. 1929</note></bibl>
-            <bibl xml:id="pmb33193">
+            <bibl xml:id="pmb63430">
                <title type="main">Comedies of Words and Other Plays</title>
                <title type="legacy-name-merge">Comedies of Words and Other Plays</title>
                <title type="werk_link">https://archive.org/details/cu31924026341523/page/n10/mode/1up</title>
@@ -4223,7 +4223,7 @@
                <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
                <author role="hat-ubersetzt" ref="pmb20624">Loving, Edward Pierre</author>
                <date notBefore-iso="1917-01-01" when-iso="1917-07-02">1917</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33193/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63430/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63430/</idno>
                <note type="collections">
                   <bibl type="collections" n="8">manually created entity</bibl>
@@ -5922,12 +5922,12 @@
                <note type="work_kind">Roman</note>
             <note target="M130.xml" corresp="1925-07-25" type="mentions">L’influence littéraire de la France à l’Étranger,
                25. 7. 1925</note></bibl>
-            <bibl xml:id="pmb59439">
+            <bibl xml:id="pmb122322">
                <title type="main">Neue Blätter für Literatur und Kunst</title>
                <title type="namensvariante">Wiener Kunst- und Buchschau</title>
                <author role="hat-herausgegeben" ref="pmb11646">Heller, Hugo</author>
                <date notBefore-iso="1906-01-01" when-iso="1906-07-02">1906</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59439/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/122322/</idno>
                <note type="collections">
                   <bibl type="collections" n="3">Manuell angelegt</bibl>
                </note>
