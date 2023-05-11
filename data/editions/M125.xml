@@ -60,7 +60,7 @@
                      <title level="a">Vom Lesen und von guten Büchern</title>
                   </analytic>
                   <monogr>
-                     <title level="j" ref="#pmb59439">Neue Blätter für Literatur und Kunst</title>
+                     <title level="j" ref="#pmb122322">Neue Blätter für Literatur und Kunst</title>
                      <imprint>
                         <date when="1906-12-01">December 1906</date>
                      </imprint>
@@ -119,7 +119,7 @@
                <bibl ref="#pmb32159"/>
                <bibl ref="#pmb33344"/>
                <bibl ref="#pmb36238"/>
-               <bibl ref="#pmb59439"/>
+               <bibl ref="#pmb122322"/>
                <bibl ref="#pmb59454"/>
                <bibl ref="#pmb59465"/>
                <bibl ref="#pmb59471"/>
@@ -923,13 +923,13 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb59439">
+            <bibl xml:id="pmb122322">
                <title>Neue Blätter für Literatur und Kunst</title>
                <title type="namensvariante">Wiener Kunst- und Buchschau</title>
                <title type="legacy-name-merge">Neue Blätter für Literatur und Kunst</title>
                <author ref="pmb11646" role="hat-herausgegeben">Heller, Hugo</author>
                <date notBefore="1906-01-01" when="1906-07-02">1906</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59439/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/122322/</idno>
                <idno type="URL" subtype="">https://this-will-change/HB-tv_periodica_317</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/122322/</idno>
                <note type="work_kind">Periodikum</note>
