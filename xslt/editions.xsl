@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="card-body-normalertext" style="background-color: #3D5A80; color: black;">
+                                <div class="card-body-normalertext" style="background-color: #3D5A80; color: white;">
                                     <p>
                                         <i>Diese Seite ist ein Platzhalter, von der sich nur die
                                             bibliografischen Angaben des Textes und die Erwähnungen
