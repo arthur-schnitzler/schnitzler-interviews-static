@@ -52,7 +52,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="toc.html">Inhaltsverzeichnis</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown dropleft">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false"> Index </a>
                             <ul class="dropdown-menu">

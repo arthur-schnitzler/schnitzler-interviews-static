@@ -3,7 +3,20 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:local="http://dse-static.foo.bar" exclude-result-prefixes="xs" version="2.0">
     <xsl:template
-        match="tei:ref[not(@type = 'schnitzler-tagebuch') and not(@type = 'schnitzler-briefe') and not(@type = 'schnitzler-bahr') and not(@type = 'schnitzler-lektueren')]">
+        match="tei:ref[@type = 'pointer']">
+        <xsl:analyze-string select="@target" regex="([IPM]\d{{3}})">
+            <xsl:matching-substring>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="concat(regex-group(1), '.html')"/>
+                    </xsl:attribute>
+                    <i class="fas fa-external-link-alt"/>
+                </xsl:element>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    <xsl:template
+        match="tei:ref[not(@type = 'schnitzler-tagebuch') and not(@type = 'schnitzler-briefe') and not(@type = 'schnitzler-bahr') and not(@type = 'schnitzler-lektueren') and not(@type = 'pointer')]">
         <xsl:choose>
             <xsl:when test="@target[ends-with(., '.xml')]">
                 <xsl:element name="a">

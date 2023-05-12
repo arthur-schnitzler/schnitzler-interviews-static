@@ -926,4 +926,23 @@ nav {
     padding: 1.5rem 2.5rem;
     }
 
+    .list-for-footnotes {
+        color: black;
+        font-family: serif;
+        list-style-type: none;
+         padding-inline-start: 0em;
+    }
+    
+    .list-for-footnotes-meta {
+        color: black;
+        font-family: sans-serif;
+        list-style-type: none;
+        padding-inline-start: 0em;
+    }
+    ol.list-for-footnotes p {
+        display: inline;
+    }
+    .footnote {
+        font-size: smaller;
+    }
     

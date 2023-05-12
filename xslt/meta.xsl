@@ -8,6 +8,7 @@
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
     <xsl:import href="partials/shared.xsl"/>
+    <xsl:import href="partials/refs.xsl"/>
     <!--<xsl:import href="partials/tei-facsimile.xsl"/>-->
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -673,4 +674,6 @@
             <xsl:apply-templates/>
         </code>
     </xsl:template>
+    
+    
 </xsl:stylesheet>
