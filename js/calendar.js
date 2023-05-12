@@ -16,7 +16,7 @@ var data = calendarData.map(r =>
   name: r.name,
   linkId: r.id,
   color: '#3D5A80'
-})).filter(r => r.startDate.getFullYear() === 1890);
+})).filter(r => r.startDate.getFullYear() === 1922);
 
 
 years = Array.from(new Set(calendarData.map(getYear))).sort();
