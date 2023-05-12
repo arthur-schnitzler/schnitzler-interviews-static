@@ -279,8 +279,9 @@
             <xsl:if test="descendant::tei:note[@type = 'mentions']">
                 <div id="mentions" class="mt-2">
                     <span class="infodesc mr-2">
+                                                <legend>Erwähnungen</legend>
+
                         <ul>
-                            <legend>Erwähnungen</legend>
                             <xsl:for-each select=".//tei:note[@type = 'mentions']">
                                 <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
                                     data-type="number"/>
@@ -339,8 +340,9 @@
                 <div id="autor_innen">
                     <xsl:choose>
                         <xsl:when test="tei:author[2]">
+                                                        <legend>Geschaffen von</legend>
+
                             <ul>
-                                <legend>Geschaffen von</legend>
                                 <xsl:for-each select="tei:author">
                                     <li>
                                         <xsl:variable name="keyToRef" as="xs:string">
@@ -523,10 +525,10 @@
                     </xsl:choose>
                 </div>
                 <div id="erscheinungsdatum" class="mt-2">
-                    <p>
+                                                    <legend>Erschienen</legend>
+
                         <xsl:if test="tei:date[1]">
                             <ul>
-                                <legend>Erschienen</legend>
                                 <li>
                                     <xsl:choose>
                                         <xsl:when test="contains(tei:date[1], '-')">
@@ -587,9 +589,10 @@
                 </div>
             </xsl:if>
             <div id="mentions" class="mt-2">
+                                    <legend>Erwähnungen</legend>
+
                 <span class="infodesc mr-2">
                     <ul>
-                        <legend>Erwähnungen</legend>
                         <xsl:for-each select=".//tei:note[@type = 'mentions']">
                             <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
                                 data-type="number"/>
@@ -671,8 +674,9 @@
                     <div class="card"> </div>
                 </xsl:if>
                 <xsl:if test="count(.//tei:placeName[contains(@type, 'namensvariante')]) gt 1">
+                                        <legend>Namensvarianten</legend>
+
                     <ul>
-                        <legend>Namensvarianten</legend>
                         <xsl:for-each select=".//tei:placeName[contains(@type, 'namensvariante')]">
                             <li>
                                 <xsl:value-of select="./text()"/>
@@ -682,8 +686,9 @@
                 </xsl:if>
                 <div id="mentions" class="mt-2">
                     <span class="infodesc mr-2">
+                                                <legend>Erwähnungen</legend>
+
                         <ul>
-                            <legend>Erwähnungen</legend>
                             <xsl:for-each select=".//tei:note[@type = 'mentions']">
                                 <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
                                     data-type="number"/>
@@ -762,8 +767,9 @@
             </xsl:if>
             <xsl:if test="tei:location">
                 <div>
+                                        <legend>Orte</legend>
+
                     <ul>
-                        <legend>Orte</legend>
                         <li>
                             <xsl:for-each
                                 select="tei:location/tei:placeName[not(. = preceding-sibling::tei:placeName)]">
@@ -796,8 +802,9 @@
             </xsl:if>
             <div id="mentions" class="mt-2">
                 <span class="infodesc mr-2">
+                                        <legend>Erwähnungen</legend>
+
                     <ul>
-                        <legend>Erwähnungen</legend>
                         <xsl:for-each select=".//tei:note[@type = 'mentions']">
                             <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
                                 data-type="number"/>

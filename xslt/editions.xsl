@@ -102,19 +102,19 @@
                             <div class="card-body">
                                 <div class="card-body-normalertext" style="background-color: #3D5A80; color: white;">
                                     <p>
-                                        <i>Diese Seite ist ein Platzhalter, von der sich nur die
+                                        <i>Diese Seite ist ein Platzhalter. Er listet die
                                             bibliografischen Angaben des Textes und die Erwähnungen
-                                            von Personen, Orten, Werken und Institutionen entnehmen
-                                            lassen. Die Buchausgabe ist in Verlagsproduktion. Der
-                                            Text wird im Oktober 2023 als zweibändige Ausgabe
-                                            veröffentlicht:</i>
+                                            von Personen, Orten, Werken und Institutionen, die im 
+                                            Text oder im Kommentar vorkommen. Die Buchausgabe ist in Verlagsproduktion. Der
+                                            Text wird im Oktober 2023 in der zweibändigen Ausgabe
+                                            enthalten sein:</i>
                                     </p>
                                     <ul style="list-style-type: none;">
                                         <li>
                                             <b>Arthur Schnitzler: »Das Zeitlose ist von kürzester
                                                 Dauer«. Interviews, Meinungen, Proteste (1891–1931).
                                                 Hg. Martin Anton Müller. Göttingen: Wallstein
-                                                2023</b>
+                                                2023.</b>
                                             <br/>
                                             <br/>
                                             <i>ca. 760 Seiten, circa 25 Abbildungen, gebunden, Schutzumschlag<br/>2
