@@ -43,14 +43,15 @@
                                     <a class="nav-link" style="color: #D3D3D3;">Literatur</a>
                                     
                                 </li>
+                                <li class="nav-item dropdown-submenu">
+                                    <a title="Schnitzler am ACDH-CH" href="https://schnitzler.acdh.oeaw.ac.at"
+                                        class="nav-link" target="_blank">Schnitzler am ACDH-CH</a>
+                                </li>
                                
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="calendar.html">Kalender</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="toc.html">Inhaltsverzeichnis</a>
                         </li>
                         <li class="nav-item dropdown dropleft">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -69,6 +70,9 @@
                                     <a class="nav-link" href="listorg.html">Institutionen</a>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="toc.html">Inhaltsverzeichnis</a>
                         </li>
                      <!--   <li class="nav-item">
                             <a title="Suche" class="nav-link" href="search.html"><svg
