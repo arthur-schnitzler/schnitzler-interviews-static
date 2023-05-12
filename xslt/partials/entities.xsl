@@ -149,10 +149,10 @@
                 select="replace(replace(@xml:id, 'person__', ''), 'pmb', '')"/>
             <xsl:if test="key('authorwork-lookup', $author-ref, $works)[1]">
                 <div class="werke">
+                    <span class="infodesc mr-2">
+                        <legend>Werke</legend>
+                    </span>
                     <ul class="dashed">
-                        <span class="infodesc mr-2">
-                            <legend>Werke</legend>
-                        </span>
                         <xsl:for-each select="key('authorwork-lookup', $author-ref, $works)">
                             <li>
                                 <xsl:if test="@role = 'editor' or @role = 'hat-herausgegeben'">
