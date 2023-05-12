@@ -95,7 +95,7 @@
                     nicht über drei Dutzend Namen betroffen sind, werden im Kommentar die
                     Verfasserinnen und Verfasser genannt, mit denen <rs type="person" ref="#pmb2121"
                         >Schnitzler</rs> hier auftritt. Kürzungen zwischen wiedergegebenen
-                    Textteilen sind durch »{[}<c rendition="#dots" n="3"/>{]}« markiert, weitere
+                    Textteilen sind durch »[<c rendition="#dots" n="3"/>]« markiert, weitere
                     Hinweise auf die Art des Eingriffs finden sich im jeweiligen Kommentarteil.</p>
                 <p>Bilder werden unmittelbar vor den Text platziert.</p>
                 <p>Stillschweigend übergangen werden ausgeschlagende Buchstaben, wenn anzunehmen
@@ -150,48 +150,6 @@
                     Ungerechtigkeit, dass unbezahlte Arbeit übergangen wurde, wird fortgeschrieben,
                     wenn Frauen ohne nähere Bezeichnung bleiben, obwohl vermutlich ein allgemein
                     hinzugefügtes »Hausfrau« mehr Gerechtigkeit bedeutet hätte.</p>
-            </div>
-            <div type="writingSession" n="2">
-                <head type="sub">Diakritische Darstellung</head>
-                <list type="simple-gloss">
-                    <label>
-                        <unclear>Beispiel</unclear>
-                    </label>
-                    <item>Unsicher gelesene Stelle</item>
-                    <label>
-                        <gap unit="chars" quantity="5" reason="illegible"/>
-                    </label>
-                    <item>Nicht entzifferte Stelle. Die Anzahl der × gibt dabei die mutmaßliche
-                        Zeichenzahl wieder.</item>
-                    <label>
-                        <add place="above">Beispiel</add>
-                    </label>
-                    <item>Nachträgliche Einfügung</item>
-                    <label>
-                        <subst>
-                            <del rend="overwritten">Exempel</del>
-                            <add place="inline">Beispiel</add>
-                        </subst>
-                    </label>
-                    <item>Eine durch Überarbeitung (Streichung, Überschreibung) getilgte
-                        Textvariante wird hochgestellt vor der sie ersetzenden Schicht
-                        wiedergegeben.</item>
-                    <label>
-                        <hi rend="latintype">Beispiel</hi>
-                    </label>
-                    <item>Schriftwechsel zu Latein- oder Antiquaschrift innerhalb eines Textes in
-                        Fraktur oder Kurrentschrift</item>
-                    <label>
-                        <hi rend="pre-print">Beispiel</hi>
-                    </label>
-                    <item>Vordruck am Papier</item>
-                    <label>
-                        <supplied>Beispiel</supplied>
-                    </label>
-                    <item>Ergänzung des Herausgebers</item>
-                    <label>{[}<c rendition="#dots" n="3"/>{]}</label>
-                    <item>Auslassung eines Textteils</item>
-                </list>
             </div>
         </body>
     </text>
