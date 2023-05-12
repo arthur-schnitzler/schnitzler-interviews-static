@@ -8,155 +8,156 @@
     <xsl:import href="./LOD-idnos.xsl"/>
     <xsl:param name="relevant-uris" select="document('../utils/list-of-relevant-uris.xml')"/>
     <xsl:key match="item" use="abbr" name="relevant-uris-type"/>
-    <xsl:template name="mam:schnitzler-tage">
+    <xsl:template name="mam:schnitzler-chronik">
         <xsl:param name="datum-iso" as="xs:date"/>
         <xsl:param name="teiSource" as="xs:string"/>
         <xsl:variable name="link">
             <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
         </xsl:variable>
+        <!--<xsl:variable name="fetchUrl"
+            select="document(concat('https://schnitzler-chronik.acdh.oeaw.ac.at/', $datum-iso, '.xml'))"
+            as="node()?"/>-->
         <xsl:variable name="fetchUrl"
-            select="document(concat('https://schnitzler-tage.acdh.oeaw.ac.at/', $datum-iso, '.xml'))"
-            as="node()?"/>
-
-        
-        <xsl:variable name="fetchURLohneTeiSource" as="node()?">
-            <xsl:element name="listEvent" namespace="http://www.tei-c.org/ns/1.0">
-                <xsl:copy-of
-                    select="$fetchUrl/descendant::tei:listEvent/tei:event[not(contains(tei:idno[1]/text(), $teiSource))]"
+            select="document(concat('../../chronik-data/', $datum-iso, '.xml'))" as="node()?"/>
+        <xsl:if test="$fetchUrl/*[1]">
+            <xsl:variable name="fetchURLohneTeiSource" as="node()">
+                <xsl:element name="listEvent" namespace="http://www.tei-c.org/ns/1.0">
+                    <xsl:copy-of
+                        select="$fetchUrl/descendant::tei:listEvent/tei:event[not(contains(tei:idno[1]/text(), $teiSource))]"
+                    />
+                </xsl:element>
+            </xsl:variable>
+            <xsl:variable name="doc_title">
+                <xsl:value-of
+                    select="$fetchUrl/descendant::tei:titleStmt[1]/tei:title[@level = 'a'][1]/text()"
                 />
-            </xsl:element>
-        </xsl:variable>
-        <xsl:variable name="doc_title" as="xs:string?">
-            <xsl:value-of
-                select="$fetchUrl/descendant::tei:titleStmt[1]/tei:title[@level = 'a'][1]/text()"/>
-        </xsl:variable>
-        <div id="tag-fuer-tag-modal-body">
-            <xsl:if test="$fetchUrl/descendant::tei:event[1]">
-            <xsl:apply-templates select="$fetchURLohneTeiSource" mode="schnitzler-tage"/>
-            </xsl:if>
-            <div class="weiteres" style="margin-top:2.5em;">
-                <xsl:variable name="datum-written" select="
-                        format-date($datum-iso, '[D1].&#160;[M1].&#160;[Y0001]',
-                        'en',
-                        'AD',
-                        'EN')"/>
-                <xsl:variable name="wochentag">
-                    <xsl:choose>
-                        <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Monday'">
-                            <xsl:text>Montag</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Tuesday'">
-                            <xsl:text>Dienstag</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Wednesday'">
-                            <xsl:text>Mittwoch</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Thursday'">
-                            <xsl:text>Donnerstag</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Friday'">
-                            <xsl:text>Freitag</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Saturday'">
-                            <xsl:text>Samstag</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Sunday'">
-                            <xsl:text>Sonntag</xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>DATUMSFEHLER</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
-                <h3>Weiteres</h3>
-                <ul>
-                    <li>
-                        <xsl:text>Zeitungen vom </xsl:text>
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:value-of
-                                    select="concat('https://anno.onb.ac.at/cgi-content/anno?datum=', replace(string($datum-iso), '-', ''))"
-                                />
-                            </xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:text>_blank</xsl:text>
-                            </xsl:attribute>
-                            <xsl:value-of select="concat($wochentag, ', ', $datum-written)"/>
-                        </xsl:element>
-                        <xsl:text> bei </xsl:text>
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:value-of
-                                    select="concat('https://anno.onb.ac.at/cgi-content/anno?datum=', replace(string($datum-iso), '-', ''))"
-                                />
-                            </xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:text>_blank</xsl:text>
-                            </xsl:attribute>
-                            <xsl:text>ANNO</xsl:text>
-                        </xsl:element>
-                    </li>
-                    <li>
-                        <xsl:text>Briefe vom </xsl:text>
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:value-of
-                                    select="concat('https://correspsearch.net/de/suche.html?d=', $datum-iso, '&amp;x=1&amp;w=0')"
-                                />
-                            </xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:text>_blank</xsl:text>
-                            </xsl:attribute>
-                            <xsl:value-of select="concat($wochentag, ', ', $datum-written)"/>
-                        </xsl:element>
-                        <xsl:text> bei </xsl:text>
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:value-of
-                                    select="concat('https://correspsearch.net/de/suche.html?d=', $datum-iso, '&amp;x=1&amp;w=0')"
-                                />
-                            </xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:text>_blank</xsl:text>
-                            </xsl:attribute>
-                            <xsl:text>correspSearch</xsl:text>
-                        </xsl:element>
-                    </li>
-                </ul>
+            </xsl:variable>
+            <div id="chronik-modal-body">
+                <xsl:apply-templates select="$fetchURLohneTeiSource" mode="schnitzler-chronik"/>
+                <div class="weiteres" style="margin-top:2.5em;">
+                    <xsl:variable name="datum-written" select="
+                            format-date($datum-iso, '[D1].&#160;[M1].&#160;[Y0001]',
+                            'en',
+                            'AD',
+                            'EN')"/>
+                    <xsl:variable name="wochentag">
+                        <xsl:choose>
+                            <xsl:when test="
+                                    format-date($datum-iso, '[F]',
+                                    'en',
+                                    'AD',
+                                    'EN') = 'Monday'">
+                                <xsl:text>Montag</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="
+                                    format-date($datum-iso, '[F]',
+                                    'en',
+                                    'AD',
+                                    'EN') = 'Tuesday'">
+                                <xsl:text>Dienstag</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="
+                                    format-date($datum-iso, '[F]',
+                                    'en',
+                                    'AD',
+                                    'EN') = 'Wednesday'">
+                                <xsl:text>Mittwoch</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="
+                                    format-date($datum-iso, '[F]',
+                                    'en',
+                                    'AD',
+                                    'EN') = 'Thursday'">
+                                <xsl:text>Donnerstag</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="
+                                    format-date($datum-iso, '[F]',
+                                    'en',
+                                    'AD',
+                                    'EN') = 'Friday'">
+                                <xsl:text>Freitag</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="
+                                    format-date($datum-iso, '[F]',
+                                    'en',
+                                    'AD',
+                                    'EN') = 'Saturday'">
+                                <xsl:text>Samstag</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="
+                                    format-date($datum-iso, '[F]',
+                                    'en',
+                                    'AD',
+                                    'EN') = 'Sunday'">
+                                <xsl:text>Sonntag</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>DATUMSFEHLER</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <h3>Weiteres</h3>
+                    <ul>
+                        <li>
+                            <xsl:text>Zeitungen vom </xsl:text>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of
+                                        select="concat('https://anno.onb.ac.at/cgi-content/anno?datum=', replace(string($datum-iso), '-', ''))"
+                                    />
+                                </xsl:attribute>
+                                <xsl:attribute name="target">
+                                    <xsl:text>_blank</xsl:text>
+                                </xsl:attribute>
+                                <xsl:value-of select="concat($wochentag, ', ', $datum-written)"/>
+                            </xsl:element>
+                            <xsl:text> bei </xsl:text>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of
+                                        select="concat('https://anno.onb.ac.at/cgi-content/anno?datum=', replace(string($datum-iso), '-', ''))"
+                                    />
+                                </xsl:attribute>
+                                <xsl:attribute name="target">
+                                    <xsl:text>_blank</xsl:text>
+                                </xsl:attribute>
+                                <xsl:text>ANNO</xsl:text>
+                            </xsl:element>
+                        </li>
+                        <li>
+                            <xsl:text>Briefe vom </xsl:text>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of
+                                        select="concat('https://correspsearch.net/de/suche.html?d=', $datum-iso, '&amp;x=1&amp;w=0')"
+                                    />
+                                </xsl:attribute>
+                                <xsl:attribute name="target">
+                                    <xsl:text>_blank</xsl:text>
+                                </xsl:attribute>
+                                <xsl:value-of select="concat($wochentag, ', ', $datum-written)"/>
+                            </xsl:element>
+                            <xsl:text> bei </xsl:text>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of
+                                        select="concat('https://correspsearch.net/de/suche.html?d=', $datum-iso, '&amp;x=1&amp;w=0')"
+                                    />
+                                </xsl:attribute>
+                                <xsl:attribute name="target">
+                                    <xsl:text>_blank</xsl:text>
+                                </xsl:attribute>
+                                <xsl:text>correspSearch</xsl:text>
+                            </xsl:element>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </xsl:if>
     </xsl:template>
-    <xsl:template match="tei:listEvent" mode="schnitzler-tage">
+    <xsl:template match="tei:listEvent" mode="schnitzler-chronik">
         <xsl:variable name="eventtypes"
-            select="'Arthur-Schnitzler-digital,schnitzler-tagebuch,schnitzler-briefe,pollaczek,schnitzler-bahr,schnitzler-orte,schnitzler-tage-manuell,pmb,schnitzler-cmif,kalliope-verbund'"/>
+            select="'Arthur-Schnitzler-digital,schnitzler-tagebuch,schnitzler-briefe,pollaczek,schnitzler-bahr,schnitzler-orte,schnitzler-chronik-manuell,pmb,schnitzler-cmif,kalliope-verbund'"/>
         <xsl:variable name="current-group" select="." as="node()"/>
         <xsl:for-each select="tokenize($eventtypes, ',')">
             <xsl:variable name="e-type" as="xs:string" select="."/>
@@ -295,7 +296,7 @@
             </xsl:choose>
         </xsl:variable>
         <li>
-            <i class="fa-regular fa-users" title="Erwähnte Personen"/>&#160; <xsl:for-each
+            <i class="fa-solid fa-users" title="Erwähnte Personen"/>&#160; <xsl:for-each
                 select="tei:person/tei:persName">
                 <xsl:choose>
                     <xsl:when
@@ -378,7 +379,7 @@
             </xsl:choose>
         </xsl:variable>
         <li>
-            <i class="fa-regular fa-building-columns" title="Erwähnte Organisationen"/>&#160;
+            <i class="fa-solid fa-building-columns" title="Erwähnte Organisationen"/>&#160;
                 <xsl:for-each select="tei:org/tei:orgName">
                 <xsl:choose>
                     <xsl:when
@@ -461,7 +462,7 @@
             </xsl:choose>
         </xsl:variable>
         <li>
-            <i title="Erwähnte Orte" class="fa-regular fa-map-location-dot"/>&#160; <xsl:for-each
+            <i title="Erwähnte Orte" class="fa-solid fa-map-location-dot"/>&#160; <xsl:for-each
                 select="tei:place/tei:placeName">
                 <xsl:choose>
                     <xsl:when test="starts-with(@ref, 'pmb')">
@@ -515,7 +516,7 @@
             </xsl:choose>
         </xsl:variable>
         <li>
-            <i title="Erwähnte Werke" class="fa-regular fa-image"/>&#160; <xsl:for-each
+            <i title="Erwähnte Werke" class="fa-solid fa-image"/>&#160; <xsl:for-each
                 select="descendant::tei:title">
                 <xsl:choose>
                     <xsl:when test="starts-with(@ref, 'pmb')">
@@ -543,7 +544,8 @@
                                 <xsl:choose><!-- Titel werden nur bis 50 Zeichen wiedergegeben -->
                                     <xsl:when test="string-length(normalize-space(.)) &gt; 50">
                                         <xsl:value-of select="substring(normalize-space(.), 1, 50)"
-                                        /><xsl:text>…</xsl:text>                                    </xsl:when>
+                                        /><xsl:text>…</xsl:text>
+                                    </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:value-of select="."/>
                                     </xsl:otherwise>

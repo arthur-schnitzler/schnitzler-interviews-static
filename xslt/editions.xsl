@@ -14,7 +14,7 @@
     <xsl:import href="./partials/html_title_navigation.xsl"/>
     <xsl:import href="./partials/view-type.xsl"/>
     <xsl:import href="./partials/entities.xsl"/>
-    <xsl:import href="./partials/schnitzler-tage.xsl"/>
+    <xsl:import href="./partials/schnitzler-chronik.xsl"/>
     <xsl:variable name="quotationURL">
         <xsl:value-of
             select="concat('https://schnitzler-interviews.acdh.oeaw.ac.at/', replace(tokenize(base-uri(), '/')[last()], '.xml', '.html'))"
@@ -22,11 +22,6 @@
     </xsl:variable>
     <xsl:variable name="currentDate">
         <xsl:value-of select="format-date(current-date(), '[D1].&#160;[M1].&#160;[Y4]')"/>
-    </xsl:variable>
-    <xsl:variable name="quotationString">
-        <xsl:value-of
-            select="concat(normalize-space(//tei:titleStmt/tei:title[@level = 'a']), '. In: Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren. Digitale Edition. Hg. Martin Anton Müller, Gerd Hermann Susen und Laura Untner, ', $quotationURL, ' (Abfrage ', $currentDate, ')')"
-        />
     </xsl:variable>
     <xsl:variable name="teiSource">
         <xsl:value-of select="data(tei:TEI/@xml:id)"/>
@@ -38,7 +33,7 @@
         <xsl:value-of select="concat(tei:TEI/@xml:id, '.pdf')"/>
     </xsl:variable>
     <xsl:variable name="link">
-        <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
+        <xsl:value-of select="concat(replace($teiSource, '.xml', ''), '.html')"/>
     </xsl:variable>
     <xsl:variable name="doc_title">
         <xsl:value-of select=".//tei:titleSmt/tei:title[@level = 'a'][1]/text()"/>
@@ -308,7 +303,9 @@
                             </div>
                             <div class="card-footer" style="clear: both;">
                                 <nav class="navbar navbar-expand-lg" style="box-shadow: none;">
-                                    <div class="container-fluid">
+                                    <div class="container-fluid" style="display: flex;
+                                        justify-content: center;
+                                        align-items: center;">
                                         <div id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0" id="secondary-menu">
                                                 <li class="nav-item"> &#160;<a href="#"
@@ -320,7 +317,7 @@
                                                   data-bs-target="#tagfuertag" type="button"
                                                   data-bs-toggle="modal">
                                                   <i class="fas fa-calendar-day"/>
-                                                  KALENDERTAG</a>&#160; </li>
+                                                  Chronik</a>&#160; </li>
                                                 <!--<li class="nav-item dropdown">
                                     <span class="nav-link">
                                         <div id="csLink" class="a.grau" data-correspondent-1-name=""
@@ -570,7 +567,7 @@
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLongTitle3">
                                     <a
-                                        href="{concat('https://schnitzler-tage.acdh.oeaw.ac.at/', $datum, '.html')}"
+                                        href="{concat('https://schnitzler-chronik.acdh.oeaw.ac.at/', $datum, '.html')}"
                                         target="_blank" style="color: #C67F53">
                                         <xsl:value-of
                                             select="concat($wochentag, ', ', $datum-written)"/>
@@ -581,7 +578,7 @@
                             </div>
                             <div class="modal-body">
                                 <div id="tag-fuer-tag-modal-body"/>
-                                <xsl:call-template name="mam:schnitzler-tage">
+                                <xsl:call-template name="mam:schnitzler-chronik">
                                     <xsl:with-param name="datum-iso" select="$datum"/>
                                     <xsl:with-param name="teiSource" select="$teiSource"/>
                                 </xsl:call-template>
