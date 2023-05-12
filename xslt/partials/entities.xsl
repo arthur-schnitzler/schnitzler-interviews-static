@@ -279,8 +279,7 @@
             <xsl:if test="descendant::tei:note[@type = 'mentions']">
                 <div id="mentions" class="mt-2">
                     <span class="infodesc mr-2">
-                                                <legend>Erwähnungen</legend>
-
+                        <legend>Erwähnungen</legend>
                         <ul>
                             <xsl:for-each select=".//tei:note[@type = 'mentions']">
                                 <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
@@ -340,8 +339,7 @@
                 <div id="autor_innen">
                     <xsl:choose>
                         <xsl:when test="tei:author[2]">
-                                                        <legend>Geschaffen von</legend>
-
+                            <legend>Geschaffen von</legend>
                             <ul>
                                 <xsl:for-each select="tei:author">
                                     <li>
@@ -525,38 +523,36 @@
                     </xsl:choose>
                 </div>
                 <div id="erscheinungsdatum" class="mt-2">
-                                                    <legend>Erschienen</legend>
-
-                        <xsl:if test="tei:date[1]">
-                            <ul>
-                                <li>
-                                    <xsl:choose>
-                                        <xsl:when test="contains(tei:date[1], '-')">
-                                            <xsl:choose>
-                                                <xsl:when
-                                                  test="normalize-space(tokenize(tei:date[1], '-')[1]) = normalize-space(tokenize(tei:date[1], '-')[2])">
-                                                  <xsl:value-of
+                    <legend>Erschienen</legend>
+                    <xsl:if test="tei:date[1]">
+                        <ul>
+                            <li>
+                                <xsl:choose>
+                                    <xsl:when test="contains(tei:date[1], '-')">
+                                        <xsl:choose>
+                                            <xsl:when
+                                                test="normalize-space(tokenize(tei:date[1], '-')[1]) = normalize-space(tokenize(tei:date[1], '-')[2])">
+                                                <xsl:value-of
                                                   select="mam:normalize-date(normalize-space((tokenize(tei:date[1], '-')[1])))"
-                                                  />
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                  <xsl:value-of
+                                                />
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of
                                                   select="mam:normalize-date(normalize-space(tei:date[1]))"
-                                                  />
-                                                </xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:value-of select="mam:normalize-date(tei:date[1])"/>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                    <xsl:if test="not(ends-with(tei:date[1], '.'))">
-                                        <xsl:text>.</xsl:text>
-                                    </xsl:if>
-                                </li>
-                            </ul>
-                        </xsl:if>
-                    </p>
+                                                />
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="mam:normalize-date(tei:date[1])"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                                <xsl:if test="not(ends-with(tei:date[1], '.'))">
+                                    <xsl:text>.</xsl:text>
+                                </xsl:if>
+                            </li>
+                        </ul>
+                    </xsl:if>
                 </div>
                 <p/>
             </xsl:if>
@@ -589,8 +585,7 @@
                 </div>
             </xsl:if>
             <div id="mentions" class="mt-2">
-                                    <legend>Erwähnungen</legend>
-
+                <legend>Erwähnungen</legend>
                 <span class="infodesc mr-2">
                     <ul>
                         <xsl:for-each select=".//tei:note[@type = 'mentions']">
@@ -674,8 +669,7 @@
                     <div class="card"> </div>
                 </xsl:if>
                 <xsl:if test="count(.//tei:placeName[contains(@type, 'namensvariante')]) gt 1">
-                                        <legend>Namensvarianten</legend>
-
+                    <legend>Namensvarianten</legend>
                     <ul>
                         <xsl:for-each select=".//tei:placeName[contains(@type, 'namensvariante')]">
                             <li>
@@ -686,8 +680,7 @@
                 </xsl:if>
                 <div id="mentions" class="mt-2">
                     <span class="infodesc mr-2">
-                                                <legend>Erwähnungen</legend>
-
+                        <legend>Erwähnungen</legend>
                         <ul>
                             <xsl:for-each select=".//tei:note[@type = 'mentions']">
                                 <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
@@ -767,8 +760,7 @@
             </xsl:if>
             <xsl:if test="tei:location">
                 <div>
-                                        <legend>Orte</legend>
-
+                    <legend>Orte</legend>
                     <ul>
                         <li>
                             <xsl:for-each
@@ -802,8 +794,7 @@
             </xsl:if>
             <div id="mentions" class="mt-2">
                 <span class="infodesc mr-2">
-                                        <legend>Erwähnungen</legend>
-
+                    <legend>Erwähnungen</legend>
                     <ul>
                         <xsl:for-each select=".//tei:note[@type = 'mentions']">
                             <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
