@@ -263,13 +263,83 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:bibl" mode="footnote">
-        <xsl:value-of select="."/>
+    <xsl:template match="tei:rs[(@ref or @key) and (ancestor::tei:rs)]">
+        <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="tei:rs[@type = 'work']/text()">
-        <i>
+    <xsl:template
+        match="tei:rs[not(ancestor::tei:rs) and not(descendant::tei:rs) and not(contains(@ref, ' '))] | tei:persName | tei:author | tei:placeName | tei:orgName">
+        <xsl:variable name="entity-typ" as="xs:string">
+            <xsl:choose>
+                <xsl:when test="@type = 'person'">
+                    <xsl:text>persons</xsl:text>
+                </xsl:when>
+                <xsl:when test="@type = 'work'">
+                    <xsl:text>works</xsl:text>
+                </xsl:when>
+                <xsl:when test="@type = 'place'">
+                    <xsl:text>places</xsl:text>
+                </xsl:when>
+                <xsl:when test="@type = 'org'">
+                    <xsl:text>orgs</xsl:text>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="$entity-typ"/>
+            </xsl:attribute>
+            <xsl:element name="a">
+                <xsl:attribute name="href">
+                    <xsl:value-of select="concat(replace(@ref, '#', ''), '.html')"/>
+                </xsl:attribute>
+                <xsl:choose>
+                    <xsl:when test="ancestor::tei:hi[@rend = 'pre-print']">
+                        <xsl:attribute name="class">
+                            <xsl:text>pre-print</xsl:text>
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test="ancestor::tei:hi[@rend = 'stamp']">
+                        <xsl:attribute name="class">
+                            <xsl:text>stamp</xsl:text>
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:when test="ancestor::tei:damage">
+                        <xsl:attribute name="class">
+                            <xsl:text>damage-critical</xsl:text>
+                        </xsl:attribute>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:apply-templates/>
+            </xsl:element>
+        </span>
+    </xsl:template>
+    <xsl:template match="tei:rs[.//tei:rs or contains(@ref, ' ')]">
+        <xsl:variable name="modalId">
+            <xsl:value-of
+                select="replace(normalize-space(string-join(.//@ref[starts-with(., '#')], '___')), '#', '')"
+            />
+        </xsl:variable>
+        <xsl:element name="a">
+            <xsl:attribute name="class">
+                <xsl:text>reference-black</xsl:text>
+            </xsl:attribute>
+            <xsl:attribute name="data-toggle">modal</xsl:attribute>
+            <xsl:attribute name="data-target">
+                <xsl:value-of select="concat('#', $modalId)"/>
+            </xsl:attribute>
             <xsl:value-of select="."/>
-        </i>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template
+        match="tei:rs[@type = 'work' and not(ancestor::tei:quote) and ancestor::tei:note and not(@subtype = 'implied')]/text()">
+        <span class="works {substring-after(@rendition, '#')}" id="{@xml:id}">
+            <span class="italics">
+                <xsl:value-of select="."/>
+            </span>
+        </span>
+    </xsl:template>
+    <xsl:template match="tei:bibl" mode="footnote">
+        <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="tei:supplied">
         <xsl:text>[</xsl:text>
