@@ -317,7 +317,7 @@
                                                   data-bs-target="#tagfuertag" type="button"
                                                   data-bs-toggle="modal">
                                                   <i class="fas fa-calendar-day"/>
-                                                  Chronik</a>&#160; </li>
+                                                  CHRONIK</a>&#160; </li>
                                                 <!--<li class="nav-item dropdown">
                                     <span class="nav-link">
                                         <div id="csLink" class="a.grau" data-correspondent-1-name=""
