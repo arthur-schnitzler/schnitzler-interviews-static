@@ -52,7 +52,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
         <link rel="stylesheet" href="css/micro-editor.css" type="text/css"/>
         <!-- Matomo -->
-        <!--<script type="text/javascript">
+        <script type="text/javascript">
             var _paq = _paq ||[];
             /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
             _paq.push([ 'trackPageView']);
@@ -60,15 +60,15 @@
             (function () {
                 var u = "https://matomo.acdh.oeaw.ac.at/";
                 _paq.push([ 'setTrackerUrl', u + 'piwik.php']);
-                _paq.push([ 'setSiteId', '171']);<!-\-
-                171 is Matomo Code schnitzler - briefe//-\->
+                _paq.push([ 'setSiteId', '236']);<!--
+                236 is Matomo Code schnitzler - interviews//-->
             var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
             g.type = 'text/javascript';
             g. async = true;
             g.defer = true;
             g.src = u + 'piwik.js';
             s.parentNode.insertBefore(g, s);
-        })();</script>-->
+        })();</script>
         <!-- End Matomo Code -->
     </xsl:template>
 </xsl:stylesheet>
