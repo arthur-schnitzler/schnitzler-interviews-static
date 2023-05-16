@@ -7,6 +7,6 @@
     <xsl:param name="project_short_title">schnitzler-interviews</xsl:param>
     <xsl:param name="github_url">https://github.com/arthur-schnitzler/schnitzler-interviews-static</xsl:param>
     <xsl:param name="html_title">schnitzler-interviews</xsl:param>
-    <xsl:param name="project_logo">images/schnitzler-interviews.svg</xsl:param>
+    <xsl:param name="project_logo">../../html/img/schnitzler-interviews.svg</xsl:param>
     <xsl:param name="base_url">https://schnitzler-interviews.acdh.oeaw.ac.at</xsl:param>
 </xsl:stylesheet>
