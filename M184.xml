@@ -1,12 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd"
-   xml:base="schnitzler-interviews"
-   xml:id="M184"
-   next="M139"
-   prev="M161">
-   <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asischema.xsd" xml:base="schnitzler-interviews" xml:id="M184" next="M139" prev="M161"> <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews,
@@ -57,8 +49,7 @@
          <change who="MAM" when="2023-05-15">angelegt</change>
          <change who="MAM" when="2023-05-15">Index check</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
          <div type="edierter-text">
             <listPerson>
@@ -259,5 +250,4 @@
             </place>
          </listPlace>
       </back>
-   </text>
-</TEI>
+   </text></TEI>
