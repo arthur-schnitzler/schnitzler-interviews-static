@@ -114,16 +114,15 @@
                                                   >Arthur Schnitzler: »Das Zeitlose ist von
                                                   kürzester Dauer«. Interviews, Meinungen, Proteste
                                                   (1891–1931). Hg. Martin Anton Müller. Göttingen:
-                                                  Wallstein 2023.</a></b>
-                                            <br/> ISBN (Print) <a
+                                                  Wallstein 2023.</a></b></li>
+                                        <li>ISBN (Print) <a
                                                 href="https://de.wikipedia.org/wiki/Spezial:ISBN-Suche/9783835354715"
                                                 >978-3-8353-5471-5</a><br/> ISBN (Open Access) <a
                                                 href="https://www.wallstein-verlag.de/9783835354715-das-zeitlose-ist-von-kuerzester-dauer.html"
                                                 >978-3-8353-8033-2</a><br/> DOI <a
                                                 href="https://doi.org/10.46500/83535471"
-                                                >https://doi.org/10.46500/83535471</a><br/><br/>753
-                                            S., 2 Bände, geb., Leinen mit Schutzumschlag im Schuber,
-                                            13,8 x 23 cm, € 48,00 (D) / € 49,40 (A) </li>
+                                                >https://doi.org/10.46500/83535471</a><br/><br/>753&#160;S., 2&#160;Bände, geb., Leinen mit Schutzumschlag im Schuber,
+                                            13,8&#160;x 23 cm, €&#160;48,00 (D) / €&#160;49,40 (A) </li>
                                         <li>Das Open-Accesss PDF kann kostenfrei <a
                                                 href="https://www.wallstein-verlag.de/9783835354715-das-zeitlose-ist-von-kuerzester-dauer.html"
                                                 >hier</a> in einem Band, <a
