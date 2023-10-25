@@ -35,9 +35,9 @@
                                         Oktober 2023</a></h4>
                                     <p>ISBN (Print) <a
                                         href="https://de.wikipedia.org/wiki/Spezial:ISBN-Suche/9783835354715"
-                                        >978-3-8353-5471-5</a><br/> ISBN (Open Access) <a
+                                        >978-3-8353-5471-5</a>, ISBN (Open Access) <a
                                             href="https://www.wallstein-verlag.de/9783835354715-das-zeitlose-ist-von-kuerzester-dauer.html"
-                                            >978-3-8353-8033-2</a><br/> DOI <a
+                                            >978-3-8353-8033-2</a>, DOI <a
                                                 href="https://doi.org/10.46500/83535471"
                                                 >https://doi.org/10.46500/83535471</a><br/><br/>753&#160;S., 2&#160;Bände, geb., Leinen mit Schutzumschlag im Schuber,
                                         13,8&#160;x 23 cm, €&#160;48,00 (D) / €&#160;49,40 (A) </p>
@@ -47,6 +47,7 @@
                                             href="https://e-book.fwf.ac.at/o:1882">hier</a> und
                                         <a href="https://e-book.fwf.ac.at/o:1881">hier</a>
                                         in zwei Bänden geladen werden.</p>
+                                    <p/>
                                     <div style="text-align: right">
                                         <a href="#body">
                                             <button class="btn btn-round"
