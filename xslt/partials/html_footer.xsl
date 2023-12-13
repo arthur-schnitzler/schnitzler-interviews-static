@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="footer-widget col-lg-1 col-md-2 col-sm-2 col-xs-6  ml-auto  text-center ">
                         <div class="textwidget custom-html-widget">
-                            <a href="https://www.oeaw.ac.at/acdh/"><img src="https://fundament.acdh.oeaw.ac.at/common-assets/images/acdh_logo.svg" class="image" alt="ACDH Logo" style="max-width: 90%; height: auto;" title="ACDH Logo"/></a>
+                            <a href="https://www.oeaw.ac.at/acdh/"><img src="images/acdh_logo.svg" class="image" alt="ACDH Logo" style="max-width: 90%; height: auto;" title="ACDH Logo"/></a>
                         </div>
                     </div>
                     <!-- .footer-widget -->
@@ -46,7 +46,7 @@
                         <div class="row">
                             <div class="textwidget custom-html-widget">
                                 <h6 class="font-weight-bold">FÖRDERINSTITUTION</h6>
-                                <a href="https://www.fwf.ac.at/"><img class="card-img-right flex-auto d-md-block" src="https://www.fwf.ac.at/fileadmin/files/Images/News_Presse/Presse/Logo/Logo-D/FWF_Logo_Zusatz_Dunkelblau_RGB_DE.svg" alt="FWF Österreichischer Wissenschaftsfond Logo" style="max-width: 140px; height: auto; margin-top:1em;" title="FWF Der Wissenschaftsfond" /></a>
+                                <a href="https://www.fwf.ac.at/"><img class="card-img-right flex-auto d-md-block" src="images/FWF_Logo.svg" alt="FWF Österreichischer Wissenschaftsfond Logo" style="max-width: 140px; height: auto; margin-top:1em;" title="FWF Der Wissenschaftsfond" /></a>
                                         <p/>
                                 <p>Gefördert aus Mitteln des<br/> Wissenschaftsfonds FWF,<br/> P31277 (2018–2021) und
                                     <br/>P34792 (2021–[2024])</p>
