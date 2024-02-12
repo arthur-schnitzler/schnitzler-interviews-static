@@ -61,7 +61,7 @@ Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen.
 direkt oder indirekt mitverantwortlich ist, übernimmt die ÖAW keine Haftung für deren Inhalte und
 schließt jegliche Haftung hierfür aus.</p>
 <h3>Urheberrechtlicher Hinweis:</h3>
-<p>Die Inhalte sind, soweit verfügbar, unter der Lizenz CC 4.0 BY bereitgestellt.</p>
+<p>Die Inhalte sind unter der Lizenz CC 4.0 BY bereitgestellt.</p>
 <h3>Datenschutzrechtlicher Hinweis:</h3>
 <p>Wir weisen darauf hin, dass zum Zwecke der Systemsicherheit und der Übersicht über das
 Nutzungsverhalten der Besuchenden im Rahmen von Cookies diverse personenbezogene Daten
