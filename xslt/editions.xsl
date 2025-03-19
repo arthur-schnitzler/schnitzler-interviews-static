@@ -13,10 +13,14 @@
     <xsl:import href="./partials/aot-options.xsl"/>
     <xsl:import href="./partials/html_title_navigation.xsl"/>
     <xsl:import href="./partials/entities.xsl"/>
-    <xsl:import href="./partials/schnitzler-chronik.xsl"/>
+    <!-- Einstellungen für die Schnitzler-Chronik. Das entfernte XSL wird nur benützt, wenn fetch-locally auf  -->
+    <xsl:import href="https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-chronik-static/refs/heads/main/xslt/export/schnitzler-chronik.xsl"/>
+    <xsl:param name="schnitzler-chronik_fetch-locally" as="xs:boolean" select="false()"/>
+    <xsl:param name="schnitzler-chronik_current-type" as="xs:string" select="'schnitzler-interviews'"/>
+    
     <xsl:variable name="quotationURL">
         <xsl:value-of
-            select="concat('https://schnitzler-briefe.acdh.oeaw.ac.at/', replace(tokenize(base-uri(), '/')[last()], '.xml', '.html'))"
+            select="concat('https://schnitzler-interviews.acdh.oeaw.ac.at/', replace(tokenize(base-uri(), '/')[last()], '.xml', '.html'))"
         />
     </xsl:variable>
     <xsl:variable name="currentDate">
@@ -42,9 +46,8 @@
     <xsl:variable name="doc_title">
         <xsl:value-of select="descendant::tei:titleStmt/tei:title[@level = 'a'][1]/text()"/>
     </xsl:variable>
-    <xsl:param name="chronik-dir">../chronik-data</xsl:param>
-    <xsl:variable name="chronik-data"
-        select="collection(concat($chronik-dir, '/?select=L0*.xml;recurse=yes'))"/>
+    
+    
     <xsl:param name="back" select="tei:TEI/tei:text/tei:back" as="node()?"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -774,42 +777,29 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:variable>
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle3">
-                                    <a
-                                        href="{concat('https://schnitzler-chronik.acdh.oeaw.ac.at/', $datum, '.html')}"
-                                        target="_blank" style="color: #C67F53">
-                                        <xsl:value-of
-                                            select="concat($wochentag, ', ', $datum-written)"/>
-                                    </a>
-                                </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-                                
-                            </div>
-                            <div class="modal-body">
-                                <div id="chronik-modal-body"/>
-                                <xsl:call-template name="mam:schnitzler-chronik">
-                                    <xsl:with-param name="datum-iso" select="$datum"/>
-                                    <xsl:with-param name="teiSource" select="$teiSource"/>
-                                </xsl:call-template>
-                                <!--
-                                    <xsl:variable name="fetchUrl"
-                                    select="concat('https://schnitzler-chronik.acdh.oeaw.ac.at/', $datum, '.json')"/>
-                                    <script type="text/javascript" src="js/schnitzler-chronik.js" charset="UTF-8"/>
-                                <script type="text/javascript">
-                                    fetch('<xsl:value-of select="$fetchUrl"/>').then(function (response) {return response.json();
-                                    }).then(function (data) {
-                                    appendData(data, '<xsl:value-of select="$teiSource"/>');
-                                }). catch (function (err) {
-                                    console.log('error: ' + err);
-                                });</script>-->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Schließen</button>
-                            </div>
+                    <div class="modal-body">
+                        <div id="chronik-modal-body">
+                            <!-- SCHNITZLER-CHRONIK. Zuerst wird der Eintrag geladen, weil das schneller ist, wenn er lokal vorliegt -->
+                            <xsl:variable name="fetchContentsFromURL" as="node()?">
+                                <xsl:choose>
+                                    <xsl:when test="$schnitzler-chronik_fetch-locally">
+                                        <xsl:copy-of
+                                            select="document(concat('../chronik-data/', $datum, '.xml'))"/>
+                                        <!-- das geht davon aus, dass das schnitzler-chronik-repo lokal vorliegt -->
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:copy-of
+                                            select="document(concat('https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-chronik-data/refs/heads/main/editions/data/', $datum, '.xml'))"
+                                        />
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:variable>
+                            <xsl:call-template name="mam:schnitzler-chronik">
+                                <xsl:with-param name="datum-iso" select="$datum"/>
+                                <xsl:with-param name="current-type" select="$schnitzler-chronik_current-type"/>
+                                <xsl:with-param name="teiSource" select="$teiSource"/>
+                                <xsl:with-param name="fetchContentsFromURL" select="$fetchContentsFromURL" as="node()?"/>
+                            </xsl:call-template>
                         </div>
                     </div>
                 </div>
