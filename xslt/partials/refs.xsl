@@ -188,24 +188,32 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template match="tei:ref[@type='pointer']">
-        <xsl:variable name="target-datei" >
-            <xsl:choose>
-                <xsl:when test="contains(@target, '_')">
-                    <xsl:value-of select="replace(substring-before(@target, '_')[1], '#', '')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="replace(@target, '#', '')"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        <xsl:variable name="target-datei-url" select="concat('https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-interviews-data/refs/heads/main/data/editions/', $target-datei, '.xml')"/>
-        <xsl:variable name="target-anchor"/>
-        <xsl:element name="a">
-            <xsl:attribute name="href">
-                <xsl:value-of select="concat($target-datei, '.html')"/>
-            </xsl:attribute>
-            <xsl:value-of select="document($target-datei-url)/descendant::*:TEI[1]/*:teiHeader[1]/*:fileDesc[1]/*:titleStmt[1]/*:title[@level='a'][1]"/>
-        </xsl:element>
+        <xsl:choose>
+            <xsl:when test="starts-with(@target, 'K')">
+                <xsl:text>-> Pointer</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="target-datei" >
+                    <xsl:choose>
+                        <xsl:when test="contains(@target, '_')">
+                            <xsl:value-of select="replace(substring-before(@target, '_')[1], '#', '')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="replace(@target, '#', '')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:variable name="target-datei-url" select="concat('https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-interviews-data/refs/heads/main/data/editions/', $target-datei, '.xml')"/>
+                <xsl:variable name="target-anchor"/>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="concat($target-datei, '.html')"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="document($target-datei-url)/descendant::*:TEI[1]/*:teiHeader[1]/*:fileDesc[1]/*:titleStmt[1]/*:title[@level='a'][1]"/>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:template>
     <xsl:template match="tei:anchor[@type='label']">
         <span><xsl:attribute name="id">
