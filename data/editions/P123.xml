@@ -24,7 +24,6 @@
             <listBibl>
                <biblStruct>
                   <analytic>
-                     <author ref="#pmb2121">Schnitzler, Arthur</author>
                      <title level="a" ref="#pmb59209">Berichtigung</title>
                   </analytic>
                   <monogr>
@@ -57,7 +56,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -67,20 +66,22 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson/>
-            <listBibl/>
-            
-            <listPlace/>
-         </div>
-         <div type="kommentar-text">
-            <listPerson/>
-            <listBibl>
-               <bibl ref="#pmb35935"/>
-               <bibl ref="#pmb58341"/>
-            </listBibl>
-            
-            <listPlace/>
+         <div type="original">
+            <head>Berichtigung</head>
+            <p>In Arthur Schnitzlers Antwort auf unsere Rundfrage (<anchor type="commentary" xml:id="K_P123-1"/>Dichtung und Alkohol<note type="commentary" xml:id="K_P123-1h">
+                  <ref type="pointer" target="#M122"/>
+               </note>) haben sich im dritten Absatz
+               sinnstörende Druckfehler eingeschlichen. Wir geben deshalb den richtigen Wortlaut des
+                  <anchor type="commentary" xml:id="K_I123-1"/>ganzen Absatzes<note type="commentary" xml:id="K_I123-1h">Die Richtigstellung erschien zuerst zum
+                  Nachdruck in der <rs type="work" ref="#pmb35935">Zeit</rs>, dann etwas ausführlicher
+                  im <rs type="work" ref="#pmb58341">Litterarischen Echo</rs>. Der Ausführlichkeit
+                  wegen wird hier vom Prinzip des Erstdrucks abgewichen und die längere Fassung
+                  wiedergegeben.</note> wieder: »Zweifellos verdanken manche künstlerische Produkte
+               dem Alkoholismus ihrer Schöpfer die besondere Eigenart, und man möchte sich, wie die
+               Dinge nun einmal stehen, gewisse dieser Werke nicht aus der Literatur wegdenken;
+               ebenso zweifellos aber ist, daß jeder der hier in Betracht kommenden Künstler ohne
+               Alkohol seine Gaben höher entwickelt hätte, da der Alkohol ein Talent wohl zu
+               verändern, aber nie zu steigern vermag.«</p>
          </div>
       </body>
       <back>

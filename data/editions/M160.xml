@@ -2,7 +2,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
-            <title level="a" ref="#pmb62475">[Käm’ ein Großer uns wieder],
+            <title level="a" ref="#pmb62475">Resurrecturi! [Käm’ ein Großer uns wieder],
                14. 4. 1895</title>
             <title type="iso-date" when-iso="1895-04-14" n="1">14. 4. 1895</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
@@ -26,7 +26,7 @@
                <biblStruct>
                   <analytic>
                      <author ref="#pmb2121">Schnitzler, Arthur</author>
-                     <title level="a" ref="#pmb62475">[Käm’ ein Großer uns wieder]</title>
+                     <title level="a" ref="#pmb62475">Resurrecturi! [Käm’ ein Großer uns wieder]</title>
                   </analytic>
                   <monogr>
                      <title level="j" ref="#pmb39950">Wiener Allgemeine Zeitung</title>
@@ -69,7 +69,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -78,73 +78,66 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson/>
-            <listBibl>
-               <bibl ref="#pmb62396"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb29670"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb50"/>
-               <place ref="#pmb151"/>
-               <place ref="#pmb166"/>
-               <place ref="#pmb41240"/>
-            </listPlace>
-         </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb2150"/>
-               <person ref="#pmb2154"/>
-               <person ref="#pmb2362"/>
-               <person ref="#pmb2416"/>
-               <person ref="#pmb2467"/>
-               <person ref="#pmb2823"/>
-               <person ref="#pmb3442"/>
-               <person ref="#pmb4064"/>
-               <person ref="#pmb4149"/>
-               <person ref="#pmb4460"/>
-               <person ref="#pmb4569"/>
-               <person ref="#pmb7218"/>
-               <person ref="#pmb7548"/>
-               <person ref="#pmb7908"/>
-               <person ref="#pmb9146"/>
-               <person ref="#pmb9550"/>
-               <person ref="#pmb11201"/>
-               <person ref="#pmb11243"/>
-               <person ref="#pmb11342"/>
-               <person ref="#pmb11363"/>
-               <person ref="#pmb11441"/>
-               <person ref="#pmb11524"/>
-               <person ref="#pmb11687"/>
-               <person ref="#pmb11851"/>
-               <person ref="#pmb12040"/>
-               <person ref="#pmb12331"/>
-               <person ref="#pmb12365"/>
-               <person ref="#pmb12867"/>
-               <person ref="#pmb12980"/>
-               <person ref="#pmb13082"/>
-               <person ref="#pmb13118"/>
-               <person ref="#pmb13769"/>
-               <person ref="#pmb22098"/>
-               <person ref="#pmb25512"/>
-               <person ref="#pmb26880"/>
-               <person ref="#pmb42298"/>
-               <person ref="#pmb42972"/>
-               <person ref="#pmb43829"/>
-               <person ref="#pmb62405"/>
-               <person ref="#pmb62418"/>
-               <person ref="#pmb62426"/>
-               <person ref="#pmb62444"/>
-               <person ref="#pmb62455"/>
-               <person ref="#pmb62462"/>
-               <person ref="#pmb62467"/>
-               <person ref="#pmb62471"/>
-            </listPerson>
-            <listBibl/>
+         <div type="original">
+            <head>
+               <rs type="work" ref="#pmb62396">Resurrecturi!</rs>
+            </head>
+            <head type="sub">(Rundfrage der »<rs type="org" ref="#pmb29670">Wiener Allgemeinen
+                  Zeitung</rs>«.)</head>
+            <p>Unsere Zeit erweckt mit der Verworrenheit ihrer socialen Verhältnisse, der
+               Unbestimmtheit ihres politischen Gefühles und der Trostlosigkeit einiger ihrer
+               charakteristischen Erscheinungen die Sehnsucht nach manchem Verlorenen, das in der
+               Vergangenheit nicht auf seinen vollen Werth erkannt wurde.</p>
+            <p>Aber, man verstehe uns recht. Weder entspringt diese Betrachtung der Sehnsucht nach
+               der »guten alten Zeit«, noch dem ernstlichen Glauben, es könne irgend etwas, das
+               einmal gewesen, wiederkehren. Aber daß uns Manches von den gewesenen Dingen und
+               Menschen heute wieder sehr zugute käme, ist klar, und da ist es denn interessant zu
+               erfahren, <hi rend="spaced_out">was</hi> die Einzelnen der hervorragenden
+               Persönlichkeiten unserer Zeit wieder auferstanden sehen möchten.</p>
+            <p>Auf unsere Frage:<lb/>
+               <hi rend="bold">»Für welches Gewesene (Mensch, Institution, Kunstform, Idee,
+                  Ereigniß) würden Sie Auferstehung wünschen?«</hi>
+               <lb/> haben uns <anchor type="commentary" xml:id="K_M160-1"/>bedeutende Geister<note type="commentary" xml:id="K_M160-1h">Die anderen 47 Antworten stammen von <rs type="person" ref="#pmb62467">Ludwig Bamberger</rs>, <rs type="person" ref="#pmb13769">Agathe
+                     Barsescu</rs>, <rs type="person" ref="#pmb2150">Julius Bauer</rs>, <rs type="person" ref="#pmb62471">Johannes Benk</rs>, <rs type="person" ref="#pmb3442">Marco Brociner</rs>, <rs type="person" ref="#pmb2154">Vincenz Chiavacci</rs>, <rs type="person" ref="#pmb2416">Jakob Julius David</rs>, <rs type="person" ref="#pmb11201">Eleonora Duse</rs>, <rs type="person" ref="#pmb62405">Moritz
+                     Egidy</rs>, <rs type="person" ref="#pmb11243">Friedrich Elbogen</rs>, <rs type="person" ref="#pmb11342">Theodor Fontane</rs>, <rs type="person" ref="#pmb7218">Karl Emil Franzos</rs>, <rs type="person" ref="#pmb11363">Louis Frappart</rs>,
+                     <rs type="person" ref="#pmb11441">Alexander Girardi</rs>, <rs type="person" ref="#pmb22098">Helene Girardi-Odilon</rs>, <rs type="person" ref="#pmb4064">Marie
+                     Eugenie Delle Grazie</rs>, <rs type="person" ref="#pmb7548">Balduin Groller</rs>,
+                     <rs type="person" ref="#pmb11524">Ferdinand Gross</rs>, <rs type="person" ref="#pmb11687">Ludwig Hevesi</rs>, <rs type="person" ref="#pmb62418">Augusta
+                     Holmes</rs>, <rs type="person" ref="#pmb7908">Hans Hopfen</rs>, <rs type="person" ref="#pmb11851">Joseph Kainz</rs>, <rs type="person" ref="#pmb13082">C.
+                  Karlweis</rs>, <rs type="person" ref="#pmb42298">Julie Kopacsy-Karczag</rs>, <rs type="person" ref="#pmb62426">Felix Lacaze</rs>, <rs type="person" ref="#pmb2823">Adolf L’Arronge</rs>, <rs type="person" ref="#pmb62455">Paula Mark</rs>, <rs type="person" ref="#pmb2467">Jules Massenet</rs>, <rs type="person" ref="#pmb12331">Adam Müller-Guttenbrunn</rs>, <rs type="person" ref="#pmb12365">Max Nordau</rs>,
+                     <rs type="person" ref="#pmb12040">Richard Nordmann [=&#160;Margarethe Langkammer]</rs>,
+                     <rs type="person" ref="#pmb9146">Georg von Ompteda</rs>, <rs type="person" ref="#pmb2362">Ilka Palmay</rs>, <rs type="person" ref="#pmb4460">Jules Renard</rs>,
+                     <rs type="person" ref="#pmb9550">Julius Rodenberg</rs>, <rs type="person" ref="#pmb62462">August Silberstein</rs>, <rs type="person" ref="#pmb25512">Julius
+                     Stettenheim</rs>, <rs type="person" ref="#pmb62444">Julius Stinde</rs>, <rs type="person" ref="#pmb12867">Johann Strauss</rs>, <rs type="person" ref="#pmb4149">A. G. von Suttner</rs>, <rs type="person" ref="#pmb42972">Albert Traeger</rs>,
+                     <rs type="person" ref="#pmb43829">Johannes Trojan</rs>, <rs type="person" ref="#pmb12980">Rudolf Tyrolt</rs>, <rs type="person" ref="#pmb26880">Adolf
+                     Weisse</rs>, <rs type="person" ref="#pmb13118">Ernst von Wildenbruch</rs> und <rs type="person" ref="#pmb4569">Olga Wisinger-Florian</rs>.</note> aus <rs type="place" ref="#pmb41240">Oesterreich</rs>, <rs type="place" ref="#pmb151">Deutschland</rs> und <rs type="place" ref="#pmb166">Frankreich</rs> bereitwillig
+               ihre Ansicht mitgetheilt, wofür wir Allen unseren besten Dank aussprechen.</p>
+            <p>Die Mehrzahl dieser Antworten spricht für unsere Anschauung, daß</p>
+            <lg type="poem" latex="Werth war, daß es ein Ende fand.«">
+               <l>»<hi rend="spaced_out">Nicht</hi> Alles, was bestand,</l>
+               <l>Werth war, daß es ein Ende fand.«</l>
+            </lg>
+            <p>Wir lassen im Nachfolgenden die einzelnen Antworten folgen:</p>
+            <p>
+               <gap reason="outOfScope" quantity="20" unit="paragraphs"/>
+            </p>
+            <latex alt="\small"/>
+            <lg type="poem">
+               <l>Käm’ ein Großer uns wieder, und wär’ er erst gestern geschieden,</l>
+               <l>Wandelt’ er einsam und fremd in der lebendigen Welt.</l>
+               <l>Wächse Vergang’nes um uns mit blühendem Scheine des Lebens,</l>
+               <l>Staunten und schauerten wir, fremd und einsam gleich Dem.</l>
+               <l>Denn es heißt ja leben: vielfältig verstrickt in ein Netz sein,</l>
+               <l>D’ran ein jeder Moment neue Fäden uns spinnt;</l>
+               <l>Und nicht nur, daß wir sind, gibt uns des Daseins Empfindung,</l>
+               <l>Auch, daß and’res vorbei, ist uns’res Daseins ein Theil.</l>
+               <l>Todt ist ein Wiedererstandenes; lebendig oft das Gewesene,</l>
+               <l>Da sein Sinn es im All nur als Gewes’nes erfüllt.</l>
+            </lg>
+            <latex alt="\normalsize"/>
             
-            <listPlace/>
+            <p rend="right">
+               <hi rend="bold">Arthur Schnitzler</hi> (<rs type="place" ref="#pmb50">Wien</rs>)</p>
          </div>
       </body>
       <back>

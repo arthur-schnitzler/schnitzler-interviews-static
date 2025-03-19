@@ -43,7 +43,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -52,27 +52,19 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb2570"/>
-            </listPerson>
-            <listBibl/>
-            
-            <listPlace/>
-         </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb2570"/>
-            </listPerson>
-            <listBibl/>
-            <listOrg>
-               <org ref="#pmb61746"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb168"/>
-               <place ref="#pmb182"/>
-               <place ref="#pmb61755"/>
-            </listPlace>
+         <div type="original">
+            <head>Wunschbüchlein zur Eröffnung des Komödienhauses</head>
+            <p>
+               <gap reason="outOfScope" unit="lines" quantity="30"/>
+            </p>
+            <p>Lieber <rs type="person" ref="#pmb2570">Lothar</rs>, ich wünsche Dir, daß Du vor dem
+               Publikum der <anchor type="commentary" xml:id="K_M155-1"/>37. Vorstellung<note type="commentary" xml:id="K_M155-1h">Der Wunsch blieb ein solcher, <rs type="person" ref="#pmb2570">Rudolf Lothar</rs> ging mit dem neu übernommenen <rs type="org" ref="#pmb61746">Komödienhaus</rs> in <rs type="place" ref="#pmb168">Berlin</rs> innerhalb weniger Wochen bankrott. <ref target="1912-12-09" type="schnitzler-tagebuch" subtype="Cf"/>: »<quote>
+                     <rs type="person" ref="#pmb2570">Rudolf Lothar</rs>, in <rs type="place" ref="#pmb168">Berlin</rs>
+                           abgekracht, halbe Million Schulden, jetzt <rs type="place" ref="#pmb61755">Cottage Sanatorium</rs>, geht nach <rs type="place" ref="#pmb182">Paris</rs>,
+                     dann Weltreisen, ist ganz guten Muts verhältnismäßig.</quote>«</note> den
+               gleichen Respekt haben mögest, wie vor der Premiere, und daß Du bei Anlaß jeden
+               Stückes Gelegenheit fändest, diesen Respekt zu beweisen.</p>
+            <p rend="right">Arthur Schnitzler.</p>
          </div>
       </body>
       <back>

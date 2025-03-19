@@ -2,9 +2,9 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
-            <title level="a" ref="#pmb63589">[Brief an Auguste Hauschner zum Weg ins Freie],
+            <title level="a" ref="#pmb63589">[Brief an Auguste Hauschner zum »Weg ins Freie«],
                1929</title>
-            <title type="iso-date" when-iso="1928-10-29" n="1">[Ende Oktober 1928, vordatiert auf:]
+            <title type="iso-date" when-iso="1928-10-29" n="1">[Ende Oktober 1928, vordatiert auf]
                            1929</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
@@ -27,8 +27,8 @@
                <biblStruct>
                   <analytic>
                      <author ref="#pmb2121">Schnitzler, Arthur</author>
-                     <title level="a" ref="#pmb63589">[Brief an Auguste Hauschner zum Weg ins
-                        Freie]</title>
+                     <title level="a" ref="#pmb63589">[Brief an Auguste Hauschner zum »Weg ins
+                        Freie«]</title>
                   </analytic>
                   <monogr>
                      <title level="m" ref="#pmb63583">Briefe an Auguste Hauschner</title>
@@ -61,7 +61,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -70,37 +70,88 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb2524"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb29923"/>
-               <bibl ref="#pmb30225"/>
-            </listBibl>
-            
-            <listPlace>
-               <place ref="#pmb50"/>
-               <place ref="#pmb168"/>
-            </listPlace>
+         <div type="original">
+            <head>Briefe an <rs type="person" ref="#pmb2524">Auguste Hauschner</rs>
+            </head>
+            <p>
+               <gap reason="outOfScope" unit="lines" quantity="40"/>
+            </p>
+            <head type="sub">Arthur Schnitzler</head>
+            <p rend="right">
+               <rs type="place" ref="#pmb50">Wien</rs>,
+               <date>23. 1. 09</date>.</p>
+            <p rend="center">Verehrte Frau,</p>
+            <p>Ich danke Ihnen sehr, daß Sie mir Ihren schönen <anchor type="commentary" xml:id="K_M178-1"/>
+               <rs type="work" subtype="implied" ref="#pmb30225">Artikel</rs>
+               <note type="commentary" xml:id="K_M178-1h">
+                  <bibl>
+                     <rs type="person" ref="#pmb2524">Auguste Hauschner</rs>: <rs type="work" ref="#pmb30225">Der Weg ins
+                        Freie</rs>. In: <rs type="work" ref="#pmb63597">Die Hilfe</rs>, Jg. 15,
+                     Nr. 3, <date>17. 1. 1909</date>, S. 39–40</bibl>. <rs type="person" ref="#pmb2121">Schnitzler</rs> urteilte im <rs type="work" ref="#pmb33243">Tagebuch</rs> am <ref type="schnitzler-tagebuch" subtype="date-only" target="1909-01-15"/>: »<quote>Neue Kritikensammlung, von <rs type="person" ref="#pmb11324">Fischer</rs> gesandt, über den Weg. Die <rs type="person" ref="#pmb2524">Hauschner</rs>, fand endlich in der ›<rs type="work" ref="#pmb63597">Hilfe</rs>‹ eine Stätte für ihren mir nun erst bekannt
+                     werdenden sehr freundlichen Aufsatz.</quote>«</note> geschickt haben. Gar viel
+               wäre darüber zu sagen, wenn es mir nicht so fatal wäre, über meine eigenen Sachen was
+               niederzuschreiben. Reden könnte ich schon eher drüber, nun vielleicht fügt es mein
+               gutes Glück, daß ich Ihnen irgend einmal in der Welt begegne. Übrigens einfacher;
+               wenn Sie nach <rs type="place" ref="#pmb50">Wien</rs> kommen, lassen Sie mich’s wissen,
+               gnädige Frau, und wenn ich nach <rs type="place" ref="#pmb168">Berlin</rs> komme, darf
+               ich mich wohl auch melden? – Vorher aber noch möchte ich Ihnen sagen, daß Sie Unrecht
+               haben, Ihren <anchor type="commentary" xml:id="K_M178-11"/>Schluß »mißlungen«<note type="commentary" xml:id="K_M178-11h">
+                  <rs type="person" ref="#pmb2524">Hauschner</rs>
+                  an <rs type="person" ref="#pmb2121">Schnitzler</rs>: »<quote>
+                     <p>
+                        <rs type="place" ref="#pmb168">Berlin</rs> d. <date>16. 1. 09</date>
+                     </p>
+                     <p>Sehr geehrter Herr Doctor – die ›<rs type="work" ref="#pmb63597">Hilfe</rs>‹
+                        hat meinen <rs type="work" subtype="implied" ref="#pmb30225">Beitrag</rs> lange
+                        nicht gebracht, weil sie eigentlich so umfangreiche Buchbesprechungen sonst
+                        nicht annimmt. Sie wünschten meine Arbeit zu lesen, ich schicke sie daher,
+                        obgleich, wie ich nun im Druck sehe, mir der Schluss misslungen ist. Was mir
+                        das innerste Wesen Ihrer bedeutenden Gestalten zu sein scheint, der Trieb
+                        zur Vereinsamung und die Fremdheit zum Menschthum, habe ich, durch ein Paar
+                        untreffende Ausdrücke, zu schwer an ein einzelnes, im Grunde leichtlebiges,
+                        Individuum gehängt.</p>
+                     <p>Trotzdem werden Sie vielleicht meine innere
+                        Bewegtheit aus meinen Worten lesen können.</p>
+                     <p>Mit besonderer
+                        Hochschätzung</p>
+                     <p>Auguste Hauschner</p>
+                  </quote>«
+                  (<ref 
+                     type="schnitzler-briefe" target="L02587"/>)</note> zu finden. – Auch ohne Ihren Brief wüßte ich
+               sehr gut, was Sie eigentlich sagen wollten. Und so viel tief und liebevoll (oder ist
+               das tautologisch?) Eindringendes in den vorherigen Absätzen. Wieviel Leserinnen Ihrer
+               Art denken Sie wohl gibt es? Und gar eine, die zugleich Künstlerin ist.<space unit="chars" quantity="1"/>
+               <c rendition="#dots" n="6"/> jetzt aber kommt es immer
+               näher, noch drei Zeilen und ich fange an, etwas über mein <rs type="work" subtype="implied" ref="#pmb29923">Buch</rs> zu sagen. – Daher nicht mehr als dies:
+               Sie haben mir durch Gedrucktes, Geschriebenes und Gefühltes herzliche Freude
+               bereitet!</p>
+            <p rend="inline">Ihr aufrichtig ergebener</p>
+            <p rend="right">Arthur Schnitzler</p>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb2524"/>
-               <person ref="#pmb11324"/>
-               <person ref="#pmb63579"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb30225"/>
-               <bibl ref="#pmb33243"/>
-               <bibl ref="#pmb63583"/>
-               <bibl ref="#pmb63597"/>
-            </listBibl>
-            
-            <listPlace>
-               <place ref="#pmb168"/>
-               <place ref="#pmb9925"/>
-            </listPlace>
+         <div type="biographical">
+            <div1>
+               <bibl>Schnitzler an <rs type="person" ref="#pmb63579">Lotte Bloch-Zavřel</rs>,
+                     <date>11. 4. 1927</date>
+               </bibl>
+               <quote>
+                  <p>
+                     <date>11. 4. 1927</date>.</p>
+                  <p>Verehrte gnädige
+                     Frau.</p>
+                  <p>Auf Ihre freundliche Anfrage erlaube ich mir zu erwiedern, dass ich
+                     gegen eine Veröffentlichung des unbeträchtlichen Briefes in Ihrem
+                     Sammelbändchen ›<rs type="work" ref="#pmb63583">Briefe an Auguste Hauschner</rs>‹ nichts
+                     einzuwenden habe und bin mit vorzüglicher Hochachtung</p>
+                  <p>Ihr
+                     ergebener</p>
+                  <p><supplied>Leerraum</supplied></p>
+                  <p>Frau <rs type="person" ref="#pmb63579">Lotte
+                        Bloch-Zavřel</rs>
+                  </p>
+                  <p>
+                     <rs type="place" ref="#pmb9925">Charlottenburg</rs>.</p>
+               </quote>
+            </div1>
          </div>
       </body>
       <back>

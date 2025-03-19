@@ -2,7 +2,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews, Meinungen, Proteste (1891–1931)</title>
-            <title level="a">Freiwillige Schutzwache,
+            <title level="a">Bürger von Währing u. Döbling!,
                25. 11. 1918</title>
             <title type="iso-date" when-iso="1918-11-25" n="1">25. 11. 1918</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
@@ -22,10 +22,27 @@
             <idno type="asi" n="142"/>
          </publicationStmt>
          <sourceDesc>
+            
+            
+            <!--<listWit>
+               <witness n="1">
+                  <msDesc>
+                     <msIdentifier>
+                        <country>A</country>
+                        <settlement>Wien</settlement>
+                        <repository>Bildarchiv und Grafiksammlung der Österreichischen Nationalbibliothek</repository>
+                        <idno>KS&#160;16215487 POR MAG</idno>
+                     </msIdentifier>
+                     <physDesc>
+                        <p></p>
+                     </physDesc>
+                  </msDesc>
+               </witness>
+            </listWit>-->
             <listBibl>
                <biblStruct>
                   <monogr>
-                     <title level="m">Freiwillige Schutzwache [Plakat]</title>
+                     <title level="m">Bürger von Währing u. Döbling!, [Plakat]</title>
                      <imprint>
                         <pubPlace>Wien</pubPlace>
                         <date when="1918-11-25" n="1">25. 11. 1918</date>
@@ -37,7 +54,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -47,48 +64,101 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb3159"/>
-               <person ref="#pmb12689"/>
-               <person ref="#pmb12948"/>
-               <person ref="#pmb23134"/>
-               <person ref="#pmb60314"/>
-               <person ref="#pmb60342"/>
-               <person ref="#pmb60346"/>
-               <person ref="#pmb60352"/>
-               <person ref="#pmb60356"/>
-               <person ref="#pmb60362"/>
-               <person ref="#pmb60368"/>
-               <person ref="#pmb60380"/>
-            </listPerson>
-            <listBibl/>
-            <listOrg>
-               <org ref="#pmb36247"/>
-               <org ref="#pmb60307"/>
-               <org ref="#pmb60309"/>
-               <org ref="#pmb60329"/>
-               <org ref="#pmb60334"/>
-               <org ref="#pmb60337"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb50"/>
-               <place ref="#pmb68"/>
-               <place ref="#pmb69"/>
-               <place ref="#pmb287"/>
-               <place ref="#pmb60332"/>
-            </listPlace>
+         <div type="original">
+            <head>Bürger von <rs ref="#pmb68" type="place">Währing</rs> u. <rs ref="#pmb68" type="place">Döbling</rs>!</head>
+            <p>Die ernsten Ereignisse, die sich vollziehen, haben es mit sich gebracht, daß unser
+               tägliches Leben, insbesondere die regelmäßige Arbeit im Dienste der Öffentlichkeit
+               und der privaten Berufe eines erhöhten Schutzes bedarf.</p>
+            <p>Die mit Hingebung geleisteten Dienste, der Sicherheits- und Stadtschutzwache könnten
+               unter Umständen nicht ausreichen, die Ordnung aufrecht zu erhalten.</p>
+            <p>Auch in anderen äußeren Bezirken haben Bürger die Notwendigkeit erkannt, die
+               Sicherheitswache zu verstärken und sie in ihrem schweren Dienste zu unterstützen.</p>
+            <p>Männer von <rs ref="#pmb68" type="place">Währing</rs> und <rs ref="#pmb69" type="place">Döbling</rs>!</p>
+            <p>Wir fordern Euch auf: Tretet der <rs type="org" ref="#pmb60307">freiwilligen
+                  Schutzwache</rs> des <rs ref="#pmb68" type="place">18.</rs> und <rs ref="#pmb69" type="place">19. Bezirkes</rs> bei! Damit soll zunächst eine Organisation
+               geschaffen werden, die erforderlichen Falles in Tätigkeit treten wird. Die Not der
+               Zeit und Euere Ehre fordern, daß Ihr selbst mit tätig seid, Euere Familien, Eueren
+               Herd, Euere Habe und damit zugleich das ganze Gemeinwesen zu schützen.</p>
+            <p>Männer von <rs ref="#pmb68" type="place">Währing</rs> und <rs ref="#pmb69" type="place">Döbling</rs> – jedes Standes, jedes Berufes&#160;– tretet der Schutzwache bei als
+               Gleiche unter Gleichen!</p>
+            <p>
+               <rs type="place" ref="#pmb50">Wien</rs>, im <date>November 1918</date>.</p>
+            <p>
+               <space dim="vertical" quantity="1" unit="paragraphs"/>
+            </p>
+            <latex alt="\enlargethispage{1em}"/>
+            <table>
+               <row>
+                  <cell>
+                     <rs type="person" ref="#pmb60342">Anton Baumann</rs>, Bezirks-Vorsteher</cell>
+               </row>
+               <row>
+                  <cell>
+                     <rs type="person" ref="#pmb60346">Wenzel Kuhn</rs>, Nationalrat und
+                     Bezirks-Vorsteher.</cell>
+               </row>
+               <row>
+                  <cell>
+                     <rs type="person" ref="#pmb60352">Karl Kerner</rs>, Gemeinderat.</cell>
+               </row>
+               <row>
+                  <cell>
+                     <rs type="person" ref="#pmb60356">Adolf Micheroli</rs>, Baumeister.</cell>
+               </row>
+               <row>
+                  <cell>Dr. <rs type="person" ref="#pmb60362">Ferd. Ritter v. Wimmer</rs>,
+                     Finanzminister a. D.</cell>
+               </row>
+               <row>
+                  <cell>
+                     <rs type="person" ref="#pmb12948">Hugo Thimig</rs>, Direktor des <rs type="org" ref="#pmb36247">Burgtheaters</rs> a. D.</cell>
+               </row>
+               <row>
+                  <cell>Dr. <rs type="person" ref="#pmb23134">Oswald Redlich</rs>,
+                     Univ.-Professor.</cell>
+               </row>
+               <row>
+                  <cell>Dr. <rs type="person" ref="#pmb60314">Josef v. Hepperger</rs>, Univ.-Prof.,
+                     Direktor der <rs type="org" ref="#pmb60337">Sternwarte</rs>.</cell>
+               </row>
+               <row>
+                  <cell>Dr. <rs type="person" ref="#pmb60368">Julius Rader</rs>, Bezirksrat.</cell>
+               </row>
+               <row>
+                  <cell>Dr. <rs type="person" ref="#pmb12689">Edmund Bernatzik</rs>,
+                     Univ.-Professor.</cell>
+               </row>
+               <row>
+                  <cell>
+                     <rs type="person" ref="#pmb12689">Ferdinand Schmutzer</rs>, Prof. der <rs type="org" ref="#pmb60329">Akademie der bildenden Künste</rs>.</cell>
+               </row>
+               <row>
+                  <cell>Hauptmann <rs type="person" ref="#pmb3159">Hugo Schmidl</rs>.</cell>
+               </row>
+               <row>
+                  <cell>Dr. Arthur Schnitzler.</cell>
+               </row>
+               <row>
+                  <cell>Hauptmann <rs type="person" ref="#pmb60380">Felix Lederer</rs>.</cell>
+               </row>
+            </table>
+            <p>
+               <space dim="vertical" quantity="1" unit="paragraphs"/>
+            </p>
+            <p>Anmeldungen und nähere Auskünfte:</p>
+            <p>Ab <date>Dienstag, den 3. Dezember</date> bis inkl. <date>Sonntag, den
+                  8. Dezember</date> von 9 bis 12 Uhr vormittags in <rs type="place" ref="#pmb68">Währing</rs>: beim <rs type="org" ref="#pmb60309">Magistratischen
+                  Bezirksamt</rs>
+               <space unit="chars" quantity="1"/>
+               <rs type="place" ref="#pmb287">Martinsstraße 100</rs>, in <rs type="place" ref="#pmb69">Döbling</rs>: beim <rs type="org" ref="#pmb60334">Polizeikommissariat</rs>
+               <space unit="chars" quantity="1"/>
+               <rs ref="#pmb60332" type="place">Kreindlgasse 13</rs>, Schulsaal.</p>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb3159"/>
-               <person ref="#pmb27966"/>
-            </listPerson>
-            <listBibl/>
-            <listOrg>
-               <org ref="#pmb60307"/>
-            </listOrg>
-            <listPlace/>
+         <div type="biographical">
+            <div1>
+               <ref target="1918-11-25" type="schnitzler-tagebuch"/>
+               <quote>Nm. <rs type="person" ref="#pmb3159">Hugo Schmidl</rs> und Ob. <rs type="person" ref="#pmb27966">Sander</rs>; wegen Unterschrift unter den Aufruf zur <rs type="org" ref="#pmb60307">Bürgerwehr Währing</rs>.–</quote>
+            </div1>
          </div>
       </body>
       <back>

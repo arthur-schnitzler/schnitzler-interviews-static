@@ -1,10 +1,14 @@
 # project specific
 *.html
-!search.html
+html/*.xml
 /saxon
 data/imprint.xml
-/static-search
-html/static-search
+/chronik-data
+
+data/indices/*.xml
+data/editions/*.xml
+data/meta/*.xml
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -141,6 +145,3 @@ desktop.ini
 
 # MacOS
 .DS_Store
-
-#my stuff
-chronik-data/

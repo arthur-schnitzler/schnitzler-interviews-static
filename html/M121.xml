@@ -26,8 +26,6 @@
             <listBibl>
                <biblStruct>
                   <analytic>
-                     <author ref="#pmb2121">Schnitzler, Arthur</author>
-                     <author ref="#pmb11617">Hauptmann, Gerhart</author>
                      <title level="a" ref="#pmb59068">Zwei Albumblätter von Gerhart Hauptmann und Artur
                         Schnitzler. Zum 60. Geburtstag des Schauspielers Oskar Sauer</title>
                   </analytic>
@@ -57,7 +55,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -65,44 +63,91 @@
          <change who="MAM" when="2021-09-28">Index check</change>
          <change who="KH" when="2021-10-18">Durchsicht</change>
       </revisionDesc>
+      <!-- https://anno.onb.ac.at/cgi-content/anno?aid=nwj&datum=19161205&seite=7&zoom=33 -->
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb2193"/>
-               <person ref="#pmb11813"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb29955"/>
-               <bibl ref="#pmb29971"/>
-               <bibl ref="#pmb29985"/>
-               <bibl ref="#pmb31943"/>
-               <bibl ref="#pmb59076"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb59074"/>
-               <org ref="#pmb59081"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb168"/>
-            </listPlace>
+         <div type="original">
+            <head>Zwei Albumblätter von Gerhart Hauptmann <latex alt="\\"/>und Artur Schnitzler.</head>
+            <head type="sub">Zum 60. Geburtstag des Schauspielers <rs type="person" ref="#pmb2193">Oskar Sauer</rs>.</head>
+            <p>Zu <rs type="person" ref="#pmb2193">Oskar Sauer</rs>s 60. Geburtstag soll unter dem
+               Titel »<rs type="work" ref="#pmb59076">Oskar Sauer. Ein Gedenkbuch 1856 bis 1916</rs>«
+               (bei <rs type="org" ref="#pmb59081">
+                  <anchor type="textConst" xml:id="T_I121-1"/>Oesterheld<note type="textConst" xml:id="T_I121-1h">
+                     <quote>Oesterfeld</quote>
+                  </note>
+                  <space unit="chars" quantity="1"/>
+                  <c rendition="#kaufmannsund"/> Ko.</rs> in <rs type="place" ref="#pmb168">Berlin</rs>) ein Sammelwerk erscheinen, das von <rs type="person" ref="#pmb11813">Siegfried Jacobsohn</rs> herausgegeben und dessen Gesamtertrag einem bestimmten
+               Fonds der <rs type="org" ref="#pmb59074">Genossenschaft deutscher Bühnenangehöriger</rs>
+               zugeführt wird. In diesem Buche schreibt <hi rend="spaced_out">Gerhart Hauptmann</hi>
+               über <rs type="person" ref="#pmb2193">Oskar Sauer</rs> die folgenden Worte:</p>
+            <p>Wer über <rs type="person" ref="#pmb2193">Oskar Sauer</rs> nachdenkt, kommt zu dem
+               Schluß: Der wahrhaftigste Mensch allein hat Eignung zum größten Schauspieler. Danach
+               wäre das Wesen der Schauspielkunst nicht Täuschung, sondern Wahrhaftigkeit – nicht
+               Maskerade, sondern Demaskerade&#160;– nicht Mummenschanz und Versteckenspiel der Seele,
+               sondern Enthüllung und Offenbarung. So ist es auch.</p>
+            <p>Von einer ähnlichen Ueberzeugung scheinen die auszugehen, denen Schauspielkunst eine
+               Art schamloser Preisgabe bedeutet. So urteilt Bürgermoral; aber, gleichwie die
+               Wissenschaft, untersteht auch die Kunst einer eigenen, anderen. Sie adelt den
+               Künstler, der sich, vermöge der hohen Idee universeller Menschlichkeit, begreift,
+               sein Selbst erhöht und es in ein zweites, höheres Leben steigert. Das reichste
+               Menschentum verfällt, wenn dies Verfahren in Verfall gerät.</p>
+            <p>Es ist wohltätig, reinigend und erhebend, die Gestalt <rs type="person" ref="#pmb2193">Oskar Sauer</rs>s, des großen Darstellers, sich hervorzurufen. Man wird es oft
+               tun, um den Glauben an das deutsche Theater, seine Kraft und Sendung aufrecht zu
+               erhalten. Aus seinem Wesen und Wirken ist eine ganze Dramaturgie abzuleiten, die
+               eines der wertvollsten Vermächtnisse für die deutsche Schaubühne sein könnte. In <rs type="person" ref="#pmb2193">Sauer</rs> verkörpert sich ihr wahrhaft schöpferisches
+               Vermögen, ihre Moral und höchste Würde.</p>
+            <p rend="center">
+               <c rendition="#ornament"/>
+            </p>
+            <p>Artur <hi rend="spaced_out">Schnitzler</hi> schreibt: »Wie gern benutze ich den Anlaß
+               seines sechzigsten Geburtstages, um <rs type="person" ref="#pmb2193">Oskar Sauer</rs>
+               meine verehrungsvollsten Grüße zu senden. Ich habe diesem außerordentlichen Künstler
+               als <anchor type="commentary" xml:id="K_I121-1"/>Theaterbesucher<note type="commentary" xml:id="K_I121-1h">Im <rs type="work" ref="#pmb33243">Tagebuch</rs>
+                  <space unit="chars" quantity="1"/>
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs>s wird <rs type="person" ref="#pmb2193">Sauer</rs> erst im Zuge dieser Würdigung erwähnt, nicht jedoch ein besonderes
+                  Theatererlebnis mit ihm. Hingegen wird im Briefwechsel <rs type="person" ref="#pmb2121">Schnitzler</rs>s mit <rs type="person" ref="#pmb10986">Otto Brahm</rs> 
+                  durchwegs positiv auf ihn Bezug genommen.</note> im Laufe der Jahre so viel
+               zu danken gehabt, daß ich es eigentlich als überflüssig, wenn nicht als unbescheiden
+               empfinden müßte, hier auch noch auszusprechen, was ich ihm als Theaterschriftsteller
+               schuldig geworden bin; aber ich kann mich doch nicht enthalten, nach dem <anchor type="commentary" xml:id="K_I121-11"/>
+               <rs type="work" subtype="implied" ref="#pmb29971">Gregers Werle</rs>
+               <note type="commentary" xml:id="K_I121-11h">Rolle aus <rs type="work" ref="#pmb29971">Die Wildente</rs> (<date>1884</date>) von <rs type="person" ref="#pmb11798">Henrik Ibsen</rs>
+               </note> (der wahrscheinlich uns allen zuerst einfällt), dem <anchor type="commentary" xml:id="K_I121-2"/>
+               <rs type="work" ref="#pmb29955" subtype="implied">Ulrik Brendel</rs>
+               <note type="commentary" xml:id="K_I121-2h">Rolle aus <rs type="work" ref="#pmb29955">Rosmersholm</rs> (<date>1886</date>) von <rs type="person" ref="#pmb11798">Henrik
+                     Ibsen</rs>
+               </note>, dem <anchor type="commentary" xml:id="K_I121-3"/>
+               <rs type="work" subtype="implied" ref="#pmb31943">Wehrhahn</rs>
+               <note type="commentary" xml:id="K_I121-3h">Rolle aus <rs type="work" ref="#pmb31943">Der
+                     Biberpelz</rs> (<date>1892</date>) von Gerhart Hauptmann</note> und mancherlei
+               andern, sehr bald des Malprofessors <rs type="work" ref="#pmb29985" subtype="implied">Wegrat</rs> (aus dem »<rs type="work" ref="#pmb29985">Einsamen Weg</rs>«) zu
+               gedenken als einer Gestalt, um deren Haupt es in meiner Erinnerung wie ein Heiligen-
+               oder vielmehr ein Edelschein schwebt, und die durch <rs type="person" ref="#pmb2193">Sauer</rs>s Kunst wohl auch anderen Leuten als dem Dichter unvergeßlich geblieben
+               sein mag. Wie kaum einen zweiten Schauspieler war es ja <rs type="person" ref="#pmb2193">Oskar Sauer</rs> gegeben, den wahrhaft reinen Menschen darzustellen: – Reinheit
+               in einer Vollendung, wo sie schon wieder Schuld geworden ist. (Denn nicht nur im
+               Uebermut sich über die Welt erheben wollen; auch aus Güte sich nicht in sie finden
+               können, ist Schuld vor Gott, Schuld im Geiste der Tragödie – tragische Schuld.) Wir
+               wissen alle, wie vieles <rs type="person" ref="#pmb2193">Sauer</rs> außerdem noch
+               gekonnt, gemeistert hat; und es ist nur natürlich, daß gerade die humoristische
+               Kehrseite der Reinheit eines seiner bevorzugten Gebiete – daß seine Schauspielkunst
+               in der Atmosphäre der Naivität, Einfalt und Beschränkheit gleichfalls wunderbar zu
+               Hause war. Aber wenn geistige Ueberlegenheit, Kühnheit, ja die Größe selbst aus der
+               Eigentümlichkeit einer bestimmten schauspielerischen Begabung heraus gespielt werden
+               können, ohne daß im Menschentum des betreffenden Darstellers auch nur bescheidene
+               Elemente jener Eigenschaften auffindbar sein müssen: um imstande zu sein, auf der
+               Bühne – nicht etwa kleine Herzenstalente, sondern Herzensgenialität glaubhaft und
+               lebendig zu machen, muß man einiges davon mit auf die Welt gebracht haben. Und in
+               dieser menschlich-künstlerischen Eigenart, ja Einzigartigkeit <rs type="person" ref="#pmb2193">Sauer</rs>s ist es wohl begründet, daß – wenn auch mancher große
+               Schauspieler nicht weniger bewundert – gewiß keiner mehr geliebt wurde und wird als
+               er.«</p>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb2193"/>
-               <person ref="#pmb10986"/>
-               <person ref="#pmb11798"/>
-               <person ref="#pmb11813"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb29955"/>
-               <bibl ref="#pmb29971"/>
-               <bibl ref="#pmb30819"/>
-               <bibl ref="#pmb31943"/>
-               <bibl ref="#pmb33243"/>
-            </listBibl>
-            
-            <listPlace/>
+         <div type="biographical">
+            <div1>
+               <ref target="1916-11-17" type="schnitzler-tagebuch"/>
+               <quote>Dictirte <rs type="work" ref="#pmb30819">Wiederkehr</rs> sozusagen zu Ende. Dann
+                  ein paar Zeilen für <rs type="person" ref="#pmb2193">Sauer</rs> (60. Geburtstag,
+                  Album, <rs type="person" ref="#pmb11813">Jacobsohn</rs> Aufforderung)</quote>
+            </div1>
          </div>
       </body>
       <back>

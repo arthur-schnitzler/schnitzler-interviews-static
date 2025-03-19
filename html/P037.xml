@@ -44,7 +44,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-AT">German</language>
+            <language ident="de-AT" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -52,31 +52,38 @@
          <change who="MAM" when="2021-09-08">Index check</change>
          <change who="KH" when="2021-10-05">Durchsicht</change>
       </revisionDesc>
+      <!-- http://anno.onb.ac.at/cgi-content/anno?aid=nwj&datum=19030404&seite=8&zoom=33 -->
    </teiHeader><text type="text">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb2121"/>
-            </listPerson>
-            <listBibl/>
-            
-            <listPlace/>
+         <div type="original">
+            <p>* Herr Dr. <rs type="person" ref="#pmb2121">Arthur <hi rend="spaced_out">Schnitzler</hi>
+               </rs> theilt uns mit, daß er <anchor type="commentary" xml:id="KT123-1"/>noch immer
+                  unvermählt<note type="commentary" xml:id="KT123-1h">
+                  <bibl>
+                     <rs type="work" ref="#pmb36376">Neues Wiener Journal</rs>, Jg. 11,
+                     Nr. 3.389, <date>3. 4. 1903</date>, S. 6</bibl>: »<quote>
+                     <rs type="work" ref="#pmb33029" subtype="implied">Wie uns
+                           mitgethei<supplied>l</supplied>t wird, hat sich Dr. Arthur <hi rend="spaced_out">Schnitzler</hi> dieser Tage in aller Stille <hi rend="spaced_out">vermählt</hi>. Seine <rs type="person" ref="#pmb2173" subtype="implied">Gattin</rs> ist eine junge Dame, die noch vor Kurzem
+                        das <rs type="place" ref="#pmb2">Conservatorium</rs> besucht hat.</rs>
+                  </quote>« Die Hochzeit mit <rs type="person" ref="#pmb2173">Olga Gussmann</rs> fand am <ref target="1903-08-26" subtype="date-only" type="schnitzler-tagebuch"/> statt.</note> ist.</p>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb2173"/>
-               <person ref="#pmb10815"/>
-               <person ref="#pmb13791"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb33029"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb29320"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb2"/>
-            </listPlace>
+         <div type="biographical">
+            <div1>
+               <ref type="schnitzler-tagebuch" target="1903-04-03"/>
+               <quote>
+                  <rs type="work" ref="#pmb33029" subtype="implied">Notiz</rs> ›<rs type="org" ref="#pmb29320">Wr. J.</rs>‹ dass ich mich ganz im Stillen mit einer jungen <rs type="person" ref="#pmb2173" subtype="implied">Dame</rs> verheiratet, die erst vor
+                  kurzem das <rs type="place" ref="#pmb2">Conserv.</rs> verlassen.– <rs type="person" ref="#pmb13791">Basch</rs> bei mir. Dementirt.–</quote>
+            </div1>
+            <div1>
+               <ref type="schnitzler-tagebuch" target="1903-04-04"/>
+               <quote>Dementi erschienen. Bei <rs type="person" ref="#pmb2173">O.</rs> Verstimmung.–</quote>
+            </div1>
+            <div1>
+               <bibl>Schnitzler an <rs type="person" ref="#pmb10815">Hermann Bahr</rs>, <date>6. 4. 1903</date></bibl>
+               <quote>Die
+                  Nachricht des <rs type="org" ref="#pmb29320">N. Wr. Journ</rs> ist
+                  unwahr, mindestens um sehr geraume Zeit verfrüht.</quote>
+            </div1>
          </div>
       </body>
       <back>

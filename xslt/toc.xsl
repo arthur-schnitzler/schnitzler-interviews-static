@@ -7,6 +7,7 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
+    <xsl:import href="./partials/tabulator_js.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title" select="'Alle Briefe'"/>
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
@@ -20,21 +21,24 @@
                     <div class="container-fluid">
                         <div class="card">
                             <div class="card-header">
-                                <h1>Alle Texte</h1>
+                                <h1>Alle Briefe</h1>
                             </div>
                             <div class="card-body">
-                                <table class="table table-striped display" id="tocTable"
-                                    style="width:100%">
+                                <table class="table table-sm display" id="tabulator-table" style="width:100%"
+                                    >
                                     <thead>
                                         <tr>
-                                            <th scope="col">Titel</th>
-                                            <th scope="col">Datum</th>
-                                            <th scope="col">Art</th>
+                                            <th scope="col" tabulator-headerFilter="input" tabulator-formatter="html">Titel</th>
+                                            <th scope="col" tabulator-headerFilter="input" tabulator-formatter="html">Briefwechsel</th>
+                                            <th scope="col" tabulator-headerFilter="input">Datum (ISO)</th>
+                                            <th scope="col" tabulator-headerFilter="input">Art</th>
+                                            <th scope="col" tabulator-headerFilter="input">ID</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <xsl:variable name="collection" select="collection('../data/editions/?select=*.xml')"/>
                                         <xsl:for-each
-                                            select="collection('../data/editions/?select=*.xml')/tei:TEI">
+                                            select="$collection/tei:TEI">
                                             <xsl:variable name="full_path">
                                                 <xsl:value-of select="document-uri(/)"/>
                                             </xsl:variable>
@@ -42,8 +46,8 @@
                                                 <td>
                                                   <sortdate hidden="true">
                                                   <xsl:value-of
-                                                  select="descendant::tei:titleStmt/tei:title[@when-iso]/@when-iso"
-                                                  />
+                                                  select="descendant::tei:titleStmt/tei:title[@type = 'iso-date']/text()"
+                                                  /><xsl:text>;</xsl:text>
                                                   </sortdate>
                                                   <a>
                                                   <xsl:attribute name="href">
@@ -57,38 +61,117 @@
                                                   </a>
                                                 </td>
                                                 <td>
+                                                  <xsl:for-each
+                                                  select="descendant::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspContext[1]/tei:ref[@type = 'belongsToCorrespondence']">
+                                                  <a>
+                                                  <xsl:attribute name="href">
                                                   <xsl:value-of
-                                                  select="normalize-space(descendant::tei:titleStmt/tei:title[@when-iso]/text())"
+                                                      select="concat(replace(@target, 'correspondence_', 'toc_'), '.html')"
+                                                  />
+                                                  </xsl:attribute>
+                                                  <xsl:value-of select="."/>
+                                                  </a>
+                                                  <xsl:if test="not(position() = last())">
+                                                  <xsl:text>; </xsl:text>
+                                                  </xsl:if>
+                                                  </xsl:for-each>
+                                                </td>
+                                                <td>
+                                                  <xsl:value-of
+                                                  select="descendant::tei:titleStmt/tei:title[@type = 'iso-date']/@when-iso"
                                                   />
                                                 </td>
                                                 <td>
-                                                  <xsl:choose>
-                                                  <xsl:when test="starts-with(@xml:id, 'I')">
-                                                  <xsl:text>Interview</xsl:text>
-                                                  </xsl:when>
-                                                  <xsl:when test="starts-with(@xml:id, 'M')">
-                                                  <xsl:text>Meinung</xsl:text>
-                                                  </xsl:when>
-                                                  <xsl:when test="starts-with(@xml:id, 'P')">
-                                                  <xsl:text>Protest</xsl:text>
-                                                  </xsl:when>
-                                                  </xsl:choose>
+                                                  <xsl:variable name="sortentyp"
+                                                  select="child::tei:teiHeader[1]/tei:fileDesc[1]/tei:sourceDesc[1]/tei:listWit[1]/tei:witness[1]/tei:objectType[1]"
+                                                  as="node()?"/>
+                                                    <xsl:choose>
+                                                        <xsl:when test="($sortentyp/text() != '') and not(normalize-space(.)='')"> <!-- für den Fall, dass Textinhalt, wird einfach dieser ausgegeben -->
+                                                            <xsl:value-of select="normalize-space($sortentyp)"/>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@ana">
+                                                            <xsl:choose>
+                                                                <xsl:when test="$sortentyp/@ana='fotografie'">
+                                                                    <xsl:text>Fotografie</xsl:text>
+                                                                </xsl:when>
+                                                                <xsl:when test="$sortentyp/@ana='entwurf' and $sortentyp/@corresp='brief'">
+                                                                    <xsl:text>Briefentwurf</xsl:text>
+                                                                </xsl:when>
+                                                                <xsl:when test="$sortentyp/@ana='entwurf' and $sortentyp/@corresp='telegramm'">
+                                                                    <xsl:text>Telegrammentwurf</xsl:text>
+                                                                </xsl:when>
+                                                                <xsl:when test="$sortentyp/@ana='bildpostkarte'">
+                                                                    <xsl:text>Bildpostkarte</xsl:text>
+                                                                </xsl:when>
+                                                                <xsl:when test="$sortentyp/@ana='postkarte'">
+                                                                    <xsl:text>Postkarte</xsl:text>
+                                                                </xsl:when>
+                                                                <xsl:when test="$sortentyp/@ana='briefkarte'">
+                                                                    <xsl:text>Briefkarte</xsl:text>
+                                                                </xsl:when>
+                                                                <xsl:when test="$sortentyp/@ana='visitenkarte'">
+                                                                    <xsl:text>Visitenkarte</xsl:text>
+                                                                </xsl:when>
+                                                                <xsl:when test="$sortentyp/@corresp='widmung'">
+                                                                    <xsl:choose>
+                                                                        <xsl:when test="$sortentyp/@ana='widmung_vorsatzblatt'">
+                                                                            <xsl:text>Widmung am Vorsatzblatt</xsl:text>
+                                                                        </xsl:when>
+                                                                        <xsl:when test="$sortentyp/@ana='widmung_titelblatt'">
+                                                                            <xsl:text>Widmung am Titelblatt</xsl:text>
+                                                                        </xsl:when>
+                                                                        <xsl:when test="$sortentyp/@ana='widmung_schmutztitel'">
+                                                                            <xsl:text>Widmung am Schmutztitel</xsl:text>
+                                                                        </xsl:when>
+                                                                        <xsl:when test="$sortentyp/@ana='widmung_umschlag'">
+                                                                            <xsl:text>Widmung am Umschlag</xsl:text>
+                                                                        </xsl:when>
+                                                                    </xsl:choose>
+                                                                </xsl:when>
+                                                            </xsl:choose>
+                                                        </xsl:when>
+                                                        <!-- ab hier ist nurmehr @corresp zu berücksichtigen, alle @ana-Fälle sind erledigt -->
+                                                        <xsl:when test="$sortentyp/@corresp='anderes'">
+                                                            <xsl:text>Sonderfall</xsl:text>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@corresp='bild'">
+                                                            <xsl:text>Bild</xsl:text>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@corresp='brief'">
+                                                            <xsl:text>Brief</xsl:text>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@corresp='karte'">
+                                                            <xsl:text>Karte</xsl:text>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@corresp='kartenbrief'">
+                                                            <xsl:text>Kartenbrief</xsl:text>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@corresp='telegramm'">
+                                                            <xsl:text>Telegramm</xsl:text>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@corresp='umschlag'">
+                                                            <xsl:text>Umschlag</xsl:text>
+                                                        </xsl:when>
+                                                        <xsl:when test="$sortentyp/@corresp='widmung'">
+                                                            <xsl:text>Widmung</xsl:text>
+                                                        </xsl:when>
+                                                        
+                                                    </xsl:choose>
+                                                  
+                                                    
+                                                </td>
+                                                <td>
+                                                    <xsl:value-of select="@xml:id"/>
                                                 </td>
                                             </tr>
                                         </xsl:for-each>
                                     </tbody>
-                                </table>
+                                </table> <xsl:call-template name="tabulator_dl_buttons"/>
                             </div>
                         </div>
                     </div>
                     <xsl:call-template name="html_footer"/>
-                    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.js"/>
-                    <script type="text/javascript" src="js/dt.js"/>
-                    <script>
-                        $(document).ready(function () {
-                        createDataTable('tocTable')
-                        });
-                    </script>
+                    <xsl:call-template name="tabulator_js"/>
                 </div>
             </body>
         </html>

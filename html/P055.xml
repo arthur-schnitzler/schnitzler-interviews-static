@@ -26,8 +26,6 @@
             <listBibl>
                <biblStruct>
                   <analytic>
-                     <author ref="#pmb10851">Bauer, Otto</author>
-                     <author ref="#pmb2121">Schnitzler, Arthur</author>
                      <title level="a" ref="#pmb33155">Der Protest aus Wien gegen Tollers
                         Hinrichtung</title>
                   </analytic>
@@ -58,7 +56,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-AT">German</language>
+            <language ident="de-AT" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -68,58 +66,126 @@
       </revisionDesc>
    </teiHeader><text type="text">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb5268"/>
-               <person ref="#pmb10851"/>
-               <person ref="#pmb12766"/>
-               <person ref="#pmb12961"/>
-            </listPerson>
-            <listBibl/>
-            <listOrg>
-               <org ref="#pmb29455"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb50"/>
-               <place ref="#pmb314"/>
-               <place ref="#pmb45258"/>
-            </listPlace>
+         <div type="original">
+            <head>Der Protest aus <rs type="place" ref="#pmb50">Wien</rs> gegen <rs type="person" ref="#pmb12961">Tollers</rs> Hinrichtung</head>
+            <head type="sub">Ein Dementi des Staatssekretärs <rs type="person" ref="#pmb10851">Bauer</rs>.</head>
+            <p rend="right">
+               <rs type="place" ref="#pmb50">
+                  <hi rend="spaced_out">Wien</hi>
+               </rs>, <date>12. Juni</date>.</p>
+            <p>Staatssekretär Dr. Otto <hi rend="spaced_out">Bauer</hi> hat an den <rs type="place" ref="#pmb314">bayerischen</rs> Ministerpräsidenten <rs type="person" ref="#pmb5268">Hoffmann</rs> in <rs type="place" ref="#pmb45258">München</rs> folgende Depesche
+               geschickt:</p>
+            <p>»Die ›<rs type="org" ref="#pmb29455">Münchener Post</rs>‹ veröffentlicht einen <anchor type="commentary" xml:id="KT141-1"/>Protest<note type="commentary" xml:id="KT141-1h">
+                  <bibl>
+                     <rs type="work" ref="#pmb44659">Eine Kundgebung für Toller</rs>. In: <rs type="work" ref="#pmb55474">Münchener Post</rs>, Jg. 33. Nr. 134,
+                        <date>11. 6. 1919</date>, S. 4</bibl>: »<quote>
+                     <p>
+                        <hi rend="bold">Eine Kundgebung für Toller.</hi>
+                     </p>
+                     <p>Aus <rs type="place" ref="#pmb50">
+                           <hi rend="spaced_out">Wien</hi>
+                        </rs> erhalten wir dieses Telegramm:</p>
+                     <p>›Die Unterzeichneten haben an den den Ministerpräsidenten <rs type="person" ref="#pmb5268">Hoffmann</rs> das nachstechende Telegramm geschickt und
+                        ersuchen um Veröffentlichung in Ihrem geschätzten Blatte:</p>
+                     <p>›Wir protestieren aufs schärfste gegen jedes Standrecht, besonders gegen die
+                           <hi rend="spaced_out">beabsichtigte</hi> Erschießung <rs ref="#pmb12961" type="person">Ernst Toller</rs>s.‹</p>
+                     <p>Staatssekretäre <rs type="person" ref="#pmb10851">Bauer</rs>, <rs type="person" ref="#pmb12766">Seitz</rs> und <rs type="person" ref="#pmb12917">Tandler</rs>.
+                           <rs type="person" ref="#pmb5929">Friedrich Adler</rs>. <rs type="person" ref="#pmb10815">Hermann Bahr</rs>. <rs type="person" ref="#pmb10955">Franz
+                           Blei</rs>. <rs type="person" ref="#pmb2121">Artur Schnitzler</rs>. <rs type="person" ref="#pmb12540">Ida Roland</rs>. <rs type="person" ref="#pmb12274">Alexander Moissi</rs>. <rs type="person" ref="#pmb25105">Hugo
+                           Sonnenschein</rs>. <rs type="person" ref="#pmb11230">Albert Ehrenstein</rs>.
+                           <rs type="person" ref="#pmb13094">Franz Werfel</rs>. <rs type="person" ref="#pmb11740">Hugo Hofmannsthal</rs>. <rs type="person" ref="#pmb13212">Stefan Zweig</rs>. <rs type="person" ref="#pmb55485">Oskar Fried</rs>. <rs type="person" ref="#pmb10863">Richard
+                  Beer-Hoffmann</rs>.</p>‹</quote>«</note> gegen die angebliche beabsichtigte
+               Erschießung <rs type="person" ref="#pmb12961">Ernst <hi rend="spaced_out">Tollers</hi>
+               </rs>, unter den auch die Unterschrift des Präsidenten <rs type="person" ref="#pmb12766">
+                  <hi rend="spaced_out">Seitz</hi>
+               </rs> und meine Unterschrift gesetzt sind. In Wirklichkeit ist weder dem Präsidenten
+                  <rs type="person" ref="#pmb12766">Seitz</rs> noch mir jemals ein solcher Aufruf zur
+               Unterschrift vorgelegt worden. <hi rend="spaced_out">Unsere Namen wurden ohne unser
+                  Wissen unter den Protest gesetzt</hi>. Wir sind überzeugt, daß es unserer Bitte
+               gar nicht bedarf, die <rs type="place" ref="#pmb314">bayerische</rs> Regierung zu
+               bewegen, kein Todesurteil mehr vollziehen zu lassen. <signed>Otto <hi rend="spaced_out">Bauer</hi>.«</signed>
+            </p>
+            <head type="sub">Eine Erklärung Dr. Artur Schnitzlers.</head>
+            <p rend="right">
+               <rs type="place" ref="#pmb50">
+                  <hi rend="spaced_out">Wien</hi>
+               </rs>, <date>12. Juni</date>.</p>
+            <p>Vom Schriftsteller Dr. Artur <hi rend="spaced_out">Schnitzler</hi> werden wir um die
+               Veröffentlichung folgender <anchor type="commentary" xml:id="K_I055-1"/>Zeilen<note type="commentary" xml:id="K_I055-1h">Das Typoskript des Briefes findet sich im
+                  Nachlass <rs type="person" ref="#pmb2121">Schnitzler</rs>s, <bibl>
+                     <publisher>Cambridge University Library</publisher>, A 19,2</bibl>.</note>
+               ersucht:</p>
+            <p rend="center">»<hi rend="spaced_out">Erklärung</hi>.</p>
+            <p>Eben erst kommt mir die gestrige Nummer der ›<hi rend="spaced_out">Wiener
+                  Mittagszeitung</hi>‹ zu Gesicht, aus der ich erfahre, daß am
+                  <date>9. d.</date> an den <rs type="place" ref="#pmb314">bayerischen</rs>
+               <space unit="chars" quantity="1"/>
+               <rs type="person" ref="#pmb5268" subtype="implied">Ministerpräsidenten</rs> eine
+               angeblich auch von mir unterfertigte Depesche abgegangen sei, in der aufs schärfste
+               gegen jede Anwendung ungesetzlicher standrechtlicher Gewalt, insbesondere aber gegen
+               die drohende standrechtliche Hinrichtung <rs type="person" ref="#pmb12961">
+                  <hi rend="spaced_out">Tollers</hi>
+               </rs> protestiert wurde.</p>
+            <p>Zu meinem Bedauern bin ich genötigt, festzustellen, daß <hi rend="spaced_out">ein
+                  solches Telegramm mir zur Einsichtnahme oder gar zur Unterschrift niemals
+                  vorgelegen hat</hi>, daß ich bis zu dieser Stunde dessen Wortlaut nicht kenne, und
+               daß ich nicht weiß, wer sich ohne meine Zustimmung ja ohne den rechtzeitigen Versuch,
+               meine Zustimmung zu erhalten, befugt halten durfte, meinen Namen unter einen Protest
+               zu setzen, der mir, soweit mir der Inhalt aus jener kurzen <latex alt="Zeitungs\-notiz">Zeitungsnotiz</latex> bekannt
+               geworden, zwar von einer zweifellos gerechten und – in Anbetracht der unterzeichneten
+               Namen – weiter nicht erstaunlichen edeln Gesinnung getragen, aber keineswegs so weit
+               gefaßt erscheint, als es der Anlaß ermöglicht und für meinen persönlichen,
+               <latex alt="par\-tei\-politisch">parteipolitisch</latex> völlig unberührten Geschmack dringend erfordert hätte.</p>
+            <p>Denn ich für meinen Teil schließe mich dem an den <rs type="place" ref="#pmb314">bayerischen</rs>
+               <space unit="chars" quantity="1"/>
+               <rs type="person" ref="#pmb5268" subtype="implied">Ministerpräsidenten</rs> gerichteten
+               Protest nicht nur mit aller Entschiedenheit an, sondern ich dehne ihn hiemit aus auf
+                  <hi rend="spaced_out">sämtliche übrigen <anchor type="label" xml:id="politischermord"/>politischen Morde und sonstigen politischen und
+                  pseudopolitischen Gewaltakte</hi> und Bübereien, in welchem Lande, in welcher
+               Partei, durch welche Instanz immer und ob sie nun an Proletariern, Bürgern, Literaten
+               oder selbst an Fürsten verübt worden wären und weiterhin verübt werden sollten.</p>
+            <p>Endlich erhebe ich Einspruch gegen jeden von welcher Seite immer ausgehenden Eingriff
+               in die Freiheit und das Selbstbestimmungsrecht des Individuums – solange durch die
+               Ausübung dieser Rechte nicht diejenigen eines anderen Individuums verletzt würden –
+               und aus dieser Empfindung heraus verwahre ich mich hiemit öffentlich gegen die
+               vermessene eigenmächtige Zeichnung meines zu meiner alleinigen Verfügung stehenden
+               Namens – und wäre es auch in bester Absicht und zum besten Zweck geschehen – unter
+               ein Schriftstück, von dessen Existenz ich im Augenblicke der Absendung überhaupt
+               keine Ahnung hatte. <signed>Dr. Artur <hi rend="spaced_out">Schnitzler</hi>.«</signed>
+            </p>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb2173"/>
-               <person ref="#pmb2312"/>
-               <person ref="#pmb5268"/>
-               <person ref="#pmb5929"/>
-               <person ref="#pmb10815"/>
-               <person ref="#pmb10851"/>
-               <person ref="#pmb10863"/>
-               <person ref="#pmb10955"/>
-               <person ref="#pmb11230"/>
-               <person ref="#pmb11740"/>
-               <person ref="#pmb12274"/>
-               <person ref="#pmb12540"/>
-               <person ref="#pmb12766"/>
-               <person ref="#pmb12917"/>
-               <person ref="#pmb12961"/>
-               <person ref="#pmb13094"/>
-               <person ref="#pmb13212"/>
-               <person ref="#pmb25105"/>
-               <person ref="#pmb55485"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb44659"/>
-               <bibl ref="#pmb55474"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb29351"/>
-               <org ref="#pmb29453"/>
-               <org ref="#pmb29670"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb50"/>
-               <place ref="#pmb45258"/>
-            </listPlace>
+         <div type="biographical">
+            <div1>
+               <ref type="schnitzler-tagebuch" target="1919-06-11"/>
+               <quote>– In der gestrigen <rs type="org" ref="#pmb29670">Mittags Ztg.</rs>
+                  Protesttelegramm wegen <rs type="person" ref="#pmb12961">Tollers</rs> (des
+                  Communisten-Literaten) Verurtheilung in <rs type="place" ref="#pmb45258">München</rs>
+                  – u. a. von mir unterschrieben. Verfasse eine Verwahrung gegen den Mißbrauch
+                  meines Namens.–</quote>
+            </div1>
+            <div1>
+               <ref type="schnitzler-tagebuch" target="1919-06-12"/>
+               <quote>Vm., nach Berathung (telef.) mit <rs type="person" ref="#pmb2312" subtype="implied">Hofrätin</rs>, und <rs type="person" ref="#pmb2173">O.</rs> und
+                  Verschärfung meiner Erwidrung zu <rs type="org" ref="#pmb29453">Correspondenz
+                     Wilhelm</rs>;– wegen Versendung an die Zeitungen.</quote>
+            </div1>
+            <div1>
+               <ref type="schnitzler-tagebuch" target="1919-06-15"/>
+               <quote>
+                  <rs type="person" ref="#pmb10955">Blei</rs> (und Genossen) – danken in der <rs type="org" ref="#pmb29351">Ztg</rs>. dem ›mutigen Anonymus‹ der ihre
+                  Unterschriften unter jenen Aufruf gesetzt hatte (gegen die Hinrichtung <rs type="person" ref="#pmb12961">Tollers</rs> – die von einem blutrünstigen Bürgertum
+                  geplant wird).–</quote>
+            </div1>
+            <div1>
+               <ref type="schnitzler-tagebuch" target="1921-08-26"/>
+               <quote>Begegnungen u. a. <rs type="person" ref="#pmb12274">Moissi</rs>, den ich zum
+                  ersten Mal sprach, seit er meinen Namen unautorisirt unter jenen <rs type="person" ref="#pmb12961">Toller</rs> Aufruf geschrieben;</quote>
+            </div1>
+            <div1>
+               <ref type="schnitzler-tagebuch" target="1929-12-20"/>
+               <quote>Sprach mit <rs type="person" ref="#pmb12274">M.</rs> zum ersten Mal über den <rs type="person" ref="#pmb12961">Toller</rs> Aufruf, wo er vor circa 8<space unit="chars" quantity="1"/>Jahren ohne mich zu fragen, meine Unterschrift
+                  hingesetzt; es löste sich heut natürlich alles in Humor.–</quote>
+            </div1>
          </div>
       </body>
       <back>

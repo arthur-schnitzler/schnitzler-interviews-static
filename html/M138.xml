@@ -8,7 +8,7 @@
             <title level="s">Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer.« Interviews,
                Meinungen, Proteste (1891–1931)</title>
             <title level="a" ref="#pmb60214">Zwei Fragen und ihre Beantwortung, 1. 1. 1925</title>
-            <title type="iso-date" when-iso="1925-01-01" n="1">1.&#160;1.&#160;1925</title>
+            <title type="iso-date" when-iso="1925-01-01" n="1">1925</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -74,7 +74,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -83,57 +83,64 @@
          <change who="KH" when="2021-11-12">Durchsicht</change>
          <change who="MAM" when="2021-12-15">Durchsicht mit Almanach</change>
       </revisionDesc>
-   </teiHeader>
-   <text type="article">
+   </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb10992"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb33237"/>
-            </listBibl>
-            
-            <listPlace/>
-         </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb4061"/>
-               <person ref="#pmb4752"/>
-               <person ref="#pmb6441"/>
-               <person ref="#pmb6927"/>
-               <person ref="#pmb6964"/>
-               <person ref="#pmb8190"/>
-               <person ref="#pmb8363"/>
-               <person ref="#pmb8673"/>
-               <person ref="#pmb8729"/>
-               <person ref="#pmb8994"/>
-               <person ref="#pmb9730"/>
-               <person ref="#pmb10478"/>
-               <person ref="#pmb10788"/>
-               <person ref="#pmb10955"/>
-               <person ref="#pmb11002"/>
-               <person ref="#pmb11265"/>
-               <person ref="#pmb11488"/>
-               <person ref="#pmb11679"/>
-               <person ref="#pmb11749"/>
-               <person ref="#pmb11813"/>
-               <person ref="#pmb12126"/>
-               <person ref="#pmb12225"/>
-               <person ref="#pmb12248"/>
-               <person ref="#pmb12540"/>
-               <person ref="#pmb12640"/>
-               <person ref="#pmb12685"/>
-               <person ref="#pmb13122"/>
-               <person ref="#pmb13208"/>
-               <person ref="#pmb13212"/>
-               <person ref="#pmb14110"/>
-               <person ref="#pmb28711"/>
-               <person ref="#pmb60247"/>
-            </listPerson>
-            <listBibl/>
-            
-            <listPlace/>
+         <div type="original">
+            <head>
+               <anchor type="commentary" xml:id="K_I138-1"/>Zwei Fragen und ihre Beantwortung<note
+                  type="commentary" xml:id="K_I138-1h">Neben <rs type="person" ref="#pmb2121"
+                     >Schnitzler</rs>s Beitrag stammen die Antworten von: <rs type="person" ref="#pmb10788"
+                     >Raoul Auernheimer</rs>, <rs type="person" ref="#pmb4752">Max Beckmann</rs>,
+                     <rs type="person" ref="#pmb14110">Richard Arnold Bermann</rs>, <rs
+                     type="person" ref="#pmb10955">Franz Blei</rs>, <rs type="person"
+                     ref="#pmb11002">Felix Braun</rs>, <rs type="person" ref="#pmb6441">Max
+                     Brod</rs>, <rs type="person" ref="#pmb6927">Kasimir Edschmid</rs>, <rs
+                     type="person" ref="#pmb6964">Anton von Eiselsberg</rs>, <rs type="person"
+                     ref="#pmb11265">Paul Ernst</rs>, <rs type="person" ref="#pmb11488">Rudolf
+                     Goldscheid</rs>, <rs type="person" ref="#pmb11679">Hermann Hesse</rs>, <rs
+                     type="person" ref="#pmb11749">Arthur Holitscher</rs>, <rs type="person"
+                     ref="#pmb11813">Siegfried Jacobsohn</rs>, <rs type="person" ref="#pmb8190"
+                     >Hermann von Keyserling</rs>, <rs type="person" ref="#pmb8363">Anton Kuh</rs>,
+                     <rs type="person" ref="#pmb8673">Ernst Lissauer</rs>, <rs type="person"
+                     ref="#pmb8729">Emil Lucka</rs>, <rs type="person" ref="#pmb12126">Emil
+                     Ludwig</rs>, <rs type="person" ref="#pmb4061">Maria Mayer</rs>, <rs
+                     type="person" ref="#pmb28711">Julius Meinl</rs>, <rs type="person"
+                     ref="#pmb12225">Max Mell</rs>, <rs type="person" ref="#pmb12248">Gustav
+                     Meyrink</rs>, <rs type="person" ref="#pmb8994">Robert Musil</rs>, <rs
+                     type="person" ref="#pmb12540">Ida Roland</rs>, <rs type="person"
+                     ref="#pmb12640">René Schickele</rs>, <rs type="person" ref="#pmb9730">Wilhelm
+                     Schmidtbonn</rs>, <rs type="person" ref="#pmb12685">Oscar A. H. Schmitz</rs>,
+                     <rs type="person" ref="#pmb60247">Hermann Struck</rs>, <rs type="person"
+                     ref="#pmb10478">Ernst Weiss</rs>, <rs type="person" ref="#pmb13122">Anton
+                     Wildgans</rs>, <rs type="person" ref="#pmb13208">Arnold Zweig</rs> und <rs
+                     type="person" ref="#pmb13212">Stefan Zweig</rs>.</note>
+            </head>
+            <p rend="center">
+               <hi rend="spaced_out">Die Fragen:</hi>
+            </p>
+            <p>1. Welches Buch des Jahres hat auf Sie den stärksten Eindruck gemacht?<lb/>2. Wodurch
+               ist Ihrer Meinung nach dieser Eindruck begründet?</p>
+            <p>
+               <gap reason="outOfScope" unit="paragraphs" quantity="30"/>
+            </p>
+            <p>
+               <space dim="vertical" unit="lines" quantity="1"/>
+            </p>
+            <p>Stärkster Bucheindruck dieses Jahres:</p>
+            <p rend="center">
+               <hi rend="antiqua">
+                  <rs type="person" ref="#pmb10992">Brandes</rs>: <anchor type="commentary"
+                     xml:id="K_I138-2"/>
+                  <rs type="work" ref="#pmb33237">Voltaire</rs>
+                  <note type="commentary" xml:id="K_I138-2h">Die Lektüre dauerte vom <ref
+                        target="1924-02-08" type="schnitzler-tagebuch" subtype="date-only"/> bis zum
+                        <ref target="1924-05-07" type="schnitzler-tagebuch" subtype="date-only"/>,
+                     wobei sich <rs type="person" ref="#pmb2121">Schnitzler</rs> erst drei Tage
+                     später den Abschluss notierte und dazu: »<quote>wunderbares
+                     Buch</quote>«.</note>.</hi>
+            </p>
+            <p rend="right">
+               <hi rend="antiqua">Arthur Schnitzler</hi>.</p>
          </div>
       </body>
       <back>
@@ -1536,5 +1543,4 @@
             </bibl>
          </listBibl>
       </back>
-   </text>
-</TEI>
+   </text></TEI>

@@ -42,7 +42,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -51,40 +51,43 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb2323"/>
-            </listPerson>
-            <listBibl/>
-            <listOrg>
-               <org ref="#pmb62745"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb50"/>
-               <place ref="#pmb34438"/>
-            </listPlace>
-         </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb6303"/>
-               <person ref="#pmb7209"/>
-               <person ref="#pmb8422"/>
-               <person ref="#pmb8740"/>
-               <person ref="#pmb9756"/>
-               <person ref="#pmb11187"/>
-               <person ref="#pmb11205"/>
-               <person ref="#pmb11435"/>
-               <person ref="#pmb11570"/>
-               <person ref="#pmb11820"/>
-               <person ref="#pmb12170"/>
-               <person ref="#pmb12543"/>
-               <person ref="#pmb13055"/>
-               <person ref="#pmb62727"/>
-               <person ref="#pmb62732"/>
-            </listPerson>
-            <listBibl/>
-            
-            <listPlace/>
+         <div type="original">
+            <head>Für <rs type="person" ref="#pmb2323">Gorki</rs>
+            </head>
+            <head type="sub">Glückwünsche der Freunde.</head>
+            <p>Das »Komitee der ausländischen Freunde von <rs type="person" ref="#pmb2323">Maxim
+                  Gorki</rs>« hat in Zusammenarbeit mit dem <rs type="org" ref="#pmb62745">Malik-Verlag</rs>, der jetzt die deutsche Gesamtausgabe von <rs type="person" ref="#pmb2323">Gorki</rs>s Werken herausgibt, dem Dichter mit den Wünschen und Grüßen
+               der Freunde eine eindrucksvolle Kundgebung geistiger Gemeinschaft übermitteln können.
+               Wir sind in der Lage, <anchor type="commentary" xml:id="K_M168-1"/>einige dieser
+                  Glückwünsche<note type="commentary" xml:id="K_M168-1h">
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs>s Textspende beschließt die Beiträge. Davor stehen
+                  jene von: <rs type="person" ref="#pmb7209">Leonhard Frank</rs>, <rs type="person" ref="#pmb11570">Knut Hamsun</rs>, <rs type="person" ref="#pmb12170">Heinrich
+                     Mann</rs>, <rs type="person" ref="#pmb11435">André Gide</rs>, <rs type="person" ref="#pmb9756">Wilhelm von Scholz</rs>, <rs type="person" ref="#pmb11820">Johannes
+                     Jensen</rs>, <rs type="person" ref="#pmb11205">Alfred Döblin</rs>, <rs type="person" ref="#pmb8422">Selma Lagerlöf</rs>, <rs type="person" ref="#pmb62727">Bernhard Diebold</rs>, <rs type="person" ref="#pmb62732">Alfons Paquet</rs>, <rs type="person" ref="#pmb8740">Paul Löbe</rs>, <rs type="person" ref="#pmb6303">Rudolf
+                     Binding</rs>, <rs type="person" ref="#pmb12543">Romain Rolland</rs>, <rs type="person" ref="#pmb13055">Jakob Wassermann</rs> und <rs type="person" ref="#pmb11187">Georges Duhamel</rs>.</note> zu veröffentlichen.</p>
+            <p>
+               <gap reason="outOfScope" unit="paragraphs" quantity="14"/>
+            </p>
+            <p>
+               <space unit="lines" quantity="1" dim="vertical"/>
+            </p>
+            <p>Dem größten <rs type="place" ref="#pmb34438">russischen</rs> Dichter <rs type="person" ref="#pmb2323">Maxim Gorki</rs>, an dessen Schaffen ich seit drei Jahrzehnten
+               bewundernd Anteil nehme, sende ich zum sechzigsten Geburtstage die herzlichsten
+               Wünsche und Grüße.</p>
+            <p>
+               <seg rend="left">
+                  <rs type="place" ref="#pmb50">
+                     <hi rend="spaced_out">Wien</hi>
+                  </rs>
+                  <hi rend="spaced_out">, </hi>
+                  <date>
+                     <hi rend="spaced_out">Feber
+                  1928</hi>
+                  </date>.</seg>
+               <seg rend="right">
+                  <hi rend="spaced_out">Arthur Schnitzler.</hi>
+               </seg>
+            </p>
          </div>
       </body>
       <back>

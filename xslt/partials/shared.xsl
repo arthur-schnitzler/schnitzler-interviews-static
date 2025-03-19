@@ -52,34 +52,59 @@
     <xsl:template match="tei:c[@rendition = '#dots']">
         <xsl:value-of select="mam:dots(@n)"/>
     </xsl:template>
-    <xsl:template match="tei:div[@type = 'image'] | tei:figure">
-        <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="tei:graphic">
+    <xsl:template match="tei:div[@type = 'image']">
         <div style="width:100%; text-align:center; padding-bottom: 1rem;">
-            <img>
-                <xsl:attribute name="src">
-                    <xsl:choose>
-                        <xsl:when
-                            test="ends-with(@url, '.png') or ends-with(@url, '.jpg') or ends-with(@url, '.jp2')  or ends-with(@url, '.gif')">
-                            <xsl:value-of select="@url"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="concat(@url, '.jpg')"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:attribute>
-                <xsl:attribute name="width">
-                    <xsl:text>50%</xsl:text>
-                </xsl:attribute>
-            </img>
+            <xsl:choose>
+                <xsl:when test="tei:figure/tei:graphic and tei:caption">
+                    <figure>
+                        <!-- Bild mit dynamischen Attributen -->
+                        <img>
+                            <xsl:attribute name="src">
+                                <xsl:variable name="facs_item" select="tei:figure/tei:graphic/@url"/>
+                                <xsl:value-of select="$facs_item"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:choose>
+                                    <xsl:when test="ends-with(tei:figure/tei:graphic/@url, '.png') or ends-with(tei:figure/tei:graphic/@url, '.jpg') or ends-with(tei:figure/tei:graphic/@url, '.jp2') or ends-with(tei:figure/tei:graphic/@url, '.gif')">
+                                        <xsl:value-of select="tei:figure/tei:graphic/@url"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="concat(tei:graphic/@url, '.jpg')"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:attribute>
+                            <xsl:attribute name="width">
+                                <xsl:text>50%</xsl:text>
+                            </xsl:attribute>
+                        </img>
+                        <!-- Bildunterschrift -->
+                        <figcaption>
+                            <xsl:apply-templates select="tei:caption"/>                                
+                        </figcaption>
+                    </figure>
+                </xsl:when>
+                <xsl:otherwise>
+                    <!-- Fallback: Nur das Bild ohne Beschriftung -->
+                    <img>
+                        <xsl:attribute name="src">
+                            <xsl:variable name="facs_item" select="tei:figure/tei:graphic/@url"/>
+                            <xsl:value-of select="$facs_item"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="tei:figure/tei:graphic/@url"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="width">
+                            <xsl:text>50%</xsl:text>
+                        </xsl:attribute>
+                    </img>
+                </xsl:otherwise>
+            </xsl:choose>
         </div>
     </xsl:template>
-    <xsl:template match="tei:pb">
-        <span class="anchor-pb"/>
-        <span class="pb" source="{@facs}">
-            <xsl:value-of select="./@n"/>
-        </span>
+    <xsl:template match="tei:lb"><br/></xsl:template>
+    <xsl:template match="tei:figDesc"/>
+    <xsl:template match="tei:caption">
+        <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="tei:space">
         <span class="space">
@@ -98,16 +123,38 @@
         </xsl:element>
     </xsl:template>
     <xsl:template match="tei:del">
-        <span class="del" style="display:none;">
+        <span class="del strikethrough badge-item" style="display:none;">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+    <!-- Die folgenden beiden Regeln sollten das Leerzeichen vor und nach Streichungen mit aus- und einblenden -->
+    <xsl:template match="text()[matches(., '[\s\r\n]+$') and following-sibling::node()[1][self::tei:del]]">
+        <xsl:value-of select="replace(., '[\s\r\n]+$', '')"/>
+        <span class="del badge-item" style="display:none;">
+            <xsl:text> </xsl:text>
+        </span>
+    </xsl:template>
+    <!--<xsl:template match="text()[matches(., '^\s+') and preceding-sibling::node()[1][self::tei:del]]">
+        <xsl:choose>
+            <!-\- hier die Abfrage soll verhindern, dass ein Leerzeichen zu wenig ist, weil das vor
+            und das nach dem del entfernt wird-\->
+            <xsl:when test="preceding-sibling::node()[1][self::tei:del]">
+                <xsl:text>Ö</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="del badge-item" style="display:none;">
+                    <xsl:text> </xsl:text>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:value-of select="replace(., '^\s+', '')"/>
+    </xsl:template>-->
     <xsl:template match="tei:add">
-        <span class="add-zeichen">↓</span>
-        <span class="add-content">
+        <span class="add-zeichen badge-item">↓</span>
+        <span class="add-content badge-item">
             <xsl:apply-templates/>
         </span>
-        <span class="add-zeichen">↓</span>
+        <span class="add-zeichen badge-item">↓</span>
     </xsl:template>
     <!-- Substi -->
     <xsl:template match="tei:subst">
@@ -169,33 +216,6 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:hi">
-        <span>
-            <xsl:choose>
-                <xsl:when test="@rendition = '#em'">
-                    <xsl:attribute name="class">
-                        <xsl:text>italic</xsl:text>
-                    </xsl:attribute>
-                </xsl:when>
-                <xsl:when test="@rendition = '#italic'">
-                    <xsl:attribute name="class">
-                        <xsl:text>italic</xsl:text>
-                    </xsl:attribute>
-                </xsl:when>
-                <xsl:when test="@rendition = '#smallcaps'">
-                    <xsl:attribute name="class">
-                        <xsl:text>smallcaps</xsl:text>
-                    </xsl:attribute>
-                </xsl:when>
-                <xsl:when test="@rendition = '#bold'">
-                    <xsl:attribute name="class">
-                        <xsl:text>bold</xsl:text>
-                    </xsl:attribute>
-                </xsl:when>
-            </xsl:choose>
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
     <xsl:template match="tei:lg">
         <span style="display:block;margin: 1em 0;">
             <xsl:apply-templates/>
@@ -210,13 +230,7 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
-    <xsl:template match="tei:supplied">
-        <span class="supplied">
-            <xsl:text>[</xsl:text>
-            <xsl:apply-templates/>
-            <xsl:text>]</xsl:text>
-        </span>
-    </xsl:template>
+    <xsl:template match="tei:supplied"><span class="supplied"><xsl:apply-templates/></span></xsl:template>
     <xsl:template match="tei:table">
         <xsl:element name="table">
             <xsl:attribute name="class">
@@ -345,7 +359,7 @@
                             />
                         </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"/>
+                            aria-label="Schließen"/>
                     </div>
                     <div class="modal-body">
                         <table class="table">
@@ -425,7 +439,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            >Close</button>
+                            >Schließen</button>
                     </div>
                 </div>
             </div>
@@ -453,7 +467,7 @@
                                         (./tei:placeName)"/>
                         </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"/>
+                            aria-label="Schließen"/>
                     </div>
                     <div class="modal-body">
                         <table>
@@ -541,7 +555,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            >Close</button>
+                            >Schließen</button>
                     </div>
                 </div>
             </div>
@@ -569,7 +583,7 @@
                                         (./tei:placeName)"/>
                         </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"/>
+                            aria-label="Schließen"/>
                     </div>
                     <div class="modal-body">
                         <table class="table">
@@ -649,16 +663,16 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            >Close</button>
+                            >Schließen</button>
                     </div>
                 </div>
             </div>
         </div>
     </xsl:template>
-    <xsl:template match="tei:listBibl">
+    <xsl:template match="tei:listBibl|tei:bibl[not(parent::tei:listBibl)]">
         <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="tei:bibl">
+    <xsl:template match="tei:listBibl/tei:bibl">
         <xsl:param name="showNumberOfMentions" as="xs:integer" select="5"/>
         <xsl:variable name="selfLink">
             <xsl:value-of select="concat(data(@xml:id), '.html')"/>
@@ -672,7 +686,7 @@
                             <xsl:value-of select="./tei:title"/>
                         </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close"/>
+                            aria-label="Schließen"/>
                     </div>
                     <div class="modal-body">
                         <table class="table">
@@ -766,11 +780,36 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            >Close</button>
+                            >Schließen</button>
                     </div>
                 </div>
             </div>
         </div>
+    </xsl:template>
+    <xsl:template match="tei:hi">
+        <xsl:element name="span">
+            <xsl:attribute name="class">
+                <xsl:choose>
+                    <xsl:when test="@rend = 'underline'">
+                        <xsl:choose>
+                            <xsl:when test="@n = '1'">
+                                <xsl:text>underline</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="@n = '2'">
+                                <xsl:text>doubleUnderline</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>tripleUnderline</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="@rend"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
     </xsl:template>
     <!-- <xsl:template match="tei:rs[@ref or @key]">
         <strong>
@@ -783,4 +822,41 @@
             </xsl:element>
         </strong>
     </xsl:template> -->
+    
+    <xsl:template match="tei:damage">
+        <span class="damage-critical">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:pb">
+        <xsl:choose>
+            <xsl:when test="starts-with(@facs, 'http') or starts-with(@facs, 'www.')">
+                <xsl:element name="a">
+                    <xsl:variable name="href">
+                        <xsl:choose>
+                            <xsl:when test="not(starts-with(@facs, 'http'))">
+                                <xsl:value-of select="concat('https://', @facs)"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="@facs"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="$href"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="target">
+                        <xsl:text>_blank</xsl:text>
+                    </xsl:attribute>
+                    <i class="fas fa-external-link-alt"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="pagebreak" title="Seitenbeginn">
+                    <xsl:text>|</xsl:text>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 </xsl:stylesheet>

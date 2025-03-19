@@ -25,7 +25,6 @@
             <listBibl>
                <biblStruct>
                   <analytic>
-                     <author ref="#pmb2121">Schnitzler, Arthur</author>
                      <title level="a" ref="#pmb58415">Artur Schnitzler über eine eventuelle
                         Wiederaufnahme der »Reigen«-Aufführungen</title>
                   </analytic>
@@ -114,7 +113,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -124,32 +123,45 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb4040"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb29855"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb37179"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb50"/>
-            </listPlace>
+         <div type="original">
+            <head>Artur Schnitzler über eine eventuelle Wiederaufnahme der »<rs type="work" ref="#pmb29855">Reigen</rs>«-Aufführungen.</head>
+            <p>Artur <hi rend="spaced_out">Schnitzler</hi> hat an Direktor <rs type="person" ref="#pmb4040">
+                  <hi rend="spaced_out">Bernau</hi>
+               </rs> das nachfolgende Schreiben gerichtet:</p>
+            <p>»Verehrter Herr Direktor! Zu meiner Verwunderung lese ich in der Zeitung eine <anchor type="commentary" xml:id="K_I107-1"/>Notiz<note type="commentary" xml:id="K_I107-1h">Die neuerliche Aufnahme auf den Spielplan wurde von mehreren
+                  Stellen berichtet, darunter von der <rs type="work" ref="#pmb58419">Illustrierten
+                     Kronen-Zeitung</rs> am <date>3. 2. 1922</date> (<bibl>Jg. 23, Nr. 7.932,
+                     S. 7</bibl>): »<quote>
+                     <hi rend="bold">(Wiederaufführung des ›<rs type="work" ref="#pmb29855">Reigen</rs>‹.)</hi> Wie verlautet, hat <rs type="person" ref="#pmb2121">Artur
+                        Schnitzler</rs> sein Einverständnis gegeben, daß der ›<rs type="work" ref="#pmb29855">Reigen</rs>‹ wieder gespielt wird. Das behördliche Verbot ist
+                     bereits vor längerer Zeit wieder aufgehoben worden. Der ›<rs type="work" ref="#pmb29855">Reigen</rs>‹ wird in den <rs type="org" ref="#pmb37179">Kammerspielen</rs> Mitte des Monats wieder im Repertoire
+                     erscheinen.</quote>«</note> des Inhalts, daß ich nach anfänglicher Weigerung
+               meine Einwilligung zur Wiederaufführung des ›<rs type="work" ref="#pmb29855">Reigen</rs>‹ erteilt hätte. Diese Auffassung beruht auf einem schwer erklärlichen
+               Mißverständnis, das kaum in der Direktionskanzlei seinen Ursprung genommen haben
+               dürfte, wo man ja über meinen Standpunkt hinreichend informiert war und ist. Erlauben
+               Sie mir aber in jedem Fall, diesen meinen Standpunkt noch einmal mit aller Klarheit
+               zum Ausdruck zu bringen.</p>
+            <p>Ich werde die Wiederaufnahme der ›<rs type="work" ref="#pmb29855">Reigen</rs>‹-Vorstellungen an den <rs type="org" ref="#pmb37179">Kammerspielen</rs> –
+               oder an irgendeiner anderen <rs type="place" ref="#pmb50">Wien</rs>er Bühne – <hi rend="spaced_out">nur dann gestatten</hi>, wenn die hier in Betracht kommenden <hi rend="spaced_out">Behörden</hi>, die selbstverständlich nach reiflicher
+               Ueberlegung das Verbot erlassen und es nun, selbstverständlich nach ebenso reiflicher
+               Ueberlegung, aufgehoben haben, sich geneigt erklären, die <hi rend="spaced_out">Darsteller und das Publikum</hi> sowohl vor Ausbrüchen mehr oder minder echter
+               sittlicher Entrüstung als auch vor angezettelten Pöbeleien <hi rend="spaced_out">zu
+                  schützen</hi> – und wenn diese Behörden überzeugt sind, solche Schutzmaßnahmen,
+               wie es in anderen zivilisierten Städten gelungen ist, mit Sicherheit praktisch
+               durchführen zu können. Ehe nach dieser Richtung hin die mir im Interesse der
+               Darsteller und des Publikums notwendig erscheinenden Garantien nicht vorliegen, <hi rend="spaced_out">erhebe ich in aller Form Protest gegen jeden Versuch einer
+                  Wiederaufnahme</hi> meiner Szenenreihe ›<rs type="work" ref="#pmb29855">Reigen</rs>‹
+               in den Spielplan der <rs type="org" ref="#pmb37179">Kammerspiele</rs>, was ich Sie,
+               verehrtester Herr <rs type="person" subtype="implied" ref="#pmb4040">Direktor</rs>,
+               freundlichst zur Kenntnis zu nehmen bitte. Mit herzlichem Gruße Ihr aufrichtig
+               ergebener Dr. <hi rend="spaced_out">Schnitzler</hi>.«</p>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb4040"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb29855"/>
-               <bibl ref="#pmb58419"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb37179"/>
-            </listOrg>
-            <listPlace/>
+         <div type="biographical">
+            <div1>
+               <ref target="1922-02-08" type="schnitzler-tagebuch"/>
+               <quote>erschien mein Protest gegen ev. Wiederaufnahme des <rs type="work" ref="#pmb29855">Reigen</rs> falls Behörde nicht für Aufrechthaltung der Ruhe
+                  garantirt, wofür sie nach Aufhebung des Verbotes verpflichtet (Brief an <rs type="person" ref="#pmb4040">Bernau</rs>).–</quote>
+            </div1>
          </div>
       </body>
       <back>

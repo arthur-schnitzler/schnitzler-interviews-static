@@ -1,3 +1,2 @@
 #FORMAT: BEACON
-#NAME:Arthur Schnitzler: »Das Zeitlose ist von kürzester Dauer«. Interviews,
-    Meinungen, Proteste (1891–1931)
+#NAME:Arthur Schnitzler – Das Zeitlose ist von kürzester Dauer

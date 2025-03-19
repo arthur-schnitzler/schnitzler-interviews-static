@@ -25,7 +25,6 @@
             <listBibl>
                <biblStruct>
                   <analytic>
-                     <author ref="#pmb2121">Schnitzler, Arthur</author>
                      <title level="a" ref="#pmb61317">Was halten Sie von diesem Herrn</title>
                   </analytic>
                   <monogr>
@@ -43,7 +42,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -52,47 +51,41 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson/>
-            <listBibl/>
-            
-            <listPlace>
-               <place ref="#pmb50"/>
-            </listPlace>
+         <div type="image">
+            <figure>
+               <graphic url="./images/1904-floh.png" width="5cm"/>
+            </figure>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb2150"/>
-               <person ref="#pmb2154"/>
-               <person ref="#pmb2577"/>
-               <person ref="#pmb2601"/>
-               <person ref="#pmb2850"/>
-               <person ref="#pmb3300"/>
-               <person ref="#pmb7048"/>
-               <person ref="#pmb8552"/>
-               <person ref="#pmb10250"/>
-               <person ref="#pmb10815"/>
-               <person ref="#pmb11036"/>
-               <person ref="#pmb11406"/>
-               <person ref="#pmb11441"/>
-               <person ref="#pmb11533"/>
-               <person ref="#pmb11851"/>
-               <person ref="#pmb11857"/>
-               <person ref="#pmb12460"/>
-               <person ref="#pmb12501"/>
-               <person ref="#pmb12618"/>
-               <person ref="#pmb12809"/>
-               <person ref="#pmb12936"/>
-               <person ref="#pmb12980"/>
-               <person ref="#pmb15112"/>
-               <person ref="#pmb21952"/>
-               <person ref="#pmb28861"/>
-               <person ref="#pmb61323"/>
-               <person ref="#pmb61347"/>
-            </listPerson>
-            <listBibl/>
-            
-            <listPlace/>
+         <div type="original">
+            <head>»Was halten Sie von diesem Herrn?«</head>
+            <p>betitelt sich die <anchor type="commentary" xml:id="K_R153-1"/>Rundfrage<note type="commentary" xml:id="K_R153-1h">Die weiteren Antworten stammen von: <rs type="person" ref="#pmb12618">Adele Sandrock</rs>, <rs type="person" ref="#pmb2601">Josef Jarno</rs>, <rs type="person" ref="#pmb2850">Stella Hohenfels</rs>, <rs type="person" ref="#pmb61323">Lene Land</rs>, <rs type="person" ref="#pmb11036">Max
+                     Eugen Burckhard</rs>, <rs type="person" ref="#pmb2150">Julius Bauer</rs>, <rs type="person" ref="#pmb10815">Hermann Bahr</rs>, <rs type="person" ref="#pmb2577">Alexander Landesberg</rs>, <rs type="person" ref="#pmb15112">Karl Costa</rs>, <rs type="person" ref="#pmb2154">Vincenz Chiavacci</rs>, <rs type="person" ref="#pmb12501">Heinrich Reinhardt</rs>, <rs type="person" ref="#pmb8552">Franz
+                     Lehár</rs>, <rs type="person" ref="#pmb12460">Eduard Pötzl</rs>, <rs type="person" ref="#pmb11857">Max Kalbeck</rs>, <rs type="person" ref="#pmb11406">Julius von
+                     Gans-Ludassy</rs>, <rs type="person" ref="#pmb3300">Julius Löwy</rs>, <rs type="person" ref="#pmb11533">Alfred Grünfeld</rs>, <rs type="person" ref="#pmb7048">Edmund Eysler</rs>, <rs type="person" ref="#pmb12809">Adolf von Sonnenthal</rs>,
+                     <rs type="person" ref="#pmb11851">Josef Kainz</rs>, <rs type="person" ref="#pmb10250">Louis Treumann</rs>, <rs type="person" ref="#pmb28861">Hermann Winkelmann</rs>,
+                     <rs type="person" ref="#pmb12980">Rudolf Tyrolt</rs>, <rs type="person" ref="#pmb21952">Hansi Niese</rs>, <rs type="person" ref="#pmb12936">Wilhelm
+                     Thaller</rs>, <rs type="person" ref="#pmb11441">Alexander Girardi</rs> und <rs type="person" ref="#pmb61347">Carl Blasel</rs>.</note>, die wir an die
+               hervorragendsten <rs type="place" ref="#pmb50">Wien</rs>er Schriftsteller, Musiker,
+               Theatergrößen und Kritiker gerichtet haben.</p>
+            <p>Was dieser Rundfrage besondere Originalität verleiht, ist der Umstand, daß jeder der
+               Gefragten auf Grund der ihm zugesandten Karikatur seiner Person über sich selbst zu
+               Gericht sitzen sollte und daß die Antworten dadurch subjektiv und objektiv
+               individuell ausfallen mußten.</p>
+            <p>Daß bei dem beschränkten Raume nicht alle Größen Aufnahme finden konnten, liegt wohl
+               auf der Hand. Wir wollen nicht verfehlen, auch an dieser Stelle, allen <hi rend="antiqua">p. t.</hi> Einsendern für die witzige und geistvolle
+               Beantwortung unserer Rundfrage Dank zu sagen. Wir geben der Erwartung Ausdruck, daß
+               wir durch die Reproduzierung dieser Selbstpersiflagen und Karikaturen der <rs type="place" ref="#pmb50">Wien</rs>er Lieblinge zur Weihnachtsbelustigung unserer
+               Leser beigetragen haben.</p>
+            <p>
+               <gap reason="outOfScope" unit="paragraphs" quantity="30"/>
+            </p>
+            <p>
+               <space dim="vertical" quantity="1" unit="paragraphs"/>
+            </p>
+            <p>Ich beantworte Rundfragen nur dann, wenn ich, auch ungefragt, ein Bedürfnis empfinde,
+               über das betreffende Thema zu reden. Das trifft hier nicht zu und daher gestatten Sie
+               mir, zu schweigen.</p>
+            <p rend="right">Arthur Schnitzler.</p>
          </div>
       </body>
       <back>

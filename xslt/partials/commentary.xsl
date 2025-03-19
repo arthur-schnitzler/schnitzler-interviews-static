@@ -4,7 +4,6 @@
     xmlns:mam="whatever" exclude-result-prefixes="xs" version="2.0">
     <!-- this creates the notes[@type='commentary']. included is a feature that takes the text between anchor and note as input and creates a lemma. if the
   text is too long it abbreviates it-->
-    
     <!-- Kommentar und Textkonstitution -->
     <xsl:template
         match="tei:note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::tei:note[@type = 'footnote'])]"/>
@@ -33,6 +32,7 @@
                 <xsl:choose>
                     <xsl:when test="not(contains($lemmaganz, ' '))">
                         <xsl:value-of select="$lemmaganz"/>
+                        
                     </xsl:when>
                     <xsl:when test="string-length(normalize-space($lemmaganz)) &gt; 24">
                         <xsl:variable name="lemma-kurz"
@@ -71,30 +71,31 @@
             </span>
         </p>
     </xsl:template>
-    
+    <xsl:template match="tei:div[@type='biographical']">
+        <p>
+            <xsl:apply-templates select="tei:div1"/>
+        </p>
+        
+    </xsl:template>
+    <xsl:template match="tei:del" mode="lemma"/>
+    <xsl:template match="tei:subst/tei:del" mode="lemma"/><!-- das verhindert die Wiedergabe des gelöschten Teils von subst in einem Lemma -->
     <xsl:template match="tei:c[@rendition = '#prozent']" mode="lemma">
         <xsl:text>%</xsl:text>
     </xsl:template>
-    
     <xsl:template match="tei:l" mode="lemma">
         <xsl:apply-templates/>
         <xsl:text> </xsl:text>
     </xsl:template>
-    
     <xsl:template match="tei:c[@rendition = '#dots']" mode="lemma">
         <xsl:value-of select="mam:dots(@n)"/>
     </xsl:template>
-    
     <xsl:template match="tei:c[@rendition = '#langesS']" mode="lemma">
         <xsl:apply-templates/>
     </xsl:template>
-    
     <xsl:template match="tei:c[@rendition = '#kaufmannsund']" mode="lemma">
         <xsl:text>&amp;</xsl:text>
     </xsl:template>
-    
     <xsl:template match="tei:c[@rendition = '#tilde']" mode="lemma">~</xsl:template>
-    
     <xsl:template match="tei:c[@rendition = '#geschwungene-klammer-auf']" mode="lemma">
         <xsl:text>{</xsl:text>
     </xsl:template>
@@ -104,20 +105,64 @@
     <xsl:template match="tei:space[@unit = 'chars' and @quantity = '1']" mode="lemma">
         <xsl:text> </xsl:text>
     </xsl:template>
-    
-    
-    
     <xsl:template match="tei:c[@rendition = '#gemination-m']" mode="lemma">
         <span class="gemination">mm</span>
     </xsl:template>
-    
     <xsl:template match="tei:c[@rendition = '#gemination-n']" mode="lemma">
         <span class="gemination">nn</span>
     </xsl:template>
-    
+    <xsl:template match="tei:hi[@rend = 'subscript']" mode="lemma">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
+    </xsl:template>
+    <xsl:template match="tei:hi[@rend = 'superscript']" mode="lemma">
+        <sub>
+            <xsl:apply-templates/>
+        </sub>
+    </xsl:template>
+    <!-- das blendet verschacheltete notes aus dem Lemma aus: -->
+    <xsl:template match="tei:note[@type='textConst' or @type='commentary']" mode="lemma"/>
     <xsl:function name="mam:dots">
-        <xsl:param name="anzahl"/> . <xsl:if test="$anzahl &gt; 1">
+        <xsl:param name="anzahl"/> 
+        <xsl:text>.&#160;</xsl:text>
+        <xsl:if test="$anzahl &gt; 1">
             <xsl:value-of select="mam:dots($anzahl - 1)"/>
         </xsl:if>
     </xsl:function>
+    
+    <xsl:template match="tei:div1">
+       <p> <span class="lemma">
+            <xsl:apply-templates select="tei:ref|tei:bibl" mode="biographical"/>
+        </span>
+        <span class="biographical-text">
+            <xsl:choose>
+                <xsl:when test="child::tei:p">
+                    <xsl:apply-templates select="tei:quote" mode="biographical"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <span>»<xsl:apply-templates select="tei:quote"/>«</span>
+                </xsl:otherwise>
+            </xsl:choose>
+        </span>
+       </p>
+    </xsl:template>
+    
+    
+    
+    <xsl:template match="tei:ref[parent::tei:div1]" mode="biographical">
+        <xsl:choose>
+            <xsl:when test="@type='schnitzler-tagebuch'">
+                <a href="https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__{@target}.html">Schnitzler: Tagebuch, 
+                    <xsl:value-of select="format-date(xs:date(@target), '[D].&#160;[M].&#160;[Y]')"/></a><xsl:text>: </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>SEX</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:bibl[parent::tei:div1]" mode="biographical">
+        <xsl:apply-templates/><xsl:text>: </xsl:text>
+    </xsl:template>
 </xsl:stylesheet>

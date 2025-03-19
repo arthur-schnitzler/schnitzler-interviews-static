@@ -8,14 +8,13 @@
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
     <xsl:import href="partials/shared.xsl"/>
-    <xsl:import href="partials/refs.xsl"/>
     <!--<xsl:import href="partials/tei-facsimile.xsl"/>-->
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select="descendant::tei:titleStmt/tei:title[@level = 'a'][1]/text()"/>
         </xsl:variable>
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
-        <html>
+        <html lang="de" style="hyphens: auto;" xml:lang="de">
             <xsl:call-template name="html_head">
                 <xsl:with-param name="html_title" select="$doc_title"/>
             </xsl:call-template>
@@ -132,20 +131,51 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
+    <xsl:template match="tei:p[@rend = 'right']">
+        <p align="right">
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
     <xsl:template match="tei:p">
         <p id="{generate-id()}">
             <xsl:apply-templates/>
         </p>
     </xsl:template>
-    <xsl:template match="tei:div">
+    <xsl:template
+        match="tei:div[not(@xml:id = 'container-ohne-slider') and not(@xml:id = 'container-mit-slider')]">
         <div id="{generate-id()}">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    <xsl:template match="tei:div[@xml:id = 'container-ohne-slider']">
+        <div style="display: flex; width: 100%;">
+            <div
+                style="width: 40%; margin: auto; display: flex; flex-direction: column; height: 500px;">
+                <div id="container-ohne-slider" style="width: 100%; flex-grow: 1;"/>
+                <div style="width: 100%; height: 55px;"/>
+                <figcaption style="text-align: center;">Abb. 8: Alle Korrespondenzen zwischen Arthur
+                    Schnitzler, Hermann Bahr, Richard Beer-Hofmann und Hugo von
+                    Hofmannsthal</figcaption>
+            </div>
+            <div
+                style="width: 40%; margin: auto; display: flex; flex-direction: column; height: 500px;">
+                <div id="container-mit-slider" style="width: 100%; flex-grow: 1;"></div>
+                <div style="width: 100%; text-align: center; margin-top: 5px;">
+                    <input type="range" id="yearSlider" min="1890" max="1931" value="1900" step="1" style="display: block; margin: 0 auto;"/>
+                    <span id="yearDisplay" style="display: block; margin-top: 2px;">1900</span>
+                </div>
+                <figcaption style="text-align: center; margin-top: auto;">Abb. 9: Alle
+                    Korrespondenzen zwischen Arthur Schnitzler, Hermann Bahr, Richard Beer-Hofmann
+                    und Hugo von Hofmannsthal im Timeslider</figcaption>
+            </div>
+        </div>
+        <script src="js/jung-wien-charts-ohne-slider.js"/>
+        <script src="js/jung-wien-charts-mit-slider.js"/>
+    </xsl:template>
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
-<xsl:template match="tei:unclear">
+    <xsl:template match="tei:unclear">
         <xsl:element name="span">
             <xsl:attribute name="class">
                 <xsl:text>unclear</xsl:text>
@@ -153,10 +183,21 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-        <xsl:template match="tei:del">
-        <del>
+    <xsl:template match="tei:del">
+        <xsl:element name="span">
+            <xsl:attribute name="class">
+                <xsl:apply-templates/>
+            </xsl:attribute>
             <xsl:apply-templates/>
-        </del>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:caption">
+        <xsl:element name="figcaption">
+            <xsl:attribute name="class">
+                <xsl:apply-templates/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
     </xsl:template>
     <xsl:template match="tei:table">
         <xsl:element name="table">
@@ -263,83 +304,21 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:rs[(@ref or @key) and (ancestor::tei:rs)]">
-        <xsl:apply-templates/>
+    <xsl:template match="tei:bibl" mode="footnote">
+        <xsl:value-of select="."/>
     </xsl:template>
-    <xsl:template
-        match="tei:rs[not(ancestor::tei:rs) and not(descendant::tei:rs) and not(contains(@ref, ' '))] | tei:persName | tei:author | tei:placeName | tei:orgName">
-        <xsl:variable name="entity-typ" as="xs:string">
-            <xsl:choose>
-                <xsl:when test="@type = 'person'">
-                    <xsl:text>persons</xsl:text>
-                </xsl:when>
-                <xsl:when test="@type = 'work'">
-                    <xsl:text>works</xsl:text>
-                </xsl:when>
-                <xsl:when test="@type = 'place'">
-                    <xsl:text>places</xsl:text>
-                </xsl:when>
-                <xsl:when test="@type = 'org'">
-                    <xsl:text>orgs</xsl:text>
-                </xsl:when>
-            </xsl:choose>
-        </xsl:variable>
-        <span>
-            <xsl:attribute name="class">
-                <xsl:value-of select="$entity-typ"/>
-            </xsl:attribute>
-            <xsl:element name="a">
-                <xsl:attribute name="href">
-                    <xsl:value-of select="concat(replace(@ref, '#', ''), '.html')"/>
-                </xsl:attribute>
-                <xsl:choose>
-                    <xsl:when test="ancestor::tei:hi[@rend = 'pre-print']">
-                        <xsl:attribute name="class">
-                            <xsl:text>pre-print</xsl:text>
-                        </xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="ancestor::tei:hi[@rend = 'stamp']">
-                        <xsl:attribute name="class">
-                            <xsl:text>stamp</xsl:text>
-                        </xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="ancestor::tei:damage">
-                        <xsl:attribute name="class">
-                            <xsl:text>damage-critical</xsl:text>
-                        </xsl:attribute>
-                    </xsl:when>
-                </xsl:choose>
-                <xsl:apply-templates/>
-            </xsl:element>
-        </span>
-    </xsl:template>
-    <xsl:template match="tei:rs[.//tei:rs or contains(@ref, ' ')]">
-        <xsl:variable name="modalId">
-            <xsl:value-of
-                select="replace(normalize-space(string-join(.//@ref[starts-with(., '#')], '___')), '#', '')"
-            />
-        </xsl:variable>
+    <xsl:template match="tei:ref">
         <xsl:element name="a">
-            <xsl:attribute name="class">
-                <xsl:text>reference-black</xsl:text>
-            </xsl:attribute>
-            <xsl:attribute name="data-toggle">modal</xsl:attribute>
-            <xsl:attribute name="data-target">
-                <xsl:value-of select="concat('#', $modalId)"/>
+            <xsl:attribute name="href">
+                <xsl:value-of select="@target"/>
             </xsl:attribute>
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
-    <xsl:template
-        match="tei:rs[@type = 'work' and not(ancestor::tei:quote) and ancestor::tei:note and not(@subtype = 'implied')]/text()">
-        <span class="works {substring-after(@rendition, '#')}" id="{@xml:id}">
-            <span class="italics">
-                <xsl:value-of select="."/>
-            </span>
-        </span>
-    </xsl:template>
-    <xsl:template match="tei:bibl" mode="footnote">
-        <xsl:apply-templates/>
+    <xsl:template match="tei:rs[@type = 'work']/text()">
+        <i>
+            <xsl:value-of select="."/>
+        </i>
     </xsl:template>
     <xsl:template match="tei:supplied">
         <xsl:text>[</xsl:text>
@@ -736,6 +715,49 @@
             <xsl:apply-templates/>
         </code>
     </xsl:template>
-    
-    
+
+    <xsl:template match="tei:figure">
+        <xsl:element name="figure">
+            <xsl:attribute name="class">
+                <xsl:text>d-flex align-items-center</xsl:text>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+
+    <xsl:template match="tei:graphic[@url]">
+        <xsl:choose>
+            <xsl:when test="ancestor::tei:TEI/@xml:id = 'Kooperationen'">
+                <img src="{@url}" class="mx-auto" style="width: 400px"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="modalName" as="xs:string">
+                    <xsl:choose>
+                        <xsl:when test="string-length(tokenize(@url, '/')[last()]) = 0">
+                            <xsl:value-of
+                                select="substring-before(tokenize(@url, '/')[last() - 1], '.')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of
+                                select="substring-before(tokenize(@url, '/')[last()], '.')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <img src="{@url}" class="img-fluid clickable-image" data-bs-toggle="modal"
+                    data-bs-target="#{$modalName}" style="width: 100%; max-width=100% "/>
+                <div class="modal fade" id="{$modalName}" tabindex="-1"
+                    aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="{@url}" class="img-fluid" alt="Full Screen Image"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xsl:otherwise>
+        </xsl:choose>
+
+    </xsl:template>
 </xsl:stylesheet>

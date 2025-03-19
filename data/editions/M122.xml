@@ -25,7 +25,6 @@
             <listBibl>
                <biblStruct>
                   <analytic>
-                     <author ref="#pmb2121">Schnitzler, Arthur</author>
                      <title level="a" ref="#pmb35739">Dichterische Arbeit und Alkohol</title>
                   </analytic>
                   <monogr>
@@ -40,7 +39,6 @@
                </biblStruct>
                <biblStruct>
                   <analytic>
-                     <author ref="#pmb2121">Schnitzler, Arthur</author>
                      <title level="a" ref="#pmb35739">Dichterische Arbeit und Alkohol</title>
                   </analytic>
                   <monogr>
@@ -95,7 +93,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -105,21 +103,62 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb59187"/>
-            </listPerson>
-            <listBibl/>
-            
-            <listPlace>
-               <place ref="#pmb50"/>
-            </listPlace>
-         </div>
-         <div type="kommentar-text">
-            <listPerson/>
-            <listBibl/>
-            
-            <listPlace/>
+         <div type="original">
+            <head>
+               <anchor type="commentary" xml:id="K_M122-1"/>Dichterische Arbeit und Alkohol<note type="commentary" xml:id="K_M122-1h">Die Umfrage erging an rund 150
+                  Autoren.</note>
+            </head>
+            <head type="sub">Eine Rundfrage</head>
+            <head type="sub">Mit Einleitung und Nachwort von Dr. <rs type="person" ref="#pmb59187">C.
+                  F. van Vleuten</rs>
+            </head>
+            <p rend="inline">1. Nehmen Sie regelmäßig vor der
+               künstlerischen Arbeit Alkohol in irgend einer Form zu sich, und welche Wirkungen
+               schreiben Sie dem zu?</p>
+            <p rend="inline">2. Haben Sie, falls Sie nicht
+               regelmäßig Alkohol vor der Arbeit nehmen, es aber gelegentlich doch einmal getan
+               haben, dann eine Steigerung oder Hemmung Ihrer Arbeitsleistung beobachtet?</p>
+            <p rend="inline">3. Sehr dankenswert wäre eine
+               Mitteilung Ihres Standpunktes zur Alkoholfrage im allgemeinen, besonders aber Ihrer
+               Beobachtungen über die Wechselwirkung zwischen Alkohol und Dichtung.</p>
+            <p>
+               <gap reason="outOfScope" unit="paragraphs" quantity="30"/>
+            </p>
+            <p>
+               <space dim="vertical" unit="lines" quantity="1"/>
+            </p>
+            <p>Zu 1 und 2. Meine persönlichen Erfahrungen über das Verhältnis des Alkohols zum
+               künstlerischen Schaffen können kaum in Betracht kommen, da ich sehr wenig, im Laufe
+               des Tages beinah niemals trinke.</p>
+            <p>Zu 3. Mein allgemeiner Standpunkt zur Alkoholfrage: Abstinenz. Nicht etwa, weil ich
+               überzeugt wäre, daß die Aufnahme geringer Alkoholmengen notwendiger Weise eine
+               Schädigung des Organismus mit sich bringen muß, – sondern weil den meisten Menschen
+               die Fähigkeit mangelt, sich über die <anchor type="textConst" xml:id="T_I122-"/>physiologischen<note type="textConst" xml:id="T_I122-h">
+                  <quote>psysiologischen</quote>
+               </note> Grenzen ihrer Alkoholtoleranz (die
+               Grenzen, jenseits derer die Gefahren für die eigne Person, die Familie, die
+               Nachkommenschaft, die Mitwelt beginnen) ein sicheres Urteil zu bilden.</p>
+            <p>Zweifellos verdanken mehrere künstlerische Produkte über Alkoholismus ihrem Schöpfer
+               die besondere Eigenart, und man möchte sich, wie die Dinge nun einmal stehen, gewisse
+               dieser Worte nicht aus der Literatur wegdenken; ebenso zweifellos aber ist, daß jeder
+               der hier in Betracht kommenden Künstler ohne Alkohol seine Gaben höher entwickelt
+               hätte, da der Alkohol ein Talent wohl zu verändern, aber nie zu steigern vermag.</p>
+            <p>Was jene andere Wechselwirkung zwischen Alkohol und Dichtung anbelangt, wie sie
+               z. B. im Trinklied zum Ausdruck kommt, so sind mir die meisten dieser
+               Erzeugnisse, wie andere literarische Fälschungen des Weltbilds, durchaus widerwärtig,
+               und ich fühle mich versucht, hochgestimmten Kneipgesängen gegenüber ein bekanntes
+               französisches Wort zu variieren, indem ich sage: Es genügt, wenn man betrunken ist;
+               man muß nicht stolz darauf sein.</p>
+            <p>
+               <seg rend="left">
+                  <rs type="place" ref="#pmb50">
+                     <hi rend="spaced_out">Wien</hi>
+                  </rs>
+               </seg>
+               <seg rend="right">
+                  <hi rend="spaced_out">Dr. Arthur Schnitzler</hi>
+               </seg>
+            </p>
          </div>
       </body>
       <back>

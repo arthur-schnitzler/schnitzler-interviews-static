@@ -14,6 +14,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"/>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
@@ -47,7 +48,7 @@
                                     <a title="Schnitzler am ACDH-CH" href="https://schnitzler.acdh.oeaw.ac.at"
                                         class="nav-link" target="_blank">Schnitzler am ACDH-CH</a>
                                 </li>
-                               
+                                
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -74,7 +75,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="toc.html">Inhaltsverzeichnis</a>
                         </li>
-                     <!--   <li class="nav-item">
+                        <li class="nav-item">
                             <a title="Suche" class="nav-link" href="search.html"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -83,12 +84,12 @@
                                     <circle cx="11" cy="11" r="8"/>
                                     <line x1="21" y1="21" x2="16.65" y2="16.65"/>
                                 </svg> SUCHE</a>
-                        </li>-->
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-
+        
+        
     </xsl:template>
 </xsl:stylesheet>

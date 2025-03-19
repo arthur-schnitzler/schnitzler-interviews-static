@@ -24,6 +24,10 @@
          <sourceDesc>
             <listBibl>
                <biblStruct>
+                  <analytic>
+                     <title level="a" ref="#pmb63301">Ein bisher unveröffentlichter Brief Schnitzlers. Antwort in Sachen
+                        des Professor Bernhardi</title>
+                  </analytic>
                   <monogr>
                      <title level="j" ref="#pmb63300">Morgenzeitung und Handelsblatt</title>
                      <imprint>
@@ -66,7 +70,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -75,27 +79,43 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb63206"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb30203"/>
-            </listBibl>
-            
-            <listPlace/>
-         </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb63206"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb30203"/>
-            </listBibl>
-            
-            <listPlace>
-               <place ref="#pmb50"/>
-            </listPlace>
+         <div type="original">
+            <head>Ein bisher unveröffentlichter Brief Schnitzlers.</head>
+            <head type="sub">Antwort in Sachen des <rs type="work" ref="#pmb30203">Professors
+                  Bernhardi</rs>.</head>
+            <p rend="inline">Von befreundeter Seite wird uns ein Brief Arthur <hi rend="spaced_out">Schnitzlers</hi> zur Verfügung gestellt, der eine Antwort des Dichters an eine
+                  <anchor type="commentary" xml:id="K_M177-1"/>
+               <rs type="person" ref="#pmb63206" subtype="implied">Dame</rs>
+               <note type="commentary" xml:id="K_M177-1h">
+                  <rs type="person" ref="#pmb63206">Edith
+                  Werner</rs>, zu diesem Zeitpunkt Schülerin eines Mädchenpensionats in <rs type="place" ref="#pmb50">Wien</rs>, hatte in ihrem Brief vom <date>24. 3. 1924</date>
+                  auf eine Stelle im ersten Akt von <rs type="work" ref="#pmb30203">Professor
+                     Bernhardi</rs> hingewiesen, die ihrer Meinung nach einen Widerspruch enthalte.
+                  Die Sterbende, von der Bernhardi sage, sie sei völlig ahnungslos und von ihrer
+                  Heilung überzeugt, rufe, als ihr die Schwester den Besuch des Priesters ankündigt,
+                  aus: »Muß ich denn wirklich sterben?« Dieses »wirklich« stehe nicht im Einklang
+                  mit der Aussage Bernhardis (<bibl>
+                     <title level="m">Briefe</title> II,
+                     S. 959</bibl>).</note> ist, die mit der Auffassung Schnitzlers nicht
+               einverstanden war. Hier der Wortlaut des Schreibens:</p>
+            <p>
+               <space dim="vertical" quantity="1" unit="paragraphs"/>
+            </p>
+            <p rend="right">
+               <date>10. April 1924</date>.</p>
+            <p rend="center">Sehr geehrtes Fräulein!</p>
+            <p>Ihr Bedenken ist ganz klug, aber trotzdem trifft es nicht zu. Die Sterbende ist zwar
+               in Euphorie verfallen, aber vorher war sie nicht nur krank, sondern sie hat sich auch
+               krank gefühlt und Todesgedanken gehabt. Die Ankündigung des priesterlichen Besuches
+               weckt sie eben aus ihrer Euphorie, auch aus der seelischen, die Todesangst ist
+               wieder da, nicht zum ersten Mal und auch ihre früheren Aengste kommen ihr nun neu zum
+               Bewußtsein. <rs type="work" ref="#pmb30203" subtype="implied">Bernhardi</rs> enthält ihr
+               also nicht die Segnungen der Kirche vor, die ja gewiß (wie später von Prof. <rs type="work" ref="#pmb30203" subtype="implied">Cyprian</rs> deutlich gesagt wird) von
+               manchen Sterbenden wirklich als Segnungen empfunden werden, sondern er erfüllt seine
+               ärztliche Pflicht, indem er seine Patientin davor zu bewahren sucht, aus ungestörtem
+               Wohlgefühl unvermittelt in Todesgrauen versetzt zu werden. Ich hoffe Sie sind
+               beruhigt, mein Fräulein, und ich grüße Sie bestens</p>
+            <p rend="right">Arthur <hi rend="spaced_out">Schnitzler</hi>.</p>
          </div>
       </body>
       <back>

@@ -5,7 +5,7 @@ var editor = new LoadEditor({
             opt: "ef",
             opt_slider: "entities-features-slider",
             title: "Alle",
-            color: "red",
+            color: "blue",
             html_class: "undefined",
             css_class: "undefined",
             chg_citation: "citation-url",
@@ -110,7 +110,7 @@ var editor = new LoadEditor({
             }
         }, {
             opt: "prs",
-            color: "red",
+            color: "blue",
             title: "Personen",
             html_class: "persons",
             css_class: "pers",
@@ -125,7 +125,7 @@ var editor = new LoadEditor({
             },
         }, {
             opt: "plc",
-            color: "red",
+            color: "blue",
             title: "Orte",
             html_class: "places",
             css_class: "plc",
@@ -140,7 +140,7 @@ var editor = new LoadEditor({
             },
         }, {
             opt: "org",
-            color: "red",
+            color: "blue",
             title: "Institutionen",
             html_class: "orgs",
             css_class: "org",
@@ -155,7 +155,7 @@ var editor = new LoadEditor({
             },
         }, {
             opt: "wrk",
-            color: "red",
+            color: "blue",
             title: "Werke",
             html_class: "works",
             css_class: "wrk",

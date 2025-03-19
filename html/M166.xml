@@ -117,7 +117,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -126,31 +126,93 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb10986"/>
-               <person ref="#pmb11617"/>
-            </listPerson>
-            <listBibl/>
-            
-            <listPlace>
-               <place ref="#pmb50"/>
-               <place ref="#pmb189"/>
-               <place ref="#pmb735"/>
-            </listPlace>
+         <div type="original">
+            <head>
+               <anchor type="commentary" xml:id="K_M166-1"/>Festschrift zum 60. Geburtstag <rs type="person" ref="#pmb11617">Gerhart Hauptmanns</rs>
+               <note type="commentary" xml:id="K_M166-1h">Das <rs type="work" ref="#pmb47979">Börsenblatt für den Deutschen
+                     Buchhandels</rs> meldete am <date>3. 8. 1922</date> das <rs type="work" ref="#pmb62664" subtype="implied">Buch</rs> als »<quote>soeben
+                     erschienen</quote>«.</note>
+            </head>
+            <p>
+               <gap reason="outOfScope" unit="paragraphs" quantity="20"/>
+            </p>
+            <head type="sub">Arthur Schnitzler</head>
+            <p>
+               <anchor xml:id="K_L02377_1" type="commentary"/>Versuche ich<note xml:id="K_L02377_1h" type="commentary">Ein Typoskript mit Textabweichungen (6 Blatt, 6 Seiten, mit
+                  handschriftlichen Korrekturen <rs type="person" ref="#pmb2121">Schnitzler</rs>s mit
+                  Bleistift) findet sich im Nachlass in der <rs type="org" ref="#pmb29355">Cambridge
+                     University Library</rs> (<bibl>A 17,4</bibl>) und ist abgedruckt in: <bibl>
+                     <title level="m">Briefe</title> II, S. 271–273</bibl>.</note>, mein
+               lieber und verehrter <rs type="person" ref="#pmb11617">Gerhart Hauptmann</rs>, während
+               ich mich in Gedanken mit Ihrem bevorstehenden <anchor type="commentary" xml:id="K_M166-12"/>Geburtstage<note type="commentary" xml:id="K_M166-12h">Am
+                     <date>15. 11. 1922</date> wurde er sechzig Jahre alt.</note>
+               beschäftige, mir die einzelnen Momente unserer Bekanntschaft oder, wenn ich mich
+               kühner ausdrücken soll, die Geschichte unserer Beziehungen zu vergegenwärtigen, so
+               wundere ich mich selbst, wie spärlich an Zahl und wie kurz gemessen die persönlichen
+               Begegnungen sind, die ich in meinem Gedächtnis verzeichnet finde. Ich denke des
+                  <anchor xml:id="K_L02377_2" type="commentary"/>Abends bei <rs type="person" ref="#pmb10986">Brahm</rs>
+               <note xml:id="K_L02377_2h" type="commentary">
+                  <ref target="1896-10-28" type="schnitzler-tagebuch" subtype="Cf"/>.
+               </note> im Jahre <date>1896</date>, an dem ich Sie <latex alt="kennen\-lernte&#160;–,">kennenlernte&#160;–,</latex> eines <anchor xml:id="K_L02377_3" type="commentary"/>Spazierganges<note xml:id="K_L02377_3h" type="commentary">
+                  <ref target="1899-01-22" type="schnitzler-tagebuch" subtype="Cf"/>.
+               </note> in der <rs type="place" ref="#pmb189">Semmering</rs>er Landschaft im
+                  <date>Winter 1899</date>, der grauverhängten, doch warmdurchleuchteten <anchor xml:id="K_L02377_4" type="commentary"/>
+               <date>Spätoktobertage 1902</date>
+               <note xml:id="K_L02377_4h" type="commentary">
+                  <ref target="1902-10-19" type="schnitzler-tagebuch" subtype="Cf"/>.
+               </note> in Ihrem <rs type="place" ref="#pmb735">Agnetendorf</rs>, des traurigen <anchor xml:id="K_L02377_5" type="commentary"/>
+               <date>Novembertages 1912</date>
+               <note xml:id="K_L02377_5h" type="commentary">
+                  <ref target="1912-12-01" type="schnitzler-tagebuch" subtype="Cf"/>; <ref type="pointer" target="#M029" subtype="cf"/>.
+               </note>, an dem wir unserem dahingeschiedenen wunderbaren <rs type="person" ref="#pmb10986" subtype="implied">Freunde</rs> in einer dämmerigen Halle
+               Abschiedsworte in den Sarg nachriefen –, und endlich einer letzten, vorläufig
+               letzten harmlosen, doch nicht unbeschwingten <anchor type="commentary" xml:id="K_M166-66"/>Unterhaltung in <rs type="place" ref="#pmb50">Wien</rs>
+               <note type="commentary" xml:id="K_M166-66h">
+                  <ref target="1921-11-14" type="schnitzler-tagebuch" subtype="Cf"/>.
+               </note>. Wenn ich so, mit anderen mehr
+               oder minder flüchtigen Begegnungen alle Stunden zusammenrechne, in denen wir uns von
+               Angesicht zu Angesicht gegenübersaßen, so kommt gewiß keine ganze Woche heraus. Wie
+               erkläre ich’s mir nur, daß mir heute trotzdem zumute ist, als richtete ich diese
+               Worte nicht nur an den weltberühmten Dichter, sondern als dürfte ich zugleich zu
+               einem Freunde sprechen, zu einem lieben alten Freunde, der mir das von Jahr zu Jahr
+               in höherem Maße wurde&#160;– ohne sein oder mein Dazutun, einfach durch die Tatsache
+               seines Daseins und Wirkens? Da ich mich von aufdringlichen Neigungen ziemlich frei
+               weiß, so ist dieses Gefühl zum Teil gewiß darin begründet, daß Künstler Ihrer hohen
+               und reinen Art, je entschiedener sie der Welt gehören, eine immer wärmere Atmosphäre
+               der Menschlichkeit und Beglückung um sich verbreiten, an der jeder Empfängliche,
+               jeder Dankbare teilnehmen darf. Da aber nicht alle diese Dankbar-Empfänglichen schon
+               darum allein das Recht für sich in Anspruch nehmen dürften, einen Mann wie Sie mit
+               dem stolzen Worte Freund zu grüßen, so wage ich es, meine wirkliche oder eingebildete
+               Berechtigung dazu aus der Empfindung herzuleiten, daß mir aus Ihrem Wesen, abgesehen
+               von jenem allgemein-zugänglichen Glanze, etwas entgegenstrahlt, das in irgendeiner
+               Weise mir ganz persönlich gilt – vielleicht als einem, der ungefähr gleichaltrig mit
+               Ihnen, dem gleichen Berufe hingegeben, nun seit so langer Zeit in bescheidener
+               Nachbarschaft seine Straße zieht und dessen innige Bewunderung für Sie und Ihr Werk
+               im Laufe dieser Jahre nicht nur ihm selbst, sondern auch Ihnen immer stärker bewußt
+               wurde. Wenn der geheimnisvolle Satz von den Parallelen, die sich erst in der
+               Unendlichkeit begegnen, auch für Menschenwege zutrifft, die in der gleichen Ebene
+               laufen, so mag er für Dichterwege ganz besonders gelten, – und je mehr wir abendwärts
+               wandeln, jener Unendlichkeit zu, die uns einmal alle umfangen wird, um so mehr
+               scheinen für unser sterbliches Auge sich diese Wege einander zu nähern und um so
+               vertrauter klingen Rufe aller Art zwischen den Wanderern hin und her. Wenn Sie heute,
+                  <rs type="person" ref="#pmb11617">Gerhart Hauptmann</rs>, aus den meinen herausgehört
+               haben, was Sie und Ihre Kunst mir bedeuten, so will ich zufrieden sein und Ihnen
+               nicht erst ausdrücklich und ausführlich sagen, welche Wünsche ich Ihnen, mir und uns
+               allen aus erfüllter Seele darbringe.</p>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb11617"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb62664"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb29355"/>
-               <org ref="#pmb37286"/>
-            </listOrg>
-            <listPlace/>
+         <div type="biographical">
+            <div1>
+               <ref target="1922-02-21" type="schnitzler-tagebuch"/>
+               <quote>Nm. beschäftigte ich mich mit einem Beitrag für die <rs type="person" ref="#pmb11617">Gerh. Hauptmann</rs>
+                  <space unit="chars" quantity="1"/>
+                  <rs type="work" ref="#pmb62664">Festschrift</rs>;– das schwierigste für mich.–</quote>
+            </div1>
+            <div1>
+               <ref target="1922-03-17" type="schnitzler-tagebuch"/>
+               <quote>Dictirt Briefe (<rs type="person" ref="#pmb11617">Gerh. Hauptmann</rs>
+                  <space unit="chars" quantity="1"/>
+                  <rs type="work" ref="#pmb62664" subtype="implied">Buch</rs> etc.) Aphor.</quote>
+            </div1>
          </div>
       </body>
       <back>

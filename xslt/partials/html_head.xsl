@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    exclude-result-prefixes="#all" version="2.0">
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all" version="2.0">
     <xsl:include href="./params.xsl"/>
     <xsl:template match="/" name="html_head">
         <xsl:param name="html_title" select="$project_short_title"/>
+        <xsl:variable name="html_title1">
+            <!-- brachialer Eingriff für index -->
+            <xsl:choose>
+                <xsl:when test="$html_title = 'Meta' or $html_title = 'meta'">
+                    <xsl:text>schnitzler-interviews</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$html_title"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-title" content="schnitzler-interviews"/>
+        <meta name="apple-mobile-web-app-title" content="{$html_title1}"/>
         <meta name="msapplication-TileColor" content="#ffffff"/>
         <meta name="msapplication-TileImage" content="{$project_logo}"/>
         <link rel="icon" type="image/svg+xml" href="{$project_logo}" sizes="any"/>
-        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
-        <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico"/>
+        <link rel="shortcut icon" href="data/images/symbole/favicon.png"/>
+        <link rel="shortcut icon" href="./img/favicon/favicon.png"/>
+        <link rel="icon" href="./img/favicon/favicon.png"/>
         <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png"/>
         <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png"/>
@@ -31,7 +43,9 @@
         <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png"/>
         <link rel="profile" href="http://gmpg.org/xfn/11"/>
-        <title>schnitzler-interviews</title>
+        <title>
+            <xsl:value-of select="$html_title1"/>
+        </title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
             integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -46,10 +60,14 @@
             crossorigin="anonymous"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"/>
         <script src="js/listStopProp.js"/>
-        <script src="js/dt.js"/>
-        <script src="js/dt-panes.js"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"/>
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
         <link rel="stylesheet" href="css/micro-editor.css" type="text/css"/>
+        <xsl:if test="descendant::tei:div[@xml:id = 'container-ohne-slider']">
+            <script src="https://code.highcharts.com/highcharts.js"/>
+            <script src="https://code.highcharts.com/modules/networkgraph.js"/>
+            <script src="https://code.highcharts.com/modules/exporting.js"/>
+        </xsl:if>
         <!-- Matomo -->
         <script type="text/javascript">
             var _paq = _paq ||[];
@@ -57,9 +75,9 @@
             _paq.push([ 'trackPageView']);
             _paq.push([ 'enableLinkTracking']);
             (function () {
-                var u = "https://matomo.acdh.oeaw.ac.at/";
-                _paq.push([ 'setTrackerUrl', u + 'piwik.php']);
-                _paq.push([ 'setSiteId', '236']);<!--
+            var u = "https://matomo.acdh.oeaw.ac.at/";
+            _paq.push([ 'setTrackerUrl', u + 'piwik.php']);
+            _paq.push([ 'setSiteId', '236']);<!--
                 236 is Matomo Code schnitzler - interviews//-->
             var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
             g.type = 'text/javascript';
@@ -67,7 +85,7 @@
             g.defer = true;
             g.src = u + 'piwik.js';
             s.parentNode.insertBefore(g, s);
-        })();</script>
+            })();</script>
         <!-- End Matomo Code -->
     </xsl:template>
 </xsl:stylesheet>

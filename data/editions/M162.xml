@@ -71,7 +71,7 @@
       </fileDesc>
       <profileDesc>
          <langUsage>
-            <language ident="de-DE">German</language>
+            <language ident="de-DE" ana="alte-rechtschreibung">German</language>
          </langUsage>
       </profileDesc>
       <revisionDesc status="approved">
@@ -80,31 +80,44 @@
       </revisionDesc>
    </teiHeader><text type="article">
       <body>
-         <div type="edierter-text">
-            <listPerson>
-               <person ref="#pmb12498"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb30205"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb36247"/>
-            </listOrg>
-            <listPlace>
-               <place ref="#pmb50"/>
-            </listPlace>
+         <div type="image">
+            <figure>
+               <graphic url="./images/1925_reimers.png" width="10cm"/>
+            </figure>
          </div>
-         <div type="kommentar-text">
-            <listPerson>
-               <person ref="#pmb12498"/>
-            </listPerson>
-            <listBibl>
-               <bibl ref="#pmb30205"/>
-            </listBibl>
-            <listOrg>
-               <org ref="#pmb36247"/>
-            </listOrg>
-            <listPlace/>
+         <div type="original">
+            <head>Georg Reimers. Festschrift zu seinem
+               vierzigjährigen Burgtheaterjubiläum 1885 1925.</head>
+            <p>
+               <gap reason="outOfScope" unit="paragraphs" quantity="20"/>
+            </p>
+            <p rend="right">
+               <anchor type="commentary" xml:id="K_M162-2"/>
+               <rs type="place" ref="#pmb50">Wien</rs>
+               <note type="commentary" xml:id="K_M162-2h">Im <date>September
+                     1925</date> fanden mehrere Feierlichkeiten anlässlich des vierzigsten
+                  Bühnenjubiläums des Schauspielers <rs type="person" ref="#pmb12498">Georg
+                     Reimers</rs> statt. Die Festschrift besteht aus Faksimiles der verschiedenen
+                  Gratulationen. <rs type="person" ref="#pmb2121">Schnitzler</rs> verwendet für seinen
+                  Beitrag (wie seit <date>1906</date> durchwegs in seinen Briefen üblich) eine
+                  lateinische Schreibschrift. Abschrift war dem Druck keine beigegeben. </note>,
+                  <date>Juli 1925</date>.</p>
+            <p>Kaum ein Jahr ist es her, mein verehrter Herr <rs type="person" ref="#pmb12498">Georg
+                  Reimers</rs>, dass ich, der Ihnen als <rs type="org" ref="#pmb36247">Burgtheater</rs>-Autor und als einfacher Theaterbesucher schon so oft zu Danke
+               verpflichtet war, die Freude hatte, Sie wieder einmal in einer meiner <anchor type="commentary" xml:id="K_M162-1"/>
+               <rs type="work" subtype="implied" ref="#pmb30205">Stücke</rs>
+               <note type="commentary" xml:id="K_M162-1h">Er bezieht sich
+                  auf die Uraufführung von <rs type="work" ref="#pmb30205">Komödie der Verführung</rs> am
+                     <ref target="1924-10-11" type="schnitzler-tagebuch" subtype="date-only"/> am <rs type="org" ref="#pmb36247">Burgtheater</rs>.</note> zu sehen, in einer Rolle, die,
+               wie man<unclear>che</unclear> fanden, Ihnen »auf den Leib« geschrieben war. Doch so
+               köstlich und herzerweichend Sie den <rs type="work" subtype="implied" ref="#pmb30205">Eligius Fenz</rs> spielten,  – ich möchte den Schauspieler <rs type="person" ref="#pmb12498">Georg Reimers</rs> gegenüber dem Kammersänger <rs type="work" subtype="implied" ref="#pmb30205">Fenz</rs> sehr entschieden in Schutz nehmen – denn
+               in jenem ist glücklicherweise all das wahr geworden und wahr geblieben, was dieser –
+               wenn ich ihn richtig beurtheile – sich großentheils nur eingebildet haben dürfte.
+               Sie, <rs type="person" ref="#pmb12498">Georg Reimers</rs> stehen heute wirklich auf der
+               Höhe Ihrer Kunst – und auf der Höhe Ihres Lebens –; und au<unclear>f</unclear>
+               der gleichen Höhe hoffen wir Sie noch lange Jahre sehen und bewundern zu dürfen.</p>
+            <p rend="inline">Mit den wärmsten Glückwünschen<lb/>Ihr</p>
+            <p rend="right">Arthur Schnitzler</p>
          </div>
       </body>
       <back>
