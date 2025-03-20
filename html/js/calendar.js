@@ -16,7 +16,7 @@ var data = calendarData.map(r =>
   name: r.name,
   linkId: r.id,
   color: '#A63437'
-})).filter(r => r.startDate.getFullYear() === 1890);
+})).filter(r => r.startDate.getFullYear() === 1921);
 
 years = Array.from(new Set(calendarData.map(getYear))).sort();
 var yearsTable = document.getElementById('years-table');
@@ -27,7 +27,7 @@ for (var i = 0; i <= years.length; i++) {
 //document.getElementById("ybtn1900").classList.add("focus");
 
 const calendar = new Calendar('#calendar', {
-  startYear: 1890,
+  startYear: 1921,
   language: "de",
   dataSource: data,
   displayHeader: false,
