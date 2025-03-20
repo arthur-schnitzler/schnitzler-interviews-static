@@ -4,6 +4,7 @@ html/*.xml
 /saxon
 data/imprint.xml
 /chronik-data
+/data
 
 data/indices/*.xml
 data/editions/*.xml
