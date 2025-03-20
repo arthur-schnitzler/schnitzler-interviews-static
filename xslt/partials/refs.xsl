@@ -189,14 +189,14 @@
     </xsl:template>
     <xsl:template match="tei:ref[@type='pointer']">
         <xsl:choose>
-            <xsl:when test="starts-with(@target, 'K')">
+            <xsl:when test="starts-with(@target, '#K') or starts-with(@target, '#L') or starts-with(@target, '#E') or (@target='#politischermord')">
                 <xsl:text>-> Pointer</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="target-datei" >
                     <xsl:choose>
                         <xsl:when test="contains(@target, '_')">
-                            <xsl:value-of select="replace(substring-before(@target, '_')[1], '#', '')"/>
+                            <xsl:value-of select="replace(tokenize(@target, '_')[1], '#', '')"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="replace(@target, '#', '')"/>
