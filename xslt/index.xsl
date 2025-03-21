@@ -61,7 +61,7 @@
                                 <div class="intro_right wrapper">
                                     <img src="images/beide.jpg" class="d-block w-100"
                                         style="max-width=30%;"
-                                        alt="Arthur Schnitzer, gezeichnet von Léandre"/>
+                                        alt="Buchumschlag"/>
                                 </div>
                             </div>
                         </div>
