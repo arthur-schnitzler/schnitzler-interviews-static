@@ -398,7 +398,7 @@
             </span>
         </li>
     </xsl:template>
-    <xsl:template match="tei:list">
+    <xsl:template match="tei:list[not(@type='simple-gloss')]">
         <ul>
             <xsl:apply-templates/>
         </ul>
