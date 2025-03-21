@@ -33,20 +33,10 @@
                                         Müller</h4>
                                     <h4><a href="https://www.wallstein-verlag.de/9783835354715-das-zeitlose-ist-von-kuerzester-dauer.html" target="_blank">Göttingen: Wallstein Verlag,
                                         Oktober 2023</a></h4>
-                                    <p>ISBN (Print) <a
-                                        href="https://de.wikipedia.org/wiki/Spezial:ISBN-Suche/9783835354715"
-                                        >978-3-8353-5471-5</a>, ISBN (Open Access) <a
-                                            href="https://www.wallstein-verlag.de/9783835354715-das-zeitlose-ist-von-kuerzester-dauer.html"
-                                            >978-3-8353-8033-2</a>, DOI <a
-                                                href="https://doi.org/10.46500/83535471"
-                                                >https://doi.org/10.46500/83535471</a><br/><br/>753&#160;S., 2&#160;Bände, geb., Leinen mit Schutzumschlag im Schuber,
-                                        13,8&#160;x 23 cm, €&#160;48,00 (D) / €&#160;49,40 (A) </p>
                                     <p>Das Open-Accesss PDF kann kostenfrei <a
-                                        href="https://www.wallstein-verlag.de/9783835354715-das-zeitlose-ist-von-kuerzester-dauer.html"
-                                        >hier</a> in einem Band, <a
                                             href="https://e-book.fwf.ac.at/o:1882">hier</a> und
                                         <a href="https://e-book.fwf.ac.at/o:1881">hier</a>
-                                        in zwei Bänden geladen werden.</p>
+                                         geladen werden.</p>
                                     <p/>
                                     <div style="text-align: right">
                                         <a href="#body">
@@ -92,12 +82,12 @@
                                 überraschendes Bild des berühmten Autors Arthur Schnitzler, der
                                 entgegen seiner angeblichen Zurückhaltung, in der Öffentlichkeit ein
                                 engagierter und eloquenter Gesprächspartner und Schriftsteller war. </p>
-                            <a href="L00001.html">
+                            <a href="I001.html">
                                 <button class="btn btn-round">Lesen</button>
                             </a>
                             <span>&#160;&#160;&#160;&#160;</span>
-                            <a href="about.html">
-                                <button class="btn btn-round">Zum Projekt</button>
+                            <a href="E_nachwort.html">
+                                <button class="btn btn-round">Zum Nachwort</button>
                             </a>
                         </div>
                     </div>
@@ -201,22 +191,6 @@
                                             <p>In den Texten erwähnte Verlage,
                                                 Redaktionen, Vereine, Gesellschaften, Firmen, Preise
                                                 …</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-sm-12">
-                                <a href="https://schnitzler.acdh.oeaw.ac.at/" class="index-link"
-                                    target="_blank">
-                                    <div class="card index-card">
-                                        <div class="card-body">
-                                            <img class="d-block w-100"
-                                                src="https://shared.acdh.oeaw.ac.at/schnitzler-briefe/img/schnitzler-acdh.jpg"
-                                                title="Schnitzler am ACDH-CH"
-                                                alt="Schnitzler am ACDH-CH"/>
-                                        </div>
-                                        <div class="card-header">
-                                            <p>Schnitzler am ACDH-CH</p>
                                         </div>
                                     </div>
                                 </a>
