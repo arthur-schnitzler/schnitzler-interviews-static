@@ -370,7 +370,11 @@
     </xsl:template>
     <xsl:template match="tei:list[@type = 'simple-gloss']">
         <ul class="list list_simple-gloss">
-            <xsl:variable name="listinhalt" select="." as="node()"/>
+            <xsl:variable name="listinhalt" as="node()">
+                <xsl:element name="list" namespace="http://www.tei-c.org/ns/1.0">
+                    <xsl:copy-of select="tei:item"/>
+                </xsl:element>
+            </xsl:variable>
             <xsl:for-each select="child::tei:label">
                 <xsl:variable name="postion" select="position()"/>
                 <li>
@@ -378,20 +382,17 @@
                         <xsl:apply-templates/>
                     </span>
                     <span class="item">
-                        <xsl:apply-templates select="$listinhalt/tei:item[$postion]"/>
+                        <xsl:apply-templates select="$listinhalt/tei:item[$postion]" mode="simple-gloss"/>
                     </span>
                 </li>
             </xsl:for-each>
         </ul>
     </xsl:template>
-    <xsl:template match="tei:label[parent::tei:list[@type = 'simple-gloss']]">
-        <li>
-            <span class="list_simple-gloss">
-                <xsl:apply-templates/>
-            </span>
-        </li>
+    <xsl:template match="tei:item" mode="simple-gloss">
+        <xsl:text>: </xsl:text>
+        <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="tei:item[parent::tei:list[@type = 'simple-gloss']]">
+    <xsl:template match="tei:label[parent::tei:list[@type = 'simple-gloss']]">
         <li>
             <span class="list_simple-gloss">
                 <xsl:apply-templates/>
@@ -752,4 +753,5 @@
         </xsl:choose>
 
     </xsl:template>
+    
 </xsl:stylesheet>

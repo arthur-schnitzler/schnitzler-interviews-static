@@ -254,6 +254,28 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
+    <xsl:template match="tei:gap[@unit = 'chars' and @reason = 'illegible']">
+        <span class="illegible">
+            <xsl:value-of select="mam:gaps(@quantity)"/>
+        </span>
+    </xsl:template>
+    <xsl:function name="mam:gaps">
+        <xsl:param name="anzahl"/>
+        <xsl:text>×</xsl:text>
+        <xsl:if test="$anzahl &gt; 1">
+            <xsl:value-of select="mam:gaps($anzahl - 1)"/>
+        </xsl:if>
+    </xsl:function>
+    <xsl:template match="tei:gap[@unit = 'lines' and @reason = 'illegible']">
+        <div class="illegible">
+            <xsl:text> [</xsl:text>
+            <xsl:value-of select="@quantity"/>
+            <xsl:text> Zeilen unleserlich] </xsl:text>
+        </div>
+    </xsl:template>
+    <xsl:template match="tei:gap[@reason = 'outOfScope']">
+        <span class="outOfScope">[…]</span>
+    </xsl:template>
     <xsl:template match="tei:supplied"><span class="supplied"><xsl:apply-templates/></span></xsl:template>
     <xsl:template match="tei:table">
         <xsl:element name="table">
