@@ -151,7 +151,7 @@
         <div style="display: flex; width: 100%;">
             <div
                 style="width: 40%; margin: auto; display: flex; flex-direction: column; height: 500px;">
-                <div id="container-ohne-slider" style="width: 100%; flex-grow: 1;"/>
+                   <div id="container-ohne-slider" style="width: 100%; flex-grow: 1;"/>
                 <div style="width: 100%; height: 55px;"/>
                 <figcaption style="text-align: center;">Abb. 8: Alle Korrespondenzen zwischen Arthur
                     Schnitzler, Hermann Bahr, Richard Beer-Hofmann und Hugo von
@@ -169,8 +169,7 @@
                     und Hugo von Hofmannsthal im Timeslider</figcaption>
             </div>
         </div>
-        <script src="js/jung-wien-charts-ohne-slider.js"/>
-        <script src="js/jung-wien-charts-mit-slider.js"/>
+        <script src="js/jung-wien-exp-charts.js"/>
     </xsl:template>
     <xsl:template match="tei:lb">
         <br/>
@@ -307,14 +306,7 @@
     <xsl:template match="tei:bibl" mode="footnote">
         <xsl:value-of select="."/>
     </xsl:template>
-    <xsl:template match="tei:ref">
-        <xsl:element name="a">
-            <xsl:attribute name="href">
-                <xsl:value-of select="@target"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
+    
     <xsl:template match="tei:rs[@type = 'work']/text()">
         <i>
             <xsl:value-of select="."/>

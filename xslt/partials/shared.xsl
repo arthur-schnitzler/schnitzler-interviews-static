@@ -230,6 +230,30 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
+    <xsl:template match="tei:gap">
+        <xsl:choose>
+            <xsl:when test="@reason = 'deleted'">
+                <span class="del gap">
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="data(@reason)"/>
+                    </xsl:attribute>
+                    <xsl:text>[</xsl:text>
+                    <xsl:apply-templates/>
+                    <xsl:text>]</xsl:text>
+                </span>
+            </xsl:when>
+            <xsl:when test="@reason = 'illegible'">
+                <span class="gap">
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="data(@reason)"/>
+                    </xsl:attribute>
+                    <xsl:text>[</xsl:text>
+                    <xsl:apply-templates/>
+                    <xsl:text>]</xsl:text>
+                </span>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
     <xsl:template match="tei:supplied"><span class="supplied"><xsl:apply-templates/></span></xsl:template>
     <xsl:template match="tei:table">
         <xsl:element name="table">
