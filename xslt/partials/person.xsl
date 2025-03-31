@@ -63,14 +63,14 @@
                         </td>
                     </tr>
                 </xsl:if>
-                <xsl:if test="./tei:noteGrp/tei:note[@type='mentions']">
+                <xsl:if test="descendant::tei:note[@type='mentions']">
                     <tr>
                         <th>
                             Erwähnt in
                         </th>
                         <td>
                             <ul>
-                                <xsl:for-each select="./tei:noteGrp/tei:note[@type='mentions']">
+                                <xsl:for-each select="descendant::tei:note[@type='mentions']">
                                     <li>
                                         <a href="{replace(@target, '.xml', '.html')}">
                                             <xsl:value-of select="./text()"/>
