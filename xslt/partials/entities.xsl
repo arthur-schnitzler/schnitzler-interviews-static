@@ -434,7 +434,7 @@
                 <span class="infodesc mr-2">
                     <legend>Erwähnungen</legend>
                     <ul>
-                        <xsl:for-each select=".//tei:note[@type = 'mentions']">
+                        <xsl:for-each select="descendant::*:note[@type = 'mentions']">
                             <xsl:sort select="replace(@corresp, '-', '')" order="ascending"
                                 data-type="number"/>
                             <xsl:variable name="linkToDocument">
@@ -452,6 +452,9 @@
                                         </a>
                                     </li>
                                 </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text>Fehler2877</xsl:text>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
                     </ul>
