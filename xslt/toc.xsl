@@ -21,7 +21,7 @@
                     <div class="container-fluid">
                         <div class="card">
                             <div class="card-header">
-                                <h1>Alle Briefe</h1>
+                                <h1>Alle Texte</h1>
                             </div>
                             <div class="card-body">
                                 <table class="table table-sm display" id="tabulator-table" style="width:100%"
