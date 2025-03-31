@@ -65,7 +65,8 @@
                             </xsl:attribute>
                             <xsl:attribute name="alt">
                                 <xsl:choose>
-                                    <xsl:when test="ends-with(tei:figure/tei:graphic/@url, '.png') or ends-with(tei:figure/tei:graphic/@url, '.jpg') or ends-with(tei:figure/tei:graphic/@url, '.jp2') or ends-with(tei:figure/tei:graphic/@url, '.gif')">
+                                    <xsl:when
+                                        test="ends-with(tei:figure/tei:graphic/@url, '.png') or ends-with(tei:figure/tei:graphic/@url, '.jpg') or ends-with(tei:figure/tei:graphic/@url, '.jp2') or ends-with(tei:figure/tei:graphic/@url, '.gif')">
                                         <xsl:value-of select="tei:figure/tei:graphic/@url"/>
                                     </xsl:when>
                                     <xsl:otherwise>
@@ -79,7 +80,7 @@
                         </img>
                         <!-- Bildunterschrift -->
                         <figcaption>
-                            <xsl:apply-templates select="tei:caption"/>                                
+                            <xsl:apply-templates select="tei:caption"/>
                         </figcaption>
                     </figure>
                 </xsl:when>
@@ -101,7 +102,9 @@
             </xsl:choose>
         </div>
     </xsl:template>
-    <xsl:template match="tei:lb"><br/></xsl:template>
+    <xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
     <xsl:template match="tei:figDesc"/>
     <xsl:template match="tei:caption">
         <xsl:apply-templates/>
@@ -128,7 +131,8 @@
         </span>
     </xsl:template>
     <!-- Die folgenden beiden Regeln sollten das Leerzeichen vor und nach Streichungen mit aus- und einblenden -->
-    <xsl:template match="text()[matches(., '[\s\r\n]+$') and following-sibling::node()[1][self::tei:del]]">
+    <xsl:template
+        match="text()[matches(., '[\s\r\n]+$') and following-sibling::node()[1][self::tei:del]]">
         <xsl:value-of select="replace(., '[\s\r\n]+$', '')"/>
         <span class="del badge-item" style="display:none;">
             <xsl:text> </xsl:text>
@@ -254,6 +258,8 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
+    <!-- löst das das whitespace-problem?: -->
+    <xsl:template match="tei:body//text()[normalize-space(.) = '']"/>
     <xsl:template match="tei:gap[@unit = 'chars' and @reason = 'illegible']">
         <span class="illegible">
             <xsl:value-of select="mam:gaps(@quantity)"/>
@@ -276,7 +282,11 @@
     <xsl:template match="tei:gap[@reason = 'outOfScope']">
         <span class="outOfScope">[…]</span>
     </xsl:template>
-    <xsl:template match="tei:supplied"><span class="supplied"><xsl:apply-templates/></span></xsl:template>
+    <xsl:template match="tei:supplied">
+        <span class="supplied">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
     <xsl:template match="tei:table">
         <xsl:element name="table">
             <xsl:attribute name="class">
@@ -715,7 +725,7 @@
             </div>
         </div>
     </xsl:template>
-    <xsl:template match="tei:listBibl|tei:bibl[not(parent::tei:listBibl)]">
+    <xsl:template match="tei:listBibl | tei:bibl[not(parent::tei:listBibl)]">
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="tei:listBibl/tei:bibl">
@@ -868,13 +878,11 @@
             </xsl:element>
         </strong>
     </xsl:template> -->
-    
     <xsl:template match="tei:damage">
         <span class="damage-critical">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    
     <xsl:template match="tei:pb">
         <xsl:choose>
             <xsl:when test="starts-with(@facs, 'http') or starts-with(@facs, 'www.')">
