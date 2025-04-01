@@ -2,6 +2,7 @@
 /data
 *.html
 html/*.xml
+html/*.csv
 /saxon
 data/imprint.xml
 /chronik-data
