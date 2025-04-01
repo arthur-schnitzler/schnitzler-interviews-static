@@ -1,4 +1,5 @@
 # project specific
+/data
 *.html
 html/*.xml
 /saxon
