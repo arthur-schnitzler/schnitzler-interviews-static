@@ -286,6 +286,8 @@ div.dataTables_filter {
     border: white;
 
 }
+
+
 .card-body-place {
     justify-content: center;
     align-items: center}
@@ -1169,4 +1171,8 @@ div#map {
 .translation-table {
     border-collapse: separate; 
     border-spacing: 30px;
+}
+
+.custom-full-width-accordion {
+  width: 100%;
 }

@@ -59,6 +59,9 @@
                                 <li>
                                     <a class="nav-link" href="listorg.html">Institutionen</a>
                                 </li>
+                                <li>
+                                    <a class="nav-link" href="questions.html">Interviewfragen</a>
+                                </li>
                             </ul>
                         </li>
                         <!-- Inhaltsverzeichnis -->

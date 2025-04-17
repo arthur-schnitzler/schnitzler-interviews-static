@@ -21,17 +21,19 @@
             <body class="page">
                 <div class="hfeed site" id="page">
                     <xsl:call-template name="nav_bar"/>
-                    <div class="container-fluid">
+                    <div>
                         <div class="card">
                             <div class="card-header">
                                 <h2 align="center">
-                                    <xsl:value-of select="$doc_title"/>
+                                    Verzeichnis der Interviewfragen
                                 </h2>
                             </div>
-                            <div class="card-body-index">
-                                <div class="container-fluid">
+                            <div class="card-body-anhang">
+                                <p class="mb-3">In Abwandlung eines Sachregisters werden die tatsächlichen und mutmaßlichen Fragen verzeichnet, auf die Schnitzler in seinen Interviews antwortet
+                                    oder zumindest zu antworten scheint. Verwandte Fragen wurden teilweise
+                                    verallgemeinert, um Variationen derselben Frage zu vermeiden.</p>
+                                
                                     <xsl:apply-templates select="//tei:list"/>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -41,8 +43,9 @@
         </html>
     </xsl:template>
     <xsl:template match="tei:list">
-        <div class="accordion" id="faqAccordion">
+        <div class="accordion custom-full-width-accordion" id="faqAccordion"> 
             <xsl:for-each-group select="tei:item[tei:note]" group-by="@ana">
+                <xsl:sort select="." lang="de"/>
                 <xsl:variable name="category" select="current-grouping-key()"/>
                 <xsl:variable name="category-id"
                     select="translate($category, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ äöüÄÖÜß()/?!.', 'abcdefghijklmnopqrstuvwxyz-aeoeueaeoeuess-------')"/>
@@ -58,7 +61,7 @@
                         aria-labelledby="heading-{$category-id}" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
                             <xsl:for-each select="current-group()">
-                                <xsl:sort select="."/>
+                                <xsl:sort select="."  lang="de"/>
                                 <p>
                                     <xsl:value-of select="text()"/>
                                     <ul>
