@@ -36,6 +36,9 @@
                                 <li>
                                     <a class="nav-link" href="E_literatur.html">Literatur</a>
                                 </li>
+                                <li>
+                                    <a class="nav-link" href="E_rezensionen.html">Rezensionen</a>
+                                </li>
                             </ul>
                         </li>
                         <!-- Kalender -->
