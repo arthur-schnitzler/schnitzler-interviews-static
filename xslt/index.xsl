@@ -15,7 +15,7 @@
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <xsl:call-template name="html_head">
-                    <xsl:with-param name="html_title" select="$doc_title"/>
+                    <xsl:with-param name="html_title" select="'schnitzler-interviews'"/>
                 </xsl:call-template>
             </head>
             <body class="page" style="background-color:#f1f1f1;">
