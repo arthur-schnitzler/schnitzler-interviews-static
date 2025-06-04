@@ -199,7 +199,7 @@
             <xsl:when test="string-length(@target)=5 and (starts-with(@target, '#I') or starts-with(@target, '#M') or starts-with(@target, '#P'))">
                 <xsl:element name="a">
                     <xsl:attribute name="href">
-                        <xsl:value-of select="concat(replace(@target, '#', ''), ',html')"/>
+                        <xsl:value-of select="concat(replace(@target, '#', ''), '.html')"/>
                     </xsl:attribute>
                     <i class="fas fa-external-link-alt"/>
                 </xsl:element>
