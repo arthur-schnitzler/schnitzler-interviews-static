@@ -137,8 +137,8 @@
         </span>
         <span class="biographical-text">
             <xsl:choose>
-                <xsl:when test="child::tei:p">
-                    <xsl:apply-templates select="tei:quote" mode="biographical"/>
+                <xsl:when test="child::tei:quote/tei:p">
+                    <xsl:apply-templates select="child::tei:quote/tei:quote" mode="biographical"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <span>»<xsl:apply-templates select="tei:quote"/>«</span>
