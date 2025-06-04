@@ -639,7 +639,5 @@
     </meta>
     <projectTree name="schnitzler-interviews-static.xpr">
         <folder path="."/>
-        <file name="../schnitzler-interviews-static-obsolet/xslt/index.xsl"/>
-        <file name="../schnitzler-briefe-static/xslt/partials/schnitzler-chronik.xsl"/>
     </projectTree>
 </project>

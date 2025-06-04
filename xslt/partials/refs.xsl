@@ -196,8 +196,67 @@
     </xsl:template>
     <xsl:template match="tei:ref[@type='pointer']">
         <xsl:choose>
-            <xsl:when test="starts-with(@target, '#K') or starts-with(@target, '#L') or starts-with(@target, '#E') or (@target='#politischermord')">
-                <xsl:text>-> Pointer</xsl:text>
+            <xsl:when test="string-length(@target)=5 and (starts-with(@target, '#I') or starts-with(@target, '#M') or starts-with(@target, '#P'))">
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="concat(replace(@target, '#', ''), ',html')"/>
+                    </xsl:attribute>
+                    <i class="fas fa-external-link-alt"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:when test="starts-with(@target, '#K') or starts-with(@target, '#L')">
+                <xsl:analyze-string select="@target" regex="^#([KEL])_([IMP]\d{{3}})-(\d{{1,2}})$">
+                    <xsl:matching-substring>
+                        <xsl:variable name="hyperlink" 
+                            select="concat(regex-group(2), '.html#', regex-group(1), '_', regex-group(2), '-', regex-group(3), 'h')"/>
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$hyperlink"/>
+                            </xsl:attribute>
+                            <i class="fas fa-external-link-alt"/>
+                        </xsl:element>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                        <i class="fas fa-external-link-alt"/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:when test="starts-with(@target, '#I') or starts-with(@target, '#M') or starts-with(@target, '#P')">
+                <xsl:analyze-string select="@target" regex="^#([IMP]\d{{3}})_[lL].+">
+                    <xsl:matching-substring>
+                        <xsl:variable name="hyperlink" 
+                            select="concat(regex-group(1), '.html', .)"/>
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$hyperlink"/>
+                            </xsl:attribute>
+                            <i class="fas fa-external-link-alt"/>
+                        </xsl:element>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                        <i class="fas fa-external-link-alt"/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:when test="starts-with(@target, '#E_')">
+                <xsl:analyze-string select="@target" regex="^#[E]_[a-zA-Z0-9]*_L*">
+                    <xsl:matching-substring>
+                        <xsl:variable name="hyperlink" 
+                            select="concat(regex-group(1), '.html', .)"/>
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$hyperlink"/>
+                            </xsl:attribute>
+                            <i class="fas fa-external-link-alt"/>
+                        </xsl:element>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                        <i class="fas fa-external-link-alt"/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:when test="starts-with(@target, '#L') or starts-with(@target, '#E') or (@target='#politischermord')">
+                <i class="fas fa-external-link-alt"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="target-datei" >
