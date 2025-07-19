@@ -498,7 +498,7 @@
                                         <xsl:for-each select=".//tei:listPerson//tei:person">
                                             <xsl:sort
                                                 select="concat(child::tei:persName[1]/tei:surname[1], child::tei:persName[1]/tei:forename[1])"/>
-                                            Entitäten                                 <xsl:variable name="naname" as="xs:string">
+                                                                             <xsl:variable name="naname" as="xs:string">
                                                 <xsl:choose>
                                                   <xsl:when
                                                   test="child::tei:persName[1]/tei:surname[1] and child::tei:persName[1]/tei:forename[1]">
@@ -777,7 +777,7 @@
                         </xsl:choose>
                     </xsl:variable>
                     <div class="modal-body">
-                        <div id="chronik-modal-body">
+                        
                             <!-- SCHNITZLER-CHRONIK. Zuerst wird der Eintrag geladen, weil das schneller ist, wenn er lokal vorliegt -->
                             <xsl:variable name="fetchContentsFromURL" as="node()?">
                                 <xsl:choose>
@@ -799,7 +799,7 @@
                                 <xsl:with-param name="teiSource" select="$teiSource"/>
                                 <xsl:with-param name="fetchContentsFromURL" select="$fetchContentsFromURL" as="node()?"/>
                             </xsl:call-template>
-                        </div>
+                        
                     </div>
                 </div>
                 <!-- Download Modal -->
