@@ -715,8 +715,8 @@
                     aria-labelledby="downloadModalLabel2" aria-hidden="true">
                     <xsl:variable name="datum-iso">
                         <xsl:variable name="date"
-                            select="descendant::tei:titleStmt[1]/tei:title[@type='iso-date'][1]/@when-iso"
-                            as="node()?"/>
+                            select="descendant::tei:teiHeader[1]/tei:fileDesc[1]/tei:titleStmt[1]/tei:title[@type='iso-date']/@when-iso"
+                            as="xs:date"/>
                         <xsl:choose>
                             <xsl:when test="$date/@when">
                                 <xsl:value-of select="$date/@when"/>
