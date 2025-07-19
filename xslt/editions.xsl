@@ -887,7 +887,6 @@
                         <xsl:with-param name="back" select="$back"/>
                     </xsl:call-template>
                 </xsl:for-each>
-                <script type="text/javascript" src="js/prev-next-urlupdate.js"/>
             </body>
         </html>
     </xsl:template>

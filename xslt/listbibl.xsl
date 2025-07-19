@@ -48,7 +48,6 @@
                                         data-csv="https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-briefe-charts/main/netzwerke/work_freq_corp_weights_directed/work_freq_corp_weights_directed_top500.csv"
                                         >Top 500</button>
                                 </div>
-                                <script src="js/work_freq_corp_weights_directed.js"/>
                                 <table class="table table-sm display" id="tabulator-table-work">
                                     <thead>
                                         <tr>
