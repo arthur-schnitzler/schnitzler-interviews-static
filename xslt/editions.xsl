@@ -187,11 +187,11 @@
                                                   <span style="color: orange;"> ENTWURF </span>
                                                   </a>&#160; </li>
                                                 </xsl:if>
-                                                <li class="nav-item"> &#160;<a href="#"
+                                                <!--<li class="nav-item"> &#160;<a href="#"
                                                   data-bs-target="#editor-widget" type="button"
                                                   data-bs-toggle="modal"><i
                                                   class="fas fa-solid fa-screwdriver-wrench"/>
-                                                  EINSTELLUNGEN </a>&#160; </li>
+                                                  EINSTELLUNGEN </a>&#160; </li>-->
                                                 <li class="nav-item"> &#160;<a href="#"
                                                   data-bs-target="#ueberlieferung" type="button"
                                                   data-bs-toggle="modal">
@@ -678,7 +678,7 @@
                     </div>
                 </div>
                 <!-- Einstellungen Modal -->
-                <div class="modal fade" id="editor-widget" tabindex="-1"
+                <!--<div class="modal fade" id="editor-widget" tabindex="-1"
                     aria-labelledby="ueberlieferungLabel" aria-hidden="true">
                     <xsl:call-template name="annotation-options"></xsl:call-template>
                     <div class="modal-dialog">
@@ -708,7 +708,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- Modal Tag -->
                 <div class="modal fade" id="schnitzler-chronik-modal" tabindex="-1"
                     aria-labelledby="downloadModalLabel2" aria-hidden="true">
