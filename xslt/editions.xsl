@@ -717,23 +717,7 @@
                         <xsl:variable name="date"
                             select="descendant::tei:teiHeader[1]/tei:fileDesc[1]/tei:titleStmt[1]/tei:title[@type='iso-date']/@when-iso"
                             as="xs:date"/>
-                        <xsl:choose>
-                            <xsl:when test="$date/@when">
-                                <xsl:value-of select="$date/@when"/>
-                            </xsl:when>
-                            <xsl:when test="$date/@from">
-                                <xsl:value-of select="$date/@from"/>
-                            </xsl:when>
-                            <xsl:when test="$date/@notBefore">
-                                <xsl:value-of select="$date/@notBefore"/>
-                            </xsl:when>
-                            <xsl:when test="$date/@to">
-                                <xsl:value-of select="$date/@to"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="$date/@notAfter"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <xsl:value-of select="$date"/>
                     </xsl:variable>
                     <xsl:variable name="datum-written" select="
                         format-date($datum-iso, '[D1].&#160;[M1].&#160;[Y0001]',
