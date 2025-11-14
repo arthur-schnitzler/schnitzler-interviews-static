@@ -786,7 +786,7 @@
                                 <h5 class="modal-title" id="exampleModalLongTitle3">
                                     <a
                                         href="{concat('https://schnitzler-chronik.acdh.oeaw.ac.at/', $datum-iso, '.html')}"
-                                        target="_blank" style="color: #C67F53">
+                                        target="_blank" style="color: #008B8B">
                                         <xsl:value-of
                                             select="concat($wochentag, ', ', $datum-written)"/>
                                     </a>

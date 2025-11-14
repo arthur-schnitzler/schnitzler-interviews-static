@@ -5,6 +5,7 @@
     <xsl:include href="./params.xsl"/>
     <xsl:template match="/" name="html_head">
         <xsl:param name="html_title" select="$project_short_title"/>
+        <xsl:param name="html_url" select="''"/>
         <xsl:variable name="html_title1">
             <!-- brachialer Eingriff für index -->
             <xsl:choose>
@@ -24,6 +25,10 @@
         <meta name="apple-mobile-web-app-title" content="{$html_title1}"/>
         <meta name="msapplication-TileColor" content="#ffffff"/>
         <meta name="msapplication-TileImage" content="{$project_logo}"/>
+        <meta name="google-site-verification" content="dc888ZmCroA0_VKEB86Vss7wy4Jbkaro0j2QfM8GOak" />
+        <xsl:if test="$html_url != ''">
+            <link rel="canonical" href="https://{$base_url}/{$html_url}"/>
+        </xsl:if>
         <link rel="icon" type="image/svg+xml" href="{$project_logo}" sizes="any"/>
         <link rel="shortcut icon" href="data/images/symbole/favicon.png"/>
         <link rel="shortcut icon" href="./img/favicon/favicon.png"/>
