@@ -42,6 +42,8 @@ jobs:
         run: ./fetch_data.sh
       - name: Build the app
         run: ./transform.sh
+      - name: Generate sitemap
+        run: java -jar saxon/saxon-he-12.5.jar -xsl:xslt/sitemap.xsl -s:xslt/sitemap.xsl -o:html/sitemap.xml
       - name: Fulltext search
         run: python make_ts_index.py
       - name: Setup Pages
