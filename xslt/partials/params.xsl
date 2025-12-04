@@ -11,4 +11,6 @@
     <xsl:param name="project_logo">images/logo.png</xsl:param>
     <xsl:param name="base_url">schnitzler-interviews.acdh.oeaw.ac.at</xsl:param>
     <xsl:param name="data_repo">https://github.com/arthur-schnitzler/schnitzler-interviews-data</xsl:param>
+    <xsl:param name="current-edition" select="'schnitzler-interviews'"/>
+    <xsl:param name="current-colour" select="'#3D5A80'"/>
 </xsl:stylesheet>
