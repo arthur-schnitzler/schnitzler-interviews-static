@@ -12,5 +12,8 @@ python add_questions.py
 echo "make calendar data"
 python make_calendar_data.py
 
+echo "fetch relations"
+python3 xslt/export/fetch_relations.py
+
 echo "create app"
 ant

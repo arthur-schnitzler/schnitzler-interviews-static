@@ -65,6 +65,7 @@
             crossorigin="anonymous"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"/>
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/entities.css" type="text/css"/>
         <link rel="stylesheet" href="css/micro-editor.css" type="text/css"/>
         <!-- Matomo -->
         <script type="text/javascript">
@@ -85,5 +86,6 @@
             s.parentNode.insertBefore(g, s);
             })();</script>
         <!-- End Matomo Code -->
+        <script src="js/entity-tabs.js" defer="defer"></script>
     </xsl:template>
 </xsl:stylesheet>

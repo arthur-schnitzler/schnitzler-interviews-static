@@ -7,7 +7,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   packages: write
   pages: write
   id-token: write
@@ -36,6 +36,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Sync entities assets from schnitzler-chronik-static
+        run: |
+          python3 check_entities_xsl.py
+          SYNCED_PATHS="xslt/partials/entities.xsl xslt/partials/entities-setup.xsl xslt/partials/relations.json html/css/entities.css html/js/entity-tabs.js"
+          if [[ -n "$(git status --porcelain $SYNCED_PATHS)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add $SYNCED_PATHS
+            git commit -m "chore: sync entities assets from schnitzler-chronik-static"
+            git push
+          fi
       - name: install python things
         run: pip install -r requirements.txt
       - name: Fetch the data
