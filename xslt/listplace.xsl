@@ -124,9 +124,9 @@
                     <body class="page">
                         <div class="hfeed site" id="page">
                             <xsl:call-template name="nav_bar"/>
-                            <div>
+                            <div class="container">
                                 <div class="card">
-                                    
+
                                     <div class="card-body">
                                         <xsl:call-template name="place_detail"/>
                                     </div>

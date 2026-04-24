@@ -342,7 +342,7 @@
                     <body class="page">
                         <div class="hfeed site" id="page">
                             <xsl:call-template name="nav_bar"/>
-                            <div >
+                            <div class="container">
                                 <div class="card">
                                     <xsl:call-template name="person_detail"/>
                                 </div>
