@@ -719,78 +719,11 @@
                             as="xs:date"/>
                         <xsl:value-of select="$date"/>
                     </xsl:variable>
-                    <xsl:variable name="datum-written" select="
-                        format-date($datum-iso, '[D1].&#160;[M1].&#160;[Y0001]',
-                        'en',
-                        'AD',
-                        'EN')"/>
-                    <xsl:variable name="wochentag">
-                        <xsl:choose>
-                            <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Monday'">
-                                <xsl:text>Montag</xsl:text>
-                            </xsl:when>
-                            <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Tuesday'">
-                                <xsl:text>Dienstag</xsl:text>
-                            </xsl:when>
-                            <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Wednesday'">
-                                <xsl:text>Mittwoch</xsl:text>
-                            </xsl:when>
-                            <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Thursday'">
-                                <xsl:text>Donnerstag</xsl:text>
-                            </xsl:when>
-                            <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Friday'">
-                                <xsl:text>Freitag</xsl:text>
-                            </xsl:when>
-                            <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Saturday'">
-                                <xsl:text>Samstag</xsl:text>
-                            </xsl:when>
-                            <xsl:when test="
-                                format-date($datum-iso, '[F]',
-                                'en',
-                                'AD',
-                                'EN') = 'Sunday'">
-                                <xsl:text>Sonntag</xsl:text>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:text>DATUMSFEHLER</xsl:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:variable>
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle3">
-                                    <a
-                                        href="{concat('https://schnitzler-chronik.acdh.oeaw.ac.at/', $datum-iso, '.html')}"
-                                        target="_blank" style="color: #008B8B">
-                                        <xsl:value-of
-                                            select="concat($wochentag, ', ', $datum-written)"/>
-                                    </a>
-                                </h5>
+                                <!-- Datums-Überschrift kommt zentral aus schnitzler-chronik.xsl -->
+                                <h5 class="modal-title" id="exampleModalLongTitle3">Chronik</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Schließen"/>
                             </div>
