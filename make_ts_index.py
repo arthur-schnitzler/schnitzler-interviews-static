@@ -34,7 +34,7 @@ current_schema = {
     "metadata": {
         "owners": ["Peter Andorfer", "Martin Anton Müller"],
         "description": "https://github.com/arthur-schnitzler/schnitzler-interviews-static",
-        "service_ids": [21741],
+        "service_ids": [21740],
     },
     "fields": [
         {"name": "id", "type": "string", "sort": True},
