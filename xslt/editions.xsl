@@ -112,6 +112,528 @@
             <body class="page">
                 <div class="hfeed site" id="page">
                     <xsl:call-template name="nav_bar"/>
+                    <!-- Zweites Menü: Action-Bar unter der Navbar, Buttons öffnen Drawer-Panels -->
+                    <nav class="action-bar" id="actionBar" aria-label="Werkzeuge und Blättern">
+                        <div class="inner">
+                            <xsl:if
+                                test="not(descendant::tei:teiHeader[1]/tei:revisionDesc[1]/@status = 'approved')">
+                                <button type="button" class="draft-badge" data-drawer="quality"
+                                    aria-expanded="false">Entwurf</button>
+                            </xsl:if>
+                            <button type="button" data-drawer="transmission" aria-expanded="false">
+                                <i class="fas fa-landmark"/>
+                                <xsl:text> Überlieferung</xsl:text>
+                            </button>
+                            <button type="button" data-drawer="entities" aria-expanded="false">
+                                <i class="fas fa-sharp fa-solid fa-people-group"/>
+                                <xsl:text> Entitäten</xsl:text>
+                            </button>
+                            <button type="button" data-drawer="cite" aria-expanded="false">
+                                <i class="fas fa-quote-right"/>
+                                <xsl:text> Zitieren</xsl:text>
+                            </button>
+                            <button type="button" data-drawer="download" aria-expanded="false">
+                                <i class="fas fa-solid fa-download"/>
+                                <xsl:text> Download</xsl:text>
+                            </button>
+                            <button type="button" data-drawer="chronik" aria-expanded="false">
+                                <i class="fas fa-calendar-day"/>
+                                <xsl:text> Chronik</xsl:text>
+                            </button>
+                            <span class="gap"/>
+                            <xsl:call-template name="header-nav-arrows"/>
+                        </div>
+                    </nav>
+                    <!-- Drawer, der unter der Action-Bar aufklappt -->
+                    <div class="drawer-backdrop" id="drawerBackdrop"/>
+                    <div class="action-drawer" id="drawer" role="region" aria-label="Werkzeuge">
+                        <div class="drawer-inner">
+                            <!-- TEXTQUALITÄT -->
+                            <div class="drawer-panel" data-panel="quality">
+                                <h3>Textqualität <button type="button" class="close" data-close=""
+                                        >schließen ✕</button></h3>
+                                <p style="font-size:13.5px; line-height:1.55; margin:0;">Diese
+                                    Abschrift wurde noch nicht ausreichend mit dem Original
+                                    abgeglichen. Sie sollte derzeit nicht – oder nur durch eigenen
+                                    Abgleich mit dem Faksimile, falls vorliegend – als Zitatvorlage
+                                    dienen.</p>
+                            </div>
+                            <!-- ÜBERLIEFERUNG -->
+                            <div class="drawer-panel" data-panel="transmission">
+                                <h3>Überlieferung <button type="button" class="close" data-close=""
+                                        >schließen ✕</button></h3>
+                                <table class="table align-top">
+                                    <tbody>
+                                        <xsl:for-each select="//tei:correspAction">
+                                            <tr>
+                                                <th>
+                                                  <xsl:choose>
+                                                  <xsl:when test="@type = 'sent'"> Versand: </xsl:when>
+                                                  <xsl:when test="@type = 'received'"> Empfangen: </xsl:when>
+                                                  <xsl:when test="@type = 'forwarded'">
+                                                  Weitergeleitet: </xsl:when>
+                                                  <xsl:when test="@type = 'redirected'"> Umgeleitet: </xsl:when>
+                                                  <xsl:when test="@type = 'delivered'"> Zustellung: </xsl:when>
+                                                  <xsl:when test="@type = 'transmitted'">
+                                                  Übermittelt: </xsl:when>
+                                                  </xsl:choose>
+                                                </th>
+                                                <td> </td>
+                                                <td>
+                                                  <xsl:if test="./tei:date">
+                                                  <xsl:value-of select="./tei:date"/>
+                                                  <br/>
+                                                  </xsl:if>
+                                                  <xsl:for-each select="child::tei:persName">
+                                                  <a class="theme-color">
+                                                  <xsl:attribute name="href">
+                                                  <xsl:value-of
+                                                  select="concat(replace((@ref), '#', ''), '.html')"
+                                                  />
+                                                  </xsl:attribute>
+                                                  <xsl:value-of select="."/>
+                                                  </a>
+                                                  <xsl:choose>
+                                                  <xsl:when test="not(position() = last())">
+                                                  <xsl:text>; </xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:otherwise>
+                                                  <br/>
+                                                  </xsl:otherwise>
+                                                  </xsl:choose>
+                                                  </xsl:for-each>
+                                                  <xsl:for-each select="child::tei:placeName">
+                                                  <a class="theme-color">
+                                                  <xsl:attribute name="href">
+                                                  <xsl:value-of
+                                                  select="concat(replace((@ref), '#', ''), '.html')"
+                                                  />
+                                                  </xsl:attribute>
+                                                  <xsl:value-of select="."/>
+                                                  </a>
+                                                  <xsl:choose>
+                                                  <xsl:when test="not(position() = last())">
+                                                  <xsl:text>; </xsl:text>
+                                                  </xsl:when>
+                                                  <xsl:otherwise>
+                                                  <br/>
+                                                  </xsl:otherwise>
+                                                  </xsl:choose>
+                                                  </xsl:for-each>
+                                                </td>
+                                            </tr>
+                                        </xsl:for-each>
+                                    </tbody>
+                                </table>
+                                <xsl:for-each select="descendant::tei:witness">
+                                    <div class="meta-caption">Textzeuge <xsl:value-of select="@n"
+                                        /></div>
+                                    <table class="table align-top">
+                                        <tbody>
+                                            <xsl:if test="tei:msDesc/tei:msIdentifier">
+                                                <tr>
+                                                  <th>Signatur </th>
+                                                  <td>
+                                                  <xsl:for-each
+                                                  select="tei:msDesc/tei:msIdentifier/child::*">
+                                                  <xsl:value-of select="."/>
+                                                  <xsl:if test="not(position() = last())">
+                                                  <xsl:text>, </xsl:text>
+                                                  </xsl:if>
+                                                  </xsl:for-each>
+                                                  </td>
+                                                </tr>
+                                            </xsl:if>
+                                            <xsl:if test="child::tei:objectType">
+                                                <tr>
+                                                  <th>Typ</th>
+                                                  <td>
+                                                  <xsl:apply-templates select="tei:objectType"/>
+                                                  </td>
+                                                </tr>
+                                            </xsl:if>
+                                            <xsl:if test="child::tei:msDesc/tei:physDesc">
+                                                <tr>
+                                                  <th>Beschreibung </th>
+                                                  <td>
+                                                  <xsl:apply-templates
+                                                  select="child::tei:msDesc/tei:physDesc/tei:objectDesc"
+                                                  />
+                                                  </td>
+                                                </tr>
+                                                <xsl:if
+                                                  test="tei:msDesc/tei:physDesc/tei:typeDesc/tei:typeNote">
+                                                  <xsl:apply-templates
+                                                  select="tei:msDesc/tei:physDesc/tei:typeDesc/tei:typeNote"
+                                                  />
+                                                </xsl:if>
+                                                <xsl:if
+                                                  test="tei:msDesc/tei:physDesc/tei:handDesc">
+                                                  <xsl:apply-templates
+                                                  select="tei:msDesc/tei:physDesc/tei:handDesc"/>
+                                                </xsl:if>
+                                                <xsl:if
+                                                  test="tei:msDesc/tei:physDesc/tei:additions">
+                                                  <tr>
+                                                  <th/>
+                                                  <th>Zufügungen</th>
+                                                  </tr>
+                                                  <xsl:apply-templates
+                                                  select="tei:msDesc/tei:physDesc/tei:additions"/>
+                                                </xsl:if>
+                                            </xsl:if>
+                                        </tbody>
+                                    </table>
+                                </xsl:for-each>
+                                <xsl:for-each select="//tei:biblStruct">
+                                    <div class="meta-caption">Druck <xsl:value-of
+                                            select="position()"/></div>
+                                    <div class="biblio-angabe">
+                                        <xsl:value-of select="mam:bibliografische-angabe(.)"/>
+                                    </div>
+                                </xsl:for-each>
+                                <xsl:if
+                                    test="descendant::tei:note[@type = 'textConst']">
+                                    <div class="meta-caption">Texteingriffe</div>
+                                    <dl class="kommentarhang">
+                                        <xsl:apply-templates
+                                            select="descendant::tei:note[@type = 'textConst']"
+                                            mode="kommentaranhang"/>
+                                    </dl>
+                                </xsl:if>
+                            </div>
+                            <!-- ENTITÄTEN -->
+                            <div class="drawer-panel" data-panel="entities">
+                                <h3>Erwähnte Entitäten <button type="button" class="close"
+                                        data-close="">schließen ✕</button></h3>
+                                <div class="drawer-grid">
+                                    <div>
+                                        <xsl:if test=".//tei:listPerson//tei:person[1]">
+                                            <div class="meta-caption">Personen</div>
+                                            <ul>
+                                                <xsl:for-each select=".//tei:listPerson//tei:person">
+                                                  <xsl:sort
+                                                  select="concat(child::tei:persName[1]/tei:surname[1], child::tei:persName[1]/tei:forename[1])"/>
+                                                  <xsl:variable name="naname" as="xs:string">
+                                                  <xsl:choose>
+                                                  <xsl:when
+                                                  test="child::tei:persName[1]/tei:surname[1] and child::tei:persName[1]/tei:forename[1]">
+                                                  <xsl:value-of
+                                                  select="concat(child::tei:persName[1]/tei:surname[1], ' ', child::tei:persName[1]/tei:forename[1])"
+                                                  />
+                                                  </xsl:when>
+                                                  <xsl:when
+                                                  test="child::tei:persName[1]/tei:forename[1]">
+                                                  <xsl:value-of select="child::tei:forename[1]"/>
+                                                  </xsl:when>
+                                                  <xsl:when
+                                                  test="child::tei:persName[1]/tei:surname[1]">
+                                                  <xsl:value-of
+                                                  select="child::tei:persName[1]/tei:surname[1]"/>
+                                                  </xsl:when>
+                                                  <xsl:otherwise>
+                                                  <xsl:value-of
+                                                  select="normalize-space(child::tei:persName)"/>
+                                                  </xsl:otherwise>
+                                                  </xsl:choose>
+                                                  </xsl:variable>
+                                                  <li>
+                                                  <a class="theme-color">
+                                                  <xsl:attribute name="href">
+                                                  <xsl:value-of
+                                                  select="concat(data(@xml:id), '.html')"/>
+                                                  </xsl:attribute>
+                                                  <xsl:value-of select="$naname"/>
+                                                  </a>
+                                                  </li>
+                                                </xsl:for-each>
+                                            </ul>
+                                        </xsl:if>
+                                    </div>
+                                    <div>
+                                        <xsl:if test=".//tei:back/tei:listBibl/tei:bibl[1]">
+                                            <div class="meta-caption">Werke</div>
+                                            <ul>
+                                                <xsl:for-each select=".//tei:back/tei:listBibl/tei:bibl">
+                                                  <xsl:sort select="child::tei:title[1]"/>
+                                                  <li>
+                                                  <a class="theme-color">
+                                                  <xsl:attribute name="href">
+                                                  <xsl:value-of
+                                                  select="concat(data(@xml:id), '.html')"/>
+                                                  </xsl:attribute>
+                                                  <xsl:if
+                                                  test="child::tei:author[@role = 'hat-geschaffen' or @role = 'author']">
+                                                  <xsl:for-each
+                                                  select="child::tei:author[@role = 'hat-geschaffen' or @role = 'author']">
+                                                  <xsl:sort
+                                                  select="concat(., child::tei:surname[1], child::tei:forename[1])"/>
+                                                  <xsl:choose>
+                                                  <xsl:when
+                                                  test="child::tei:surname[1] or child::tei:forename[1]">
+                                                  <xsl:choose>
+                                                  <xsl:when
+                                                  test="child::tei:surname[1] and child::tei:forename[1]">
+                                                  <xsl:value-of
+                                                  select="concat(child::tei:surname[1], ' ', child::tei:forename[1])"
+                                                  />
+                                                  </xsl:when>
+                                                  <xsl:when test="child::tei:forename[1]">
+                                                  <xsl:value-of select="child::tei:forename[1]"/>
+                                                  </xsl:when>
+                                                  <xsl:otherwise>
+                                                  <xsl:value-of select="child::tei:surname[1]"/>
+                                                  </xsl:otherwise>
+                                                  </xsl:choose>
+                                                  <xsl:if test="position() != last()">
+                                                  <xsl:text>, </xsl:text>
+                                                  </xsl:if>
+                                                  </xsl:when>
+                                                  <xsl:otherwise>
+                                                  <xsl:value-of select="."/>
+                                                  <xsl:if test="position() != last()">
+                                                  <xsl:text>; </xsl:text>
+                                                  </xsl:if>
+                                                  </xsl:otherwise>
+                                                  </xsl:choose>
+                                                  <xsl:if test="position() = last()">
+                                                  <xsl:text>: </xsl:text>
+                                                  </xsl:if>
+                                                  </xsl:for-each>
+                                                  </xsl:if>
+                                                  <xsl:value-of select="./tei:title[1]"/>
+                                                  </a>
+                                                  </li>
+                                                </xsl:for-each>
+                                            </ul>
+                                        </xsl:if>
+                                    </div>
+                                    <div>
+                                        <xsl:if test=".//tei:back/tei:listOrg/tei:org[1]">
+                                            <div class="meta-caption">Institutionen</div>
+                                            <ul>
+                                                <xsl:for-each select=".//tei:listOrg//tei:org">
+                                                  <xsl:sort select="child::tei:orgName[1]"/>
+                                                  <li>
+                                                  <a class="theme-color">
+                                                  <xsl:attribute name="href">
+                                                  <xsl:value-of
+                                                  select="concat(data(@xml:id), '.html')"/>
+                                                  </xsl:attribute>
+                                                  <xsl:value-of select="./tei:orgName[1]"/>
+                                                  </a>
+                                                  </li>
+                                                </xsl:for-each>
+                                            </ul>
+                                        </xsl:if>
+                                    </div>
+                                    <div>
+                                        <xsl:if test=".//tei:back/tei:listPlace/tei:place[1]">
+                                            <div class="meta-caption">Orte</div>
+                                            <ul>
+                                                <xsl:for-each select=".//tei:listPlace/tei:place">
+                                                  <xsl:sort select="child::tei:placeName[1]"/>
+                                                  <li>
+                                                  <a class="theme-color">
+                                                  <xsl:attribute name="href">
+                                                  <xsl:value-of
+                                                  select="concat(data(@xml:id), '.html')"/>
+                                                  </xsl:attribute>
+                                                  <xsl:value-of
+                                                  select="child::tei:placeName[1]/text()"/>
+                                                  </a>
+                                                  <xsl:if
+                                                  test="child::tei:placeName[@type = 'alternative-name' or contains(@type, 'namensvariante')][1]">
+                                                  <xsl:text> (</xsl:text>
+                                                  <xsl:for-each
+                                                  select="distinct-values(child::tei:placeName[@type = 'alternative-name' or contains(@type, 'namensvariante')])">
+                                                  <xsl:value-of select="normalize-space(.)"/>
+                                                  <xsl:if test="position() != last()">
+                                                  <xsl:text>, </xsl:text>
+                                                  </xsl:if>
+                                                  </xsl:for-each>
+                                                  <xsl:text>)</xsl:text>
+                                                  </xsl:if>
+                                                  <xsl:if
+                                                  test="child::tei:location[@type = 'coords']">
+                                                  <xsl:text> </xsl:text>
+                                                  <xsl:variable name="mlat"
+                                                  select="replace(tokenize(tei:location[@type = 'coords'][1]/tei:geo, ' ')[1], ',', '.')"
+                                                  as="xs:string"/>
+                                                  <xsl:variable name="mlong"
+                                                  select="replace(tokenize(tei:location[@type = 'coords'][1]/tei:geo, ' ')[2], ',', '.')"
+                                                  as="xs:string"/>
+                                                  <xsl:variable name="mappin"
+                                                  select="concat('mlat=',$mlat, '&amp;mlon=', $mlong)"
+                                                  as="xs:string"/>
+                                                  <xsl:variable name="openstreetmapurl"
+                                                  select="concat('https://www.openstreetmap.org/?', $mappin, '#map=12/', $mlat, '/', $mlong)"/>
+                                                  <a class="theme-color">
+                                                  <xsl:attribute name="href">
+                                                  <xsl:value-of select="$openstreetmapurl"/>
+                                                  </xsl:attribute>
+                                                  <xsl:attribute name="target">
+                                                  <xsl:text>_blank</xsl:text>
+                                                  </xsl:attribute>
+                                                  <xsl:attribute name="rel">
+                                                  <xsl:text>noopener</xsl:text>
+                                                  </xsl:attribute>
+                                                  <i class="fa-solid fa-location-dot"/>
+                                                  </a>
+                                                  </xsl:if>
+                                                  </li>
+                                                </xsl:for-each>
+                                            </ul>
+                                        </xsl:if>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ZITIEREN -->
+                            <div class="drawer-panel" data-panel="cite">
+                                <h3>Zitieren <button type="button" class="close" data-close=""
+                                        >schließen ✕</button></h3>
+                                <div class="meta-caption">Empfohlene Zitierweise</div>
+                                <blockquote class="cite-block citation-quote">
+                                    <xsl:value-of select="normalize-space($quotationString)"/>
+                                </blockquote>
+                                <div class="meta-caption">Kurz-Identifier</div>
+                                <p style="font-size:13.5px;">Für gekürzte Zitate reicht die Angabe
+                                    der Textnummer aus, die eindeutig und persistent ist:
+                                        »<b><xsl:value-of
+                                            select="replace(tokenize(base-uri(), '/')[last()], '.xml', '')"
+                                        /></b>«.</p>
+                                <div class="meta-caption">Wikipedia-Vorlage</div>
+                                <blockquote class="cite-block citation-quote"
+                                    style="margin: 6px 0 16px;">
+                                    <code>
+                                        <xsl:text>{{Internetquelle |url=https://schnitzler-interviews.acdh.oeaw.ac.at/</xsl:text>
+                                        <xsl:value-of select="$link"/>
+                                        <xsl:text> |titel=</xsl:text>
+                                        <xsl:value-of select="$doc_title"/>
+                                        <xsl:text> |werk=Arthur Schnitzler: „Das Zeitlose ist von kürzester Dauer“ |hrsg=Martin Anton Müller |sprache=de |datum=</xsl:text>
+                                        <xsl:value-of
+                                            select="//tei:titleStmt/tei:title[@type = 'iso-date']/@when-iso"/>
+                                        <xsl:text> |abruf=</xsl:text>
+                                        <xsl:value-of
+                                            select="format-date(current-date(), '[Y4]-[M02]-[D02]')"/>
+                                        <xsl:text> }}</xsl:text>
+                                    </code>
+                                </blockquote>
+                            </div>
+                            <!-- DOWNLOAD -->
+                            <div class="drawer-panel" data-panel="download">
+                                <h3>Download <button type="button" class="close" data-close=""
+                                        >schließen ✕</button></h3>
+                                <div class="download-list">
+                                    <a data-bs-toggle="tooltip" title="Text als TEI-Datei">
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="$teiDoc"/>
+                                        </xsl:attribute>
+                                        <i class="far fa-file-code"/>
+                                        <xsl:text> TEI-XML</xsl:text>
+                                    </a>
+                                    <a class="secondary" data-bs-toggle="tooltip"
+                                        title="PDF des Buchs">
+                                        <xsl:attribute name="href">
+                                            <xsl:choose>
+                                                <xsl:when test="starts-with(tei:TEI/@xml:id, 'I')">
+                                                  <xsl:text>https://library.oapen.org/handle/20.500.12657/77015</xsl:text>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                  <xsl:text>https://library.oapen.org/handle/20.500.12657/77016</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:attribute>
+                                        <i class="far fa-file-lines"/>
+                                        <xsl:text> PDF »Das Zeitlose ist von kürzester Dauer« Band </xsl:text>
+                                        <xsl:choose>
+                                            <xsl:when test="starts-with(tei:TEI/@xml:id, 'I')">
+                                                <xsl:text>1</xsl:text>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:text>2</xsl:text>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- CHRONIK -->
+                            <div class="drawer-panel" data-panel="chronik">
+                                <xsl:variable name="datum-iso">
+                                    <xsl:variable name="date"
+                                        select="descendant::tei:teiHeader[1]/tei:fileDesc[1]/tei:titleStmt[1]/tei:title[@type='iso-date']/@when-iso"
+                                        as="xs:date"/>
+                                    <xsl:value-of select="$date"/>
+                                </xsl:variable>
+                                <h3>Chronik <button type="button" class="close" data-close=""
+                                        >schließen ✕</button></h3>
+                                <!-- Datums-Überschrift kommt zentral aus schnitzler-chronik.xsl -->
+                                <!-- SCHNITZLER-CHRONIK. Zuerst wird der Eintrag geladen, weil das schneller ist, wenn er lokal vorliegt -->
+                                <xsl:variable name="fetchContentsFromURL" as="node()?">
+                                    <xsl:choose>
+                                        <xsl:when test="$schnitzler-chronik_fetch-locally">
+                                            <xsl:copy-of
+                                                select="document(concat('../chronik-data/', $datum-iso, '.xml'))"/>
+                                            <!-- das geht davon aus, dass das schnitzler-chronik-repo lokal vorliegt -->
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:copy-of
+                                                select="document(concat('https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-chronik-data/refs/heads/main/editions/data/', $datum-iso, '.xml'))"
+                                            />
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:variable>
+                                <xsl:call-template name="mam:schnitzler-chronik">
+                                    <xsl:with-param name="datum-iso" select="$datum-iso"/>
+                                    <xsl:with-param name="current-type"
+                                        select="$schnitzler-chronik_current-type"/>
+                                    <xsl:with-param name="teiSource" select="$teiSource"/>
+                                    <xsl:with-param name="fetchContentsFromURL"
+                                        select="$fetchContentsFromURL" as="node()?"/>
+                                </xsl:call-template>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+// Action-Bar-Drawer (Überlieferung, Entitäten, Zitieren, Download, Chronik)
+(function(){
+var bar=document.getElementById('actionBar');
+var drawer=document.getElementById('drawer');
+var backdrop=document.getElementById('drawerBackdrop');
+if(!bar||!drawer){return;}
+var buttons=bar.querySelectorAll('button[data-drawer]');
+var panels=drawer.querySelectorAll('.drawer-panel');
+function syncTop(){drawer.style.top=bar.offsetHeight+'px';}
+syncTop();
+window.addEventListener('resize',syncTop);
+if(window.ResizeObserver){new ResizeObserver(syncTop).observe(bar);}
+function openDrawer(name){
+syncTop();
+buttons.forEach(function(b){b.setAttribute('aria-expanded',b.getAttribute('data-drawer')===name?'true':'false');});
+panels.forEach(function(p){p.classList.toggle('active',p.getAttribute('data-panel')===name);});
+drawer.classList.add('open');
+if(backdrop){backdrop.classList.add('show');}
+var inner=drawer.querySelector('.drawer-inner');
+if(inner){inner.scrollTop=0;}
+document.dispatchEvent(new CustomEvent('drawer:open',{detail:name}));
+}
+function closeDrawer(){
+buttons.forEach(function(b){b.setAttribute('aria-expanded','false');});
+drawer.classList.remove('open');
+if(backdrop){backdrop.classList.remove('show');}
+}
+buttons.forEach(function(b){
+b.addEventListener('click',function(){
+var name=b.getAttribute('data-drawer');
+var expanded=b.getAttribute('aria-expanded')==='true';
+if(expanded){closeDrawer();}else{openDrawer(name);}
+});
+});
+drawer.querySelectorAll('[data-close]').forEach(function(c){c.addEventListener('click',closeDrawer);});
+// Tipp/Klick auf die abgedunkelte Fläche hinter dem Drawer (mobiler Backdrop) schließt
+if(backdrop){backdrop.addEventListener('click',closeDrawer);}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDrawer();}});
+})();</script>
                     <div class="container-fluid">
                         <div class="wp-transcript">
                             <div class="card" data-index="true">
@@ -174,52 +696,6 @@
                                 
                             </div>
                             <div class="card-footer" style="clear: both;">
-                                <nav class="navbar navbar-expand-lg" style="box-shadow: none;">
-                                    <div class="container-fluid" style="display: flex;
-                                        justify-content: center;
-                                        align-items: center;">
-                                        <div id="navbarSupportedContent">
-                                            <ul class="navbar-nav mb-2 mb-lg-0" id="secondary-menu">
-                                                <xsl:if
-                                                  test="not(descendant::tei:teiHeader[1]/tei:revisionDesc[1]/@status = 'approved')">
-                                                  <li class="nav-item"> &#160;<a href="#"
-                                                  data-bs-target="#qualitaet" type="button"
-                                                  data-bs-toggle="modal">
-                                                  <span style="color: orange;"> ENTWURF </span>
-                                                  </a>&#160; </li>
-                                                </xsl:if>
-                                                <!--<li class="nav-item"> &#160;<a href="#"
-                                                  data-bs-target="#editor-widget" type="button"
-                                                  data-bs-toggle="modal"><i
-                                                  class="fas fa-solid fa-screwdriver-wrench"/>
-                                                  EINSTELLUNGEN </a>&#160; </li>-->
-                                                <li class="nav-item"> &#160;<a href="#"
-                                                  data-bs-target="#ueberlieferung" type="button"
-                                                  data-bs-toggle="modal">
-                                                  <i class="fas fa-landmark"/> ÜBERLIEFERUNG
-                                                  </a>&#160; </li>
-                                                <li class="nav-item"> &#160;<a href="#"
-                                                  data-bs-target="#entitaeten" type="button"
-                                                  data-bs-toggle="modal">
-                                                  <i class="fas fa-sharp fa-solid fa-people-group"/>
-                                                  ENTITÄTEN </a>&#160; </li>
-                                                <li class="nav-item"> &#160;<a href="#"
-                                                  data-bs-target="#zitat" type="button"
-                                                  data-bs-toggle="modal">
-                                                  <i class="fas fa-quote-right"/> ZITIEREN</a>&#160; </li>
-                                                <li class="nav-item"> &#160;<a href="#"
-                                                  data-bs-target="#downloadModal" type="button"
-                                                  data-bs-toggle="modal"><i
-                                                  class="fas fa-solid fa-download"/> DOWNLOAD
-                                                  </a>&#160; </li>
-                                                <li class="nav-item"> &#160;<a href="#"
-                                                        data-bs-target="#schnitzler-chronik-modal" type="button"
-                                                        data-bs-toggle="modal">
-                                                        <i class="fas fa-calendar-day"/> CHRONIK</a>&#160; </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </nav>
                                 <xsl:if test="descendant::tei:div[@type='biographical']">
                                     <div class="card-body-anhang">
                                         <p class="text-capitalize">ZEUGNISSE:</p>
@@ -239,442 +715,6 @@
                                 </xsl:if>
                             </div>
                             <xsl:call-template name="html_footer"/>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="ueberlieferung" tabindex="-1"
-                    aria-labelledby="ueberlieferungLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle1">
-                                    <xsl:for-each
-                                        select="//tei:fileDesc/tei:titleStmt/tei:title[@level = 'a']">
-                                        <xsl:apply-templates/>
-                                        <br/>
-                                    </xsl:for-each>
-                                </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-                                
-                            </div>
-                            <div class="modal-body">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <xsl:for-each select="//tei:correspAction">
-                                            <tr>
-                                                <th>
-                                                  <xsl:choose>
-                                                  <xsl:when test="@type = 'sent'"> Versand: </xsl:when>
-                                                  <xsl:when test="@type = 'received'"> Empfangen: </xsl:when>
-                                                  <xsl:when test="@type = 'forwarded'">
-                                                  Weitergeleitet: </xsl:when>
-                                                  <xsl:when test="@type = 'redirected'"> Umgeleitet: </xsl:when>
-                                                  <xsl:when test="@type = 'delivered'"> Zustellung: </xsl:when>
-                                                  <xsl:when test="@type = 'transmitted'">
-                                                  Übermittelt: </xsl:when>
-                                                  </xsl:choose>
-                                                </th>
-                                                <td> </td>
-                                                <td>
-                                                  <xsl:if test="./tei:date">
-                                                  <xsl:value-of select="./tei:date"/>
-                                                  <br/>
-                                                  </xsl:if>
-                                                  <xsl:for-each select="child::tei:persName">
-                                                  <a class="theme-color">
-                                                  <xsl:attribute name="href">
-                                                  <xsl:value-of select="concat(replace((@ref), '#', ''), '.html')"
-                                                  />
-                                                  </xsl:attribute>
-                                                  <xsl:value-of select="."/>
-                                                  </a>
-                                                  <xsl:choose>
-                                                  <xsl:when test="not(position() = last())">
-                                                  <xsl:text>; </xsl:text>
-                                                  </xsl:when>
-                                                  <xsl:otherwise>
-                                                  <br/>
-                                                  </xsl:otherwise>
-                                                  </xsl:choose>
-                                                  </xsl:for-each>
-                                                  <xsl:for-each select="child::tei:placeName">
-                                                  <a class="theme-color">
-                                                  <xsl:attribute name="href">
-                                                      <xsl:value-of select="concat(replace((@ref), '#', ''), '.html')"
-                                                  />
-                                                  </xsl:attribute>
-                                                  <xsl:value-of select="."/>
-                                                  </a>
-                                                  <xsl:choose>
-                                                  <xsl:when test="not(position() = last())">
-                                                  <xsl:text>; </xsl:text>
-                                                  </xsl:when>
-                                                  <xsl:otherwise>
-                                                  <br/>
-                                                  </xsl:otherwise>
-                                                  </xsl:choose>
-                                                  </xsl:for-each>
-                                                </td>
-                                            </tr>
-                                        </xsl:for-each>
-                                    </tbody>
-                                </table>
-                                <br/>
-                                <!-- Modal Überlieferung -->
-                                <div class="modal-body">
-                                    <xsl:for-each select="descendant::tei:witness">
-                                        <h5>TEXTZEUGE <xsl:value-of select="@n"/>
-                                        </h5>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <xsl:if test="tei:msDesc/tei:msIdentifier">
-                                                  <tr>
-                                                  <th>Signatur </th>
-                                                  <td>
-                                                  <xsl:for-each
-                                                  select="tei:msDesc/tei:msIdentifier/child::*">
-                                                  <xsl:value-of select="."/>
-                                                  <xsl:if test="not(position() = last())">
-                                                  <xsl:text>, </xsl:text>
-                                                  </xsl:if>
-                                                  </xsl:for-each>
-                                                  </td>
-                                                  </tr>
-                                                </xsl:if>
-                                                <xsl:if test="child::tei:objectType">
-                                                  <tr>
-                                                  <th>Typ</th>
-                                                  <td>
-                                                  <xsl:apply-templates select="tei:objectType"/>
-                                                  </td>
-                                                  </tr>
-                                                </xsl:if>
-                                                <xsl:if test="child::tei:msDesc/tei:physDesc">
-                                                  <tr>
-                                                  <th>Beschreibung </th>
-                                                  <td>
-                                                  <xsl:apply-templates
-                                                  select="child::tei:msDesc/tei:physDesc/tei:objectDesc"
-                                                  />
-                                                  </td>
-                                                  </tr>
-                                                  <xsl:if
-                                                  test="tei:msDesc/tei:physDesc/tei:typeDesc/tei:typeNote">
-                                                  <xsl:apply-templates
-                                                  select="tei:msDesc/tei:physDesc/tei:typeDesc/tei:typeNote"
-                                                  />
-                                                  </xsl:if>
-                                                  <xsl:if
-                                                  test="tei:msDesc/tei:physDesc/tei:handDesc">
-                                                  <xsl:apply-templates
-                                                  select="tei:msDesc/tei:physDesc/tei:handDesc"/>
-                                                  </xsl:if>
-                                                  <xsl:if
-                                                  test="tei:msDesc/tei:physDesc/tei:additions">
-                                                  <tr>
-                                                  <th/>
-                                                  <th>Zufügungen</th>
-                                                  </tr>
-                                                  <xsl:apply-templates
-                                                  select="tei:msDesc/tei:physDesc/tei:additions"/>
-                                                  </xsl:if>
-                                                </xsl:if>
-                                            </tbody>
-                                        </table>
-                                    </xsl:for-each>
-                                    <xsl:for-each select="//tei:biblStruct">
-                                        <h5>DRUCK <xsl:value-of select="position()"/>
-                                        </h5>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                  <th/>
-                                                  <td>
-                                                  <xsl:value-of
-                                                  select="mam:bibliografische-angabe(.)"/>
-                                                  </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </xsl:for-each>
-                                    <h5>TEXTEINGRIFFE</h5>
-                                    <dl class="kommentarhang">
-                                        <xsl:apply-templates
-                                            select="descendant::tei:note[@type = 'textConst']"
-                                            mode="kommentaranhang"/>
-                                    </dl>
-                                    
-                                </div>
-                            </div>
-                            
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Schließen</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal Zitat -->
-                <div class="modal fade" id="zitat" tabindex="-1" aria-labelledby="zitatModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Zitat</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-                                
-                            </div>
-                            <div class="modal-body">
-                                <p>Eine zitierfähige Angabe dieser Seite lautet:</p>
-                                <blockquote>
-                                    <xsl:value-of select="$quotationString"/>
-                                </blockquote>
-                                <p/>
-                                <p>Für gekürzte Zitate reicht die Angabe der Textnummer aus, die
-                                    eindeutig und persistent ist: »<b><xsl:value-of
-                                            select="replace(tokenize(base-uri(), '/')[last()], '.xml', '')"
-                                        /></b>«.</p>
-                                <p>Für Belege in der Wikipedia kann diese Vorlage benutzt
-                                    werden:</p>
-                                <blockquote>
-                                    <code>{{Internetquelle
-                                            |url=https://schnitzler-interviews.acdh.oeaw.ac.at/<xsl:value-of
-                                            select="$link"/> |titel=<xsl:value-of
-                                            select="$doc_title"/> |werk=Arthur Schnitzler:
-                                        „Das Zeitlose ist von kürzester Dauer“ |hrsg=Martin Anton
-                                        Müller |sprache=de
-                                            |datum=<xsl:value-of
-                                            select="//tei:titleStmt/tei:title[@type = 'iso-date']/@when-iso"
-                                        /> |abruf=<xsl:value-of
-                                            select="format-date(current-date(), '[Y4]-[M02]-[D02]')"
-                                        /> }} </code>
-                                </blockquote>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Schließen</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal Qualität -->
-                <div class="modal fade" id="qualitaet" tabindex="-1"
-                    aria-labelledby="qualitaetModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Textqualität</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-                                
-                            </div>
-                            <div class="modal-body">
-                                <p>Diese Abschrift wurde noch nicht ausreichend mit dem Original
-                                    abgeglichen. Sie sollte derzeit nicht – oder nur durch eigenen
-                                    Abgleich mit dem Faksimile, falls vorliegend – als Zitatvorlage
-                                    dienen.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Schließen</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal Entitäten -->
-                <div class="modal fade" id="entitaeten" tabindex="-1"
-                    aria-labelledby="entitaetenModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Erwähnte
-                                    Entitäten</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-                                
-                            </div>
-                            <div class="modal-body">
-                                <div>
-                                    <legend>Personen</legend>
-                                    <ul>
-                                        <xsl:for-each select=".//tei:listPerson//tei:person">
-                                            <xsl:sort
-                                                select="concat(child::tei:persName[1]/tei:surname[1], child::tei:persName[1]/tei:forename[1])"/>
-                                                                             <xsl:variable name="naname" as="xs:string">
-                                                <xsl:choose>
-                                                  <xsl:when
-                                                  test="child::tei:persName[1]/tei:surname[1] and child::tei:persName[1]/tei:forename[1]">
-                                                  <xsl:value-of
-                                                  select="concat(child::tei:persName[1]/tei:surname[1], ' ', child::tei:persName[1]/tei:forename[1])"
-                                                  />
-                                                  </xsl:when>
-                                                  <xsl:when
-                                                  test="child::tei:persName[1]/tei:forename[1]">
-                                                  <xsl:value-of select="child::tei:forename[1]"/>
-                                                  </xsl:when>
-                                                  <xsl:when
-                                                  test="child::tei:persName[1]/tei:surname[1]">
-                                                  <xsl:value-of
-                                                  select="child::tei:persName[1]/tei:surname[1]"/>
-                                                  </xsl:when>
-                                                  <xsl:otherwise>
-                                                  <xsl:value-of
-                                                  select="normalize-space(child::tei:persName)"/>
-                                                  </xsl:otherwise>
-                                                </xsl:choose>
-                                            </xsl:variable>
-                                            <li>
-                                                <a class="theme-color">
-                                                  <xsl:attribute name="href">
-                                                  <xsl:value-of
-                                                  select="concat(data(@xml:id), '.html')"/>
-                                                  </xsl:attribute>
-                                                  <xsl:value-of select="$naname"/>
-                                                </a>
-                                            </li>
-                                        </xsl:for-each>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <xsl:if test=".//tei:back/tei:listBibl/tei:bibl[1]">
-                                        <legend>Werke</legend>
-                                        <ul>
-                                            <xsl:for-each select=".//tei:back/tei:listBibl/tei:bibl">
-                                                <xsl:sort select="child::tei:title[1]"/>
-                                                <li>
-                                                  <a class="theme-color">
-                                                  <xsl:attribute name="href">
-                                                  <xsl:value-of
-                                                  select="concat(data(@xml:id), '.html')"/>
-                                                  </xsl:attribute>
-                                                  <xsl:if
-                                                  test="child::tei:author[@role = 'hat-geschaffen' or @role = 'author']">
-                                                  <xsl:for-each
-                                                  select="child::tei:author[@role = 'hat-geschaffen' or @role = 'author']">
-                                                  <xsl:sort
-                                                  select="concat(., child::tei:surname[1], child::tei:forename[1])"/>
-                                                  <xsl:choose>
-                                                  <xsl:when
-                                                  test="child::tei:surname[1] or child::tei:forename[1]">
-                                                  <xsl:choose>
-                                                  <xsl:when
-                                                  test="child::tei:surname[1] and child::tei:forename[1]">
-                                                  <xsl:value-of
-                                                  select="concat(child::tei:surname[1], ' ', child::tei:forename[1])"
-                                                  />
-                                                  </xsl:when>
-                                                  <xsl:when test="child::tei:forename[1]">
-                                                  <xsl:value-of select="child::tei:forename[1]"/>
-                                                  </xsl:when>
-                                                  <xsl:otherwise>
-                                                  <xsl:value-of select="child::tei:surname[1]"/>
-                                                  </xsl:otherwise>
-                                                  </xsl:choose>
-                                                  <xsl:if test="position() != last()">
-                                                  <xsl:text>, </xsl:text>
-                                                  </xsl:if>
-                                                  </xsl:when>
-                                                  <xsl:otherwise>
-                                                  <xsl:value-of select="."/>
-                                                  <xsl:if test="position() != last()">
-                                                  <xsl:text>; </xsl:text>
-                                                  </xsl:if>
-                                                  </xsl:otherwise>
-                                                  </xsl:choose>
-                                                  <xsl:if test="position() = last()">
-                                                  <xsl:text>: </xsl:text>
-                                                  </xsl:if>
-                                                  </xsl:for-each>
-                                                  </xsl:if>
-                                                  <xsl:value-of select="./tei:title[1]"/>
-                                                  </a>
-                                                </li>
-                                            </xsl:for-each>
-                                        </ul>
-                                    </xsl:if>
-                                </div>
-                                <div>
-                                    <xsl:if test=".//tei:back/tei:listOrg/tei:org[1]">
-                                        <legend>Institutionen</legend>
-                                        <ul>
-                                            <xsl:for-each select=".//tei:listOrg//tei:org">
-                                                <xsl:sort select="child::tei:orgName[1]"/>
-                                                <li>
-                                                  <a class="theme-color">
-                                                  <xsl:attribute name="href">
-                                                  <xsl:value-of
-                                                  select="concat(data(@xml:id), '.html')"/>
-                                                  </xsl:attribute>
-                                                  <xsl:value-of select="./tei:orgName[1]"/>
-                                                  </a>
-                                                </li>
-                                            </xsl:for-each>
-                                        </ul>
-                                    </xsl:if>
-                                </div>
-                                <div>
-                                    <xsl:if test=".//tei:back/tei:listPlace/tei:place[1]">
-                                        <legend>Orte</legend>
-                                        <ul>
-                                            <xsl:for-each select=".//tei:listPlace/tei:place">
-                                                <xsl:sort select="child::tei:placeName[1]"/>
-                                                <li>
-                                                  <a class="theme-color">
-                                                  <xsl:attribute name="href">
-                                                  <xsl:value-of
-                                                  select="concat(data(@xml:id), '.html')"/>
-                                                  </xsl:attribute>
-                                                  <xsl:value-of
-                                                  select="child::tei:placeName[1]/text()"/>
-                                                  </a>
-                                                  <xsl:if
-                                                  test="child::tei:placeName[@type = 'alternative-name' or contains(@type, 'namensvariante')][1]">
-                                                  <xsl:text> (</xsl:text>
-                                                  <xsl:for-each
-                                                  select="distinct-values(child::tei:placeName[@type = 'alternative-name' or contains(@type, 'namensvariante')])">
-                                                  <xsl:value-of select="normalize-space(.)"/>
-                                                  <xsl:if test="position() != last()">
-                                                  <xsl:text>, </xsl:text>
-                                                  </xsl:if>
-                                                  </xsl:for-each>
-                                                  <xsl:text>)</xsl:text>
-                                                  </xsl:if>
-                                                  <xsl:if
-                                                  test="child::tei:location[@type = 'coords']">
-                                                  <xsl:text> </xsl:text>
-                                                  <xsl:variable name="mlat"
-                                                  select="replace(tokenize(tei:location[@type = 'coords'][1]/tei:geo, ' ')[1], ',', '.')"
-                                                  as="xs:string"/>
-                                                  <xsl:variable name="mlong"
-                                                  select="replace(tokenize(tei:location[@type = 'coords'][1]/tei:geo, ' ')[2], ',', '.')"
-                                                  as="xs:string"/>
-                                                  <xsl:variable name="mappin"
-                                                  select="concat('mlat=',$mlat, '&amp;mlon=', $mlong)"
-                                                  as="xs:string"/>
-                                                  <xsl:variable name="openstreetmapurl"
-                                                  select="concat('https://www.openstreetmap.org/?', $mappin, '#map=12/', $mlat, '/', $mlong)"/>
-                                                  <a class="theme-color">
-                                                  <xsl:attribute name="href">
-                                                  <xsl:value-of select="$openstreetmapurl"/>
-                                                  </xsl:attribute>
-                                                  <xsl:attribute name="target">
-                                                  <xsl:text>_blank</xsl:text>
-                                                  </xsl:attribute>
-                                                  <xsl:attribute name="rel">
-                                                  <xsl:text>noopener</xsl:text>
-                                                  </xsl:attribute>
-                                                  <i class="fa-solid fa-location-dot"/>
-                                                  </a>
-                                                  </xsl:if>
-                                                </li>
-                                            </xsl:for-each>
-                                        </ul>
-                                    </xsl:if>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Schließen</button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -710,112 +750,6 @@
                         </div>
                     </div>
                 </div>-->
-                <!-- Modal Tag -->
-                <div class="modal fade" id="schnitzler-chronik-modal" tabindex="-1"
-                    aria-labelledby="downloadModalLabel2" aria-hidden="true">
-                    <xsl:variable name="datum-iso">
-                        <xsl:variable name="date"
-                            select="descendant::tei:teiHeader[1]/tei:fileDesc[1]/tei:titleStmt[1]/tei:title[@type='iso-date']/@when-iso"
-                            as="xs:date"/>
-                        <xsl:value-of select="$date"/>
-                    </xsl:variable>
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <!-- Datums-Überschrift kommt zentral aus schnitzler-chronik.xsl -->
-                                <h5 class="modal-title" id="exampleModalLongTitle3">Chronik</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Schließen"/>
-                            </div>
-                            <div class="modal-body">
-                                <div id="chronik-modal-body">
-                                    <!-- SCHNITZLER-CHRONIK. Zuerst wird der Eintrag geladen, weil das schneller ist, wenn er lokal vorliegt -->
-                                    <xsl:variable name="fetchContentsFromURL" as="node()?">
-                                        <xsl:choose>
-                                            <xsl:when test="$schnitzler-chronik_fetch-locally">
-                                                <xsl:copy-of
-                                                    select="document(concat('../chronik-data/', $datum-iso, '.xml'))"/>
-                                                <!-- das geht davon aus, dass das schnitzler-chronik-repo lokal vorliegt -->
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:copy-of
-                                                    select="document(concat('https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-chronik-data/refs/heads/main/editions/data/', $datum-iso, '.xml'))"
-                                                />
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </xsl:variable>
-                                    <xsl:call-template name="mam:schnitzler-chronik">
-                                        <xsl:with-param name="datum-iso" select="$datum-iso"/>
-                                        <xsl:with-param name="current-type"
-                                            select="$schnitzler-chronik_current-type"/>
-                                        <xsl:with-param name="teiSource" select="$teiSource"/>
-                                        <xsl:with-param name="fetchContentsFromURL"
-                                            select="$fetchContentsFromURL" as="node()?"/>
-                                    </xsl:call-template>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Schließen</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Download Modal -->
-                <div class="modal fade" id="downloadModal" tabindex="-1"
-                    aria-labelledby="downloadModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle4"
-                                    >Downloadmöglichkeiten</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-                                
-                            </div>
-                            <div class="modal-body">
-                                <xsl:variable name="id-ohne-l"
-                                    select="number(substring-after(tei:TEI/@xml:id, 'L'))"/>
-                                <p>
-                                    <a class="ml-3" data-bs-toggle="tooltip"
-                                        title="Text als TEI-Datei">
-                                        <xsl:attribute name="href">
-                                            <xsl:value-of select="$teiDoc"/>
-                                        </xsl:attribute>
-                                        <i class="fa-lg far fa-file-code"/> TEI </a>
-                                </p>
-                                <p>
-                                    <a class="ml-3" data-toggle="tooltip"
-                                        title="PDF des Buchs">
-                                        <xsl:attribute name="href">
-                                            <xsl:choose>
-                                                <xsl:when test="starts-with(@xml:id, 'I')">
-                                                    <xsl:text>https://library.oapen.org/handle/20.500.12657/77015</xsl:text>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                    <xsl:text>https://library.oapen.org/handle/20.500.12657/77016</xsl:text>
-                                                </xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:attribute>
-                                        <i class="fa-lg far fa-file-lines"/> PDF »Das Zeitlose ist von kürzester Dauer« Band 
-                                        <xsl:choose>
-                                            <xsl:when test="starts-with(@xml:id, 'I')">
-                                                <xsl:text>1</xsl:text>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:text>2</xsl:text>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                        
-                                    </a>
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Schließen</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Hier die Modals für mehrere rs/@refs in einem -->
                 <xsl:for-each
                     select="descendant::tei:rs[(not(ancestor::tei:note) and contains(@ref, ' ')) or descendant::tei:rs[not(ancestor::tei:note)]]">

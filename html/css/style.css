@@ -1199,3 +1199,292 @@ div#map {
 .custom-full-width-accordion {
   width: 100%;
 }
+
+/* Action-Bar (zweites Menü unter der Navbar), übernommen aus schnitzler-briefe-static */
+.action-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: #3D5A80;
+    color: #fff;
+    border-bottom: 1px solid #2e4560;
+}
+.action-bar .inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 22px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 0;
+}
+.action-bar .draft-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px 10px 0;
+    color: #fff;
+    font-size: 11.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    margin-right: 6px;
+    text-decoration: none;
+}
+.action-bar .draft-badge::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffd24a;
+    box-shadow: 0 0 0 3px rgba(255, 210, 74, .25);
+}
+.action-bar button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 11px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background .12s;
+}
+.action-bar button:hover {
+    background: rgba(255, 255, 255, .1);
+}
+.action-bar button[data-drawer]:not(.draft-badge)::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid rgba(255, 255, 255, .75);
+    border-bottom: 1.5px solid rgba(255, 255, 255, .75);
+    transform: rotate(45deg);
+    margin-top: -4px;
+    transition: transform .15s;
+}
+.action-bar button[aria-expanded="true"] {
+    background: rgba(255, 255, 255, .18);
+}
+.action-bar button[data-drawer]:not(.draft-badge)[aria-expanded="true"]::after {
+    transform: rotate(225deg);
+    margin-top: 4px;
+}
+.action-bar .fas,
+.action-bar .far {
+    color: #fff;
+}
+.action-bar .gap {
+    flex: 1;
+}
+.action-bar .neighbors {
+    display: inline-flex;
+    align-items: stretch;
+}
+.action-bar .neighbors .dropdown {
+    display: inline-flex;
+    align-items: stretch;
+}
+.action-bar .neighbors .dropdown-menu .fas {
+    color: #3D5A80;
+}
+.action-bar .neighbors a {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 14px;
+    color: #fff;
+}
+.action-bar .neighbors a:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+/* Drawer unter der Action-Bar */
+.drawer-backdrop {
+    display: none;
+}
+.action-drawer {
+    background: #f5f5f5;
+    border-bottom: 1px solid #dee2e6;
+    display: none;
+    position: sticky;
+    top: 43px;
+    z-index: 1019;
+    box-shadow: 0 6px 18px -8px rgba(0, 0, 0, .1);
+}
+.action-drawer.open {
+    display: block;
+}
+.drawer-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 22px 28px 26px;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+.drawer-panel {
+    display: none;
+}
+.drawer-panel.active {
+    display: block;
+}
+.drawer-panel h3 {
+    font-size: 12px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #3D5A80;
+    font-weight: 700;
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3D5A80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drawer-panel h3 .close {
+    color: #5f676e;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: none;
+    opacity: 1;
+}
+.drawer-panel h3 .close:hover {
+    color: #3D5A80;
+}
+.drawer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px 24px;
+}
+.transmission-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 16px;
+}
+.drawer-panel table {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.drawer-panel table td,
+.drawer-panel table th {
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.setting-group {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 14px 16px 12px;
+    background: rgba(61, 90, 128, .03);
+}
+.setting-group .title {
+    font-size: 12px;
+    color: #3D5A80;
+    font-weight: 600;
+    letter-spacing: .04em;
+    margin-bottom: 10px;
+}
+.meta-caption {
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #5f676e;
+    font-weight: 600;
+    margin: 18px 0 8px;
+}
+.biblio-angabe {
+    margin: 0 0 8px;
+    line-height: 1.5;
+}
+.cite-block {
+    font-size: 15px;
+    line-height: 1.55;
+    padding: 14px 18px;
+    background: #f8f9fa;
+    border-left: 3px solid #3D5A80;
+    border-radius: 3px;
+    margin: 6px 0 16px;
+}
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.download-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    background: #3D5A80;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.download-list a.secondary {
+    background: #fff;
+    color: #3D5A80;
+    border: 1px solid rgba(61, 90, 128, .4);
+}
+.download-list a:hover {
+    filter: brightness(1.05);
+}
+.download-list a .far,
+.download-list a .fas {
+    color: inherit;
+}
+
+/* Action-Bar und Drawer auf kleinen Bildschirmen */
+@media (max-width: 768px) {
+    .action-bar .inner {
+        padding: 0 10px;
+    }
+    .action-bar button {
+        padding: 9px 8px;
+        font-size: 12px;
+        gap: 5px;
+    }
+    .action-bar .draft-badge {
+        font-size: 10px;
+        padding: 8px 10px 8px 0;
+    }
+    /* Abdunkelung der Seite hinter dem geöffneten Drawer */
+    .drawer-backdrop.show {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .35);
+        z-index: 1018;
+    }
+    .drawer-inner {
+        padding: 0 14px 18px;
+        max-height: calc(100vh - 160px);
+    }
+    /* Panel-Kopf samt Schließen-Button bleibt beim Scrollen sichtbar */
+    .drawer-panel h3 {
+        position: sticky;
+        top: 0;
+        background: #f5f5f5;
+        z-index: 2;
+        padding-top: 12px;
+    }
+    .drawer-panel h3 .close {
+        font-size: 13px;
+        padding: 6px 0 6px 12px;
+    }
+    .drawer-grid,
+    .transmission-layout {
+        grid-template-columns: 1fr;
+    }
+}

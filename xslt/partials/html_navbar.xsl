@@ -3,7 +3,8 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all" version="2.0">
     <xsl:template match="/" name="nav_bar">
-        <nav class="navbar navbar-expand-md" style="padding-top:1px;">
+        <nav class="navbar navbar-expand-md" role="navigation" aria-label="Hauptnavigation"
+            style="padding-top:1px; position: relative; z-index: 1050;">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand custom-logo-link" rel="home" itemprop="url">
                     <img src="images/schnitzler-interviews.svg" class="img-fluid"

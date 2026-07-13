@@ -7,36 +7,32 @@
                 using tei:title but includes prev and next urls. -->
     
     <xsl:template name="header-nav">
-        
-        <xsl:variable name="doc_title">
-            <xsl:value-of select="descendant::tei:titleSmt/tei:title[@level = 'a'][1]/text()"/>
-        </xsl:variable>
         <div class="row" id="title-nav">
-            <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:left">
-                <xsl:if test="child::tei:TEI/@prev">
-                    <h1>
-                        <a href="{child::tei:TEI/@prev}.html" class="nav-link" aria-expanded="false">
-                            <i class="fas fa-chevron-left"></i>
-                        </a>
-                    </h1>
-                </xsl:if>
-            </div>
-            <div class="col-md-8">
+            <div class="col-12">
                 <h1 align="center">
                     <xsl:value-of
                         select="descendant::tei:fileDesc/tei:titleStmt/tei:title[@level = 'a']"/>
                 </h1>
             </div>
-            <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
-                <xsl:if test="child::tei:TEI/@next">
-                    <h1>
-                        <a href="{child::tei:TEI/@next}.html" class="nav-link" aria-expanded="false">
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </h1>
-                </xsl:if>
-            </div>
         </div>
+    </xsl:template>
+    <!-- Blätterfunktion (vorheriger/nächster Text), rechtsbündig in der Action-Bar.
+         Muss im Kontext des Dokumentknotens aufgerufen werden. -->
+    <xsl:template name="header-nav-arrows">
+        <span class="neighbors">
+            <xsl:if test="child::tei:TEI/@prev">
+                <a href="{child::tei:TEI/@prev}.html" title="Vorheriger Text"
+                    aria-label="Vorheriger Text">
+                    <i class="fas fa-chevron-left"/>
+                </a>
+            </xsl:if>
+            <xsl:if test="child::tei:TEI/@next">
+                <a href="{child::tei:TEI/@next}.html" title="Nächster Text"
+                    aria-label="Nächster Text">
+                    <i class="fas fa-chevron-right"/>
+                </a>
+            </xsl:if>
+        </span>
     </xsl:template>
     
 </xsl:stylesheet>
